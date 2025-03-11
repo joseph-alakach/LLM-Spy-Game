@@ -3,7 +3,6 @@ import prompts_constants
 
 class Agent:
     LLM_NAMES = ["openai"]
-    # ROLES = ["spy", "detective"]
 
     def __init__(self, llm_name: str, player_name: str, player_role: str, secret_word: str):
         self.llm_name = llm_name
@@ -57,7 +56,7 @@ class Agent:
                         {"role": "system",
                          "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \nYour name in the game is: {self.player_name} \n{self.secret_word}"},
                         {"role": "user",
-                         "content": f"This is the conversation record so far {conversation}. \nNow it is your turn to respond to the last question in the conversation record. Return only your response: Your response: "},
+                         "content": f"This is the conversation record so far {conversation}. \nNow it is your turn to respond to the last question in the conversation record. Return only your response: "},
                     ],
                     temperature=0.3,
                 )
@@ -90,7 +89,8 @@ class Agent:
                         {"role": "system",
                          "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \nYour name in the game is: {self.player_name} \n{self.secret_word}"},
                         {"role": "user",
-                         "content": f"This is the conversation record so far {conversation}. \nNow it is the voting round based on the conversation record vote a player. From this list choose only 1 {list_of_players}. Your response: "},
+                         "content": f"""This is the conversation record so far {conversation}. \nNow it is the voting round based on the conversation record vote a player. From this list choose only 1 {list_of_players}. 
+                            Your response format must be: player_# """},
                     ],
                     temperature=0.3,
                 )
