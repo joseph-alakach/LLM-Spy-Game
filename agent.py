@@ -8,7 +8,7 @@ class Agent:
         self.llm_name = llm_name
         self.player_name = player_name
         self.role = player_role
-        self.secret_word = f"The secret_word is : {secret_word}" if secret_word != "" else "You were not given the secret_word"
+        self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word"
         self.player_name_conversation_log = []
 
 
@@ -22,16 +22,23 @@ class Agent:
                     model=prompts_constants.GPT_4O,
                     messages=[
                         {"role": "system",
-                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \nYour name in the game is: {self.player_name} \n{self.secret_word}" },
+                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
+                                    f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
+                                    f"Your name in the game is: {self.player_name} \n"
+                                    f"{self.secret_word}"},
                         {"role": "user",
-                         "content": f"This is the conversation record so far {conversation}. \n Now it is your turn to ask a question to the player next to you, ask a question. Return only the question: Your question: "},
+                         "content": f"""This is the conversation record so far: {conversation}. 
+
+                         - **Do NOT ask a question that has already been asked before.** 
+                         - **You must come up with a new question that has not been asked.**
+                         - **Ensure that the question is relevant and helps progress the game.**
+                         - **Return only the question.** 
+
+                         Your question:"""},
                     ],
                     temperature=0.3,
                 )
                 question = llm_response.choices[0].message.content
-
-            else:
-                pass
 
             if question == "":
                 raise Exception
@@ -47,23 +54,23 @@ class Agent:
     def respond_to_question(self, conversation: str) -> str:
         response = ""
         try:
-
             if self.llm_name == self.LLM_NAMES[0]:
-
                 llm_response = config.OPENAI_MODEL.chat.completions.create(
                     model=prompts_constants.GPT_4O,
                     messages=[
                         {"role": "system",
-                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \nYour name in the game is: {self.player_name} \n{self.secret_word}"},
+                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
+                                    f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
+                                    f"Your name in the game is: {self.player_name} \n"
+                                    f"{self.secret_word}"},
                         {"role": "user",
-                         "content": f"This is the conversation record so far {conversation}. \nNow it is your turn to respond to the last question in the conversation record. Return only your response: "},
+                         "content": f"This is the conversation record so far {conversation}. \n"
+                                    f"Now it is your turn to respond to the last question in the conversation record. "
+                                    f"Return only your response:"},
                     ],
                     temperature=0.3,
                 )
                 response = llm_response.choices[0].message.content
-
-            else:
-                pass
 
             if response == "":
                 raise Exception
@@ -75,37 +82,49 @@ class Agent:
             print(e)
             return f"Error generating response: llm_name: {self.llm_name}, player_name: {self.player_name}, role: {self.role}"
 
-
-    def vote(self, conversation: str, number_of_players: int) -> int:
+    def vote(self, conversation: str, number_of_players: int) -> tuple:
         response = ""
+        explanation = ""
         list_of_players = [f'player_{i}' for i in range(number_of_players)]
         try:
-
             if self.llm_name == self.LLM_NAMES[0]:
-
                 llm_response = config.OPENAI_MODEL.chat.completions.create(
                     model=prompts_constants.GPT_4O,
                     messages=[
                         {"role": "system",
-                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \nYour name in the game is: {self.player_name} \n{self.secret_word}"},
+                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
+                                    f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
+                                    f"Your name in the game is: {self.player_name} \n"
+                                    f"{self.secret_word}"},
                         {"role": "user",
-                         "content": f"""This is the conversation record so far {conversation}. \nNow it is the voting round based on the conversation record vote a player. From this list choose only 1 {list_of_players}. 
-                            Your response format must be: player_# """},
+                         "content": f"""This is the conversation record so far: {conversation}. 
+
+                         - Now it is the **voting round**. 
+                         - Choose the **player you suspect the most** based on their answers. 
+                         - Select from this list: {list_of_players}.
+                         - **Return only one name in this format**: player_# 
+                         - **Then, explain why you are voting for them in a short statement.**
+
+                         Example response:  
+                         player_3  
+                         "I believe player_3 is the spy because their answer to X question was inconsistent with the secret word."
+
+                         Your response:"""},
                     ],
                     temperature=0.3,
                 )
-                response = llm_response.choices[0].message.content.replace("player_","")
-                response = int(response)
+                response_lines = llm_response.choices[0].message.content.split("\n", 1)
+                response = response_lines[0].strip().replace("player_", "")
+                explanation = response_lines[1].strip() if len(response_lines) > 1 else "No explanation provided."
 
-            else:
-                pass
+                response = int(response)
 
             if response == "":
                 raise Exception
 
-            self.player_name_conversation_log.append(response)
-            return response
+            self.player_name_conversation_log.append((response, explanation))
+            return response, explanation
 
         except Exception as e:
             print(e)
-            return -1
+            return -1, "Error in generating vote explanation."
