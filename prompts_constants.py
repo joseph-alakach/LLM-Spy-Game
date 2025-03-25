@@ -1,8 +1,4 @@
-GPT_4O = "gpt-4o-2024-08-06"
-
 ROLES = ["spy", "detective"]
-
-
 
 SYSTEM_PROMPTS = {
     "rules": """

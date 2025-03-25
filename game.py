@@ -6,13 +6,13 @@ import numpy as np
 class SpyGame:
     game_record = {}
 
-    def __init__(self, number_of_players, number_of_rounds: int, secret_word: str, category: str):
+    def __init__(self, number_of_players, number_of_rounds: int, secret_word: str, category: str, llm_name: str):
         self.secret_word = secret_word
         self.category = category
         self.number_of_rounds = number_of_rounds
         self.spy_number = random.randint(0, number_of_players - 1)
-        self.players = [Agent(llm_name="openai", player_name=f"player_{i}", player_role="spy", secret_word="",
-                              category=category) if i == self.spy_number else Agent(llm_name="openai",
+        self.players = [Agent(llm_name=llm_name, player_name=f"player_{i}", player_role="spy", secret_word="",
+                              category=category) if i == self.spy_number else Agent(llm_name=llm_name,
                                                                                     player_name=f"player_{i}",
                                                                                     player_role="detective",
                                                                                     secret_word=self.secret_word,
@@ -64,5 +64,21 @@ class SpyGame:
             # Spy was not voted out
             self.game_record["winner"] = "spy"
 
-        self.game_record[
-            "conversation_record"] += f"\nThe Spy: player_{self.spy_number}, secret_word: {self.secret_word}"
+        self.game_record["conversation_record"] += f"\nThe Spy: player_{self.spy_number}, secret_word: {self.secret_word}"
+
+        print("Token Usage Per Agent:")
+        total_input_tokens = 0
+        total_output_tokens = 0
+        for i, player in enumerate(self.players):
+            input_tokens = player.input_tokens_used
+            output_tokens = player.output_tokens_used
+            total = input_tokens + output_tokens
+
+            total_input_tokens += input_tokens
+            total_output_tokens += output_tokens
+            print(f"player_{i} | input: {input_tokens} | output: {output_tokens} | total: {total}")
+
+        print("\nTotal Token Usage:")
+        print(f"Total input tokens used: {total_input_tokens}")
+        print(f"Total output tokens used: {total_output_tokens}")
+        print(f"Grand total tokens used: {total_input_tokens + total_output_tokens}")
