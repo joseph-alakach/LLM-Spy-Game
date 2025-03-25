@@ -1,29 +1,29 @@
 import config
 import prompts_constants
 
+
 class Agent:
     LLM_NAMES = ["openai"]
 
-    def __init__(self, llm_name: str, player_name: str, player_role: str, secret_word: str):
+    def __init__(self, llm_name: str, player_name: str, player_role: str, secret_word: str, category: str):
         self.llm_name = llm_name
         self.player_name = player_name
         self.role = player_role
+        self.category = category
         self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word"
         self.player_name_conversation_log = []
-
 
     def ask_question(self, conversation: str) -> str:
         question = ""
         try:
-
             if self.llm_name == self.LLM_NAMES[0]:
-
                 llm_response = config.OPENAI_MODEL.chat.completions.create(
                     model=prompts_constants.GPT_4O,
                     messages=[
                         {"role": "system",
                          "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
                                     f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
+                                    f"The secret word belongs to the category: {self.category} \n"
                                     f"Your name in the game is: {self.player_name} \n"
                                     f"{self.secret_word}"},
                         {"role": "user",
@@ -49,7 +49,6 @@ class Agent:
         except Exception as e:
             print(e)
             return f"Error generating question: llm_name: {self.llm_name}, player_name: {self.player_name}, role: {self.role}"
-
 
     def respond_to_question(self, conversation: str) -> str:
         response = ""
@@ -128,3 +127,25 @@ class Agent:
         except Exception as e:
             print(e)
             return -1, "Error in generating vote explanation."
+
+    def guess_secret_word(self, conversation: str) -> str:
+        try:
+            if self.llm_name == self.LLM_NAMES[0]:
+                llm_response = config.OPENAI_MODEL.chat.completions.create(
+                    model=prompts_constants.GPT_4O,
+                    messages=[
+                        {"role": "system",
+                         "content": f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
+                                    f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
+                                    f"You are the spy. You were just caught, but you now have one chance to guess the secret word."},
+                        {"role": "user",
+                         "content": f"""Here is the full conversation record: {conversation}.
+                         Based on this, make your best guess of the secret word. Respond with only the word, nothing else."""}
+                    ],
+                    temperature=0.5
+                )
+                return llm_response.choices[0].message.content.strip()
+            return "unknown"
+        except Exception as e:
+            print(e)
+            return "error"

@@ -1,13 +1,14 @@
 from game import SpyGame
 import json
 
-
-
 number_of_games = 1
 games_total_record = []
-number_of_players = 7
+number_of_players = 3
+number_of_rounds = 2
+secret_word = "hamburger"
+category = "food"
 for _ in range(number_of_games):
-    game = SpyGame(number_of_players)
+    game = SpyGame(number_of_players, number_of_rounds, secret_word, category)
     game.run()
     games_total_record.append(game.game_record)
 
