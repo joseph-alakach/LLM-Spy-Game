@@ -169,6 +169,7 @@ class Agent:
                 f"""This is the conversation record so far: {conversation}. \n
                     - Now it is the **voting round**. 
                     - Choose the **player you suspect the most** based on their answers. 
+                    - You are not allowed to vote for yourself.
                     - Select from this list: {list_of_players}.
                     - **Return only one name in this format**: player_# 
                     - **Then, explain why you are voting for them in a short statement.**
