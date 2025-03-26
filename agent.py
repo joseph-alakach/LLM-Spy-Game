@@ -16,6 +16,7 @@ class Agent:
         self.output_tokens_used = 0
 
     def ask_question(self, conversation: str) -> str:
+        print("ask_question")
         question = ""
         try:
             system_message = (
@@ -47,7 +48,7 @@ class Agent:
                 llm_response = config.OPENAI_CLIENT.chat.completions.create(
                     model=config.OPENAI_MODEL,
                     messages=messages,
-                    temperature=0.3,
+                    # temperature=0.3,
                 )
 
                 output_text = llm_response.choices[0].message.content.strip()
@@ -86,6 +87,7 @@ class Agent:
             return f"Error generating question: llm_name: {self.llm_name}, player_name: {self.player_name}, role: {self.role}"
 
     def respond_to_question(self, conversation: str) -> str:
+        print("respond_to_question")
         response = ""
         try:
             system_message = (
@@ -112,7 +114,7 @@ class Agent:
                 llm_response = config.OPENAI_CLIENT.chat.completions.create(
                     model=config.OPENAI_MODEL,
                     messages=messages,
-                    temperature=0.3,
+                    # temperature=0.3,
                 )
 
                 output_text = llm_response.choices[0].message.content.strip()
@@ -150,6 +152,7 @@ class Agent:
             return f"Error generating response: llm_name: {self.llm_name}, player_name: {self.player_name}, role: {self.role}"
 
     def vote(self, conversation: str, number_of_players: int) -> tuple:
+        print("vote")
         response = ""
         explanation = ""
         list_of_players = [f'player_{i}' for i in range(number_of_players)]
@@ -188,7 +191,7 @@ class Agent:
                 llm_response = config.OPENAI_CLIENT.chat.completions.create(
                     model=config.OPENAI_MODEL,
                     messages=messages,
-                    temperature=0.3,
+                    # temperature=0.3,
                 )
 
                 output_text = llm_response.choices[0].message.content.strip()
@@ -236,6 +239,7 @@ class Agent:
             return -1, "Error in generating vote explanation."
 
     def guess_secret_word(self, conversation: str) -> str:
+        print("guess_secret_word")
         try:
             system_message = (
                 f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
@@ -259,7 +263,7 @@ class Agent:
                 llm_response = config.OPENAI_CLIENT.chat.completions.create(
                     model=config.OPENAI_MODEL,
                     messages=messages,
-                    temperature=0.5,
+                    # temperature=0.3,
                 )
 
                 output_text = llm_response.choices[0].message.content.strip()
@@ -282,7 +286,7 @@ class Agent:
                         {"role": "system", "content": system_message},
                         {"role": "user", "content": user_message}
                     ],
-                    temperature=0.5,
+                    temperature=0.3,
                 )
                 return llm_response.choices[0].message.content.strip()
 
