@@ -9,7 +9,7 @@ number_of_players = 5
 number_of_rounds = 2
 category = random.choice(list(categories.CATEGORIES.keys()))
 secret_word = random.choice(categories.CATEGORIES[category])
-llm_name = "openai"  # openai, gemini, deepseek
+llm_name = "claude"  # openai, gemini, deepseek, claude
 for _ in range(number_of_games):
     game = SpyGame(number_of_players, number_of_rounds, secret_word, category, llm_name)
     game.run()

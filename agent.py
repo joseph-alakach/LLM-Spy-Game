@@ -10,7 +10,7 @@ class Agent:
         self.player_name = player_name
         self.role = player_role
         self.category = category
-        self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word"
+        self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word because you are a spy"
         self.player_name_conversation_log = []
         self.input_tokens_used = 0
         self.output_tokens_used = 0
@@ -76,6 +76,17 @@ class Agent:
                 )
                 question = llm_response.choices[0].message.content.strip()
 
+            elif self.llm_name == "claude":
+                llm_response = config.CLAUDE_CLIENT.messages.create(
+                    model=config.CLAUDE_MODEL,
+                    system=system_message,
+                    messages=[
+                        {"role": "user", "content": user_message}
+                    ],
+                    max_tokens=256
+                )
+                question = llm_response.content[0].text.strip() if hasattr(llm_response, "content") else ""
+
             if question == "":
                 raise Exception("Empty question returned.")
 
@@ -140,6 +151,17 @@ class Agent:
                     temperature=0.3,
                 )
                 response = llm_response.choices[0].message.content.strip()
+
+            elif self.llm_name == "claude":
+                llm_response = config.CLAUDE_CLIENT.messages.create(
+                    model=config.CLAUDE_MODEL,
+                    system=system_message,
+                    messages=[
+                        {"role": "user", "content": user_message}
+                    ],
+                    max_tokens=256
+                )
+                response = llm_response.content[0].text.strip() if hasattr(llm_response, "content") else ""
 
             if response == "":
                 raise Exception("Empty response returned.")
@@ -228,6 +250,20 @@ class Agent:
                 response = lines[0].strip().replace("player_", "")
                 explanation = lines[1].strip() if len(lines) > 1 else "No explanation provided."
 
+            elif self.llm_name == "claude":
+                llm_response = config.CLAUDE_CLIENT.messages.create(
+                    model=config.CLAUDE_MODEL,
+                    system=system_message,
+                    messages=[
+                        {"role": "user", "content": user_message}
+                    ],
+                    max_tokens=256
+                )
+                if hasattr(llm_response, "content"):
+                    lines = llm_response.content[0].text.strip().split("\n", 1)
+                    response = lines[0].strip().replace("player_", "")
+                    explanation = lines[1].strip() if len(lines) > 1 else "No explanation provided."
+
             if response == "":
                 raise Exception("Empty vote returned.")
             response = int(response)
@@ -290,6 +326,17 @@ class Agent:
                     temperature=0.3,
                 )
                 return llm_response.choices[0].message.content.strip()
+
+            elif self.llm_name == "claude":
+                llm_response = config.CLAUDE_CLIENT.messages.create(
+                    model=config.CLAUDE_MODEL,
+                    system=system_message,
+                    messages=[
+                        {"role": "user", "content": user_message}
+                    ],
+                    max_tokens=256
+                )
+                return llm_response.content[0].text.strip() if hasattr(llm_response, "content") else "unknown"
 
             return "unknown"
 
