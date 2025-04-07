@@ -19,10 +19,14 @@ class SpyGame:
                                                                                     category=category) for i in
                         range(number_of_players)]
         self.number_of_players = len(self.players)
+
         self.game_record["conversation_record"] = f"**Game Starts**"
         self.game_record["voting_record"] = ""
         self.game_record["player_with_most_votes"] = ""
         self.game_record["winner"] = ""
+        self.game_record["spy"] = ""
+        self.game_record["secret_word"] = ""
+        self.game_record["players"] = {}
 
     @classmethod
     def from_llm_list(cls, llm_names, number_of_rounds: int, secret_word: str, category: str):
@@ -95,7 +99,12 @@ class SpyGame:
             # Spy was not voted out
             self.game_record["winner"] = "spy"
 
-        self.game_record["conversation_record"] += f"\nThe Spy: player_{self.spy_number}, secret_word: {self.secret_word}"
+        playersDataJson = {}
+        for i in self.players:
+            playersDataJson[i.player_name.split('_')[1]] = i.llm_name
+        self.game_record["players"] = playersDataJson
+        self.game_record["spy"] = self.spy_number
+        self.game_record["secret_word"] = self.secret_word
 
         print("Token Usage Per Agent:")
         total_input_tokens = 0
