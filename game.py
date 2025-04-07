@@ -6,7 +6,7 @@ import numpy as np
 class SpyGame:
     game_record = {}
 
-    def __init__(self, number_of_players, number_of_rounds: int, secret_word: str, category: str, llm_name: str):
+    def __init__(self, number_of_players, number_of_rounds: int, secret_word: str, category: str, llm_name):
         self.secret_word = secret_word
         self.category = category
         self.number_of_rounds = number_of_rounds
@@ -23,6 +23,37 @@ class SpyGame:
         self.game_record["voting_record"] = ""
         self.game_record["player_with_most_votes"] = ""
         self.game_record["winner"] = ""
+
+    @classmethod
+    def from_llm_list(cls, llm_names, number_of_rounds: int, secret_word: str, category: str):
+        number_of_players = len(llm_names)
+        spy_number = random.randint(0, number_of_players - 1)
+
+        players = []
+        for i in range(number_of_players):
+            llm = llm_names[i]
+            role = "spy" if i == spy_number else "detective"
+            word = "" if role == "spy" else secret_word
+
+            agent = Agent(
+                llm_name=llm,
+                player_name=f"player_{i}",
+                player_role=role,
+                secret_word=word,
+                category=category
+            )
+            players.append(agent)
+
+        # Instantiate using the base constructor with dummy values
+        game = cls(number_of_players=number_of_players, number_of_rounds=number_of_rounds,
+                   secret_word=secret_word, category=category, llm_name=None)
+
+        # Overwrite the players and spy_number
+        game.players = players
+        game.spy_number = spy_number
+        game.number_of_players = number_of_players
+
+        return game
 
     def run(self):
         round = 1
