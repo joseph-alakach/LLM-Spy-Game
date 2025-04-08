@@ -5,7 +5,7 @@ CATEGORIES = {
     ],
     "place": [
         "airport", "school", "beach", "library", "museum", "hospital", "park",
-        "restaurant", "theater", "zoo", "stadium", "bus station", "mall", "campground"
+        "restaurant", "theater", "zoo", "stadium", "mall", "campground"
     ],
     "object": [
         "phone", "backpack", "umbrella", "chair", "laptop", "bottle", "pen",
