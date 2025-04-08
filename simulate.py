@@ -3,13 +3,6 @@ import json
 import random
 import categories
 
-number_of_games = 1
-games_total_record = []
-number_of_rounds = 2
-category = random.choice(list(categories.CATEGORIES.keys()))
-secret_word = random.choice(categories.CATEGORIES[category])
-
-
 def convert_game_record(game_record):
     # Function to remove unwanted escape sequences like \"
     def clean_text(text):
@@ -65,7 +58,6 @@ def convert_game_record(game_record):
 
     return game_record
 
-
 games = []
 def process_all_games(data):
     # Iterate through each game record in the list
@@ -74,6 +66,11 @@ def process_all_games(data):
         games.append(game)
 
 
+number_of_games = 1
+games_total_record = []
+number_of_rounds = 2
+category = random.choice(list(categories.CATEGORIES.keys()))
+secret_word = random.choice(categories.CATEGORIES[category])
 allSame = False
 if allSame:
     number_of_players = 5
@@ -84,7 +81,7 @@ if allSame:
         games_total_record.append(game.game_record)
 
 else:
-    llm_names = ["openai", "openai"] #, "gemini", "claude", "deepseek"]
+    llm_names = ["openai", "gemini", "claude", "deepseek"]
     random.shuffle(llm_names)
     for _ in range(number_of_games):
         game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds, secret_word=secret_word, category=category)
