@@ -67,11 +67,12 @@ def process_all_games(data):
 
 
 number_of_games = 1
-games_total_record = []
 number_of_rounds = 2
+allSame = False
+
+games_total_record = []
 category = random.choice(list(categories.CATEGORIES.keys()))
 secret_word = random.choice(categories.CATEGORIES[category])
-allSame = False
 if allSame:
     number_of_players = 5
     llm_name = "claude"  # openai, gemini, deepseek, claude
