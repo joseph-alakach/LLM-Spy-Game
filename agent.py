@@ -276,7 +276,7 @@ class Agent:
             return -1, "Error in generating vote explanation."
 
     def guess_secret_word(self, conversation: str) -> str:
-        print("guess_secret_word")
+        # print("guess_secret_word")
         try:
             system_message = (
                 f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
