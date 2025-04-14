@@ -66,6 +66,12 @@ def process_all_games(data):
         games.append(game)
 
 
+
+
+
+
+
+
 number_of_games = 1
 number_of_rounds = 2
 allSame = False
@@ -82,7 +88,9 @@ if allSame:
         games_total_record.append(game.game_record)
 
 else:
-    llm_names = ["openai", "gemini", "claude", "deepseek"]
+    llm_names = ["openai", "gemini", "claude", "deepseek", "human"]
+    # llm_names = ["openai", "gemini", "claude", "deepseek"]
+
     random.shuffle(llm_names)
     for _ in range(number_of_games):
         game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds, secret_word=secret_word, category=category)

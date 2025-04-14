@@ -40,8 +40,8 @@ You are the **Spy**. Your goal is to blend in and avoid being detected.
 - Everyone else shares the word and is trying to catch you.
 
 ## What To Do:
-- Answer questions convincingly — avoid sounding confused.
-- Ask general questions that could fit many topics.
+- Answer questions convincingly, lie as if you know the secret word.  — avoid sounding confused.
+- Ask general questions that could fit many topics, lie as if you know the secret word.
 - Pay close attention to what others say. Try to guess the secret word.
 
 ## Win Condition:
@@ -57,7 +57,7 @@ You are a **Detective**. Your goal is to expose the **Spy** — without giving a
 - The Spy does **not** — they’ll try to blend in.
 
 ## How to Play:
-- Ask subtle, short questions that hint at the topic — **not too obvious**.
+- Ask short questions related to the secret word but it should be vague in order to not give away the secret word to the spy — **not too obvious**.
 - Give answers that are relevant, but **not too detailed**.
 - Watch for vague or off-topic responses — those might be the Spy!
 

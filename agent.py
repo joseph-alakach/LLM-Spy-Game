@@ -10,10 +10,16 @@ class Agent:
         self.player_name = player_name
         self.role = player_role
         self.category = category
-        self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word because you are a spy"
         self.player_name_conversation_log = []
         self.input_tokens_used = 0
         self.output_tokens_used = 0
+        if self.role == "spy":
+            secret_word = ""
+        self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word because you are a spy"
+
+        if self.llm_name == "human":
+            print(f"You are participating in the game as {self.player_name}, your role in the game is ({self.role}), {self.secret_word}")
+
 
     def ask_question(self, conversation: str) -> str:
         print("ask_question")
@@ -30,9 +36,9 @@ class Agent:
                 f"This is the conversation record so far: {conversation}. \n\n"
                 "- Do NOT ask a question that has already been asked before. \n"
                 "- You must come up with a new question that has not been asked. \n"
-                "- Ensure that the question is relevant and helps progress the game. \n"
-                "- Return only the question. \n\n"
-                "Your question:"
+                "- Ask short questions related to the secret word but it should be vague in order to not give away the secret word to the spy. \n"
+                "- Return only the question sentence do not add anything else. \n\n"
+                "Your question: "
             )
 
             if self.llm_name == "openai":
@@ -86,6 +92,10 @@ class Agent:
                     max_tokens=256
                 )
                 question = llm_response.content[0].text.strip() if hasattr(llm_response, "content") else ""
+
+            elif self.llm_name == "human":
+                print(f"This is the conversation record so far: {conversation}. \n\n")
+                question = input(f"As {self.player_name} role:({self.role}) insert the question you want to ask to the next player: ")
 
             if question == "":
                 raise Exception("Empty question returned.")
@@ -162,6 +172,11 @@ class Agent:
                     max_tokens=256
                 )
                 response = llm_response.content[0].text.strip() if hasattr(llm_response, "content") else ""
+
+            elif self.llm_name == "human":
+                print(f"This is the conversation record so far: {conversation}. \n\n")
+                print("Now it is your turn to respond to the last question in the conversation record.")
+                response = input(f"As {self.player_name} role:({self.role}) insert the answer to respond to last question: ")
 
             if response == "":
                 raise Exception("Empty response returned.")
@@ -264,6 +279,16 @@ class Agent:
                     response = lines[0].strip().replace("player_", "")
                     explanation = lines[1].strip() if len(lines) > 1 else "No explanation provided."
 
+            elif self.llm_name == "human":
+                print(f"This is the conversation record so far: {conversation}. \n\n")
+                print("""- Now it is the **voting round**. 
+                    - Choose the **player you suspect the most** based on their answers. 
+                    - You are not allowed to vote for yourself.
+                    - Select from this list: {list_of_players}.
+                    - **insert only one name in this format**: player_#""")
+                response = input(f"As {self.player_name} role:({self.role}) insert the player_# to vote him out: ")
+                response = response.strip().replace("player_", "")
+
             if response == "":
                 raise Exception("Empty vote returned.")
             response = int(response)
@@ -337,6 +362,14 @@ class Agent:
                     max_tokens=256
                 )
                 return llm_response.content[0].text.strip() if hasattr(llm_response, "content") else "unknown"
+
+            elif self.llm_name == "human":
+                print(f"This is the conversation record so far: {conversation}. \n\n")
+                print("As you know you are the spy and the players have voted you out"
+                      "but you still have the chance to win by guessing the secret word Based on this, make your best guess of the secret word. Respond with only the word, nothing else.")
+                response = input(f"As {self.player_name} role:({self.role}) insert the your guess of the secret word: ")
+
+                return response
 
             return "unknown"
 
