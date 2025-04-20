@@ -74,22 +74,22 @@ def process_all_games(data):
 
 number_of_games = 1
 number_of_rounds = 2
-allSame = False
+allSame = True
 
 games_total_record = []
 category = random.choice(list(categories.CATEGORIES.keys()))
 secret_word = random.choice(categories.CATEGORIES[category])
 if allSame:
-    number_of_players = 5
-    llm_name = "claude"  # openai, gemini, deepseek, claude
+    number_of_players = 4
+    llm_name = "grok"  # openai, gemini, deepseek, claude, grok
     for _ in range(number_of_games):
         game = SpyGame(number_of_players, number_of_rounds, secret_word, category, llm_name)
         game.run()
         games_total_record.append(game.game_record)
 
 else:
-    llm_names = ["openai", "gemini", "claude", "deepseek", "human"]
-    # llm_names = ["openai", "gemini", "claude", "deepseek"]
+    llm_names = ["openai", "gemini", "claude", "deepseek", "grok", "human"]
+    # llm_names = ["openai", "gemini", "claude", "deepseek", "grok"]
 
     random.shuffle(llm_names)
     for _ in range(number_of_games):
