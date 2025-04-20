@@ -81,7 +81,7 @@ category = random.choice(list(categories.CATEGORIES.keys()))
 secret_word = random.choice(categories.CATEGORIES[category])
 if allSame:
     number_of_players = 4
-    llm_name = "grok"  # openai, gemini, deepseek, claude, grok
+    llm_name = "deepseek"  # openai, gemini, deepseek, claude, grok
     for _ in range(number_of_games):
         game = SpyGame(number_of_players, number_of_rounds, secret_word, category, llm_name)
         game.run()

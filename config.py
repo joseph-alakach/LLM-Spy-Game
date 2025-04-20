@@ -21,8 +21,8 @@ GEMINI_MODEL = genai.GenerativeModel("gemini-2.5-flash-preview-04-17")
 # === DeepSeek ===
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_CLIENT = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
-DEEPSEEK_MODEL = "deepseek-reasoner"
-# DEEPSEEK_MODEL = "deepseek-chat"
+# DEEPSEEK_MODEL = "deepseek-reasoner"
+DEEPSEEK_MODEL = "deepseek-chat"
 
 # === Claude ===
 CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
