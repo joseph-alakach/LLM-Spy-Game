@@ -28,6 +28,7 @@ class SpyGame:
         self.game_record["secret_word"] = ""
         self.game_record["players"] = {}
 
+
     @classmethod
     def from_llm_list(cls, llm_names, number_of_rounds: int, secret_word: str, category: str):
         number_of_players = len(llm_names)
@@ -105,6 +106,15 @@ class SpyGame:
         self.game_record["players"] = playersDataJson
         self.game_record["spy"] = self.spy_number
         self.game_record["secret_word"] = self.secret_word
+
+        self.game_record["llm_info"] = {}
+        for player in self.players:
+            self.game_record["llm_info"][player.player_name] = {
+                "llm_type": player.llm_name,
+                "role": player.role,
+                "question_generation_durations": player.question_generation_durations,
+                "answer_generation_durations": player.answer_generation_durations,
+            }
 
         print("Token Usage Per Agent:")
         total_input_tokens = 0

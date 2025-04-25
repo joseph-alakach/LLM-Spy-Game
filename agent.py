@@ -1,3 +1,5 @@
+import time
+
 import config
 import prompts_constants
 from token_utils import count_openai_input_tokens, count_openai_output_tokens
@@ -13,6 +15,8 @@ class Agent:
         self.player_name_conversation_log = []
         self.input_tokens_used = 0
         self.output_tokens_used = 0
+        self.question_generation_durations = []
+        self.answer_generation_durations = []
         if self.role == "spy":
             secret_word = ""
         self.secret_word = f"The secret_word is: {secret_word}" if secret_word != "" else "You were not given the secret_word because you are a spy"
@@ -104,7 +108,10 @@ class Agent:
         )
         question = ""
         if self.llm_name != "human":
+            start_time = time.time()
             question = self._call_llm(system_message, user_message)
+            end_time = time.time()
+            self.question_generation_durations.append(end_time - start_time)
         else:
             print(f"This is the conversation record so far: {conversation}. \n\n")
             question = input(f"As {self.player_name} role:({self.role}) insert the question you want to ask to the next player: ")
@@ -126,7 +133,10 @@ class Agent:
         )
         response = ""
         if self.llm_name != "human":
+            start_time = time.time()
             response = self._call_llm(system_message, user_message)
+            end_time = time.time()
+            self.answer_generation_durations.append(end_time - start_time)
         else:
             print(f"This is the conversation record so far: {conversation}. \n\n")
             print("Now it is your turn to respond to the last question in the conversation record.")
