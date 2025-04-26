@@ -30,6 +30,8 @@ class SpyGame:
         self.game_record["spy"] = ""
         self.game_record["secret_word"] = ""
         self.game_record["players"] = {}
+        self.game_record["conversation_record_json"] = []
+        self.game_record["voting_record_json"] = []
 
 
     @classmethod
@@ -70,10 +72,23 @@ class SpyGame:
             player_to_ask_index = 0
             for _ in range(self.number_of_players):
                 player_to_respond_index = (player_to_ask_index + 1) % (self.number_of_players)
+                question = self.players[player_to_ask_index].ask_question(
+                    conversation=self.game_record['conversation_record'])
                 self.game_record[
-                    "conversation_record"] += f"\nplayer_{player_to_ask_index} asks player_{player_to_respond_index} the question: {self.players[player_to_ask_index].ask_question(conversation=self.game_record['conversation_record'])}"
-                self.game_record[
-                    "conversation_record"] += f"\nplayer_{player_to_respond_index} responds: {self.players[player_to_respond_index].respond_to_question(conversation=self.game_record['conversation_record'])}"
+                    "conversation_record"] += f"\nplayer_{player_to_ask_index} asks player_{player_to_respond_index} the question: {question}"
+                answer = self.players[player_to_respond_index].respond_to_question(
+                    conversation=self.game_record['conversation_record'])
+                self.game_record["conversation_record"] += f"\nplayer_{player_to_respond_index} responds: {answer}"
+
+
+                # Append to conversation_record_json in the desired structured format
+                self.game_record["conversation_record_json"].append({
+                    "ask_player": f"player_{player_to_ask_index}",
+                    "respond_player": f"player_{player_to_respond_index}",
+                    "question": question,
+                    "answer": answer
+                })
+
                 player_to_ask_index = (player_to_ask_index + 1) % (self.number_of_players)
 
             round += 1
@@ -87,6 +102,13 @@ class SpyGame:
             self.game_record[
                 "voting_record"] += f"\nplayer_{player_index} voted on: player_{player_voted_on} - Reason: {explanation}"
             vote_explanations[f"player_{player_index}"] = explanation
+
+            # Append to voting_record_json in the desired structured format
+            self.game_record["voting_record_json"].append({
+                "voter": f"player_{player_index}",
+                "voted_for": f"player_{player_voted_on}",
+                "reason": explanation
+            })
 
         player_with_most_votes = int(np.argmax(votes))
         self.game_record["player_with_most_votes"] = player_with_most_votes

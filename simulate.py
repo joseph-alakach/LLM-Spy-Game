@@ -3,72 +3,9 @@ import json
 import random
 import categories
 
-def convert_game_record(game_record):
-    # Function to remove unwanted escape sequences like \"
-    def clean_text(text):
-        return text.replace('\\"', '')
-
-    # Initialize the conversation_record as an empty list
-    conversation_record = []
-
-    # Split conversation_record string by newlines
-    if isinstance(game_record['conversation_record'], str):
-        lines = game_record['conversation_record'].split("\n")
-
-        # Ignore the first and last elements (game start and end of rounds)
-        lines = lines[1:-1]
-
-        # Iterate through the conversation and group the "asks" and "responds"
-        for i in range(0, len(lines), 2):
-            if "asks" in lines[i] and "responds" in lines[i + 1]:
-                questioner = clean_text(lines[i].split(" asks ")[0].strip())
-                responder = clean_text(lines[i].split(" asks ")[1].split(" the question")[0].strip())
-                question = clean_text(lines[i].split(" asks ")[1].split(" the question: ")[1].strip())
-                answer = clean_text(lines[i + 1].split(" responds: ")[1].strip())
-
-                conversation_record.append({
-                    "ask_player": questioner,
-                    "respond_player": responder,
-                    "question": question,
-                    "answer": answer
-                })
-
-    # Convert voting_record into a list of dictionaries
-    voting_record = []
-    for entry in game_record['voting_record'].split("\n"):
-        if "voted on" in entry:
-            parts = entry.split(" voted on: ")
-            voter = parts[0].strip()
-            rest = parts[1].split(" - Reason: ")
-
-            if len(rest) > 1:
-                voted_for = rest[0].strip()
-                reason = clean_text(rest[1].strip())  # Clean reason as well
-                voting_record.append({
-                    "voter": voter,
-                    "voted_for": voted_for,
-                    "reason": reason
-                })
-            else:
-                print(f"Skipping incomplete vote entry: {entry}")
-
-    # Update game_record with the new format
-    game_record['conversation_record'] = conversation_record
-    game_record['voting_record'] = voting_record
-
-    return game_record
-
-
-
-
-
-
-
-
-
-number_of_games = 2
+number_of_games = 1
 number_of_rounds = 2
-allSame = False
+allSame = True
 
 games_total_record = []
 
@@ -78,7 +15,7 @@ secret_word = random.choice(categories.CATEGORIES[category])
 
 for i in range(number_of_games):
     if allSame:
-        number_of_players = 5
+        number_of_players = 3
         llm_name = "openai"  # openai, gemini, deepseek, claude, grok
         game = SpyGame(number_of_players, number_of_rounds, secret_word, category, llm_name)
     else:
@@ -91,8 +28,19 @@ for i in range(number_of_games):
     if i != 0:
         with open("games_total_record.json", "r") as file:
             games_total_record = json.load(file)
+
     game.run()
-    game.game_record = convert_game_record(game.game_record)
+    if "conversation_record" in game.game_record:
+        del game.game_record["conversation_record"]
+    if "voting_record" in game.game_record:
+        del game.game_record["voting_record"]
+    if "conversation_record_json" in game.game_record:
+        game.game_record["conversation_record"] = game.game_record["conversation_record_json"]
+        del game.game_record["conversation_record_json"]
+    if "voting_record_json" in game.game_record:
+        game.game_record["voting_record"] = game.game_record["voting_record_json"]
+        del game.game_record["voting_record_json"]
     games_total_record.append(game.game_record)
+
     with open("games_total_record.json", "w") as file:
         json.dump(games_total_record, file, indent=4)
