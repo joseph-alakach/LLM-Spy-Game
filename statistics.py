@@ -5,7 +5,11 @@ import textstat
 import config
 from pprint import pprint
 
-def llms_vote_stats(game_records: List[Dict], llms_used: List[str]) -> dict :
+def llms_vote_stats(game_records: List[Dict]) -> dict :
+    llms_used = []
+    for game in game_records:
+        llms_used.extend(game["players"].values())
+    llms_used = list(set(llms_used))
     stats = {llm_name:{"detective_correct_votes":0, "got_votes_as_spy":0} for llm_name in llms_used}
     for game in game_records:
         for player_name, player_info in game["llm_info"].items():
@@ -151,6 +155,6 @@ def compact_readability_analysis_results(readability_data: dict) -> dict:
 with open("games_total_record.json", "r") as file:
     games_total_record = json.load(file)
 
-# print(llms_vote_stats(games_total_record, ["openai","claude"]))
-pprint(compact_sent_analysis_results(sentiment_analysis_dict(games_total_record)))
+print(llms_vote_stats(games_total_record))
+# pprint(compact_sent_analysis_results(sentiment_analysis_dict(games_total_record)))
 # pprint(compact_readability_analysis_results(readability_analysis_dict(games_total_record)))
