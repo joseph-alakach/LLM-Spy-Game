@@ -68,7 +68,7 @@ def convert_game_record(game_record):
 
 number_of_games = 2
 number_of_rounds = 2
-allSame = True
+allSame = False
 
 games_total_record = []
 
@@ -78,12 +78,12 @@ secret_word = random.choice(categories.CATEGORIES[category])
 
 for i in range(number_of_games):
     if allSame:
-        number_of_players = 3
+        number_of_players = 5
         llm_name = "openai"  # openai, gemini, deepseek, claude, grok
         game = SpyGame(number_of_players, number_of_rounds, secret_word, category, llm_name)
     else:
-        llm_names = ["openai", "gemini", "claude", "deepseek", "grok", "human"]
-        # llm_names = ["openai", "gemini", "claude", "deepseek", "grok"]
+        # llm_names = ["openai", "gemini", "claude", "deepseek", "grok", "human"]
+        llm_names = ["openai", "gemini", "claude", "deepseek", "grok"]
         random.shuffle(llm_names)
         game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds, secret_word=secret_word,
                                      category=category)

@@ -155,6 +155,8 @@ def compact_readability_analysis_results(readability_data: dict) -> dict:
 with open("games_total_record.json", "r") as file:
     games_total_record = json.load(file)
 
-print(llms_vote_stats(games_total_record))
+# pprint(llms_vote_stats(games_total_record))
+# pprint(sentiment_analysis_dict(games_total_record))
 # pprint(compact_sent_analysis_results(sentiment_analysis_dict(games_total_record)))
+pprint(readability_analysis_dict(games_total_record))
 # pprint(compact_readability_analysis_results(readability_analysis_dict(games_total_record)))
