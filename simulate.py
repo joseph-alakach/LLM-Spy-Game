@@ -3,9 +3,9 @@ import json
 import random
 import categories
 
-number_of_games = 1
+number_of_games = 2
 number_of_rounds = 2
-allSame = True
+allSame = False
 
 games_total_record = []
 
