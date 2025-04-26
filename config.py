@@ -17,7 +17,7 @@ OPENAI_MODEL = "gpt-4o-2024-08-06"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 GEMINI_MODEL = "gemini-2.5-flash-preview-04-17"
-GEMINI_CONFIG = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=1024))
+GEMINI_CONFIG = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=4096))
 # GEMINI_MODEL = "gemini-2.5-pro-preview-03-25"
 
 # === DeepSeek ===

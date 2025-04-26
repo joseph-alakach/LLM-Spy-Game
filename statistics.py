@@ -3,6 +3,7 @@ from typing import List, Dict
 from transformers import pipeline
 import textstat
 import config
+from pprint import pprint
 
 def llms_vote_stats(game_records: List[Dict], llms_used: List[str]) -> dict :
     stats = {llm_name:{"detective_correct_votes":0, "got_votes_as_spy":0} for llm_name in llms_used}
@@ -29,9 +30,61 @@ def readability_metrics(text: str) -> list :
     grade_level = textstat.flesch_kincaid_grade(text)
     return [reading_ease, grade_level]
 
+def sentiment_analysis_dict(game_records: List[Dict]) -> dict :
+    llms_used = []
+    for game in game_records:
+        llms_used.extend(game["players"].values())
+    llms_used = list(set(llms_used))
+    results = {llm_name:{"as_detective":[], "as_spy":[]} for llm_name in llms_used}
+    for game in game_records:
+        for cr in game['conversation_record']:
+            answer_player = cr["respond_player"]
+            answer = cr["answer"]
+            answer_sentiment = sentiment_analyzer(answer)
+            for player_name, player_info in game["llm_info"].items():
+                if player_name == answer_player and player_info["role"] == "detective":
+                    results[player_info["llm_type"]]["as_detective"].append(answer_sentiment)
+                if player_name == answer_player and player_info["role"] == "spy":
+                    results[player_info["llm_type"]]["as_spy"].append(answer_sentiment)
+    return results
+
+def compact_sent_analysis_results(sentiment_data: dict) -> dict:
+    compact_data = {}
+    for llm_name, roles_data in sentiment_data.items():
+        compact_data[llm_name] = {}
+        for role, sentiment_list in roles_data.items():
+            positive_scores = []
+            negative_scores = []
+            positive_count = 0
+            negative_count = 0
+
+            for sentiments in sentiment_list:
+                for sentiment in sentiments:
+                    label = sentiment['label'].lower()
+                    score = sentiment['score']
+
+                    if label == 'positive':
+                        positive_scores.append(score)
+                        positive_count += 1
+                    elif label == 'negative':
+                        negative_scores.append(score)
+                        negative_count += 1
+
+            avg_positive_score = sum(positive_scores) / len(positive_scores) if positive_scores else 0
+            avg_negative_score = sum(negative_scores) / len(negative_scores) if negative_scores else 0
+
+            compact_data[llm_name][role] = {
+                "positive_count": positive_count,
+                "negative_count": negative_count,
+                "positive_avg_score": avg_positive_score,
+                "negative_avg_score": avg_negative_score
+            }
+    return compact_data
 
 
 with open("games_total_record.json", "r") as file:
     games_total_record = json.load(file)
 
 # print(llms_vote_stats(games_total_record, ["openai","claude"]))
+
+pprint(compact_sent_analysis_results(sentiment_analysis_dict(games_total_record)))
