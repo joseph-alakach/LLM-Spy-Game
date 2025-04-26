@@ -1,0 +1,271 @@
+[
+    {
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How often do you attend these kinds of gatherings?",
+                "answer": "A few times a year, usually when there's something important to discuss."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What\u2019s the most memorable thing you\u2019ve seen at one of these?",
+                "answer": "I once saw a really engaging presentation that sparked a lot of discussion."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of people do you usually meet at these?",
+                "answer": "Mostly people from my industry or field."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do you usually prepare for it?",
+                "answer": "I usually prepare by reviewing any key materials and making sure I'm up to speed on current trends."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's one thing you find most inspiring about these events?",
+                "answer": "I find the keynote speeches most inspiring - they often feature thought leaders who share innovative ideas and industry trends that I can apply to my work. The energy in the room during these sessions is always motivating."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answers were consistently vague and minimal. When asked about takeaways from conferences, they just said 'new insights or connections' without any specific details about presentations, sessions, or networking that would be common knowledge for someone familiar with conferences.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answers ('mostly people from my industry or field' and 'usually some new insights or connections') were very generic and could apply to many types of events, lacking specific hints that would tie them to the secret word 'conference.' Other players gave more nuanced responses that subtly fit the context.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"I believe player_0 is the spy because their responses were very generic and didn't specifically align with the nuances of a 'conference', such as focusing on networking breaks and keynote speeches without mentioning any specific details that would be more common knowledge to someone familiar with conferences.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their initial answers were more general than other players' responses, not specifically referencing common elements of a conference like sessions, keynotes, or networking until later."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers, like mentioning a 'surprise keynote speaker,' felt a bit generic and lacked the specific details that others provided about these events."
+            }
+        ],
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "conference",
+        "players": {
+            "0": "claude",
+            "1": "deepseek",
+            "2": "openai",
+            "3": "gemini",
+            "4": "grok"
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    1.7007720470428467,
+                    1.947887897491455
+                ],
+                "answer_generation_durations": [
+                    2.0481081008911133,
+                    2.353450059890747
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.08228611946106,
+                    4.2999351024627686
+                ],
+                "answer_generation_durations": [
+                    4.838766813278198,
+                    5.3204851150512695
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    0.6151840686798096,
+                    0.5572018623352051
+                ],
+                "answer_generation_durations": [
+                    1.307615041732788,
+                    1.3370780944824219
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.2739670276641846,
+                    8.602167844772339
+                ],
+                "answer_generation_durations": [
+                    3.381582260131836,
+                    2.7154500484466553
+                ]
+            },
+            "player_4": {
+                "llm_type": "grok",
+                "role": "spy",
+                "question_generation_durations": [
+                    16.07237195968628,
+                    22.318376302719116
+                ],
+                "answer_generation_durations": [
+                    10.449893951416016,
+                    14.241150856018066
+                ]
+            }
+        }
+    },
+    {
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of attire is appropriate for this?",
+                "answer": "Oh, I think it really depends on the situation, doesn't it? You definitely want to be comfortable, though."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What's the typical atmosphere like?",
+                "answer": "Oh, it's usually professional and energetic, with plenty of networking opportunities."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What's a typical schedule like for these?",
+                "answer": "I'd say they typically start with a morning keynote, followed by breakout sessions throughout the day. There's usually a lunch break for networking, then afternoon sessions, and sometimes panel discussions before closing remarks. The schedule is often packed but includes short breaks between sessions for people to move between rooms or have quick conversations."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How important is the location choice for these gatherings?",
+                "answer": "Location is crucial\u2014it needs to be accessible, have enough space for sessions and networking, and ideally be in a place that enhances the overall experience, like a city with good transport links or amenities nearby."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What\u2019s the most common format for presentations at these?",
+                "answer": "Presentations are often a mix of keynote speeches, panel discussions, and breakout sessions, allowing for both broad insights and detailed discussions."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their answers were quite general and didn't provide specific details that would indicate knowledge of the secret word, especially when they mentioned the number of attendees and the atmosphere.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer regarding the number of attendees was very general, which made me suspicious."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answers, like the one about attire, were overly vague and lacked specific details that someone familiar with these events would naturally include.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answers have been consistently vague and generic. When asked about attire, they gave a non-committal response that could apply to anything. Their answer about topics was also very generic, mentioning \"industry\" without specifics. Most tellingly, they didn't use any conference-specific terminology in any of their responses, unlike other players who mentioned keynotes, sessions, networking, and presentations."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answer about attire was vague and didn't align well with the typical expectations for a conference. They also didn't provide much detail when asked about topics, which could indicate they're avoiding specifics to hide their lack of knowledge.\""
+            }
+        ],
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "gemini",
+            "2": "grok",
+            "3": "claude",
+            "4": "deepseek"
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    0.605125904083252,
+                    0.6141300201416016
+                ],
+                "answer_generation_durations": [
+                    0.8202571868896484,
+                    0.7707400321960449
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.690311908721924,
+                    6.040013074874878
+                ],
+                "answer_generation_durations": [
+                    4.734530925750732,
+                    3.9955761432647705
+                ]
+            },
+            "player_2": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    16.173954725265503,
+                    25.395541191101074
+                ],
+                "answer_generation_durations": [
+                    12.288710355758667,
+                    11.979169130325317
+                ]
+            },
+            "player_3": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    1.2316129207611084,
+                    2.0914299488067627
+                ],
+                "answer_generation_durations": [
+                    2.562558889389038,
+                    2.7889108657836914
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.611454010009766,
+                    4.812079906463623
+                ],
+                "answer_generation_durations": [
+                    4.397290945053101,
+                    5.768259048461914
+                ]
+            }
+        },
+        "spy_guess": "Conference"
+    }
+]
