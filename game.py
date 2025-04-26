@@ -1,6 +1,9 @@
 import random
-from agent import Agent
 import numpy as np
+
+from agent import Agent
+from utils import retry
+
 
 
 class SpyGame:
@@ -60,6 +63,7 @@ class SpyGame:
 
         return game
 
+    @retry()
     def run(self):
         round = 1
         while round <= self.number_of_rounds:
