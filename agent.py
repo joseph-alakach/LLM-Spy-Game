@@ -26,27 +26,17 @@ class Agent:
 
     def _call_llm(self, system_prompt: str, user_prompt: str) -> str:
         if self.llm_name == "openai":
-            messages = [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ]
-
-            # Count input tokens before sending
-            input_tokens = count_openai_input_tokens(messages, model=config.OPENAI_MODEL)
-
-            # Call OpenAI API
             llm_response = config.OPENAI_CLIENT.chat.completions.create(
                 model=config.OPENAI_MODEL,
-                messages=messages,
+                messages= [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
                 temperature=0.3,
             )
-
             output_text = llm_response.choices[0].message.content.strip()
-            output_tokens = count_openai_output_tokens(output_text, model=config.OPENAI_MODEL)
-
-            # Update the agent’s token counters
-            self.input_tokens_used += input_tokens
-            self.output_tokens_used += output_tokens
+            self.input_tokens_used += llm_response.usage.prompt_tokens
+            self.output_tokens_used += llm_response.usage.completion_tokens
 
         elif self.llm_name == "gemini":
             prompt = system_prompt + "\n\n" + user_prompt
@@ -67,6 +57,8 @@ class Agent:
                 temperature=0.3,
             )
             output_text = llm_response.choices[0].message.content.strip()
+            self.input_tokens_used += llm_response.usage.prompt_tokens
+            self.output_tokens_used += llm_response.usage.completion_tokens
 
         elif self.llm_name == "claude":
             llm_response = config.CLAUDE_CLIENT.messages.create(
@@ -75,10 +67,12 @@ class Agent:
                 messages=[
                     {"role": "user", "content": user_prompt}
                 ],
-                max_tokens=256,
+                max_tokens=2048,
                 temperature=0.3
             )
             output_text = llm_response.content[0].text.strip() if hasattr(llm_response, "content") else ""
+            self.input_tokens_used += llm_response.usage.input_tokens
+            self.output_tokens_used += llm_response.usage.output_tokens
 
         elif self.llm_name == "grok":
             llm_response = config.GROK_CLIENT.chat.completions.create(
@@ -90,6 +84,8 @@ class Agent:
                 temperature=0.3
             )
             output_text = llm_response.choices[0].message.content.strip()
+            self.input_tokens_used += llm_response.usage.prompt_tokens
+            self.output_tokens_used +=llm_response.usage.total_tokens - llm_response.usage.prompt_tokens
 
         return output_text
 
