@@ -1,0 +1,237 @@
+[
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "steak",
+        "players": {
+            "0": "openai",
+            "1": "deepseek",
+            "2": "gemini",
+            "3": "grok",
+            "4": "claude"
+        },
+        "token_details": {
+            "claude": {
+                "input_tokens": 4901,
+                "output_tokens": 1863,
+                "thinking_tokens": 0,
+                "full_output_tokens": 1863
+            },
+            "gemini": {
+                "input_tokens": 4044,
+                "output_tokens": 71,
+                "thinking_tokens": 3441,
+                "full_output_tokens": 3512
+            },
+            "openai": {
+                "input_tokens": 3889,
+                "output_tokens": 210,
+                "thinking_tokens": 2048,
+                "full_output_tokens": 2258
+            },
+            "deepseek": {
+                "input_tokens": 3740,
+                "output_tokens": 100,
+                "thinking_tokens": 3044,
+                "full_output_tokens": 3144
+            },
+            "grok": {
+                "input_tokens": 3927,
+                "output_tokens": 105,
+                "thinking_tokens": 5739,
+                "full_output_tokens": 5844
+            }
+        },
+        "token_prices": {
+            "claude": {
+                "input_cost": 0.014703,
+                "output_cost": 0.027945,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.027945
+            },
+            "gemini": {
+                "input_cost": 0.0006066,
+                "output_cost": 4.26e-05,
+                "thinking_cost": 0.0120435,
+                "full_output_cost": 0.0120861
+            },
+            "openai": {
+                "input_cost": 0.0042779,
+                "output_cost": 0.000924,
+                "thinking_cost": 0.0090112,
+                "full_output_cost": 0.0099352
+            },
+            "deepseek": {
+                "input_cost": 0.0005236,
+                "output_cost": 0.00021899999999999998,
+                "thinking_cost": 0.00666636,
+                "full_output_cost": 0.006885359999999999
+            },
+            "grok": {
+                "input_cost": 0.0011780999999999999,
+                "output_cost": 5.2499999999999995e-05,
+                "thinking_cost": 0.0028694999999999997,
+                "full_output_cost": 0.0029219999999999997
+            },
+            "total_costs": {
+                "total_input_cost": 0.0212892,
+                "total_output_cost": 0.029183100000000003,
+                "total_thinking_cost": 0.030590560000000003,
+                "total_full_output_cost": 0.05977366,
+                "full_total_cost": 0.08106286
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.413019895553589,
+                    7.994670152664185
+                ],
+                "answer_generation_durations": [
+                    5.3177783489227295,
+                    5.733880043029785
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    63.52238893508911,
+                    17.428399085998535
+                ],
+                "answer_generation_durations": [
+                    10.947957038879395,
+                    9.502679109573364
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.2651689052581787,
+                    4.5075788497924805
+                ],
+                "answer_generation_durations": [
+                    2.764178991317749,
+                    1.988933801651001
+                ]
+            },
+            "player_3": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    12.390257835388184,
+                    25.70419192314148
+                ],
+                "answer_generation_durations": [
+                    6.7714011669158936,
+                    9.888835906982422
+                ]
+            },
+            "player_4": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.829715967178345,
+                    7.902967214584351
+                ],
+                "answer_generation_durations": [
+                    7.175875902175903,
+                    5.101049184799194
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it usually served as a main course?",
+                "answer": "Yes, it often is."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is tenderness an important factor in its preparation?",
+                "answer": "Absolutely, it makes a big difference."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the cut matter?",
+                "answer": "Yes, the cut can make a big difference."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is marinating a common practice?",
+                "answer": "Yes, many people do that to enhance flavor, though some purists prefer just salt and pepper."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do people have strong preferences about how it's cooked?",
+                "answer": "Yes\u2014some swear by rare, others won\u2019t touch it unless it\u2019s well done, and many spots in between."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it commonly served with a sauce?",
+                "answer": "Some do, but it's also enjoyed simply seasoned."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it often cooked over an open flame?",
+                "answer": "Yes, it's a popular method."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically eaten with a fork and knife?",
+                "answer": "player_3 responds: Yes, it's commonly done that way.  \nplayer_3 asks player_4 the question: Is letting it rest after preparation a good idea?"
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it commonly served rare?",
+                "answer": "Yes, many enthusiasts prefer it that way, though it's really a personal preference ranging from \"blue rare\" to well-done."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do different countries or regions have famous varieties of it?",
+                "answer": "Yes\u2014Argentina\u2019s bife de chorizo, Japan\u2019s Wagyu, American ribeye or New York strip, even Australian grass-fed cuts all have their own fan base."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they oddly asked two very similar questions back-to-back, which felt like they were fishing for extra hints rather than playing naturally.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"Player_4 conflated 'resting' (post-cooking step) with doneness levels, suggesting they might not know steak preparation nuances. Their answer to player_3\u2019s resting question was off-topic, hinting at unfamiliarity.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because they asked two questions during their turn towards the end of the game, which seemed unusual and potentially like they were searching for clarity."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answers, like the one about it being served as a main course, were somewhat vague and lacked the specific details that the rest of us provided.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because they asked two different questions in their last turn ('Is letting it rest after preparation a good idea?' then switched to 'Is it commonly served rare?'). This suggests they were uncertain about what questions would be appropriate for steak, possibly revealing their lack of knowledge about the secret word.\""
+            }
+        ]
+    }
+]

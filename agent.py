@@ -15,6 +15,7 @@ class Agent:
         self.player_name_conversation_log = []
         self.input_tokens_used = 0
         self.output_tokens_used = 0
+        self.thinking_tokens_used = 0
         self.question_generation_durations = []
         self.answer_generation_durations = []
         if self.role == "spy":
@@ -32,20 +33,22 @@ class Agent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.3,
             )
             output_text = llm_response.choices[0].message.content.strip()
             self.input_tokens_used += llm_response.usage.prompt_tokens
-            self.output_tokens_used += llm_response.usage.completion_tokens
+            self.output_tokens_used += (llm_response.usage.completion_tokens - llm_response.usage.completion_tokens_details.reasoning_tokens)
+            self.thinking_tokens_used += llm_response.usage.completion_tokens_details.reasoning_tokens
 
         elif self.llm_name == "gemini":
             prompt = system_prompt + "\n\n" + user_prompt
             llm_response = config.GEMINI_CLIENT.models.generate_content(
                 model=config.GEMINI_MODEL,
                 contents=prompt,
-                # config=config.GEMINI_CONFIG,
             )
             output_text = llm_response.text.strip() if hasattr(llm_response, "text") else ""
+            self.input_tokens_used += llm_response.usage_metadata.prompt_token_count
+            self.output_tokens_used += llm_response.usage_metadata.candidates_token_count
+            self.thinking_tokens_used += llm_response.usage_metadata.thoughts_token_count
 
         elif self.llm_name == "deepseek":
             llm_response = config.DEEPSEEK_CLIENT.chat.completions.create(
@@ -58,7 +61,8 @@ class Agent:
             )
             output_text = llm_response.choices[0].message.content.strip()
             self.input_tokens_used += llm_response.usage.prompt_tokens
-            self.output_tokens_used += llm_response.usage.completion_tokens
+            self.output_tokens_used += (llm_response.usage.completion_tokens - llm_response.usage.completion_tokens_details.reasoning_tokens)
+            self.thinking_tokens_used += llm_response.usage.completion_tokens_details.reasoning_tokens
 
         elif self.llm_name == "claude":
             llm_response = config.CLAUDE_CLIENT.messages.create(
@@ -67,10 +71,13 @@ class Agent:
                 messages=[
                     {"role": "user", "content": user_prompt}
                 ],
-                max_tokens=2048,
-                temperature=0.3
+                max_tokens=6000,
+                thinking={
+                    "type": "enabled",
+                    "budget_tokens": 5000
+                }
             )
-            output_text = llm_response.content[0].text.strip() if hasattr(llm_response, "content") else ""
+            output_text = llm_response.content[1].text.strip() if hasattr(llm_response, "content") else ""
             self.input_tokens_used += llm_response.usage.input_tokens
             self.output_tokens_used += llm_response.usage.output_tokens
 
@@ -85,7 +92,8 @@ class Agent:
             )
             output_text = llm_response.choices[0].message.content.strip()
             self.input_tokens_used += llm_response.usage.prompt_tokens
-            self.output_tokens_used +=llm_response.usage.total_tokens - llm_response.usage.prompt_tokens
+            self.output_tokens_used += llm_response.usage.completion_tokens
+            self.thinking_tokens_used += llm_response.usage.completion_tokens_details.reasoning_tokens
 
         return output_text
 

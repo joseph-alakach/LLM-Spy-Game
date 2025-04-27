@@ -32,6 +32,8 @@ class SpyGame:
         self.game_record["players"] = {}
         self.game_record["conversation_record_json"] = []
         self.game_record["voting_record_json"] = []
+        self.game_record["token_details"] = {}
+        self.game_record["token_prices"] = {}
 
 
     @classmethod
@@ -65,7 +67,7 @@ class SpyGame:
 
         return game
 
-    @retry()
+    # @retry()
     def run(self):
         round = 1
         while round <= self.number_of_rounds:
@@ -141,20 +143,104 @@ class SpyGame:
                 "question_generation_durations": player.question_generation_durations,
                 "answer_generation_durations": player.answer_generation_durations,
             }
+        self.print_token_costs()
 
-        print("Token Usage Per Agent:")
-        total_input_tokens = 0
-        total_output_tokens = 0
-        for i, player in enumerate(self.players):
+
+
+    def getTokenCountForLLM(self) -> dict:
+        llms_used = []
+        llms_used.extend(self.game_record["players"].values())
+        llms_used = list(set(llms_used))
+        full_usage = {llm_name: {"input_tokens": 0, "output_tokens": 0, "thinking_tokens": 0, "full_output_tokens": 0}
+                      for llm_name in llms_used}
+        for player in self.players:
+            llm_name = player.llm_name
             input_tokens = player.input_tokens_used
             output_tokens = player.output_tokens_used
-            total = input_tokens + output_tokens
+            thinking_tokens = player.thinking_tokens_used
+            full_output_tokens = output_tokens + thinking_tokens
+            full_usage[llm_name]["input_tokens"] += input_tokens
+            full_usage[llm_name]["output_tokens"] += output_tokens
+            full_usage[llm_name]["thinking_tokens"] += thinking_tokens
+            full_usage[llm_name]["full_output_tokens"] += full_output_tokens
 
-            total_input_tokens += input_tokens
-            total_output_tokens += output_tokens
-            print(f"player_{i} | input: {input_tokens} | output: {output_tokens} | total: {total}")
+        self.game_record["token_details"] = full_usage
+        return full_usage
 
-        print("\nTotal Token Usage:")
-        print(f"Total input tokens used: {total_input_tokens}")
-        print(f"Total output tokens used: {total_output_tokens}")
-        print(f"Grand total tokens used: {total_input_tokens + total_output_tokens}")
+    def calculate_token_costs(self) -> dict:
+        full_usage = self.getTokenCountForLLM()
+        pricing = {
+            "gemini": {"input": 0.15/1000000, "output": 0.6/1000000, "thinking": 3.5/1000000},
+            "openai": {"input": 1.1/1000000, "output": 4.4/1000000, "thinking": 4.4/1000000},
+            "claude": {"input": 3/1000000, "output": 15/1000000, "thinking": 15/1000000},
+            "grok": {"input": 0.3/1000000, "output": 0.5/1000000, "thinking": 0.5/1000000},
+            "deepseek": {"input": 0.14/1000000, "output": 2.19/1000000, "thinking": 2.19/1000000},
+        }
+        llm_costs = {}
+        total_input_cost = 0
+        total_output_cost = 0
+        total_thinking_cost = 0
+        total_full_output_cost = 0
+        for llm_name, usage in full_usage.items():
+            if llm_name in pricing:
+                price_per_token = pricing[llm_name]
+                input_cost = usage["input_tokens"] * price_per_token["input"]
+                output_cost = usage["output_tokens"] * price_per_token["output"]
+                thinking_cost = usage["thinking_tokens"] * price_per_token["thinking"]
+                full_output_cost = output_cost + thinking_cost
+
+                # Store the results in the llm_costs dictionary
+                llm_costs[llm_name] = {
+                    "input_cost": input_cost,
+                    "output_cost": output_cost,
+                    "thinking_cost": thinking_cost,
+                    "full_output_cost": full_output_cost,
+                }
+
+                total_input_cost += input_cost
+                total_output_cost += output_cost
+                total_thinking_cost += thinking_cost
+                total_full_output_cost += full_output_cost
+
+        llm_costs["total_costs"] = {
+            "total_input_cost": total_input_cost,
+            "total_output_cost": total_output_cost,
+            "total_thinking_cost": total_thinking_cost,
+            "total_full_output_cost": total_full_output_cost,
+            "full_total_cost": total_input_cost+total_full_output_cost
+        }
+        self.game_record["token_prices"] = llm_costs
+        return llm_costs
+
+    def print_token_costs(self):
+        # Get the token counts and costs
+        full_usage = self.getTokenCountForLLM()
+        llm_costs = self.calculate_token_costs()
+
+        # Print individual costs for each LLM
+        for llm_name in full_usage:
+            print(f"LLM: {llm_name}")
+            print(f"{'=' * 50}")
+            print(f"Token Count:")
+            print(f"  Input Tokens: {full_usage[llm_name]['input_tokens']}")
+            print(f"  Output Tokens: {full_usage[llm_name]['output_tokens']}")
+            print(f"  Thinking Tokens: {full_usage[llm_name]['thinking_tokens']}")
+            print(f"  Full Output Tokens: {full_usage[llm_name]['full_output_tokens']}")
+
+            print(f"Price:")
+            print(f"  Input Cost: ${llm_costs[llm_name]['input_cost']:.6f}")
+            print(f"  Output Cost: ${llm_costs[llm_name]['output_cost']:.6f}")
+            print(f"  Thinking Cost: ${llm_costs[llm_name]['thinking_cost']:.6f}")
+            print(f"  Full Output Cost: ${llm_costs[llm_name]['full_output_cost']:.6f}")
+
+            print(f"{'=' * 50}\n")
+
+        # Print the total costs for the run
+        print(f"{'=' * 50}")
+        print(f"Total Costs for the Run:")
+        print(f"  Total Input Cost: ${llm_costs['total_costs']['total_input_cost']:.6f}")
+        print(f"  Total Output Cost: ${llm_costs['total_costs']['total_output_cost']:.6f}")
+        print(f"  Total Thinking Cost: ${llm_costs['total_costs']['total_thinking_cost']:.6f}")
+        print(f"  Total Full Output Cost: ${llm_costs['total_costs']['total_full_output_cost']:.6f}")
+        print(f"  Full Total Cost: ${llm_costs['total_costs']['full_total_cost']:.6f}")
+        print(f"{'=' * 50}")

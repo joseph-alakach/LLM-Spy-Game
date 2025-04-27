@@ -2,7 +2,6 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 from google import genai
-from google.genai import types
 import anthropic
 
 load_dotenv()
@@ -10,20 +9,17 @@ load_dotenv()
 # === OpenAI ===
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_CLIENT = OpenAI(api_key=OPENAI_API_KEY)
-OPENAI_MODEL = "gpt-4o-2024-08-06"
-# OPENAI_MODEL = "o3-mini"
+OPENAI_MODEL = "o4-mini"
 
 # === Gemini ===
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 GEMINI_MODEL = "gemini-2.5-flash-preview-04-17"
-GEMINI_CONFIG = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=4096))
 
 # === DeepSeek ===
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_CLIENT = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
-# DEEPSEEK_MODEL = "deepseek-reasoner"
-DEEPSEEK_MODEL = "deepseek-chat"
+DEEPSEEK_MODEL = "deepseek-reasoner"
 
 # === Claude ===
 CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
