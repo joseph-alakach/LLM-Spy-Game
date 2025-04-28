@@ -102,18 +102,22 @@ class Agent:
         system_message = (
             f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
             f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
-            f"The secret word belongs to the category: {self.category} \n"
             f"Your name in the game is: {self.player_name} \n"
             f"{self.secret_word}"
         )
-        user_message = (
-            f"This is the conversation record so far: {conversation}. \n\n"
-            "- Do NOT ask a question that has already been asked before. \n"
-            "- You must come up with a new question that has not been asked. \n"
-            "- Ask short questions related to the secret word but it should be vague in order to not give away the secret word to the spy. \n"
-            "- Return only the question sentence do not add anything else. \n\n"
-            "Your question: "
-        )
+        additional_user_prompt = ""
+        if self.role != "spy":
+            additional_user_prompt = "Make sure your question does not give any knowledge about the secret word that might help the spy deduct what is the secret word."
+        user_message = f"""This is the conversation record so far: {conversation}.
+        
+            - Do NOT ask a question that has already been asked before.
+            - You must come up with a new question that has not been asked. 
+            - Ask short and vague question related to the secret word but it should be vague in order to not give away the secret word to the spy. \n"
+            - {additional_user_prompt}
+            - Return only the question sentence do not add anything else.
+            
+            Your question: """
+
         question = ""
         if self.llm_name != "human":
             start_time = time.time()
@@ -135,8 +139,12 @@ class Agent:
 
             Your task now is to respond only to the question directed at you."""
 
+        additional_user_prompt = ""
+        if self.role != "spy":
+            additional_user_prompt = "Make sure your answer does not give any knowledge about the secret word that might help the spy deduct what is the secret word."
         user_message = f"""This is the conversation record so far: {conversation}
             Now it is your turn to respond to the last question in the conversation record.
+            {additional_user_prompt}
             The last question in the conversation record is directed at you. 
             
             Your response to the last question in the conversation record: 

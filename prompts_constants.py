@@ -59,11 +59,12 @@ You are a **Detective**. Your goal is to expose the **Spy** — without giving a
 ## How to Play:
 - Ask short questions related to the secret word but it should be vague in order to not give away the secret word to the spy — **not too obvious**.
 - Give answers that are relevant, but **not too detailed**.
-- Watch for vague or off-topic responses — those might be the Spy!
+- Watch for off-topic responses, or responses that do not align with the secret word — those might be the Spy!
 - Use other players' questions and answers to find out who is the spy, as the questions and answers show the players' knowledge of the secret word.
+- Make sure to give questions and answers vague enough, so that your question or answer will not help the spy get knowledge on what might the secret word be. 
 
 ## Important:
 - Do NOT ask or answer in ways that make the word obvious, or else the spy will use it to guess the word.
-- Be vague on purpose — if the Spy figures it out, **they win**!
+- Be vague on purpose — if the Spy figures the secret word out, **the Spy wins**!
 """
 }

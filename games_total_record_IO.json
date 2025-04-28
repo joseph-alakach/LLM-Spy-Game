@@ -1,147 +1,146 @@
 [
     {
-        "player_with_most_votes": 3,
+        "player_with_most_votes": 4,
         "winner": "spy",
-        "spy": 3,
-        "secret_word": "apple",
+        "spy": 2,
+        "secret_word": "monkey",
         "players": {
-            "0": "claude",
-            "1": "openai",
-            "2": "grok",
-            "3": "gemini",
-            "4": "deepseek"
+            "0": "gemini",
+            "1": "deepseek",
+            "2": "openai",
+            "3": "claude",
+            "4": "grok"
         },
         "token_details": {
-            "claude": {
-                "input_tokens": 4785,
-                "output_tokens": 1845,
-                "thinking_tokens": 0,
-                "full_output_tokens": 1845
-            },
-            "grok": {
-                "input_tokens": 3985,
-                "output_tokens": 65,
-                "thinking_tokens": 3401,
-                "full_output_tokens": 3466
-            },
-            "openai": {
-                "input_tokens": 3937,
-                "output_tokens": 147,
-                "thinking_tokens": 1920,
-                "full_output_tokens": 2067
-            },
             "gemini": {
-                "input_tokens": 4865,
-                "output_tokens": 57,
-                "thinking_tokens": 5513,
-                "full_output_tokens": 5570
+                "input_tokens": 4673,
+                "output_tokens": 56,
+                "thinking_tokens": 4165,
+                "full_output_tokens": 4221
+            },
+            "claude": {
+                "input_tokens": 5269,
+                "output_tokens": 2264,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2264
             },
             "deepseek": {
-                "input_tokens": 4262,
-                "output_tokens": 88,
-                "thinking_tokens": 4546,
-                "full_output_tokens": 4634
+                "input_tokens": 4292,
+                "output_tokens": 96,
+                "thinking_tokens": 5194,
+                "full_output_tokens": 5290
+            },
+            "grok": {
+                "input_tokens": 4605,
+                "output_tokens": 78,
+                "thinking_tokens": 4545,
+                "full_output_tokens": 4623
+            },
+            "openai": {
+                "input_tokens": 3830,
+                "output_tokens": 152,
+                "thinking_tokens": 2176,
+                "full_output_tokens": 2328
             }
         },
         "token_prices": {
-            "claude": {
-                "input_cost": 0.014355,
-                "output_cost": 0.027675,
-                "thinking_cost": 0.0,
-                "full_output_cost": 0.027675
-            },
-            "grok": {
-                "input_cost": 0.0011955,
-                "output_cost": 3.25e-05,
-                "thinking_cost": 0.0017005,
-                "full_output_cost": 0.001733
-            },
-            "openai": {
-                "input_cost": 0.0043307,
-                "output_cost": 0.0006468,
-                "thinking_cost": 0.008448,
-                "full_output_cost": 0.0090948
-            },
             "gemini": {
-                "input_cost": 0.0007297499999999999,
-                "output_cost": 3.42e-05,
-                "thinking_cost": 0.0192955,
-                "full_output_cost": 0.019329700000000002
+                "input_cost": 0.00070095,
+                "output_cost": 3.36e-05,
+                "thinking_cost": 0.0145775,
+                "full_output_cost": 0.0146111
+            },
+            "claude": {
+                "input_cost": 0.015807,
+                "output_cost": 0.033960000000000004,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.033960000000000004
             },
             "deepseek": {
-                "input_cost": 0.00059668,
-                "output_cost": 0.00019271999999999998,
-                "thinking_cost": 0.00995574,
-                "full_output_cost": 0.01014846
+                "input_cost": 0.00060088,
+                "output_cost": 0.00021024,
+                "thinking_cost": 0.011374859999999999,
+                "full_output_cost": 0.0115851
+            },
+            "grok": {
+                "input_cost": 0.0013815,
+                "output_cost": 3.9e-05,
+                "thinking_cost": 0.0022724999999999998,
+                "full_output_cost": 0.0023114999999999998
+            },
+            "openai": {
+                "input_cost": 0.004213000000000001,
+                "output_cost": 0.0006688,
+                "thinking_cost": 0.0095744,
+                "full_output_cost": 0.010243200000000001
             },
             "total_costs": {
-                "total_input_cost": 0.02120763,
-                "total_output_cost": 0.028581220000000004,
-                "total_thinking_cost": 0.03939974,
-                "total_full_output_cost": 0.06798096,
-                "full_total_cost": 0.08918859000000001
+                "total_input_cost": 0.022703330000000004,
+                "total_output_cost": 0.03491164,
+                "total_thinking_cost": 0.03779926,
+                "total_full_output_cost": 0.07271090000000001,
+                "full_total_cost": 0.09541423000000002
             }
         },
-        "spy_guess": "Apple",
         "llm_info": {
             "player_0": {
-                "llm_type": "claude",
+                "llm_type": "gemini",
                 "role": "detective",
                 "question_generation_durations": [
-                    9.170302867889404,
-                    7.449312686920166
+                    3.8341753482818604,
+                    7.331608533859253
                 ],
                 "answer_generation_durations": [
-                    6.036622524261475,
-                    6.5472166538238525
+                    2.0923614501953125,
+                    2.3079988956451416
                 ]
             },
             "player_1": {
-                "llm_type": "openai",
-                "role": "detective",
-                "question_generation_durations": [
-                    4.603637218475342,
-                    6.2502336502075195
-                ],
-                "answer_generation_durations": [
-                    6.44589638710022,
-                    4.2486841678619385
-                ]
-            },
-            "player_2": {
-                "llm_type": "grok",
-                "role": "detective",
-                "question_generation_durations": [
-                    10.759414434432983,
-                    10.947747945785522
-                ],
-                "answer_generation_durations": [
-                    8.704862594604492,
-                    5.526601314544678
-                ]
-            },
-            "player_3": {
-                "llm_type": "gemini",
-                "role": "spy",
-                "question_generation_durations": [
-                    4.910015344619751,
-                    8.941501379013062
-                ],
-                "answer_generation_durations": [
-                    2.248338222503662,
-                    4.51645302772522
-                ]
-            },
-            "player_4": {
                 "llm_type": "deepseek",
                 "role": "detective",
                 "question_generation_durations": [
-                    56.16573786735535,
-                    135.82171297073364
+                    12.643665790557861,
+                    58.283937215805054
                 ],
                 "answer_generation_durations": [
-                    10.785487174987793,
-                    13.859845399856567
+                    16.555647134780884,
+                    16.379369497299194
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.5295140743255615,
+                    7.0498552322387695
+                ],
+                "answer_generation_durations": [
+                    6.129059314727783,
+                    6.927333831787109
+                ]
+            },
+            "player_3": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.636475801467896,
+                    8.086500644683838
+                ],
+                "answer_generation_durations": [
+                    8.023236751556396,
+                    5.68741512298584
+                ]
+            },
+            "player_4": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    12.830266237258911,
+                    17.507594108581543
+                ],
+                "answer_generation_durations": [
+                    8.295289516448975,
+                    7.694303512573242
                 ]
             }
         },
@@ -149,89 +148,89 @@
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "What is your favorite way to consume this?",
-                "answer": "Baked with a sprinkle of cinnamon."
+                "question": "Is it known for its agility?",
+                "answer": "Yes, it can move swiftly when needed."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "Which season does this remind you of?",
-                "answer": "Fall"
+                "question": "Does it typically live in groups?",
+                "answer": "Yes, they often live in groups."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "What color does this remind you of?",
-                "answer": "Orange"
+                "question": "Is it primarily nocturnal?",
+                "answer": "No, they tend to be active when the sun is out."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "What do you typically eat it with?",
-                "answer": "Cheese."
+                "question": "Does it use tools in any way?",
+                "answer": "Yes, it does in some instances."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "What part do you usually avoid when eating it?",
-                "answer": "The core and seeds."
+                "question": "Does it have opposable thumbs?",
+                "answer": "Yes, it typically does."
             },
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "What sound does it make when you bite into it?",
-                "answer": "A crisp, gentle crunch."
+                "question": "Does it spend a lot of time off the ground?",
+                "answer": "Yes, often in elevated areas."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "What scent comes to mind?",
-                "answer": "Fresh and sweet."
+                "question": "Do they engage in playful behavior often?",
+                "answer": "Yes, they\u2019re quite playful."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "What shape does this remind you of?",
-                "answer": "Round"
+                "question": "Does it use vocal communication?",
+                "answer": "Yes, they communicate with various sounds and calls to signal different things to their group."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "Where does it typically grow?",
-                "answer": "Orchards"
+                "question": "Does it have fur covering most of its body?",
+                "answer": "Yes, it does."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "What children's activity involves it?",
-                "answer": "Bobbing for them at fall festivals."
+                "question": "Is it known for its intelligence?",
+                "answer": "Yes, it shows signs of intelligence."
             }
         ],
         "voting_record": [
             {
                 "voter": "player_0",
-                "voted_for": "player_3",
-                "reason": "\"I believe player_3 is the spy because they answered 'Orange' when asked about color. While some apple varieties may have orange-red hues, apples are primarily associated with red, green, or yellow. Additionally, their answers were minimal and vague, suggesting they were being cautious due to uncertainty about the secret word.\""
+                "voted_for": "player_4",
+                "reason": "I suspect player_4 because their answer about using tools felt slightly less certain compared to other responses."
             },
             {
                 "voter": "player_1",
                 "voted_for": "player_3",
-                "reason": "\u201cI suspect player_3 because calling it orange is inconsistent with the typical colors of the secret word.\u201d"
+                "reason": "\"I suspect player_3 is the Spy because their answer about vocal communication was overly detailed ('signal different things to their group'), which risks hinting at social or primate traits. Detectives should keep answers vague, and this specificity could inadvertently aid the Spy.\""
             },
             {
                 "voter": "player_2",
-                "voted_for": "player_3",
-                "reason": "\"I believe player_3 is the spy because their answer about the color being orange doesn't align with what I expect, as it seems off based on the context of our discussions.\""
+                "voted_for": "player_4",
+                "reason": "\u201cI think player_4 is the spy because their tool\u2010use answer was oddly vague compared to the group\u2019s more specific responses.\u201d"
             },
             {
                 "voter": "player_3",
-                "voted_for": "player_2",
-                "reason": "I believe player_2 is the spy because their answers 'Fall' and 'Fresh and sweet' were quite general and didn't provide much specific detail about the secret word."
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answer about tool use ('Yes, it does in some instances') seems hesitant and noncommittal compared to how well-documented monkey tool use is. A detective who knows the secret word might have given a more confident answer.\""
             },
             {
                 "voter": "player_4",
                 "voted_for": "player_3",
-                "reason": "\"I suspect player_3 is the spy because their answer 'Orange' to the color question doesn't align with the secret word 'apple,' which is typically red, green, or yellow. This mismatch suggests a lack of awareness of the word's context.\""
+                "reason": "I believe player_3 is the spy because their response about vocal communication was more detailed and elaborate compared to the shorter, more concise answers from other players, which made it stand out as potentially overcompensating."
             }
         ]
     }
