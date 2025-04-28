@@ -67,7 +67,7 @@ class SpyGame:
 
         return game
 
-    # @retry()
+    @retry()
     def run(self):
         round = 1
         while round <= self.number_of_rounds:

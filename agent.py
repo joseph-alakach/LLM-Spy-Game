@@ -57,7 +57,7 @@ class Agent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.3,
+                temperature=0.00000001,
             )
             output_text = llm_response.choices[0].message.content.strip()
             self.input_tokens_used += llm_response.usage.prompt_tokens
@@ -88,7 +88,7 @@ class Agent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.3
+                temperature=0.000000001
             )
             output_text = llm_response.choices[0].message.content.strip()
             self.input_tokens_used += llm_response.usage.prompt_tokens
@@ -128,17 +128,21 @@ class Agent:
 
     def respond_to_question(self, conversation: str) -> str:
         print("respond_to_question")
-        system_message = (
-            f"{prompts_constants.SYSTEM_PROMPTS.get('rules')} \n"
-            f"{prompts_constants.SYSTEM_PROMPTS.get(self.role)} \n"
-            f"Your name in the game is: {self.player_name} \n"
-            f"{self.secret_word}"
-        )
-        user_message = (
-            f"This is the conversation record so far: {conversation} \n\n"
-            "Now it is your turn to respond to the last question in the conversation record.\n"
-            "Return only your response."
-        )
+        system_message = f"""{prompts_constants.SYSTEM_PROMPTS.get('rules')}
+            {prompts_constants.SYSTEM_PROMPTS.get(self.role)}
+            Your name in the game is: {self.player_name}
+            {self.secret_word}
+
+            Your task now is to respond only to the question directed at you."""
+
+        user_message = f"""This is the conversation record so far: {conversation}
+            Now it is your turn to respond to the last question in the conversation record.
+            The last question in the conversation record is directed at you. 
+            
+            Your response to the last question in the conversation record: 
+
+            Give only the response to the question, don't add anything else in the beginning and the end."""
+
         response = ""
         if self.llm_name != "human":
             start_time = time.time()
