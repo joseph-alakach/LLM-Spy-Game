@@ -1,146 +1,147 @@
 [
     {
-        "player_with_most_votes": 4,
+        "player_with_most_votes": 2,
         "winner": "spy",
         "spy": 2,
-        "secret_word": "monkey",
+        "secret_word": "competition",
         "players": {
-            "0": "gemini",
-            "1": "deepseek",
-            "2": "openai",
-            "3": "claude",
-            "4": "grok"
+            "0": "claude",
+            "1": "grok",
+            "2": "deepseek",
+            "3": "openai",
+            "4": "gemini"
         },
         "token_details": {
-            "gemini": {
-                "input_tokens": 4673,
-                "output_tokens": 56,
-                "thinking_tokens": 4165,
-                "full_output_tokens": 4221
-            },
-            "claude": {
-                "input_tokens": 5269,
-                "output_tokens": 2264,
-                "thinking_tokens": 0,
-                "full_output_tokens": 2264
-            },
             "deepseek": {
-                "input_tokens": 4292,
-                "output_tokens": 96,
-                "thinking_tokens": 5194,
-                "full_output_tokens": 5290
-            },
-            "grok": {
-                "input_tokens": 4605,
-                "output_tokens": 78,
-                "thinking_tokens": 4545,
-                "full_output_tokens": 4623
+                "input_tokens": 4539,
+                "output_tokens": 84,
+                "thinking_tokens": 5053,
+                "full_output_tokens": 5137
             },
             "openai": {
-                "input_tokens": 3830,
-                "output_tokens": 152,
-                "thinking_tokens": 2176,
-                "full_output_tokens": 2328
+                "input_tokens": 4454,
+                "output_tokens": 150,
+                "thinking_tokens": 3776,
+                "full_output_tokens": 3926
+            },
+            "gemini": {
+                "input_tokens": 4798,
+                "output_tokens": 54,
+                "thinking_tokens": 4640,
+                "full_output_tokens": 4694
+            },
+            "grok": {
+                "input_tokens": 4178,
+                "output_tokens": 73,
+                "thinking_tokens": 3216,
+                "full_output_tokens": 3289
+            },
+            "claude": {
+                "input_tokens": 5129,
+                "output_tokens": 1986,
+                "thinking_tokens": 0,
+                "full_output_tokens": 1986
             }
         },
         "token_prices": {
-            "gemini": {
-                "input_cost": 0.00070095,
-                "output_cost": 3.36e-05,
-                "thinking_cost": 0.0145775,
-                "full_output_cost": 0.0146111
-            },
-            "claude": {
-                "input_cost": 0.015807,
-                "output_cost": 0.033960000000000004,
-                "thinking_cost": 0.0,
-                "full_output_cost": 0.033960000000000004
-            },
             "deepseek": {
-                "input_cost": 0.00060088,
-                "output_cost": 0.00021024,
-                "thinking_cost": 0.011374859999999999,
-                "full_output_cost": 0.0115851
-            },
-            "grok": {
-                "input_cost": 0.0013815,
-                "output_cost": 3.9e-05,
-                "thinking_cost": 0.0022724999999999998,
-                "full_output_cost": 0.0023114999999999998
+                "input_cost": 0.00063546,
+                "output_cost": 0.00018396,
+                "thinking_cost": 0.011066069999999999,
+                "full_output_cost": 0.01125003
             },
             "openai": {
-                "input_cost": 0.004213000000000001,
-                "output_cost": 0.0006688,
-                "thinking_cost": 0.0095744,
-                "full_output_cost": 0.010243200000000001
+                "input_cost": 0.0048994,
+                "output_cost": 0.00066,
+                "thinking_cost": 0.0166144,
+                "full_output_cost": 0.017274400000000002
+            },
+            "gemini": {
+                "input_cost": 0.0007197,
+                "output_cost": 3.24e-05,
+                "thinking_cost": 0.01624,
+                "full_output_cost": 0.0162724
+            },
+            "grok": {
+                "input_cost": 0.0012534,
+                "output_cost": 3.65e-05,
+                "thinking_cost": 0.0016079999999999998,
+                "full_output_cost": 0.0016445
+            },
+            "claude": {
+                "input_cost": 0.015387,
+                "output_cost": 0.02979,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.02979
             },
             "total_costs": {
-                "total_input_cost": 0.022703330000000004,
-                "total_output_cost": 0.03491164,
-                "total_thinking_cost": 0.03779926,
-                "total_full_output_cost": 0.07271090000000001,
-                "full_total_cost": 0.09541423000000002
+                "total_input_cost": 0.02289496,
+                "total_output_cost": 0.030702860000000002,
+                "total_thinking_cost": 0.04552847,
+                "total_full_output_cost": 0.07623133,
+                "full_total_cost": 0.09912629
             }
         },
+        "spy_guess": "competition",
         "llm_info": {
             "player_0": {
-                "llm_type": "gemini",
-                "role": "detective",
-                "question_generation_durations": [
-                    3.8341753482818604,
-                    7.331608533859253
-                ],
-                "answer_generation_durations": [
-                    2.0923614501953125,
-                    2.3079988956451416
-                ]
-            },
-            "player_1": {
-                "llm_type": "deepseek",
-                "role": "detective",
-                "question_generation_durations": [
-                    12.643665790557861,
-                    58.283937215805054
-                ],
-                "answer_generation_durations": [
-                    16.555647134780884,
-                    16.379369497299194
-                ]
-            },
-            "player_2": {
-                "llm_type": "openai",
-                "role": "spy",
-                "question_generation_durations": [
-                    5.5295140743255615,
-                    7.0498552322387695
-                ],
-                "answer_generation_durations": [
-                    6.129059314727783,
-                    6.927333831787109
-                ]
-            },
-            "player_3": {
                 "llm_type": "claude",
                 "role": "detective",
                 "question_generation_durations": [
-                    8.636475801467896,
-                    8.086500644683838
+                    7.207694053649902,
+                    6.858821392059326
                 ],
                 "answer_generation_durations": [
-                    8.023236751556396,
-                    5.68741512298584
+                    6.427203416824341,
+                    5.553389549255371
                 ]
             },
-            "player_4": {
+            "player_1": {
                 "llm_type": "grok",
                 "role": "detective",
                 "question_generation_durations": [
-                    12.830266237258911,
-                    17.507594108581543
+                    6.046706199645996,
+                    6.920172214508057
                 ],
                 "answer_generation_durations": [
-                    8.295289516448975,
-                    7.694303512573242
+                    5.92903733253479,
+                    8.435078859329224
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    97.60843563079834,
+                    119.77558588981628
+                ],
+                "answer_generation_durations": [
+                    61.754321336746216,
+                    18.857009887695312
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.4176297187805176,
+                    6.086075305938721
+                ],
+                "answer_generation_durations": [
+                    3.9104788303375244,
+                    4.056544542312622
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.488381862640381,
+                    8.67625641822815
+                ],
+                "answer_generation_durations": [
+                    3.5984079837799072,
+                    3.0932464599609375
                 ]
             }
         },
@@ -148,89 +149,89 @@
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "Is it known for its agility?",
-                "answer": "Yes, it can move swiftly when needed."
+                "question": "Is winning important to you?",
+                "answer": "Yes."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "Does it typically live in groups?",
-                "answer": "Yes, they often live in groups."
+                "question": "Do you value pushing your limits?",
+                "answer": "Yes."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "Is it primarily nocturnal?",
-                "answer": "No, they tend to be active when the sun is out."
+                "question": "Do you thrive under pressure?",
+                "answer": "Often, yes."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "Does it use tools in any way?",
-                "answer": "Yes, it does in some instances."
+                "question": "Do you feel energized by challenges involving others?",
+                "answer": "Definitely, it can be motivating."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "Does it have opposable thumbs?",
-                "answer": "Yes, it typically does."
+                "question": "Does practice help?",
+                "answer": "Absolutely, it's essential for improvement."
             },
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "Does it spend a lot of time off the ground?",
-                "answer": "Yes, often in elevated areas."
+                "question": "Do you prefer team or individual activities?",
+                "answer": "I prefer team activities."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "Do they engage in playful behavior often?",
-                "answer": "Yes, they\u2019re quite playful."
+                "question": "Do you appreciate the drive from others' achievements?",
+                "answer": "Yes, it can be inspiring."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "Does it use vocal communication?",
-                "answer": "Yes, they communicate with various sounds and calls to signal different things to their group."
+                "question": "Do you think clear communication is vital here?",
+                "answer": "Yes, especially when coordinating efforts."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "Does it have fur covering most of its body?",
-                "answer": "Yes, it does."
+                "question": "Do you find comparing results helpful?",
+                "answer": "Yes, it can provide insights."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "Is it known for its intelligence?",
-                "answer": "Yes, it shows signs of intelligence."
+                "question": "Is strategy important?",
+                "answer": "Absolutely, having a thoughtful approach is key to success."
             }
         ],
         "voting_record": [
             {
                 "voter": "player_0",
-                "voted_for": "player_4",
-                "reason": "I suspect player_4 because their answer about using tools felt slightly less certain compared to other responses."
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answers were unusually brief compared to everyone else. Their simple 'Yes' response to my question about winning didn't elaborate on competitive aspects like others did with their answers. While their questions were on-topic, their minimal answers suggest they might be avoiding saying too much to prevent revealing their lack of knowledge about the secret word.\""
             },
             {
                 "voter": "player_1",
                 "voted_for": "player_3",
-                "reason": "\"I suspect player_3 is the Spy because their answer about vocal communication was overly detailed ('signal different things to their group'), which risks hinting at social or primate traits. Detectives should keep answers vague, and this specificity could inadvertently aid the Spy.\""
+                "reason": "\"I believe player_3 is the spy because their response of 'Often, yes' to thriving under pressure seemed slightly hesitant and less enthusiastic, which might not fully align with the theme of the discussions.\""
             },
             {
                 "voter": "player_2",
-                "voted_for": "player_4",
-                "reason": "\u201cI think player_4 is the spy because their tool\u2010use answer was oddly vague compared to the group\u2019s more specific responses.\u201d"
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the Spy because their vague response 'Often, yes' to thriving under pressure feels non-committal, unlike Detectives who might align more confidently with the secret word's context.\""
             },
             {
                 "voter": "player_3",
-                "voted_for": "player_4",
-                "reason": "\"I suspect player_4 is the spy because their answer about tool use ('Yes, it does in some instances') seems hesitant and noncommittal compared to how well-documented monkey tool use is. A detective who knows the secret word might have given a more confident answer.\""
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were overly vague and never referenced success, results, or improvement like the others.\u201d"
             },
             {
                 "voter": "player_4",
-                "voted_for": "player_3",
-                "reason": "I believe player_3 is the spy because their response about vocal communication was more detailed and elaborate compared to the shorter, more concise answers from other players, which made it stand out as potentially overcompensating."
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their question about communication felt less directly related to the core topic than other players' questions.\""
             }
         ]
     }
