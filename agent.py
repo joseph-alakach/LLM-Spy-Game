@@ -112,7 +112,7 @@ class Agent:
         
             - Do NOT ask a question that has already been asked before.
             - You must come up with a new question that has not been asked. 
-            - Ask short and vague question related to the secret word but it should be vague in order to not give away the secret word to the spy. \n"
+            - Ask a vague question related to the secret word but it should be vague in order to not give away the secret word to the spy. \n"
             - {additional_user_prompt}
             - Return only the question sentence do not add anything else.
             
@@ -146,10 +146,9 @@ class Agent:
             Now it is your turn to respond to the last question in the conversation record.
             {additional_user_prompt}
             The last question in the conversation record is directed at you. 
-            
             Your response to the last question in the conversation record: 
 
-            Give only the response to the question, don't add anything else in the beginning and the end."""
+            Give only the response to the question, don't add anything else in the beginning and the end. Your response should not be longer than 1 sentence"""
 
         response = ""
         if self.llm_name != "human":

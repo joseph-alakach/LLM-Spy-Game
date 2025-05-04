@@ -1,239 +1,146 @@
 [
     {
-        "player_with_most_votes": 1,
-        "winner": "spy",
-        "spy": 3,
-        "secret_word": "firefighter",
-        "players": {
-            "0": "claude",
-            "1": "openai",
-            "2": "gemini",
-            "3": "grok",
-            "4": "deepseek"
-        },
-        "llm_info": {
-            "player_0": {
-                "llm_type": "claude",
-                "role": "detective",
-                "question_generation_durations": [
-                    1.6698060035705566,
-                    1.3687162399291992
-                ],
-                "answer_generation_durations": [
-                    1.8431611061096191,
-                    1.9587557315826416
-                ]
-            },
-            "player_1": {
-                "llm_type": "openai",
-                "role": "detective",
-                "question_generation_durations": [
-                    0.6060900688171387,
-                    0.7278368473052979
-                ],
-                "answer_generation_durations": [
-                    1.4052979946136475,
-                    1.0865328311920166
-                ]
-            },
-            "player_2": {
-                "llm_type": "gemini",
-                "role": "detective",
-                "question_generation_durations": [
-                    5.799516916275024,
-                    8.640352249145508
-                ],
-                "answer_generation_durations": [
-                    5.736309051513672,
-                    5.789612054824829
-                ]
-            },
-            "player_3": {
-                "llm_type": "grok",
-                "role": "spy",
-                "question_generation_durations": [
-                    17.691105842590332,
-                    22.017868995666504
-                ],
-                "answer_generation_durations": [
-                    9.481784105300903,
-                    11.77354097366333
-                ]
-            },
-            "player_4": {
-                "llm_type": "deepseek",
-                "role": "detective",
-                "question_generation_durations": [
-                    3.9936609268188477,
-                    4.257322072982788
-                ],
-                "answer_generation_durations": [
-                    4.7074549198150635,
-                    5.679772853851318
-                ]
-            }
-        },
-        "conversation_record": [
-            {
-                "ask_player": "player_0",
-                "respond_player": "player_1",
-                "question": "What kind of equipment would you typically use in your job?",
-                "answer": "I would use tools that help with safety and emergencies."
-            },
-            {
-                "ask_player": "player_1",
-                "respond_player": "player_2",
-                "question": "What kind of environment do you usually work in?",
-                "answer": "It's usually an environment that requires immediate response."
-            },
-            {
-                "ask_player": "player_2",
-                "respond_player": "player_3",
-                "question": "Do you work as part of a team?",
-                "answer": "player_3 responds: Yes, definitely\u2014collaboration is key in my role.  \nplayer_3 asks player_0 the question: How do you prepare for unexpected challenges in your work?"
-            },
-            {
-                "ask_player": "player_3",
-                "respond_player": "player_4",
-                "question": "What training is essential for your position?",
-                "answer": "Physical endurance and quick decision-making are crucial parts of the training."
-            },
-            {
-                "ask_player": "player_4",
-                "respond_player": "player_0",
-                "question": "What kind of protective gear is important for your role?",
-                "answer": "I rely on specialized heat-resistant clothing, a helmet, and breathing apparatus to stay safe while handling dangerous situations."
-            },
-            {
-                "ask_player": "player_0",
-                "respond_player": "player_1",
-                "question": "How do you handle high-stress situations in your job?",
-                "answer": "I stay calm and rely on my training to make quick, effective decisions."
-            },
-            {
-                "ask_player": "player_1",
-                "respond_player": "player_2",
-                "question": "What motivates you to keep going in your role?",
-                "answer": "Knowing that I can make a positive difference during challenging times."
-            },
-            {
-                "ask_player": "player_2",
-                "respond_player": "player_3",
-                "question": "Are loud noises a common part of your job?",
-                "answer": "player_3 responds: Yes, loud noises are often unavoidable in my job, especially during critical operations.  \nplayer_3 asks player_0 the question: How do you ensure effective communication in high-pressure scenarios?"
-            },
-            {
-                "ask_player": "player_3",
-                "respond_player": "player_4",
-                "question": "What is the most challenging aspect of your daily responsibilities?",
-                "answer": "Balancing speed and safety while under intense pressure is the toughest part."
-            },
-            {
-                "ask_player": "player_4",
-                "respond_player": "player_0",
-                "question": "What kind of schedule or shifts do you typically work in this role?",
-                "answer": "I typically work 24-hour shifts, followed by 48 hours off. This schedule allows us to be available around the clock for emergencies, though it can be demanding on personal life."
-            }
-        ],
-        "voting_record": [
-            {
-                "voter": "player_0",
-                "voted_for": "player_3",
-                "reason": "\"I believe player_3 is the spy because their answers were more generic compared to others. They mentioned 'collaboration' and 'loud noises' but didn't reference any specific aspects of firefighting like equipment, emergency response, or safety protocols that other players naturally incorporated.\""
-            },
-            {
-                "voter": "player_1",
-                "voted_for": "player_3",
-                "reason": "\"I believe player_3 is the spy because their responses were often repeated and lacked specificity, especially when asked about loud noises and communication, which seemed less aligned with the role of a firefighter.\""
-            },
-            {
-                "voter": "player_2",
-                "voted_for": "player_1",
-                "reason": "I believe player_1 is the spy because their answers were very general and could apply to many jobs, suggesting they might not know the specific secret word."
-            },
-            {
-                "voter": "player_3",
-                "voted_for": "player_1",
-                "reason": "\"I suspect player_1 because their responses were quite vague and lacked the specific details about equipment and environments that others provided, which made them seem less knowledgeable about the role.\""
-            },
-            {
-                "voter": "player_4",
-                "voted_for": "player_2",
-                "reason": "\"I believe player_2 is the spy because their answers ('immediate response' and 'positive difference during challenging times') are too generic and could apply to many emergency roles, not specifically the secret word. They avoided giving more specific details that would align closely with the word.\""
-            }
-        ]
-    },
-    {
-        "player_with_most_votes": 0,
+        "player_with_most_votes": 4,
         "winner": "spy",
         "spy": 2,
-        "secret_word": "firefighter",
+        "secret_word": "student",
         "players": {
-            "0": "grok",
-            "1": "claude",
-            "2": "deepseek",
-            "3": "gemini",
-            "4": "openai"
+            "0": "openai",
+            "1": "gemini",
+            "2": "grok",
+            "3": "claude",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 4784,
+                "output_tokens": 202,
+                "thinking_tokens": 1984,
+                "full_output_tokens": 2186
+            },
+            "grok": {
+                "input_tokens": 3998,
+                "output_tokens": 102,
+                "thinking_tokens": 3912,
+                "full_output_tokens": 4014
+            },
+            "deepseek": {
+                "input_tokens": 5056,
+                "output_tokens": 120,
+                "thinking_tokens": 4563,
+                "full_output_tokens": 4683
+            },
+            "claude": {
+                "input_tokens": 5622,
+                "output_tokens": 2521,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2521
+            },
+            "gemini": {
+                "input_tokens": 4723,
+                "output_tokens": 78,
+                "thinking_tokens": 4932,
+                "full_output_tokens": 5010
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0052624,
+                "output_cost": 0.0008888,
+                "thinking_cost": 0.0087296,
+                "full_output_cost": 0.009618400000000001
+            },
+            "grok": {
+                "input_cost": 0.0011994,
+                "output_cost": 5.1e-05,
+                "thinking_cost": 0.001956,
+                "full_output_cost": 0.0020069999999999997
+            },
+            "deepseek": {
+                "input_cost": 0.00070784,
+                "output_cost": 0.0002628,
+                "thinking_cost": 0.009992969999999999,
+                "full_output_cost": 0.010255769999999999
+            },
+            "claude": {
+                "input_cost": 0.016866,
+                "output_cost": 0.037815,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.037815
+            },
+            "gemini": {
+                "input_cost": 0.00070845,
+                "output_cost": 4.68e-05,
+                "thinking_cost": 0.017262,
+                "full_output_cost": 0.0173088
+            },
+            "total_costs": {
+                "total_input_cost": 0.02474409,
+                "total_output_cost": 0.0390644,
+                "total_thinking_cost": 0.03794057,
+                "total_full_output_cost": 0.07700497,
+                "full_total_cost": 0.10174906
+            }
         },
         "llm_info": {
             "player_0": {
-                "llm_type": "grok",
-                "role": "detective",
-                "question_generation_durations": [
-                    5.939176321029663,
-                    16.382198810577393
-                ],
-                "answer_generation_durations": [
-                    9.823290824890137,
-                    11.889940977096558
-                ]
-            },
-            "player_1": {
-                "llm_type": "claude",
-                "role": "detective",
-                "question_generation_durations": [
-                    1.4325230121612549,
-                    1.432851791381836
-                ],
-                "answer_generation_durations": [
-                    2.25061297416687,
-                    3.175058126449585
-                ]
-            },
-            "player_2": {
-                "llm_type": "deepseek",
-                "role": "spy",
-                "question_generation_durations": [
-                    4.20782995223999,
-                    5.119523763656616
-                ],
-                "answer_generation_durations": [
-                    5.426617860794067,
-                    6.143465995788574
-                ]
-            },
-            "player_3": {
-                "llm_type": "gemini",
-                "role": "detective",
-                "question_generation_durations": [
-                    5.963552951812744,
-                    9.521805047988892
-                ],
-                "answer_generation_durations": [
-                    4.293503999710083,
-                    4.30174994468689
-                ]
-            },
-            "player_4": {
                 "llm_type": "openai",
                 "role": "detective",
                 "question_generation_durations": [
-                    0.7168691158294678,
-                    0.6128849983215332
+                    4.698025941848755,
+                    7.259275197982788
                 ],
                 "answer_generation_durations": [
-                    1.0068960189819336,
-                    1.9484021663665771
+                    3.1865901947021484,
+                    3.5434317588806152
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.084857940673828,
+                    7.095576524734497
+                ],
+                "answer_generation_durations": [
+                    2.9120161533355713,
+                    3.791037082672119
+                ]
+            },
+            "player_2": {
+                "llm_type": "grok",
+                "role": "spy",
+                "question_generation_durations": [
+                    8.803640365600586,
+                    14.255550861358643
+                ],
+                "answer_generation_durations": [
+                    11.090364933013916,
+                    4.727862358093262
+                ]
+            },
+            "player_3": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.69794750213623,
+                    8.105056524276733
+                ],
+                "answer_generation_durations": [
+                    7.161989688873291,
+                    8.71049952507019
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    46.557446002960205,
+                    12.39932656288147
+                ],
+                "answer_generation_durations": [
+                    13.393226385116577,
+                    13.952965259552002
                 ]
             }
         },
@@ -241,89 +148,89 @@
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "What job do you think is the bravest?",
-                "answer": "I think there are many brave jobs, but those who rush into dangerous situations when others are running away deserve special recognition. It takes a special kind of courage to put yourself at risk for strangers."
+                "question": "Would you say engaging with this generally requires following a set routine?",
+                "answer": "A certain degree of structure often helps."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "What kind of equipment would be essential for this role?",
-                "answer": "Hmm, I'd say protective gear is absolutely crucial\u2014something like a helmet, sturdy boots, and maybe even a specialized uniform designed for high-risk situations. Communication devices would be vital too, to stay coordinated in emergencies."
+                "question": "Is there a common progression associated with it?",
+                "answer": "Yes, it generally follows a predictable sequence of stages."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "What kind of training do you think is most important for someone in this role?",
-                "answer": "Definitely training on how to operate safely and effectively in highly dangerous environments, often under extreme pressure, is crucial. And learning how to make split-second decisions that protect both yourself and others."
+                "question": "What are some common challenges associated with it?",
+                "answer": "Managing time effectively while balancing multiple responsibilities and deadlines can be particularly challenging."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "What kind of situations do they often deal with?",
-                "answer": "They often deal with emergencies that involve life-threatening situations, where quick thinking and immediate action are necessary to ensure safety and rescue."
+                "question": "Do you think certain social environments can enhance or hinder this experience?",
+                "answer": "Collaborative settings can amplify focus, while chaotic ones might disrupt progress."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "What qualities do you think are essential for someone in this role?",
-                "answer": "I respond: I think qualities like courage, quick decision-making, and strong teamwork are essential for someone in this role.  \nI ask player_1 the question: How do you think preparation and experience help in handling the demands of this kind of work?"
+                "question": "How significant are milestones in tracking progress within this context?",
+                "answer": "They serve as useful guideposts for measuring advancement, though overemphasis can become counterproductive."
             },
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "How do you think this role contributes to public safety?",
-                "answer": "I believe this role is absolutely vital to public safety. These individuals are often first on the scene during emergencies, providing immediate response when disasters strike. They not only save lives directly through rescue operations but also work on prevention through community education and safety inspections. Their presence alone gives people a sense of security, knowing that trained professionals are ready to respond at a moment's notice when danger threatens."
+                "question": "In your view, what role does feedback play in driving improvement within this process?",
+                "answer": "Constructive criticism helps refine approaches and deepen understanding."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "What physical fitness requirements do you think are necessary for this profession?",
-                "answer": "I'd say top-tier endurance and strength are non-negotiable\u2014being able to carry heavy equipment or injured people while maintaining stamina during long, grueling operations. Core stability is also key for navigating unstable environments, along with the ability to perform under physically demanding conditions for extended periods."
+                "question": "Are there specific tools or methods commonly employed in this process?",
+                "answer": "Yes, tools like scheduling software and collaborative platforms are frequently used to optimize efficiency and coordination."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "What kind of mental resilience do you think is most important for someone in this role?",
-                "answer": "I think the ability to remain composed and make clear decisions in extremely chaotic and high-pressure situations is vital. Also, being able to process and cope with witnessing difficult or traumatic events regularly is crucial for long-term effectiveness."
+                "question": "What impact do external factors have on the overall sustainability of this activity?",
+                "answer": "External factors like personal circumstances, available support systems, and environmental conditions can significantly impact one's ability to maintain consistent engagement and progress."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "What kind of places do they typically work or respond to?",
-                "answer": "They typically work in urban and residential areas, responding to incidents in buildings, streets, and sometimes in natural settings like forests or fields, depending on the nature of the emergency."
+                "question": "How do you think personal growth and self-awareness relate to success in this context?",
+                "answer": "Developing self-awareness allows one to recognize areas needing adaptation, while personal growth builds resilience to navigate evolving demands effectively."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "What kind of teamwork is involved in this role?",
-                "answer": "I respond: I think the teamwork involves close coordination, clear communication, and mutual reliance during high-stakes operations to ensure everyone stays safe and effective.  \nI ask player_1 the question: What do you think are the key challenges in building and maintaining such teamwork?"
+                "question": "How do individual differences influence the approach one might take?",
+                "answer": "They affect preferred pacing, strategies, and the type of support or autonomy needed to stay motivated and progress."
             }
         ],
         "voting_record": [
             {
                 "voter": "player_0",
-                "voted_for": "player_3",
-                "reason": "I believe player_3 is the spy because their responses, such as on training and mental resilience, felt somewhat generic and lacked the specific nuances that the others provided, making them stand out as less engaged with the role's details."
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their reference to \u2018scheduling software and collaborative platforms\u2019 felt more like corporate tools than what a typical student would rely on.\""
             },
             {
                 "voter": "player_1",
                 "voted_for": "player_4",
-                "reason": "I believe player_4 is the spy because their answers were consistently vague and generic. When asked about situations they deal with and places they work, their responses lacked specific details that would be familiar to someone who knows the secret word \"firefighter\" - no mention of fires, burning buildings, or specific emergency scenarios that firefighters commonly handle."
+                "reason": "I am voting for player_4 because their responses and questions were the most general and least specific to the particular context, potentially indicating a lack of understanding of the secret word."
             },
             {
                 "voter": "player_2",
                 "voted_for": "player_4",
-                "reason": "\"I believe player_4 is the spy because their answers were somewhat generic and didn't provide as much specific insight into the role as the others. For example, their response about the places they work was very broad and could apply to multiple professions, whereas other players gave more detailed answers that seemed to align better with a specific role.\""
+                "reason": "I believe player_4 is the spy because their answers, like the one about collaborative settings amplifying focus, felt overly vague and didn't fully align with the structured progression and tools typically associated with the secret word."
             },
             {
                 "voter": "player_3",
-                "voted_for": "player_0",
-                "reason": "I believe player_0 is the spy because their answers about essential qualities and teamwork, while relevant, felt slightly more generic compared to the more specific details provided by other players regarding equipment, physical requirements, or work locations."
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answers, while not incorrect, seem more generalized and could apply to many contexts beyond being a student. Their response about 'collaborative settings' and 'developing self-awareness' lacks specific reference to classroom environments, coursework, or educational progression that a fellow student would likely include.\""
             },
             {
                 "voter": "player_4",
-                "voted_for": "player_0",
-                "reason": "\"I believe player_0 is the spy because their responses were quite generic and didn't provide specific insights related to the secret word, especially when discussing qualities and teamwork.\""
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their mention of 'sustainability' and 'consistent engagement' in response to external factors feels slightly misaligned with the secret word 'student,' leaning into broader terminology rather than student-specific challenges.\""
             }
         ]
     }
