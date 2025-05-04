@@ -98,10 +98,10 @@ def run_games_different_llms(number_of_games: int):
 
 
 # Run games with the same LLM
-# number_of_games_same = 4
-# llm_name = "openai"  #openai, gemini, deepseek, claud, grok
-# games_same_llm = run_games_same_llm(llm_name, number_of_games_same)
+number_of_games_same = 1
+llm_name = "openai"  #openai, gemini, deepseek, claud, grok
+games_same_llm = run_games_same_llm(llm_name, number_of_games_same)
 
 # Run games with different LLMs
-number_of_games_different = 5
-games_different_llms = run_games_different_llms(number_of_games_different)
+# number_of_games_different = 5
+# games_different_llms = run_games_different_llms(number_of_games_different)
