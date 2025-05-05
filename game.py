@@ -2,25 +2,19 @@ import random
 import numpy as np
 
 from agent import Agent
-from utils import retry
-
 
 
 class SpyGame:
     game_record = {}
 
-    def __init__(self, number_of_players, number_of_rounds: int, secret_word: str, category: str, llm_name):
+    def __init__(self, number_of_players, number_of_rounds: int, secret_word: str, llm_name: str):
         self.secret_word = secret_word
-        self.category = category
         self.number_of_rounds = number_of_rounds
         self.spy_number = random.randint(0, number_of_players - 1)
-        self.players = [Agent(llm_name=llm_name, player_name=f"player_{i}", player_role="spy", secret_word="",
-                              category=category) if i == self.spy_number else Agent(llm_name=llm_name,
+        self.players = [Agent(llm_name=llm_name, player_name=f"player_{i}", player_role="spy", secret_word="") if i == self.spy_number else Agent(llm_name=llm_name,
                                                                                     player_name=f"player_{i}",
                                                                                     player_role="detective",
-                                                                                    secret_word=self.secret_word,
-                                                                                    category=category) for i in
-                        range(number_of_players)]
+                                                                                    secret_word=self.secret_word) for i in range(number_of_players)]
         self.number_of_players = len(self.players)
 
         self.game_record["conversation_record"] = f"**Game Starts**"
@@ -37,7 +31,7 @@ class SpyGame:
 
 
     @classmethod
-    def from_llm_list(cls, llm_names, number_of_rounds: int, secret_word: str, category: str):
+    def from_llm_list(cls, llm_names, number_of_rounds: int, secret_word: str):
         number_of_players = len(llm_names)
         spy_number = random.randint(0, number_of_players - 1)
 
@@ -51,14 +45,13 @@ class SpyGame:
                 llm_name=llm,
                 player_name=f"player_{i}",
                 player_role=role,
-                secret_word=word,
-                category=category
+                secret_word=word
             )
             players.append(agent)
 
         # Instantiate using the base constructor with dummy values
         game = cls(number_of_players=number_of_players, number_of_rounds=number_of_rounds,
-                   secret_word=secret_word, category=category, llm_name=None)
+                   secret_word=secret_word, llm_name=None)
 
         # Overwrite the players and spy_number
         game.players = players
@@ -67,7 +60,6 @@ class SpyGame:
 
         return game
 
-    @retry()
     def run(self):
         round = 1
         while round <= self.number_of_rounds:
@@ -112,21 +104,24 @@ class SpyGame:
                 "reason": explanation
             })
 
-        player_with_most_votes = int(np.argmax(votes))
-        self.game_record["player_with_most_votes"] = player_with_most_votes
+        # check if there is a tie
+        max_vote_count = max(votes)
+        num_players_with_max = sum(1 for count in votes if count == max_vote_count)
 
-        if player_with_most_votes == self.spy_number:
-            # Spy was caught, give them a chance to guess the word
-            guessed_word = self.players[self.spy_number].guess_secret_word(self.game_record["conversation_record"])
-            self.game_record["spy_guess"] = guessed_word
-
-            if guessed_word.lower().strip() == self.secret_word.lower().strip():
-                self.game_record["winner"] = "spy"
-            else:
-                self.game_record["winner"] = "detectives"
-        else:
-            # Spy was not voted out
+        if num_players_with_max > 1:
+            self.game_record["player_with_most_votes"] = "votes_tie"
+            # spy wins because of vote tie
             self.game_record["winner"] = "spy"
+        else:
+            player_with_most_votes = int(np.argmax(votes))
+            self.game_record["player_with_most_votes"] = player_with_most_votes
+            if player_with_most_votes == self.spy_number:
+                guessed_word = self.players[self.spy_number].guess_secret_word(self.game_record["conversation_record"])
+                self.game_record["spy_guess"] = guessed_word
+                self.game_record["winner"] = "detectives"
+            else:
+                # Spy was not voted out
+                self.game_record["winner"] = "spy"
 
         playersDataJson = {}
         for i in self.players:

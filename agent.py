@@ -2,16 +2,15 @@ import time
 
 import config
 import prompts_constants
-from token_utils import count_openai_input_tokens, count_openai_output_tokens
+from utils import retry
 
 
 class Agent:
 
-    def __init__(self, llm_name: str, player_name: str, player_role: str, secret_word: str, category: str):
+    def __init__(self, llm_name: str, player_name: str, player_role: str, secret_word: str):
         self.llm_name = llm_name
         self.player_name = player_name
         self.role = player_role
-        self.category = category
         self.player_name_conversation_log = []
         self.input_tokens_used = 0
         self.output_tokens_used = 0
@@ -25,6 +24,7 @@ class Agent:
         if self.llm_name == "human":
             print(f"You are participating in the game as {self.player_name}, your role in the game is ({self.role}), {self.secret_word}")
 
+    @retry(retries=3, delay=10)
     def _call_llm(self, system_prompt: str, user_prompt: str) -> str:
         if self.llm_name == "openai":
             llm_response = config.OPENAI_CLIENT.chat.completions.create(
@@ -112,7 +112,6 @@ class Agent:
         
             - Do NOT ask a question that has already been asked before.
             - You must come up with a new question that has not been asked. 
-            - Ask a vague question related to the secret word but it should be vague in order to not give away the secret word to the spy. \n"
             - {additional_user_prompt}
             - Return only the question sentence do not add anything else.
             

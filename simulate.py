@@ -2,7 +2,13 @@ from game import SpyGame
 import json
 import random
 import categories
+from utils import retry
 
+@retry()
+def __run_same_llm(number_of_players, number_of_rounds, secret_word, llm_name):
+    game = SpyGame(number_of_players, number_of_rounds, secret_word, llm_name)
+    game.run()
+    return game.game_record
 
 def run_games_same_llm(llm_name: str, number_of_games: int):
     games_total_record = []
@@ -13,28 +19,37 @@ def run_games_same_llm(llm_name: str, number_of_games: int):
     # Run the games
     for i in range(number_of_games):
         number_of_players = 5
-        game = SpyGame(number_of_players, number_of_rounds, secret_word, category, llm_name)
-
         if i != 0:
             with open("games_total_record.json", "r") as file:
                 games_total_record = json.load(file)
-        game.run()
-        if "conversation_record" in game.game_record:
-            del game.game_record["conversation_record"]
-        if "voting_record" in game.game_record:
-            del game.game_record["voting_record"]
-        if "conversation_record_json" in game.game_record:
-            game.game_record["conversation_record"] = game.game_record["conversation_record_json"]
-            del game.game_record["conversation_record_json"]
-        if "voting_record_json" in game.game_record:
-            game.game_record["voting_record"] = game.game_record["voting_record_json"]
-            del game.game_record["voting_record_json"]
-        games_total_record.append(game.game_record)
+        game_record = __run_same_llm(number_of_players, number_of_rounds, secret_word, llm_name)
+
+        if "conversation_record" in game_record:
+            del game_record["conversation_record"]
+        if "voting_record" in game_record:
+            del game_record["voting_record"]
+        if "conversation_record_json" in game_record:
+            game_record["conversation_record"] = game_record["conversation_record_json"]
+            del game_record["conversation_record_json"]
+        if "voting_record_json" in game_record:
+            game_record["voting_record"] = game_record["voting_record_json"]
+            del game_record["voting_record_json"]
+        games_total_record.append(game_record)
         with open("games_total_record.json", "w") as file:
             json.dump(games_total_record, file, indent=4)
 
     return games_total_record
 
+@retry()
+def __run_different_llms(llm_names, number_of_rounds, secret_word, spy_llm ):
+    game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds, secret_word=secret_word)
+    spy_llm_now = game.players[game.spy_number].llm_name
+    while spy_llm_now != spy_llm:
+        game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds, secret_word=secret_word)
+        spy_llm_now = game.players[game.spy_number].llm_name
+
+    game.run()
+    return game.game_record
 
 def run_games_different_llms(number_of_games: int):
     llms = ["openai", "gemini", "claude", "deepseek", "grok"]
@@ -62,36 +77,22 @@ def run_games_different_llms(number_of_games: int):
         llm_names = llms.copy()
         random.shuffle(llm_names)
 
-        # Assign the spy role for the current game
-        spy_llm = spy_assignments[i]
-        # print("required spy llm: " + spy_llm)
-        game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds, secret_word=secret_word,
-                                     category=category)
-        spy_llm_now = game.players[game.spy_number].llm_name
-        # print("current spy llm: " + spy_llm_now)
-        while spy_llm_now != spy_llm:
-            game = SpyGame.from_llm_list(llm_names=llm_names, number_of_rounds=number_of_rounds,
-                                         secret_word=secret_word,
-                                         category=category)
-            spy_llm_now = game.players[game.spy_number].llm_name
-            # print("current spy llm: " + spy_llm_now)
-
-
         if i != 0:
             with open("games_total_record.json", "r") as file:
                 games_total_record = json.load(file)
-        game.run()
-        if "conversation_record" in game.game_record:
-            del game.game_record["conversation_record"]
-        if "voting_record" in game.game_record:
-            del game.game_record["voting_record"]
-        if "conversation_record_json" in game.game_record:
-            game.game_record["conversation_record"] = game.game_record["conversation_record_json"]
-            del game.game_record["conversation_record_json"]
-        if "voting_record_json" in game.game_record:
-            game.game_record["voting_record"] = game.game_record["voting_record_json"]
-            del game.game_record["voting_record_json"]
-        games_total_record.append(game.game_record)
+        spy_llm = spy_assignments[i]
+        game_record = __run_different_llms(llm_names, number_of_rounds, secret_word, spy_llm)
+        if "conversation_record" in game_record:
+            del game_record["conversation_record"]
+        if "voting_record" in game_record:
+            del game_record["voting_record"]
+        if "conversation_record_json" in game_record:
+            game_record["conversation_record"] = game_record["conversation_record_json"]
+            del game_record["conversation_record_json"]
+        if "voting_record_json" in game_record:
+            game_record["voting_record"] = game_record["voting_record_json"]
+            del game_record["voting_record_json"]
+        games_total_record.append(game_record)
         with open("games_total_record.json", "w") as file:
             json.dump(games_total_record, file, indent=4)
     return games_total_record
