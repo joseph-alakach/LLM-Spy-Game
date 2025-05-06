@@ -11,7 +11,7 @@ def __run_same_llm(number_of_players, number_of_rounds, secret_word, llm_name):
     return game.game_record
 
 def run_games_same_llm(llm_name: str, number_of_games: int):
-    record_json_path = "generated_data/games_simulation_deepseek_0_20.json"
+    record_json_path = "generated_data/games_simulation_grok_0_20.json"
     games_total_record = []
     number_of_rounds = 2
 
@@ -101,7 +101,7 @@ def run_games_different_llms(number_of_games: int):
 
 # Run games with the same LLM
 number_of_games_same = 20
-llm_name = "deepseek"  #openai, gemini, deepseek, claud, grok
+llm_name = "grok"  #openai, gemini, deepseek, claude, grok
 games_same_llm = run_games_same_llm(llm_name, number_of_games_same)
 
 # Run games with different LLMs
