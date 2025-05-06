@@ -1,0 +1,1877 @@
+[
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21122,
+                "output_tokens": 907,
+                "thinking_tokens": 10112,
+                "full_output_tokens": 11019
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0232342,
+                "output_cost": 0.0039908,
+                "thinking_cost": 0.0444928,
+                "full_output_cost": 0.0484836
+            },
+            "total_costs": {
+                "total_input_cost": 0.0232342,
+                "total_output_cost": 0.0039908,
+                "total_thinking_cost": 0.0444928,
+                "total_full_output_cost": 0.0484836,
+                "full_total_cost": 0.0717178
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.723735809326172,
+                    6.209491491317749
+                ],
+                "answer_generation_durations": [
+                    3.0447776317596436,
+                    5.887002468109131
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.201234340667725,
+                    8.200072288513184
+                ],
+                "answer_generation_durations": [
+                    2.883096218109131,
+                    3.2815935611724854
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.318292856216431,
+                    5.590345144271851
+                ],
+                "answer_generation_durations": [
+                    3.418818473815918,
+                    48.68757176399231
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    13.061562538146973,
+                    4.295515060424805
+                ],
+                "answer_generation_durations": [
+                    2.5358171463012695,
+                    2.63175106048584
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.94147253036499,
+                    4.476828336715698
+                ],
+                "answer_generation_durations": [
+                    2.8507332801818848,
+                    4.444589138031006
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this something people often travel to attend?",
+                "answer": "Yes, people frequently travel to attend it."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it common for attendees to give presentations at this event?",
+                "answer": "Yes, many attendees give presentations during the event."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is this event usually held annually?",
+                "answer": "Yes, it\u2019s typically organized around the same period each year."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this event typically span more than one day?",
+                "answer": "Yes, it often runs over multiple days."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do participants often exchange business cards at this event?",
+                "answer": "Yes, exchanging business cards is quite common."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does the event usually include keynote speeches delivered by experts?",
+                "answer": "Yes, the event usually features keynote speeches delivered by experts."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do attendees usually receive a printed or digital agenda when they arrive?",
+                "answer": "Yes, attendees usually receive a printed or digital agenda upon arrival."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are there scheduled networking sessions or social gatherings as part of this event?",
+                "answer": "Yes, the program usually includes scheduled networking sessions and social gatherings."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there typically exhibition booths or vendor areas at this event where attendees can explore products or services?",
+                "answer": "Yes, such events often feature exhibition booths or vendor areas where attendees can explore offerings."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do participants typically sign up in advance for specific sessions or workshops at this event?",
+                "answer": "Yes, participants typically sign up in advance for the specific sessions or workshops they plan to attend."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their emphasis on exhibition booths/vendor areas feels more like a trade-show detail than a typical conference, suggesting they\u2019re guessing rather than drawing on real knowledge.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their phrasing (\u2018organized around the same period each year\u2019) felt oddly generic and awkward, unlike the more natural, detailed responses from the others.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI believe player_4 is the spy because their responses were overly generic and lacked any detail that would confirm real familiarity with this type of event.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their emphasis on exhibition booths and vendor areas feels like they\u2019re thinking of a trade show rather than a broad \u2018conference,\u2019 which seems like an over-specific detail.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their phrasing (\u2018explore offerings\u2019) felt unusually vague compared to the more specific details the others provided.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22354,
+                "output_tokens": 978,
+                "thinking_tokens": 9088,
+                "full_output_tokens": 10066
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0245894,
+                "output_cost": 0.0043032,
+                "thinking_cost": 0.0399872,
+                "full_output_cost": 0.0442904
+            },
+            "total_costs": {
+                "total_input_cost": 0.0245894,
+                "total_output_cost": 0.0043032,
+                "total_thinking_cost": 0.0399872,
+                "total_full_output_cost": 0.0442904,
+                "full_total_cost": 0.0688798
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.46872353553772,
+                    4.24273157119751
+                ],
+                "answer_generation_durations": [
+                    2.3257787227630615,
+                    4.314320087432861
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.372351408004761,
+                    4.809568881988525
+                ],
+                "answer_generation_durations": [
+                    3.1898834705352783,
+                    4.278209924697876
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.781209707260132,
+                    3.687922954559326
+                ],
+                "answer_generation_durations": [
+                    3.1783740520477295,
+                    2.374952793121338
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    2.697587490081787,
+                    5.087310791015625
+                ],
+                "answer_generation_durations": [
+                    5.3376405239105225,
+                    4.121514320373535
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.7552995681762695,
+                    4.358315944671631
+                ],
+                "answer_generation_durations": [
+                    3.5500965118408203,
+                    8.163297891616821
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you expect attendees to wear name badges or lanyards at this event?",
+                "answer": "Yes, attendees would typically wear name badges on lanyards to facilitate introductions."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would attendees typically receive printed materials or handouts to reference during this event?",
+                "answer": "Yes, attendees often receive printed agendas or pamphlets to reference during the event."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is there usually a designated keynote speaker at this event?",
+                "answer": "Yes, there\u2019s typically a keynote speaker who outlines the main themes of the event."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there often multiple concurrent sessions scheduled for attendees to choose from at this event?",
+                "answer": "Yes, there are usually several concurrent sessions so attendees can choose the topics most relevant to them."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would catering or coffee service typically be provided during the event?",
+                "answer": "Yes, events often provide coffee service along with light catered refreshments."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is there usually a registration desk where attendees check in at the start of the event?",
+                "answer": "Yes, there is usually a registration desk where attendees check in and pick up their badges and materials."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are there often dedicated networking breaks or social mixers scheduled during this event?",
+                "answer": "Yes, there are usually dedicated networking breaks or social mixers to give attendees time to connect."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are there typically vendor booths or an exhibition hall set up during this event?",
+                "answer": "Yes, there\u2019s often an exhibition hall with vendor booths where sponsors showcase their products and services."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there often panel discussions featuring multiple experts during this event?",
+                "answer": "Yes, the event typically features panel discussions where multiple experts share their insights."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is free Wi-Fi generally provided to attendees during this event?",
+                "answer": "Yes, free Wi-Fi is usually offered to attendees."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their mention of a full exhibition hall with vendor booths felt more like a trade show or expo than a typical conference, which the others described more generically.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answer about \u2018printed agendas or pamphlets\u2019 felt oddly generic and unfocused compared to the more detailed, conference\u2010specific language used by the others.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\u201cI believe player_1 is the spy because their responses were unusually formal and generic compared to the more detailed answers from others.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers were unusually detailed\u2014mentioning \u201coutlining themes\u201d and \u201csponsors showcasing products\u201d\u2014as if they were inferring from context rather than genuine knowledge."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers about printed materials and networking breaks felt a bit too rehearsed and generic, as if they were avoiding any specific nuance of the event."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21867,
+                "output_tokens": 955,
+                "thinking_tokens": 10240,
+                "full_output_tokens": 11195
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0240537,
+                "output_cost": 0.004202,
+                "thinking_cost": 0.045056,
+                "full_output_cost": 0.049257999999999996
+            },
+            "total_costs": {
+                "total_input_cost": 0.0240537,
+                "total_output_cost": 0.004202,
+                "total_thinking_cost": 0.045056,
+                "total_full_output_cost": 0.049257999999999996,
+                "full_total_cost": 0.0733117
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.6834557056427,
+                    3.832139492034912
+                ],
+                "answer_generation_durations": [
+                    3.017848491668701,
+                    2.727963447570801
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.858511447906494,
+                    5.114518880844116
+                ],
+                "answer_generation_durations": [
+                    4.112666606903076,
+                    2.167677879333496
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.426238775253296,
+                    6.703235387802124
+                ],
+                "answer_generation_durations": [
+                    3.1506173610687256,
+                    4.372943878173828
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.4332897663116455,
+                    7.078445672988892
+                ],
+                "answer_generation_durations": [
+                    4.332454204559326,
+                    2.2955362796783447
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.755069017410278,
+                    6.006936550140381
+                ],
+                "answer_generation_durations": [
+                    2.759432554244995,
+                    4.130255460739136
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you expect to reference an agenda or schedule when participating in this?",
+                "answer": "Yes, I\u2019d typically check the agenda beforehand to know what\u2019s coming up."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you typically take notes during this?",
+                "answer": "Yes, I usually take brief notes to capture the important points."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do you often get a chance to network with attendees from different organizations?",
+                "answer": "Yes, there are usually breaks or social sessions where you can mingle with folks from different organizations."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you usually attend presentations delivered by guest speakers during these?",
+                "answer": "Yes, I usually attend several sessions led by guest speakers."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are there usually Q&A sessions after the presentations?",
+                "answer": "Yes, presenters usually offer a brief Q&A session after their talks."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is there usually a registration or check-in process before it starts?",
+                "answer": "Yes, there\u2019s usually a check-in desk where you pick up your badge and program materials beforehand."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are there breakout sessions that run concurrently on different topics?",
+                "answer": "Yes, there are usually multiple parallel sessions focusing on different topics."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is there typically a keynote address delivered by a prominent speaker during this?",
+                "answer": "Yes, there\u2019s usually a keynote delivered by a notable speaker to kick things off."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there usually vendor booths or exhibition areas set up alongside the sessions?",
+                "answer": "Yes, there\u2019s usually an exhibition hall with vendor booths and demo stations alongside the sessions."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are there usually panel discussions featuring multiple experts on a single topic?",
+                "answer": "Yes, there are typically panel sessions where several experts discuss a single topic."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their reference to \u2018demo stations\u2019 alongside vendor booths feels more like an expo/trade-show than a typical conference setup.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the spy because their responses about agendas and check-ins felt overly formulaic and lacked the nuanced detail a true insider would provide.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their mention of \u2018demo stations\u2019 seemed more fitting for a trade show than a conference, suggesting they might not truly know what event we\u2019re discussing.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers\u2014about just taking notes and having parallel sessions\u2014could apply to many meetings or workshops, whereas everyone else referenced more conference-specific elements like badges, vendor booths, keynotes, and panel discussions.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because they gave an unusually specific detail about picking up badges and program materials, which felt like an attempt to sound overly authoritative.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21876,
+                "output_tokens": 949,
+                "thinking_tokens": 10624,
+                "full_output_tokens": 11573
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0240636,
+                "output_cost": 0.0041756,
+                "thinking_cost": 0.046745600000000005,
+                "full_output_cost": 0.05092120000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.0240636,
+                "total_output_cost": 0.0041756,
+                "total_thinking_cost": 0.046745600000000005,
+                "total_full_output_cost": 0.05092120000000001,
+                "full_total_cost": 0.0749848
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.6131651401519775,
+                    7.149019956588745
+                ],
+                "answer_generation_durations": [
+                    4.636294603347778,
+                    3.319652557373047
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.614182233810425,
+                    4.181606292724609
+                ],
+                "answer_generation_durations": [
+                    3.1177098751068115,
+                    3.2008650302886963
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.4794111251831055,
+                    5.811208724975586
+                ],
+                "answer_generation_durations": [
+                    2.485170602798462,
+                    2.8641958236694336
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.7671144008636475,
+                    6.768485069274902
+                ],
+                "answer_generation_durations": [
+                    4.252827882766724,
+                    2.4692089557647705
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.688059091567993,
+                    7.093236923217773
+                ],
+                "answer_generation_durations": [
+                    2.819610118865967,
+                    3.5331618785858154
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this something you would typically find inside a house?",
+                "answer": "No, you wouldn't typically find it inside a house."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this typically involve a large group of people coming together?",
+                "answer": "Yes, it typically involves a large gathering of people."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is this something that is typically scheduled on a regular basis, such as annually?",
+                "answer": "Yes, many are held on a regular schedule, often annually, though timing can vary."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it often include formal presentations or talks led by subject-matter experts?",
+                "answer": "Yes, they often feature formal presentations or talks led by subject-matter experts."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you say that networking among attendees is a major component of this activity?",
+                "answer": "Yes, networking is a significant component of such events."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this activity typically include vendor booths or an exhibition hall for product demonstrations?",
+                "answer": "Yes, they often include vendor booths or an exhibition hall for product demonstrations."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does attending this activity usually require participants to pay a registration fee?",
+                "answer": "Yes, participants typically pay a registration fee to attend."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this activity commonly span multiple days rather than being a single-day event?",
+                "answer": "Yes, they often run over multiple days to accommodate various sessions and activities."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do participants usually receive printed materials such as a schedule or guide at the start of the event?",
+                "answer": "Yes, participants typically receive printed schedules or guides at the start of the event."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do participants typically wear name badges or identifiable lanyards?",
+                "answer": "Yes, participants almost always wear name badges or identifiable lanyards."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because they were the only one to answer \u2018No\u2019 about finding it inside a house, which makes their responses stand out from the rest.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their brief, unqualified \u201cYes\u201d answers to nuanced questions felt overly generic and seem like someone trying too hard to blend in.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their very first answer simply mirrored the question word-for-word (\u2018you wouldn\u2019t typically\u2026\u2019) instead of offering the deeper nuance that the other detectives provided.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their dismissal of any in\u2010house setting was overly absolute compared to everyone else\u2019s more nuanced replies, suggesting they might not truly understand the context.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their answer about scheduling was hedged (\u201cthough timing can vary\u201d), which seems like an attempt to blend in without real confidence about the core details.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21193,
+                "output_tokens": 899,
+                "thinking_tokens": 11712,
+                "full_output_tokens": 12611
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0233123,
+                "output_cost": 0.0039556,
+                "thinking_cost": 0.051532800000000004,
+                "full_output_cost": 0.05548840000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.0233123,
+                "total_output_cost": 0.0039556,
+                "total_thinking_cost": 0.051532800000000004,
+                "total_full_output_cost": 0.05548840000000001,
+                "full_total_cost": 0.0788007
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    15.437007188796997,
+                    7.326030731201172
+                ],
+                "answer_generation_durations": [
+                    3.970532178878784,
+                    7.455854415893555
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.535349130630493,
+                    7.139369964599609
+                ],
+                "answer_generation_durations": [
+                    4.199841737747192,
+                    2.7333669662475586
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    10.335609197616577,
+                    3.597933053970337
+                ],
+                "answer_generation_durations": [
+                    5.385488748550415,
+                    2.403576374053955
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.037400007247925,
+                    4.551000595092773
+                ],
+                "answer_generation_durations": [
+                    3.642725944519043,
+                    3.249424695968628
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.956079721450806,
+                    11.078850746154785
+                ],
+                "answer_generation_durations": [
+                    3.6973679065704346,
+                    3.3590919971466064
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would people typically need to register in advance in order to participate?",
+                "answer": "Yes, you typically need to register in advance to secure a spot."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this typically span multiple days?",
+                "answer": "Yes, it usually spans several days."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this typically take place indoors?",
+                "answer": "Yes, most of it takes place indoors."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are meals often provided as part of the event?",
+                "answer": "Yes, meals or snacks are often included for attendees."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically involve formal presentations or talks led by speakers?",
+                "answer": "Yes, there are usually scheduled sessions where speakers present their topics."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does the event typically include scheduled networking sessions?",
+                "answer": "Yes, there are usually dedicated networking sessions built into the schedule."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are attendees typically provided with name tags or identification badges upon entry?",
+                "answer": "Yes, attendees are typically issued identification badges or name tags when they arrive."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are there usually vendor booths or exhibition areas set up for attendees to visit?",
+                "answer": "Yes, there are usually vendor booths or exhibition areas set up for attendees to visit."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do attendees often receive printed materials like programs or brochures?",
+                "answer": "Yes, attendees typically receive printed programs or brochures outlining the schedule and key information."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are there usually smaller breakout sessions or workshops held in addition to the main presentations?",
+                "answer": "Yes, there are typically smaller breakout sessions or workshops alongside the main presentations."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their answers about spanning several days and providing badges were unusually detailed yet generic, as if they were trying too hard to fit in.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they hedged with \u2018most of it takes place indoors\u2019 instead of a straightforward affirmation, which seems like an uncertainty slip rather than a detective\u2019s confident knowledge of the secret word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because they repeatedly emphasized generic amenities like meals and brochures\u2014which feels like vague filler rather than specific insight into the event.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because emphasizing printed brochures feels like a generic guess rather than actual insider knowledge about our secret word.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their line of questioning about vendor booths and printed materials felt overly generic and could apply to many events, not specifically a conference.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "detectives",
+        "spy": 3,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23799,
+                "output_tokens": 1015,
+                "thinking_tokens": 9728,
+                "full_output_tokens": 10743
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0261789,
+                "output_cost": 0.004466,
+                "thinking_cost": 0.0428032,
+                "full_output_cost": 0.0472692
+            },
+            "total_costs": {
+                "total_input_cost": 0.0261789,
+                "total_output_cost": 0.004466,
+                "total_thinking_cost": 0.0428032,
+                "total_full_output_cost": 0.0472692,
+                "full_total_cost": 0.0734481
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.462578058242798,
+                    14.857142686843872
+                ],
+                "answer_generation_durations": [
+                    3.1680593490600586,
+                    2.372563600540161
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.74838399887085,
+                    7.082946300506592
+                ],
+                "answer_generation_durations": [
+                    2.688568115234375,
+                    3.0503931045532227
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.066570520401001,
+                    2.751664161682129
+                ],
+                "answer_generation_durations": [
+                    3.6938467025756836,
+                    3.5439555644989014
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    8.107399225234985,
+                    6.005161762237549
+                ],
+                "answer_generation_durations": [
+                    4.022141218185425,
+                    3.431626558303833
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.366804838180542,
+                    6.572809457778931
+                ],
+                "answer_generation_durations": [
+                    4.2004594802856445,
+                    3.3474040031433105
+                ]
+            }
+        },
+        "spy_guess": "conference",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this something that usually requires substantial advance planning, or can it be arranged at short notice?",
+                "answer": "It usually takes considerable advance planning, though smaller occasions can sometimes be arranged quickly."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you expect people to dress formally, or is casual attire more typical?",
+                "answer": "Typically attendees opt for formal wear, though certain gatherings might permit business casual."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you expect this to take place primarily indoors, outdoors, or a mix of the two?",
+                "answer": "It tends to be a mix, with the ceremony held outdoors and the reception hosted indoors."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do guests typically bring or exchange gifts as part of this event?",
+                "answer": "Not typically; though attendees often exchange business cards or promotional materials."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do attendees typically stay overnight in nearby accommodations, or do most return home the same day?",
+                "answer": "Most participants stay overnight given the multi-day schedule, although some local attendees commute home each day."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it common for participants to attend multiple sessions on different topics over the course of the event?",
+                "answer": "Yes, it\u2019s quite typical for participants to attend several sessions on diverse topics throughout the event."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you expect this gathering to make extensive use of audiovisual equipment like projectors and microphones?",
+                "answer": "Yes, attendees often rely heavily on projectors, microphones, and other AV equipment to facilitate presentations and discussions."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you expect a keynote address or featured speaker at this gathering?",
+                "answer": "Yes, there\u2019s usually a featured keynote speaker to open the proceedings."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the event typically include scheduled networking sessions or informal social gatherings for attendees?",
+                "answer": "Yes, there are scheduled networking events like coffee breaks and poster sessions, along with informal evening mixers."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are meals or catering typically provided for attendees, or do they arrange their own meals separately?",
+                "answer": "Most large gatherings include catered meals and refreshments, though attendees sometimes explore nearby eateries for additional dining."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI believe player_3 is the spy because their reference to an outdoor \u2018ceremony\u2019 and indoor \u2018reception\u2019 fits a wedding scenario, not a conference.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their description of an outdoor ceremony and indoor reception fits a wedding, not a conference.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because referring to an outdoor \u2018ceremony\u2019 and indoor \u2018reception\u2019 sounds like a wedding, not a conference.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their detailed focus on business cards and promotional materials instead of any traditional gifts felt oddly specific and out of step with the rest of the group\u2019s broader descriptions.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\u201cI believe player_3 is the spy because their description of an outdoor \u2018ceremony\u2019 and indoor \u2018reception\u2019 aligns more with a wedding than a conference.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21948,
+                "output_tokens": 956,
+                "thinking_tokens": 11456,
+                "full_output_tokens": 12412
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.024142800000000002,
+                "output_cost": 0.0042064,
+                "thinking_cost": 0.050406400000000004,
+                "full_output_cost": 0.0546128
+            },
+            "total_costs": {
+                "total_input_cost": 0.024142800000000002,
+                "total_output_cost": 0.0042064,
+                "total_thinking_cost": 0.050406400000000004,
+                "total_full_output_cost": 0.0546128,
+                "full_total_cost": 0.07875560000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.225048542022705,
+                    8.769436359405518
+                ],
+                "answer_generation_durations": [
+                    2.8460748195648193,
+                    3.6430323123931885
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    16.724156379699707,
+                    4.748363494873047
+                ],
+                "answer_generation_durations": [
+                    2.922461986541748,
+                    4.813416481018066
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.436256647109985,
+                    6.68570876121521
+                ],
+                "answer_generation_durations": [
+                    3.6032443046569824,
+                    3.2392773628234863
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.803173065185547,
+                    4.570983409881592
+                ],
+                "answer_generation_durations": [
+                    11.044501781463623,
+                    4.664656639099121
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.630368947982788,
+                    5.215325593948364
+                ],
+                "answer_generation_durations": [
+                    3.670637845993042,
+                    2.675400733947754
+                ]
+            }
+        },
+        "spy_guess": "conference",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this typically a multi-day affair or contained within a single day?",
+                "answer": "It typically spans multiple days."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do participants typically need to register in advance to attend?",
+                "answer": "Yes, advance sign-up is generally required to help organizers manage capacity and logistics."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are meals or breaks typically scheduled as part of the event?",
+                "answer": "Yes, there are usually scheduled breaks for meals and refreshments throughout the event."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the event usually feature keynote speakers or presentations?",
+                "answer": "Yes, the program usually includes keynote addresses and presentations."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does the event typically include smaller breakout sessions or workshops in addition to the main presentations?",
+                "answer": "Yes, it\u2019s common to have specialized breakout sessions and workshops alongside the main presentations."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Are there typically structured networking sessions for participants outside of the main presentations?",
+                "answer": "Yes, there are usually designated networking sessions, such as coffee breaks or informal meet-and-greet periods."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is there typically an exhibition hall or vendor area where organizations showcase their offerings?",
+                "answer": "Yes, many events include an exhibition area where vendors and organizations set up booths to showcase their offerings."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do participants usually receive a program booklet or digital agenda to guide them through the event?",
+                "answer": "Yes, attendees typically receive a program booklet or digital agenda outlining the sessions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are evening receptions or social gatherings typically organized as part of the event schedule?",
+                "answer": "Yes, evening receptions or social gatherings are often included to encourage informal networking."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do attendees usually wear name badges or lanyards for identification during the event?",
+                "answer": "Yes, attendees almost always wear name badges or lanyards to ensure easy identification throughout the event."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their responses have been notably generic and lacked the specific context clues that the other players\u2019 answers provided.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answer about registration brought up \u2018capacity and logistics\u2019 in a way that feels overly generic and not specific to a conference setting.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I think player_3 is the spy because their answers were very generic and lacked the specific details (like workshop names or session structures) that real attendees would know about a conference.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their overly formal, logistics-focused answers stood out compared to the more natural event descriptions from the others.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\u201cI\u2019m suspicious because their very first reply broke the pattern\u2014avoiding a simple \u2018Yes\u2019 and using an odd phrasing\u2014which might be a sign of someone faking familiarity.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22478,
+                "output_tokens": 976,
+                "thinking_tokens": 9024,
+                "full_output_tokens": 10000
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.024725800000000003,
+                "output_cost": 0.0042944,
+                "thinking_cost": 0.0397056,
+                "full_output_cost": 0.044
+            },
+            "total_costs": {
+                "total_input_cost": 0.024725800000000003,
+                "total_output_cost": 0.0042944,
+                "total_thinking_cost": 0.0397056,
+                "total_full_output_cost": 0.044,
+                "full_total_cost": 0.0687258
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.900561094284058,
+                    9.522617816925049
+                ],
+                "answer_generation_durations": [
+                    2.478078603744507,
+                    3.246755361557007
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.392449855804443,
+                    5.261731147766113
+                ],
+                "answer_generation_durations": [
+                    3.6890313625335693,
+                    2.7365379333496094
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.284552574157715,
+                    6.060788869857788
+                ],
+                "answer_generation_durations": [
+                    3.2220304012298584,
+                    4.036813735961914
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.757775068283081,
+                    4.2912917137146
+                ],
+                "answer_generation_durations": [
+                    3.01611065864563,
+                    3.8950679302215576
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.391201734542847,
+                    7.788506984710693
+                ],
+                "answer_generation_durations": [
+                    2.328906774520874,
+                    3.7089462280273438
+                ]
+            }
+        },
+        "spy_guess": "conference",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do participants typically follow a pre-planned schedule during this event?",
+                "answer": "Yes, there\u2019s usually a structured agenda, though it can shift slightly if sessions run long."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this event usually include planned networking opportunities among attendees?",
+                "answer": "Yes, there are typically designated time slots or social sessions set aside specifically for attendees to network."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is there often a central registration or check-in process before the event activities begin?",
+                "answer": "Yes, there\u2019s typically a central check-in desk where participants register and pick up materials before activities start."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there usually keynote speakers or featured presenters at this event?",
+                "answer": "Yes, this event often includes keynote speakers or featured presenters."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this event typically include breakout sessions or smaller workshops alongside the main program?",
+                "answer": "Yes, there are usually parallel breakout sessions or smaller workshops scheduled alongside the main program."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this event typically feature exhibitor booths or vendor displays for attendees to explore?",
+                "answer": "Yes, there are usually exhibitor booths or vendor displays set up for attendees to explore."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do attendees typically wear name badges or identification lanyards throughout the event?",
+                "answer": "Yes, attendees typically wear name badges or lanyards for identification throughout the event."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this event typically include scheduled breaks for meals or refreshments?",
+                "answer": "Yes, there are usually scheduled breaks for refreshments and meals."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is there usually an official event app or digital platform for attendees to access schedules and information?",
+                "answer": "Yes, there\u2019s usually an official app or online platform where attendees can view agendas, session details, and speaker information."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there usually a closing ceremony or wrap-up session at the end of the event?",
+                "answer": "Yes, there\u2019s usually a closing ceremony or wrap-up session to recap highlights and officially conclude the event."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their responses were more generic and lacked the scheduling details and nuance that the others included.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their description of the closing ceremony was unusually detailed and sounded like they were overcompensating to appear authoritative about the event.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers felt more generic and lacked the small nuances about how things actually run\u2014unlike the other players who added concrete details.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I suspect player_2 because their answers were uniformly generic and lacked the little qualifiers or examples that genuine attendees usually offer when describing event features."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their emphasis on exhibitor booths and vendor displays feels more specific to a trade show than a general conference, which could indicate they\u2019re guessing rather than drawing on shared knowledge.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 24555,
+                "output_tokens": 1139,
+                "thinking_tokens": 13120,
+                "full_output_tokens": 14259
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0270105,
+                "output_cost": 0.005011600000000001,
+                "thinking_cost": 0.057728,
+                "full_output_cost": 0.0627396
+            },
+            "total_costs": {
+                "total_input_cost": 0.0270105,
+                "total_output_cost": 0.005011600000000001,
+                "total_thinking_cost": 0.057728,
+                "total_full_output_cost": 0.0627396,
+                "full_total_cost": 0.0897501
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.90646481513977,
+                    5.302369832992554
+                ],
+                "answer_generation_durations": [
+                    3.321739435195923,
+                    6.396543741226196
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.829951524734497,
+                    5.214164733886719
+                ],
+                "answer_generation_durations": [
+                    6.165079116821289,
+                    4.098585605621338
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.517565965652466,
+                    5.194504499435425
+                ],
+                "answer_generation_durations": [
+                    6.332809925079346,
+                    3.610852003097534
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    11.0722017288208,
+                    9.040152072906494
+                ],
+                "answer_generation_durations": [
+                    6.038776397705078,
+                    4.6766908168792725
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.900089979171753,
+                    22.179921865463257
+                ],
+                "answer_generation_durations": [
+                    3.5629467964172363,
+                    5.121456861495972
+                ]
+            }
+        },
+        "spy_guess": "conference",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When attending an event with multiple activities lined up, how do you allocate your attention among them?",
+                "answer": "I prioritize the most relevant activities first, engage with them fully, and then rotate through the rest to get an overview."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When participating in a day filled with back-to-back talks, do you take notes to recall key points or rely on follow-up resources afterward?",
+                "answer": "I take concise notes during each session and then revisit slide decks or recordings afterward to fill in any gaps."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "If a keynote speaker cancels at the last minute, how do you fill that unexpected opening in your schedule?",
+                "answer": "I\u2019d open it up for an impromptu group discussion or swing by nearby booths to explore related resources."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When two sessions you want to attend are scheduled at the same time, how do you decide which one to join?",
+                "answer": "I compare their objectives and pick the one most relevant to my goals, then follow up on the other through notes or peer discussions."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "After a session ends, do you prefer to approach the speaker immediately with questions or reflect on the material first and follow up later?",
+                "answer": "I usually take a moment to reflect and refine my questions before seeking out the speaker afterward."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When networking spontaneously during breaks, how do you balance casual conversation with professional goals?",
+                "answer": "I start with light, friendly chatter to build rapport, then segue into discussing shared interests and goals to keep it both casual and purposeful."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When an event includes workshops that require pre-registration alongside walk-in panels, how do you decide which to reserve in advance and which to attend spontaneously?",
+                "answer": "I pre-register for workshops with limited capacity or specialized content, and leave the more general panels for spontaneous walk-in attendance."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do you incorporate breaks or downtime into a packed schedule to maintain your energy and focus?",
+                "answer": "I schedule brief five-minute breaks between sessions to step away, stretch, and clear my head before diving into the next talk."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "If a session deviates from its described format and becomes more interactive than expected, how do you adjust your participation strategy?",
+                "answer": "I\u2019d pivot from listening to contributing by asking focused questions and offering relevant examples to keep the conversation moving."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When walking the exhibitor hall, how do you decide which booths to visit when you\u2019re pressed for time?",
+                "answer": "I skim booth descriptions to pick those most aligned with my goals first, then if time permits, I circle back to explore the others more briefly."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their answers stayed overly generic\u2014unlike others who referenced \u2018sessions,\u2019 \u2018booths,\u2019 or \u2018slide decks,\u2019 they never used any conference-specific terms.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their suggestion of impromptu group discussions to fill a keynote gap, along with the unusually specific five-minute break detail, feels more contrived than the other, more personal strategies.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "I believe player_4 is the spy because their answers are unusually generic and lack the conference-specific details (workshops, booths, slides, speakers) that everyone else mentions."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answers frequently pivoted to visiting nearby booths rather than engaging with session content\u2014an odd diversion that may mask their lack of true insight.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their answers have been surprisingly generic and lack the specific conference-related details that everyone else is weaving in.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "conference",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21355,
+                "output_tokens": 908,
+                "thinking_tokens": 10368,
+                "full_output_tokens": 11276
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0234905,
+                "output_cost": 0.0039952,
+                "thinking_cost": 0.045619200000000006,
+                "full_output_cost": 0.0496144
+            },
+            "total_costs": {
+                "total_input_cost": 0.0234905,
+                "total_output_cost": 0.0039952,
+                "total_thinking_cost": 0.045619200000000006,
+                "total_full_output_cost": 0.0496144,
+                "full_total_cost": 0.0731049
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.675921440124512,
+                    6.406494617462158
+                ],
+                "answer_generation_durations": [
+                    9.208799839019775,
+                    2.2020063400268555
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.202383756637573,
+                    3.510957956314087
+                ],
+                "answer_generation_durations": [
+                    3.1889538764953613,
+                    3.95231032371521
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.043614625930786,
+                    5.853178977966309
+                ],
+                "answer_generation_durations": [
+                    3.313056707382202,
+                    2.3982136249542236
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    8.520721435546875,
+                    7.100385665893555
+                ],
+                "answer_generation_durations": [
+                    4.873915910720825,
+                    3.0091371536254883
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    14.827862977981567,
+                    2.9876837730407715
+                ],
+                "answer_generation_durations": [
+                    6.005961179733276,
+                    5.4399354457855225
+                ]
+            }
+        },
+        "spy_guess": "conference",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you typically find multiple separate sessions or presentations associated with this?",
+                "answer": "Yes, there are usually multiple distinct sessions or presentations."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would attendees usually need to register in advance to participate?",
+                "answer": "Yes, attendees typically register beforehand to confirm their participation."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do participants often travel from outside the local area to attend?",
+                "answer": "Yes, many attendees travel from other cities to join."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is the event typically spread over more than one day?",
+                "answer": "Yes, it often extends across multiple days."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there usually an opportunity for attendees to network or socialize informally?",
+                "answer": "Yes, attendees often have designated periods for informal networking."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do attendees typically wear identification badges or lanyards during this event?",
+                "answer": "Yes, attendees usually wear identification badges or lanyards."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is there often a keynote speaker or featured presentation to open the event?",
+                "answer": "Yes, events often begin with a keynote speaker or featured presentation."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is there usually an official program or agenda provided to attendees?",
+                "answer": "Yes, attendees usually receive an official agenda detailing the sessions and timings."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do sessions often run simultaneously in different rooms or tracks?",
+                "answer": "Yes, it\u2019s common for multiple sessions to run in parallel in different rooms."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do sponsors often set up booths or displays at this event?",
+                "answer": "Yes, sponsors usually set up booths or displays at the event."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 is the spy because their answer about the event almost always starting with a keynote felt too generic and overly confident, lacking the nuanced understanding a real insider would have.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their answers have felt overly precise\u2014mirroring the question\u2019s wording too closely\u2014which makes me think they\u2019re guessing rather than speaking from real experience.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because mentioning sponsors setting up booths or displays feels more like a trade show than a typical conference.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their questions and answers were extremely generic\u2014focused only on broad logistics\u2014and lacked any subtle insight that a real detective would hint at.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their phrasing felt overly formal and generic\u2014\u2018register beforehand to confirm their participation\u2019 seems like filler rather than firsthand knowledge of the event.\u201d"
+            }
+        ]
+    }
+]

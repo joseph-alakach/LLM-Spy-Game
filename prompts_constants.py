@@ -56,7 +56,7 @@ You are a **Detective**. Your goal is to expose the **Spy** — without giving a
 - The Spy does **not** — they’ll try to blend in and guess the secret word.
 
 ## How to Play:
-- Ask questions related to the secret word but it should be vague in order to not give away the secret word to the spy — **not too obvious**.
+- Ask questions related to the secret word but its important that the question does not give away what might the secret word be, as the spy could use it to deduct the secret word.
 - Give answers that are relevant to the secret word but be careful, as the spy could use it to find out the secret word.
 - Watch for off-topic responses, or responses that do not align with the secret word — those might be the Spy!
 - Use other players' questions and answers to find out who is the spy, as the questions and answers show the players' knowledge of the secret word.

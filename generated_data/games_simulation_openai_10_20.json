@@ -1,0 +1,1872 @@
+[
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23360,
+                "output_tokens": 1048,
+                "thinking_tokens": 11200,
+                "full_output_tokens": 12248
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.025696,
+                "output_cost": 0.0046112,
+                "thinking_cost": 0.049280000000000004,
+                "full_output_cost": 0.05389120000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.025696,
+                "total_output_cost": 0.0046112,
+                "total_thinking_cost": 0.049280000000000004,
+                "total_full_output_cost": 0.05389120000000001,
+                "full_total_cost": 0.07958720000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.54938817024231,
+                    5.986861705780029
+                ],
+                "answer_generation_durations": [
+                    4.373866319656372,
+                    4.09062647819519
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.36837363243103,
+                    5.472572326660156
+                ],
+                "answer_generation_durations": [
+                    3.794063091278076,
+                    4.366314172744751
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.767174005508423,
+                    6.9729766845703125
+                ],
+                "answer_generation_durations": [
+                    2.512147903442383,
+                    2.4298453330993652
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.095439195632935,
+                    6.868247985839844
+                ],
+                "answer_generation_durations": [
+                    2.928753137588501,
+                    6.512791156768799
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.33988356590271,
+                    6.540465831756592
+                ],
+                "answer_generation_durations": [
+                    5.33588171005249,
+                    4.488854169845581
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When learning new material, do you focus more on memorizing facts or on understanding the emotions behind it?",
+                "answer": "I tend to focus on understanding the emotions behind it, since that helps me truly absorb and internalize the material."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When tackling a complex problem, do you prefer to plan every step in advance or adapt your approach spontaneously?",
+                "answer": "I generally outline key steps ahead of time but stay flexible to adjust tactics as I go."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When trying to remember something, do you rely more on pictures in your mind or on verbal descriptions?",
+                "answer": "I rely more on pictures in my mind."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When coordinating a group effort, do you prefer to assign specific roles to each person or let everyone contribute where they see fit?",
+                "answer": "I prefer to assign specific roles so everyone knows their responsibilities."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When preparing to speak in public, do you prefer to memorize your script word-for-word or use bullet points and speak more freely?",
+                "answer": "I prefer to use bullet points and speak more freely rather than memorizing every word."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When you\u2019re in a new environment, do you prefer to observe quietly at first or jump in and interact quickly?",
+                "answer": "I usually observe quietly at first to get a sense of the situation before engaging."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When planning your leisure activities, do you prefer a structured itinerary or lots of free time to decide on the spot?",
+                "answer": "I like having a loose plan outlining key activities but leaving plenty of free time to explore spontaneously."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When making a decision, do you trust your intuition or rely on detailed analysis?",
+                "answer": "I trust my intuition."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When working on a creative project, do you prefer to focus intensely on one element at a time or to experiment with multiple elements simultaneously?",
+                "answer": "I prefer to focus intensely on one element at a time."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When receiving constructive feedback, do you prefer it to be direct and specific or gentle and broad?",
+                "answer": "I prefer direct and specific feedback so I can clearly understand what to improve."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers about assigning roles and focusing on one element feel director-oriented rather than actor-oriented, which doesn\u2019t align with the secret word.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because they slipped in the word \u201croles\u201d in their answer\u2014too on the nose for someone who shouldn\u2019t know the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers were overly structured and precise on both coordination and creative projects, which feels like deflection rather than the subtlety I\u2019d expect from a genuine detective.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because they said they prefer using bullet points rather than memorizing a script word-for-word\u2014something an actor would almost certainly do if the secret word is 'actor.'\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their preference for using bullet points rather than memorizing word-for-word doesn\u2019t align with the deep script memorization an actor would rely on.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22958,
+                "output_tokens": 999,
+                "thinking_tokens": 12672,
+                "full_output_tokens": 13671
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0252538,
+                "output_cost": 0.0043956,
+                "thinking_cost": 0.0557568,
+                "full_output_cost": 0.0601524
+            },
+            "total_costs": {
+                "total_input_cost": 0.0252538,
+                "total_output_cost": 0.0043956,
+                "total_thinking_cost": 0.0557568,
+                "total_full_output_cost": 0.0601524,
+                "full_total_cost": 0.0854062
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.9176719188690186,
+                    13.535613059997559
+                ],
+                "answer_generation_durations": [
+                    3.2013511657714844,
+                    11.917054176330566
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.979904413223267,
+                    11.339702367782593
+                ],
+                "answer_generation_durations": [
+                    2.291853904724121,
+                    3.839604616165161
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.750986337661743,
+                    3.6007206439971924
+                ],
+                "answer_generation_durations": [
+                    2.8885691165924072,
+                    5.595982313156128
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.399193525314331,
+                    8.47801685333252
+                ],
+                "answer_generation_durations": [
+                    5.789013385772705,
+                    3.1546247005462646
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.44029426574707,
+                    8.139944076538086
+                ],
+                "answer_generation_durations": [
+                    6.037465333938599,
+                    10.708567380905151
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does your work typically involve a lot of physical movement?",
+                "answer": "It varies\u2014some days I\u2019m on my feet and quite active, while other days I\u2019m more stationary."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do you often work as part of a team, or do you usually work independently?",
+                "answer": "I usually collaborate with a small team, but I also handle certain tasks independently when needed."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do you find yourself spending more of your workday on problem-solving or on routine tasks?",
+                "answer": "I spend most of my day on problem-solving, though there are still some routine tasks that come up regularly."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you need to adjust your tone or style when interacting with different people?",
+                "answer": "Absolutely\u2014I adapt my tone and style depending on the audience and situation."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you frequently need to memorize large amounts of information for your work?",
+                "answer": "Yes, I regularly have to memorize chunks of information, though I often refer back to notes when possible."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you often need to research background information to accurately prepare for your work tasks?",
+                "answer": "Yes, I regularly look into relevant background details and context to prepare, though I also work off summaries and notes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do you often have to travel to different locations for your work?",
+                "answer": "Yes, I often travel to meet with clients or visit sites, though I can handle many tasks remotely."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do you typically work under strict deadlines, or do you have a more flexible schedule?",
+                "answer": "I mostly work under strict deadlines\u2014shoot and performance schedules are tightly planned, with only occasional flexibility during rehearsals."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you need to wear specialized clothing or a uniform as part of your work?",
+                "answer": "No, I don\u2019t have a uniform\u2014I just wear whatever\u2019s appropriate for the setting."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you use any specialized tools or equipment regularly in your work?",
+                "answer": "Yes, I frequently use specialized equipment such as sound\u2010recording devices, reference screens, and handheld aids."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI believe player_2 is the spy because mentioning travel to meet \u2018clients\u2019 and handling tasks remotely doesn\u2019t fit with the actor context.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\u201cI believe player_0 is the spy because their mention of regularly using sound\u2010recording devices and reference screens sounds more like film crew equipment than tools an actor would use.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their mention of \u2018shoot and performance schedules\u2019 felt unusually specific\u2014almost like a hidden clue pointing toward the secret word.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their mention of routinely using sound\u2010recording devices and technical equipment doesn\u2019t fit an actor\u2019s typical tools.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their claim of regularly using sound\u2010recording devices and reference screens doesn\u2019t align with an actor\u2019s typical tools.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21022,
+                "output_tokens": 913,
+                "thinking_tokens": 16768,
+                "full_output_tokens": 17681
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0231242,
+                "output_cost": 0.0040172,
+                "thinking_cost": 0.0737792,
+                "full_output_cost": 0.0777964
+            },
+            "total_costs": {
+                "total_input_cost": 0.0231242,
+                "total_output_cost": 0.0040172,
+                "total_thinking_cost": 0.0737792,
+                "total_full_output_cost": 0.0777964,
+                "full_total_cost": 0.1009206
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.278615474700928,
+                    9.164346933364868
+                ],
+                "answer_generation_durations": [
+                    4.799339771270752,
+                    12.683685302734375
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.926281213760376,
+                    8.909346103668213
+                ],
+                "answer_generation_durations": [
+                    3.287020683288574,
+                    3.9893176555633545
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    20.59208583831787,
+                    7.4250969886779785
+                ],
+                "answer_generation_durations": [
+                    4.147087812423706,
+                    2.5021002292633057
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.044376850128174,
+                    5.602189779281616
+                ],
+                "answer_generation_durations": [
+                    4.271690607070923,
+                    4.274383306503296
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    15.609742164611816,
+                    21.13093900680542
+                ],
+                "answer_generation_durations": [
+                    2.545340061187744,
+                    6.880270719528198
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this more commonly found indoors or outdoors?",
+                "answer": "More commonly found indoors."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something that tends to vary greatly from one instance to another?",
+                "answer": "Yes, they can differ quite a bit from one to another."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it a living being?",
+                "answer": "Yes, it is a living being."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it commonly a profession that people pursue?",
+                "answer": "Yes, it\u2019s commonly pursued as a career."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Can it typically be performed remotely, or does it require being on-site?",
+                "answer": "While remote options exist, it generally requires being on-site."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it something people typically seek out regularly, or only when the need arises?",
+                "answer": "Typically only when there\u2019s a specific need, rather than on a regular basis."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it usually involve collaborating closely with others on tasks?",
+                "answer": "Yes, it typically involves collaborating closely with others."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the role commonly involve creative expression as a significant component?",
+                "answer": "Yes, creative expression is often a central aspect of the role."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this profession typically require specialized tools or equipment?",
+                "answer": "Yes, it often requires specialized tools or equipment."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this profession usually involve performing live in front of an audience?",
+                "answer": "Yes, it typically involves performing live in front of an audience."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I suspect player_1 because their answers about being \u201cmore commonly found indoors\u201d and only sought \u201cwhen the need arises\u201d felt oddly off compared to the rest who consistently pointed to a live, on-site performing profession."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answer about requiring specialized tools felt too generic for an actor and didn\u2019t show the nuance we\u2019d expect from someone who knows the secret word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because they insisted that an actor \u2018typically performs live in front of an audience,\u2019 which doesn\u2019t fit the many screen\u2010based acting roles that don\u2019t involve a live audience.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their emphasis on needing \u2018specialized tools or equipment\u2019 doesn\u2019t quite fit an actor\u2019s role and felt unusually generic.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the spy because saying this profession is only sought \u201cwhen there\u2019s a specific need\u201d sounds more like a service (e.g., doctors or trades) than an actor.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21902,
+                "output_tokens": 949,
+                "thinking_tokens": 18176,
+                "full_output_tokens": 19125
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0240922,
+                "output_cost": 0.0041756,
+                "thinking_cost": 0.0799744,
+                "full_output_cost": 0.08415
+            },
+            "total_costs": {
+                "total_input_cost": 0.0240922,
+                "total_output_cost": 0.0041756,
+                "total_thinking_cost": 0.0799744,
+                "total_full_output_cost": 0.08415,
+                "full_total_cost": 0.10824220000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.5835862159729,
+                    21.86878752708435
+                ],
+                "answer_generation_durations": [
+                    25.389344453811646,
+                    4.846665143966675
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.601261138916016,
+                    38.474438428878784
+                ],
+                "answer_generation_durations": [
+                    2.234060049057007,
+                    13.915162801742554
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    14.680314302444458,
+                    8.978662252426147
+                ],
+                "answer_generation_durations": [
+                    6.232851266860962,
+                    7.120850563049316
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    11.05632734298706,
+                    17.0000479221344
+                ],
+                "answer_generation_durations": [
+                    4.7555763721466064,
+                    2.66097354888916
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    12.67453145980835,
+                    4.67184591293335
+                ],
+                "answer_generation_durations": [
+                    15.370769739151001,
+                    3.1232986450195312
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you be more likely to encounter this in nature or in an urban environment?",
+                "answer": "You\u2019d be more likely to encounter this in an urban environment."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is specialized training or formal education typically required to engage with this?",
+                "answer": "No, it's not formally required, though many pursue training to develop their skills."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does engaging with this usually involve working closely with other people?",
+                "answer": "Yes, it typically involves working closely with others, though some parts can be done solo."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is this something that people typically learn through hands-on experience rather than through theoretical study?",
+                "answer": "Yes, it's primarily learned through practice and hands-on experience rather than theoretical study."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this activity typically require individuals to memorize information beforehand?",
+                "answer": "Yes, it usually requires memorizing key information in advance."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this activity typically rely heavily on verbal communication?",
+                "answer": "Yes, it often depends heavily on verbal communication."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this activity typically require the use of specialized tools or instruments?",
+                "answer": "No, it mainly relies on personal skills rather than specialized instruments."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does engaging in this activity often involve wearing costumes or specialized attire?",
+                "answer": "Yes, participants often wear specific outfits or costumes to suit their role or the setting."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this activity typically involve rehearsing multiple times before the main event?",
+                "answer": "Yes, it typically involves rehearsing multiple times before the main event."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is this activity commonly performed in front of a live audience?",
+                "answer": "Yes, it\u2019s commonly performed in front of a live audience."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because they said no specialized tools are typically required, but in a performance setting props and stage equipment are essential.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI believe player_3 is the spy because their answers were overly cautious and generic\u2014hedging about teamwork and solo parts suggests they\u2019re guessing rather than speaking from clear knowledge of the secret word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their overly cautious, nuanced answer about training\u2014\u2018no formal requirement but many pursue it\u2019\u2014seemed like a safe guess rather than genuine insider knowledge.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because saying this activity is \u2018commonly performed in front of a live audience\u2019 doesn\u2019t really fit all acting\u2014most actors work on film and TV without any live audience.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because insisting this is \u2018commonly performed in front of a live audience\u2019 feels more like public speaking than acting, which often happens on camera without an audience.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21504,
+                "output_tokens": 911,
+                "thinking_tokens": 19264,
+                "full_output_tokens": 20175
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.023654400000000003,
+                "output_cost": 0.0040084000000000005,
+                "thinking_cost": 0.0847616,
+                "full_output_cost": 0.08877
+            },
+            "total_costs": {
+                "total_input_cost": 0.023654400000000003,
+                "total_output_cost": 0.0040084000000000005,
+                "total_thinking_cost": 0.0847616,
+                "total_full_output_cost": 0.08877,
+                "full_total_cost": 0.11242440000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    14.669637441635132,
+                    5.086014270782471
+                ],
+                "answer_generation_durations": [
+                    6.842438459396362,
+                    4.076698541641235
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.028626441955566,
+                    12.576182842254639
+                ],
+                "answer_generation_durations": [
+                    2.5860190391540527,
+                    5.71066427230835
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.289313554763794,
+                    17.788471937179565
+                ],
+                "answer_generation_durations": [
+                    4.053548574447632,
+                    3.595926284790039
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.647058010101318,
+                    22.35191059112549
+                ],
+                "answer_generation_durations": [
+                    2.3557169437408447,
+                    4.208346366882324
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.63417673110962,
+                    9.437753438949585
+                ],
+                "answer_generation_durations": [
+                    4.837724447250366,
+                    2.9652631282806396
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you consider this to be a living thing?",
+                "answer": "No, I wouldn\u2019t consider it alive."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you say that specialized training is typically required to do this well?",
+                "answer": "Yes, I think you generally need some formal instruction or practice to do it well."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do practitioners of this often study examples by others to improve their skill?",
+                "answer": "Yes, examining and analyzing others\u2019 examples is a common way to hone one\u2019s technique."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do people often collaborate with others when doing this?",
+                "answer": "Yes, collaboration is quite common."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is this something that people typically perform in front of an audience?",
+                "answer": "Yes, people generally perform it in front of an audience."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do practitioners often wear specialized attire when performing this?",
+                "answer": "Yes, performers usually wear costumes or specific outfits appropriate for their roles."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it common for practitioners to memorize material as part of this activity?",
+                "answer": "Yes, practitioners typically need to memorize material as part of this activity."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is improvisation generally discouraged in this activity?",
+                "answer": "Yes, practitioners are generally expected to adhere to the prepared material rather than improvise."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do practitioners of this often rehearse extensively before performing?",
+                "answer": "Yes, extensive rehearsal is common practice before performing."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do practitioners typically work under the guidance of a director when engaging in this activity?",
+                "answer": "Yes, practitioners typically work under the guidance of a director."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their claim that improvisation is generally discouraged feels too absolute and may be an attempt to sound knowledgeable without knowing the actual activity.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were unusually generic\u2014never using any role- or director-specific language like the others did\u2014suggesting they\u2019re bluffing without knowing the word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their claim that improvisation is generally discouraged struck me as overly confident and not quite aligned with the subtleties of the secret word.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because they said the subject isn\u2019t alive when an actor is definitely a living person.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI think player_2\u2019s answers were unusually generic and hedged\u2014talking about \u2018formal instruction or practice\u2019 in broad terms rather than the specifics of acting\u2014so I suspect they\u2019re the Spy.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23216,
+                "output_tokens": 1045,
+                "thinking_tokens": 11200,
+                "full_output_tokens": 12245
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0255376,
+                "output_cost": 0.0045980000000000005,
+                "thinking_cost": 0.049280000000000004,
+                "full_output_cost": 0.053878
+            },
+            "total_costs": {
+                "total_input_cost": 0.0255376,
+                "total_output_cost": 0.0045980000000000005,
+                "total_thinking_cost": 0.049280000000000004,
+                "total_full_output_cost": 0.053878,
+                "full_total_cost": 0.0794156
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.393419027328491,
+                    5.945827007293701
+                ],
+                "answer_generation_durations": [
+                    4.972062349319458,
+                    7.24280047416687
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.668611288070679,
+                    6.0999603271484375
+                ],
+                "answer_generation_durations": [
+                    3.4551355838775635,
+                    3.8702809810638428
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.763447999954224,
+                    4.67045521736145
+                ],
+                "answer_generation_durations": [
+                    2.2813405990600586,
+                    3.4045159816741943
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.411876201629639,
+                    5.033571243286133
+                ],
+                "answer_generation_durations": [
+                    4.191533803939819,
+                    4.380303621292114
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.9199931621551514,
+                    11.926472187042236
+                ],
+                "answer_generation_durations": [
+                    5.521576166152954,
+                    3.369962692260742
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What tactic do you find most effective when you need to capture a crowd\u2019s attention?",
+                "answer": "I usually open with a bold statement that creates unexpected curiosity."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When delivering a message, do you rely more on expressive gestures or on vocal modulation?",
+                "answer": "I rely more on vocal modulation, using subtle shifts in tone and pacing to convey nuance."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do you find it more effective to structure your presentation chronologically or thematically?",
+                "answer": "I generally prefer a thematic structure because it lets me emphasize key points more cohesively."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When trying to persuade an audience, do you find personal anecdotes more effective than statistical evidence?",
+                "answer": "I generally find personal anecdotes more effective, since they humanize your point and resonate more than bare numbers."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you find improvisation or meticulous planning more important when preparing to deliver a message?",
+                "answer": "Meticulous planning lays the groundwork, but I find improvisation essential to keep the message engaging and authentic."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you find maintaining consistent eye contact or varying your speaking pace more effective for keeping an audience engaged?",
+                "answer": "I find varying my speaking pace more effective, as shifts in rhythm keep listeners attentive and curious."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When attempting to establish credibility with your audience, do you rely more on highlighting your past achievements or on citing endorsements from others?",
+                "answer": "I rely more on citing endorsements from respected peers, since external validation often resonates stronger than self-praise."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When aiming to leave a lasting impression, do you prioritize ending with a strong call-to-action or with a reflective takeaway?",
+                "answer": "I prefer ending with a reflective takeaway, letting the audience digest and connect with the message personally."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When you want to clarify a complex point, do you prefer using analogies or step-by-step explanations?",
+                "answer": "I usually prefer analogies, as they bridge complex ideas to relatable experiences more naturally."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When illustrating a point to an audience, do you prefer using visual aids or relying solely on verbal descriptions?",
+                "answer": "I prefer using visual aids, as they provide concrete anchors that help the audience grasp complex concepts more quickly."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 is the spy because their emphasis on external endorsements and subtle tone shifts feels more like a marketer\u2019s strategy than an actor\u2019s focus on embodied expression and character work.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because their focus on personal anecdotes and analogies to explain ideas reads more like a lecturer\u2019s tactic than an actor\u2019s performance-driven approach.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"I believe player_0 is the spy because their answers\u2014especially on planning versus improvisation\u2014were overly balanced and generic, as if crafted to avoid revealing any specific insight.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because preferring \u2018visual aids\u2019 sounds more like a lecturer\u2019s approach, not something an actor focused on performance would emphasize.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their insistence on using visual aids feels out of place\u2014an actor would lean on body language and voice rather than slides.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22321,
+                "output_tokens": 975,
+                "thinking_tokens": 14336,
+                "full_output_tokens": 15311
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0245531,
+                "output_cost": 0.00429,
+                "thinking_cost": 0.0630784,
+                "full_output_cost": 0.06736840000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.0245531,
+                "total_output_cost": 0.00429,
+                "total_thinking_cost": 0.0630784,
+                "total_full_output_cost": 0.06736840000000001,
+                "full_total_cost": 0.09192150000000002
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    11.124051094055176,
+                    9.63954210281372
+                ],
+                "answer_generation_durations": [
+                    4.591914653778076,
+                    3.326815366744995
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.96756911277771,
+                    17.453742504119873
+                ],
+                "answer_generation_durations": [
+                    5.11682653427124,
+                    2.791471481323242
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.722790241241455,
+                    7.000543117523193
+                ],
+                "answer_generation_durations": [
+                    4.713069915771484,
+                    2.7137842178344727
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.518900632858276,
+                    11.03533124923706
+                ],
+                "answer_generation_durations": [
+                    2.9163551330566406,
+                    3.363564968109131
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.008753776550293,
+                    6.019855499267578
+                ],
+                "answer_generation_durations": [
+                    7.037607908248901,
+                    3.0721099376678467
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it common in this role to spend significant time practicing or rehearsing before the main event?",
+                "answer": "Yes, it\u2019s common to spend a lot of time rehearsing and fine-tuning beforehand."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is improvisation often an important skill in this role?",
+                "answer": "It can be useful at times, but it\u2019s not typically the main focus."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is effective body language often an essential aspect of this role?",
+                "answer": "Yes, conveying intent and emotion through posture and movement is often crucial."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is projecting your voice to ensure clarity and audibility often important in this role?",
+                "answer": "Yes, ensuring you project clearly so everyone can hear is often crucial."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is collaborating closely with a director or other team members often essential for this role?",
+                "answer": "Yes, it\u2019s often essential to work closely with the director and other team members."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is auditioning a common step to obtain a position in this role?",
+                "answer": "Yes, auditioning is typically required to secure a role."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is working from a written script or text often a component of this role?",
+                "answer": "Yes, it typically involves working from a written script."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it common for someone in this role to perform in front of a live audience?",
+                "answer": "Yes, it\u2019s quite typical to perform live in front of an audience."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it typical for someone in this role to memorize large amounts of dialogue?",
+                "answer": "Yes, memorizing considerable amounts of dialogue is usually essential to deliver a consistent performance."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it common for someone in this role to develop a detailed backstory for their character as part of their preparation?",
+                "answer": "Yes, it\u2019s common practice to create a detailed character background to inform motivations and choices."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their hesitant, hedged answer on improvisation (\u2018useful at times but not the main focus\u2019) doesn\u2019t align with how central improvisation often is to acting.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their hedged answer on improvisation seemed out of step with the more confident, specific responses the other players gave about the role.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their points on voice projection and memorizing dialogue felt overly generic\u2014more fitting for singers or speakers\u2014rather than showing specific insight into acting.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because they said it\u2019s \u2018quite typical to perform live in front of an audience,\u2019 ignoring that many actors work solely on film or television without live audiences.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answer downplaying the importance of improvisation felt unusually cautious and vague compared to the others.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23817,
+                "output_tokens": 1099,
+                "thinking_tokens": 11840,
+                "full_output_tokens": 12939
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.026198700000000002,
+                "output_cost": 0.004835600000000001,
+                "thinking_cost": 0.052096,
+                "full_output_cost": 0.056931600000000006
+            },
+            "total_costs": {
+                "total_input_cost": 0.026198700000000002,
+                "total_output_cost": 0.004835600000000001,
+                "total_thinking_cost": 0.052096,
+                "total_full_output_cost": 0.056931600000000006,
+                "full_total_cost": 0.0831303
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.540708303451538,
+                    14.490040302276611
+                ],
+                "answer_generation_durations": [
+                    3.654409885406494,
+                    3.7316701412200928
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.788448095321655,
+                    2.933526039123535
+                ],
+                "answer_generation_durations": [
+                    4.609521389007568,
+                    5.204506874084473
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.031456470489502,
+                    8.462271451950073
+                ],
+                "answer_generation_durations": [
+                    3.328855276107788,
+                    3.7776453495025635
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.52286434173584,
+                    8.298595190048218
+                ],
+                "answer_generation_durations": [
+                    3.0849459171295166,
+                    6.6029276847839355
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.6008007526397705,
+                    9.899216890335083
+                ],
+                "answer_generation_durations": [
+                    3.8582985401153564,
+                    2.3924365043640137
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you prefer roles that require adapting on the spot or ones that allow for extensive preparation ahead of time?",
+                "answer": "I prefer roles that require adapting on the spot, since I enjoy the challenge of improvising when situations shift."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When learning something new, do you focus more on understanding the underlying principles or on getting hands-on practice first?",
+                "answer": "I focus on understanding the underlying principles first so that my hands-on practice is more purposeful."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When collaborating with others, do you prefer to take the lead or work quietly behind the scenes?",
+                "answer": "I usually take the lead to keep things on track but don\u2019t mind supporting quietly when the situation calls for it."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When presenting information, do you rely more on visual aids or verbal explanations?",
+                "answer": "I usually rely more on visual aids to give the audience a clear framework for what I\u2019m explaining."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "In a stressful situation, do you find it more effective to stay silent and observe or to speak up immediately to address the issue?",
+                "answer": "I tend to speak up immediately to address the issue, since quick intervention usually helps de-escalate stress."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When conveying information, do you rely more on your tone of voice or on your body language?",
+                "answer": "I rely more on my tone of voice to convey nuance and clarity."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When planning an event, do you focus more on the big-picture vision or on the detailed logistics?",
+                "answer": "I focus more on detailed logistics to anticipate any potential issues and keep everything running smoothly."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When faced with unexpected feedback on your work, do you immediately seek clarification or take time to reflect on it on your own?",
+                "answer": "I usually take time to reflect on the feedback myself first to see what I can adjust before reaching out for clarification."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When solving a problem, do you prefer to brainstorm many ideas upfront or focus deeply on one solution first?",
+                "answer": "I prefer brainstorming multiple ideas upfront to explore different angles before zeroing in on a single solution."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When organizing your tasks for the day, do you prefer to stick to a detailed schedule or go with a general outline that allows flexibility?",
+                "answer": "I prefer a general outline that allows flexibility so I can adjust priorities as needed throughout the day."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because relying on visual aids to present information doesn\u2019t fit with the subtle, live\u2010performance feel an actor would emphasize, unlike the others whose answers align more naturally with acting.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their answers were overly precise\u2014focusing heavily on principles and logistics in a way that feels unnaturally consistent compared to the others.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI think player_4 is the spy because their answers about relying on visual aids and brainstorming felt generic and didn\u2019t reflect the performance-and-voice focus you\u2019d expect if they knew the word \u2018actor.\u2019\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their reliance on visual aids over verbal explanations doesn\u2019t align with the emphasis on voice and presence an actor would have.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because both of their answers\u2014focusing on principles over hands-on practice and on detailed logistics over big-picture vision\u2014don\u2019t fit the actor theme the other detectives are hinting at.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22057,
+                "output_tokens": 985,
+                "thinking_tokens": 13696,
+                "full_output_tokens": 14681
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0242627,
+                "output_cost": 0.004334,
+                "thinking_cost": 0.0602624,
+                "full_output_cost": 0.0645964
+            },
+            "total_costs": {
+                "total_input_cost": 0.0242627,
+                "total_output_cost": 0.004334,
+                "total_thinking_cost": 0.0602624,
+                "total_full_output_cost": 0.0645964,
+                "full_total_cost": 0.0888591
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.9186413288116455,
+                    5.793457984924316
+                ],
+                "answer_generation_durations": [
+                    2.7746522426605225,
+                    3.533052921295166
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.36742091178894,
+                    14.847577095031738
+                ],
+                "answer_generation_durations": [
+                    2.569699764251709,
+                    4.861161231994629
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.38581895828247,
+                    8.84844422340393
+                ],
+                "answer_generation_durations": [
+                    3.8731939792633057,
+                    3.9258999824523926
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.909101724624634,
+                    4.761692047119141
+                ],
+                "answer_generation_durations": [
+                    2.9048030376434326,
+                    3.50016188621521
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.375749349594116,
+                    3.941349983215332
+                ],
+                "answer_generation_durations": [
+                    5.697010517120361,
+                    6.614631414413452
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does what you do typically require formal training or education?",
+                "answer": "Typically, yes, though some people learn it through hands-on experience rather than formal schooling."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this role typically involve working closely with a team of people rather than independently?",
+                "answer": "Yes, it generally involves collaborating with others rather than working alone."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this role typically involve irregular or unpredictable working hours?",
+                "answer": "Yes, the schedule often varies and can be quite unpredictable."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this role often involve performing scripted content in front of an audience?",
+                "answer": "Yes, you often have to deliver scripted material in front of an audience."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this role require regular use of props or specialized equipment?",
+                "answer": "Occasionally, though it varies depending on the specific needs of each production."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this role typically involve wearing specialized attire or costumes during work?",
+                "answer": "Yes, wearing specific attire or costumes is usually part of the job."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this role often require traveling to different venues or locations rather than being based in a single fixed workplace?",
+                "answer": "Yes, this role often requires traveling to various locations rather than being confined to a single workplace."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this role typically involve going through an audition or selection process before being chosen for a project?",
+                "answer": "Yes, candidates typically go through a selection or audition process before being chosen."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this role typically require memorizing a significant amount of dialogue or text?",
+                "answer": "Yes, this role requires memorizing a large amount of dialogue."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this role often require improvisation or ad-libbing during performances?",
+                "answer": "Sometimes, depending on the production\u2019s style and the director\u2019s preferences."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers to the highly specific, actor-focused questions (\u2018scripted content\u2019 and \u2018memorizing dialogue\u2019) were too generic and unnuanced, as if they were copying rather than drawing on real experience.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their answers about using props and improvisation were unusually vague compared to everyone else\u2019s strong agreement with the role\u2019s core activities.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their answers were unusually hedged (\u2018Occasionally,\u2019 \u2018Sometimes\u2019), as if they were trying to avoid giving away specific knowledge.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because they hedged twice\u2014saying props are only \u2018occasional\u2019 and improvisation happens \u2018sometimes\u2019\u2014which seems less confident than the solid yes\u2010style answers the real detectives gave for an actor\u2019s duties.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their hedged answers about using props (\u2018occasionally\u2019) and improvisation (\u2018sometimes\u2019) felt unusually vague compared to everyone else\u2019s confidence.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "actor",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21521,
+                "output_tokens": 937,
+                "thinking_tokens": 12416,
+                "full_output_tokens": 13353
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.023673100000000002,
+                "output_cost": 0.0041228,
+                "thinking_cost": 0.0546304,
+                "full_output_cost": 0.058753200000000005
+            },
+            "total_costs": {
+                "total_input_cost": 0.023673100000000002,
+                "total_output_cost": 0.0041228,
+                "total_thinking_cost": 0.0546304,
+                "total_full_output_cost": 0.058753200000000005,
+                "full_total_cost": 0.08242630000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.617338418960571,
+                    4.397353649139404
+                ],
+                "answer_generation_durations": [
+                    2.8096396923065186,
+                    2.6881589889526367
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.903009414672852,
+                    22.5600745677948
+                ],
+                "answer_generation_durations": [
+                    4.085404634475708,
+                    2.472486734390259
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.10700535774231,
+                    9.66966724395752
+                ],
+                "answer_generation_durations": [
+                    2.0579135417938232,
+                    2.2487738132476807
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.133969068527222,
+                    7.933688402175903
+                ],
+                "answer_generation_durations": [
+                    3.2476348876953125,
+                    4.067109107971191
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.510488748550415,
+                    14.752416849136353
+                ],
+                "answer_generation_durations": [
+                    3.0256824493408203,
+                    2.8396260738372803
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is effectively conveying emotions a key aspect of this?",
+                "answer": "Yes, it\u2019s often an important element."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is public performance a significant aspect of this?",
+                "answer": "Yes, presenting skills in front of an audience is a major component."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it usually require repeatedly practicing the same material to achieve a consistent performance?",
+                "answer": "Yes, practicing the same material repeatedly is key to achieving consistency."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it often require collaborating with others to achieve the best result?",
+                "answer": "Yes, collaborating with others often leads to a stronger final result."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it often require interpreting and delivering written text in a compelling way?",
+                "answer": "Yes, interpreting and presenting written content engagingly is often crucial."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it often involve improvisation or spontaneous variation during presentation?",
+                "answer": "Yes, spontaneity and improvisation often play a role."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does maintaining eye contact with an audience often enhance this activity?",
+                "answer": "Yes, maintaining eye contact often helps build a stronger connection with the audience."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it often require projecting your voice to be heard clearly by a distant audience?",
+                "answer": "Yes, projecting your voice is essential to ensure everyone can hear you."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it often require incorporating deliberate body movements or gestures to convey meaning?",
+                "answer": "Yes, deliberate body movements and gestures often help convey meaning more effectively."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this activity often require wearing specialized outfits or costumes to suit different roles?",
+                "answer": "Yes, specialized costumes are often worn to embody different roles."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their focus on \u2018collaborating with others\u2019 seems more about an overall production team than the individual craft of the actor.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their emphasis on maintaining eye contact with an audience feels more like public speaking than the actor\u2019s focus on scene partners and character interaction.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their first answer was unusually vague compared to the others\u2019 detailed responses\u2014an inconsistency that suggests they don\u2019t truly know the secret word.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because they kept zeroing in on audience interaction\u2014public performance and eye contact\u2014while everyone else spoke more broadly about the activity, which seems like they didn\u2019t really know what the secret word encompassed.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers were overly generic\u2014\u2018collaborating leads to a stronger result\u2019 and \u2018gestures help convey meaning\u2019 could apply to many activities, not specifically acting.\u201d"
+            }
+        ]
+    }
+]

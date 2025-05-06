@@ -1,0 +1,3761 @@
+[
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "car",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21075,
+                "output_tokens": 566,
+                "thinking_tokens": 25192,
+                "full_output_tokens": 25758
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0029505,
+                "output_cost": 0.00123954,
+                "thinking_cost": 0.055170479999999994,
+                "full_output_cost": 0.05641001999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0029505,
+                "total_output_cost": 0.00123954,
+                "total_thinking_cost": 0.055170479999999994,
+                "total_full_output_cost": 0.05641001999999999,
+                "full_total_cost": 0.05936051999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    66.34012603759766,
+                    30.242363691329956
+                ],
+                "answer_generation_durations": [
+                    98.33600783348083,
+                    38.477301836013794
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    83.23738145828247,
+                    93.18871736526489
+                ],
+                "answer_generation_durations": [
+                    17.824177503585815,
+                    123.49517703056335
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    16.50343370437622,
+                    32.31057143211365
+                ],
+                "answer_generation_durations": [
+                    105.62482690811157,
+                    23.378456115722656
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    145.8102207183838,
+                    84.21350884437561
+                ],
+                "answer_generation_durations": [
+                    24.44328808784485,
+                    23.51652979850769
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    54.97961664199829,
+                    33.47325611114502
+                ],
+                "answer_generation_durations": [
+                    270.55690002441406,
+                    36.484907388687134
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Where do you typically keep it when you're not using it?",
+                "answer": "In a garage."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What routine check do you prioritize to ensure it runs smoothly?",
+                "answer": "Regularly check the oil levels and tire pressure."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How often do you recommend servicing it to maintain optimal performance?",
+                "answer": "Following the manufacturer's recommended schedule."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What steps do you take to ensure its security when leaving it unattended?",
+                "answer": "I use a steering lock and park in a visible area."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's your strategy for dealing with unexpected issues during use?",
+                "answer": "I check the manual first and contact assistance if necessary."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What item do you always keep inside for emergencies?",
+                "answer": "A flashlight and a first aid kit."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What do you check to ensure it can stop effectively when needed?",
+                "answer": "Check the brake pads and fluid levels regularly."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What precautions do you take before using it in extreme weather conditions?",
+                "answer": "Check the tires and ensure visibility systems are functional."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What measures do you take to minimize wear and tear during daily use?",
+                "answer": "I avoid sudden acceleration and braking to reduce strain on components."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's your approach to maintaining its aesthetic appeal over time?",
+                "answer": "Regular cleaning and promptly addressing minor imperfections to keep it looking new."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about servicing ('Following the manufacturer's recommended schedule') was overly generic and lacked specific car-related context. Additionally, referring to 'visibility systems' instead of more direct terms like windshield wipers or headlights felt vague, potentially indicating a lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about servicing ('manufacturer's recommended schedule') was overly generic and avoided car-specific details like oil changes or mileage intervals. Their 'visibility systems' response to extreme weather also felt vague compared to more concrete answers from others.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answer about security measures (steering lock and visible parking) seems overly specific to a car, potentially avoiding detection by matching expected answers too perfectly, unlike other detectives who maintained more balanced vagueness.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the Spy because their answer about emergency items (flashlight and first aid kit) feels less specific to a car compared to expected answers like jumper cables or a spare tire, which could indicate a lack of direct knowledge of the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about servicing ('following the manufacturer's schedule') was overly generic compared to other detectives' specific references (e.g., oil, brakes). This vagueness could indicate a lack of familiarity with car-related maintenance details.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "detectives",
+        "spy": 2,
+        "secret_word": "boat",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 22511,
+                "output_tokens": 588,
+                "thinking_tokens": 20388,
+                "full_output_tokens": 20976
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0031515400000000004,
+                "output_cost": 0.0012877199999999998,
+                "thinking_cost": 0.04464972,
+                "full_output_cost": 0.045937439999999996
+            },
+            "total_costs": {
+                "total_input_cost": 0.0031515400000000004,
+                "total_output_cost": 0.0012877199999999998,
+                "total_thinking_cost": 0.04464972,
+                "total_full_output_cost": 0.045937439999999996,
+                "full_total_cost": 0.04908898
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    125.8424425125122,
+                    70.86060357093811
+                ],
+                "answer_generation_durations": [
+                    18.181820392608643,
+                    71.33078527450562
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    106.28899669647217,
+                    87.31475782394409
+                ],
+                "answer_generation_durations": [
+                    58.88784575462341,
+                    108.8789324760437
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    73.45216536521912,
+                    25.889410257339478
+                ],
+                "answer_generation_durations": [
+                    90.83737111091614,
+                    65.66027426719666
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    48.49026083946228,
+                    110.53406119346619
+                ],
+                "answer_generation_durations": [
+                    20.41175150871277,
+                    38.67187023162842
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    24.55102276802063,
+                    66.66484475135803
+                ],
+                "answer_generation_durations": [
+                    64.96448969841003,
+                    62.48703360557556
+                ]
+            }
+        },
+        "spy_guess": "boat",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What is a common material used in the construction of this item?",
+                "answer": "Metal is often utilized."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What is the primary method of movement for this item, and does it rely on internal or external forces?",
+                "answer": "It primarily moves through internal mechanisms, relying on its own power source."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What are the typical maintenance routines required for this item?",
+                "answer": "Regular checks and cleaning of key components to ensure longevity and performance."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What factors are crucial for maintaining stability during operation?",
+                "answer": "Balancing weight distribution and ensuring structural integrity through routine inspections are key."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What factors influence its direction when in use?",
+                "answer": "The operator's adjustments to steering mechanisms and external environmental forces like wind or currents."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What common obstacles must be navigated around during operation?",
+                "answer": "Natural formations and transient floating objects."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What considerations are important when storing this item long-term?",
+                "answer": "Protection from environmental exposure and maintaining a dry, temperature-controlled environment are essential."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do safety features vary depending on the operational environment?",
+                "answer": "Adaptations focus on durability against environmental stress and emergency preparedness tailored to specific conditions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What methods are typically employed to secure the item when temporarily stationary?",
+                "answer": "Using anchoring systems or fastening to fixed structures, combined with periodic checks to ensure security."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What essential skills should an operator master to handle this item effectively?",
+                "answer": "Proficiency in steering, understanding environmental variables, and coordinating with team members for safe navigation."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"Player_2's mention of 'internal mechanisms' for movement conflicts with common boat propulsion (e.g., sails or external motors), and their focus on 'temperature-controlled' storage feels overly specific and misaligned with typical boat maintenance.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the Spy because their answer about movement relying on 'internal mechanisms' and mentioning a 'temperature-controlled environment' for storage feels slightly misaligned with typical boat knowledge. While internal power sources are valid, the storage detail leans more toward items sensitive to temperature, which is less critical for general boats.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"Player_0's mention of 'coordinating with team members' when discussing operator skills seems inconsistent with a solo-operated vessel, suggesting they might be fabricating details as the Spy.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the Spy because their answer about movement ('internal mechanisms, own power source') is vague and could apply to non-water vehicles, unlike boat-specific terms like propulsion through water or sails. This aligns with a Spy guessing generically.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the Spy because their answer about movement ('internal mechanisms, own power source') leans toward motorized vehicles but neglects external forces like wind/water currents, which are critical for boats. This mismatch suggests they might not know the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "projector",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 20567,
+                "output_tokens": 457,
+                "thinking_tokens": 17827,
+                "full_output_tokens": 18284
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0028793800000000004,
+                "output_cost": 0.0010008299999999999,
+                "thinking_cost": 0.03904112999999999,
+                "full_output_cost": 0.040041959999999995
+            },
+            "total_costs": {
+                "total_input_cost": 0.0028793800000000004,
+                "total_output_cost": 0.0010008299999999999,
+                "total_thinking_cost": 0.03904112999999999,
+                "total_full_output_cost": 0.040041959999999995,
+                "full_total_cost": 0.042921339999999995
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    120.68540048599243,
+                    299.140531539917
+                ],
+                "answer_generation_durations": [
+                    32.9404296875,
+                    18.346848249435425
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    93.60444045066833,
+                    26.154396772384644
+                ],
+                "answer_generation_durations": [
+                    46.258206367492676,
+                    27.27738928794861
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    50.117722272872925,
+                    70.42974519729614
+                ],
+                "answer_generation_durations": [
+                    132.0231852531433,
+                    120.59502577781677
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    31.185059547424316,
+                    38.273869037628174
+                ],
+                "answer_generation_durations": [
+                    38.60341811180115,
+                    123.49238300323486
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    345.4884476661682,
+                    176.53485083580017
+                ],
+                "answer_generation_durations": [
+                    231.7820656299591,
+                    23.23536443710327
+                ]
+            }
+        },
+        "spy_guess": "boat",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it require calibration before use?",
+                "answer": "Occasional adjustments might be necessary depending on the environment."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How many input sources does it typically support?",
+                "answer": "Typically three or more."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does ambient lighting affect its performance?",
+                "answer": "Yes, brighter environments can sometimes impact clarity."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How crucial is ventilation for its operation?",
+                "answer": "Proper ventilation is essential to prevent overheating."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is portability a key factor in its design?",
+                "answer": "Portability varies, but many models consider it important."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How often should the primary component be replaced for optimal performance?",
+                "answer": "Regular replacement every few hundred hours based on usage."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is ceiling mounting a common setup for this device?",
+                "answer": "Installation options vary depending on the environment."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is wireless connectivity a common feature in newer models?",
+                "answer": "It's increasingly standard, though not all models include it."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How important is regular filter maintenance for optimal functionality?",
+                "answer": "Regular cleaning ensures longevity and efficiency."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How does the size of the environment impact its optimal performance?",
+                "answer": "Larger spaces often require adjustments to ensure effective use."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their question about 'regular filter maintenance' doesn't align with typical projector features, suggesting a lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their answer about ceiling mounting ('Installation options vary...') was overly vague for a device where ceiling mounting is a common setup. Additionally, their input sources response ('three or more') felt non-committal compared to more specific knowledge a Detective might have.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answer about replacing the primary component 'every few hundred hours' is inconsistent with a projector's bulb lifespan, which typically lasts thousands of hours.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answer about replacing the primary component 'every few hundred hours' contradicts the secret word 'projector,' as projector lamps typically last thousands of hours, not hundreds.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"Player_2's vague responses about ceiling mounting and input sources could indicate they are avoiding specifics to blend in as the Spy.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "car",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21658,
+                "output_tokens": 607,
+                "thinking_tokens": 20305,
+                "full_output_tokens": 20912
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00303212,
+                "output_cost": 0.0013293299999999999,
+                "thinking_cost": 0.04446794999999999,
+                "full_output_cost": 0.04579727999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00303212,
+                "total_output_cost": 0.0013293299999999999,
+                "total_thinking_cost": 0.04446794999999999,
+                "total_full_output_cost": 0.04579727999999999,
+                "full_total_cost": 0.04882939999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    224.1557650566101,
+                    13.77438998222351
+                ],
+                "answer_generation_durations": [
+                    11.12013840675354,
+                    11.240958452224731
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    55.694583892822266,
+                    40.19084191322327
+                ],
+                "answer_generation_durations": [
+                    130.10005855560303,
+                    14.182602643966675
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    12.669843435287476,
+                    34.665085315704346
+                ],
+                "answer_generation_durations": [
+                    10.34819483757019,
+                    17.363022327423096
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    59.17894148826599,
+                    22.814218282699585
+                ],
+                "answer_generation_durations": [
+                    12.784246921539307,
+                    19.72023367881775
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    44.70594382286072,
+                    17.615548133850098
+                ],
+                "answer_generation_durations": [
+                    97.02739071846008,
+                    12.96737003326416
+                ]
+            }
+        },
+        "spy_guess": "boat",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of environment is this item most commonly associated with?",
+                "answer": "It's typically found in environments designed for connectivity and mobility."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What role does maintenance play in the longevity of this item?",
+                "answer": "Regular maintenance ensures optimal performance and prevents wear and tear over time."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How does user behavior typically influence its efficiency?",
+                "answer": "Consistent adherence to proper handling techniques can greatly affect its performance over time."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How does design influence its functionality?",
+                "answer": "The design optimizes both form and purpose, ensuring seamless integration of its components."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What factors contribute to its longevity beyond regular maintenance?",
+                "answer": "The quality of materials used in its construction and adherence to operational guidelines also play significant roles."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What aspects are crucial for ensuring user safety during operation?",
+                "answer": "Proper use of safety mechanisms and adherence to operational protocols are essential to minimize risks during use."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How do regulatory standards influence its design and operation?",
+                "answer": "Regulatory standards enforce safety and interoperability requirements that shape both its structural features and usage parameters."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What factors influence its energy efficiency during typical usage?",
+                "answer": "Operational habits and external conditions, such as resistance management and propulsion consistency, play key roles."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How does the surrounding infrastructure affect its operational effectiveness?",
+                "answer": "Supporting networks and their quality determine how smoothly it can perform essential functions."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How does cultural perception shape its adaptation across different regions?",
+                "answer": "Cultural values and priorities, such as environmental concerns or space optimization, often dictate regional preferences in its design and usage patterns."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's response about infrastructure affecting operational effectiveness was too vague. 'Supporting networks' doesn't strongly align with car-specific infrastructure like roads or fuel systems, suggesting a lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their answer about design ('seamless integration of components') was overly generic, and their infrastructure response ('supporting networks') lacked concrete ties to car-specific elements like roads or traffic systems, suggesting limited grasp of the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their mention of 'propulsion consistency' in energy efficiency seems overly specific to vehicles, which may not align if the secret word is a non-mobility device. This inconsistency stands out compared to others\u2019 broader answers.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their answer about 'supporting networks' affecting operational effectiveness was overly vague and could apply to many concepts, whereas a Detective might subtly reference infrastructure like roads or traffic systems without directly mentioning the secret word 'car'.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the spy because their mention of 'interoperability requirements' in regulatory standards feels misaligned with the secret word 'car.' This term is more common in tech or systems contexts, whereas car regulations typically focus on safety, emissions, or performance, making the response seem forced or speculative.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "cartographer",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 22599,
+                "output_tokens": 659,
+                "thinking_tokens": 17206,
+                "full_output_tokens": 17865
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00316386,
+                "output_cost": 0.00144321,
+                "thinking_cost": 0.037681139999999995,
+                "full_output_cost": 0.039124349999999995
+            },
+            "total_costs": {
+                "total_input_cost": 0.00316386,
+                "total_output_cost": 0.00144321,
+                "total_thinking_cost": 0.037681139999999995,
+                "total_full_output_cost": 0.039124349999999995,
+                "full_total_cost": 0.04228820999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    33.215484857559204,
+                    26.39602017402649
+                ],
+                "answer_generation_durations": [
+                    15.75565481185913,
+                    15.818836688995361
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.76833462715149,
+                    24.241047620773315
+                ],
+                "answer_generation_durations": [
+                    11.834702968597412,
+                    14.189082145690918
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    39.38407564163208,
+                    30.552095413208008
+                ],
+                "answer_generation_durations": [
+                    11.764015674591064,
+                    14.6332688331604
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    30.21370506286621,
+                    29.598113536834717
+                ],
+                "answer_generation_durations": [
+                    13.180980443954468,
+                    12.181411981582642
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    30.2459499835968,
+                    54.00643253326416
+                ],
+                "answer_generation_durations": [
+                    9.815737009048462,
+                    8.622638940811157
+                ]
+            }
+        },
+        "spy_guess": "boat",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you consider this word to be essential for a particular hobby or activity?",
+                "answer": "Yes, it's often linked to specialized tasks in certain professions."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is this word commonly associated with the intersection of creativity and technical precision?",
+                "answer": "Yes, it requires both artistic vision and meticulous accuracy."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the word imply the creation of something that serves as a reference for others in their work?",
+                "answer": "Yes, it results in a tool often relied upon for accuracy in various fields."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the word's application typically involve collaboration with experts from different disciplines to achieve its purpose?",
+                "answer": "Yes, integrating expertise from varied fields is often necessary to ensure its accuracy and utility."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does the profession associated with this word require adapting to significant technological changes in how its primary tasks are accomplished?",
+                "answer": "Yes, staying updated with evolving tools and methodologies is crucial for maintaining effectiveness in this field."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is the outcome of this word's application typically subject to frequent updates based on new data or innovations?",
+                "answer": "Yes, regular revisions are necessary to reflect evolving information and maintain relevance."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does the word's application involve translating complex information into a universally understandable format?",
+                "answer": "Yes, it necessitates distilling intricate details into accessible representations."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the application of this word involve abstracting real-world elements into symbolic representations?",
+                "answer": "Yes, it transforms tangible observations into structured visual systems."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the process tied to this word typically involve a combination of on-site data collection and subsequent analytical refinement?",
+                "answer": "Yes, it relies on both direct environmental engagement and methodical interpretation to fulfill its objectives."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does the profession associated with this word demand a harmonious balance between analytical rigor and visual presentation skills?",
+                "answer": "Yes, integrating structured analysis with compelling visual communication defines expertise in this profession."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 because their answer about transforming observations into 'structured visual systems' feels overly abstract and less aligned with common interpretations of professions involving collaboration and technical precision, possibly hinting at a Spy's vague fabrication.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answer about 'on-site data collection and analytical refinement' leans more toward fieldwork-heavy professions (e.g., geology, ecology) rather than the nuanced balance of technical and creative skills central to cartography. This vagueness could indicate the Spy's lack of specific alignment with the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's responses, while plausible, are overly broad and could apply to multiple professions. Their mention of 'collaboration with experts from different disciplines' and 'direct environmental engagement' feels less specific to cartography, suggesting they might be the Spy guessing rather than knowing the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their answer about collaboration with 'experts from different disciplines' feels overly broad and less specific to cartography. While collaboration occurs in cartography, the phrasing could apply to many fields, suggesting uncertainty about the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their initial answer ('specialized tasks in certain professions') felt overly broad and less specific to the secret word's unique blend of creativity, technical precision, and interdisciplinary collaboration inherent to cartography.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "embassy",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21763,
+                "output_tokens": 607,
+                "thinking_tokens": 19693,
+                "full_output_tokens": 20300
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00304682,
+                "output_cost": 0.0013293299999999999,
+                "thinking_cost": 0.04312766999999999,
+                "full_output_cost": 0.04445699999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00304682,
+                "total_output_cost": 0.0013293299999999999,
+                "total_thinking_cost": 0.04312766999999999,
+                "total_full_output_cost": 0.04445699999999999,
+                "full_total_cost": 0.04750381999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    36.31993293762207,
+                    13.529945850372314
+                ],
+                "answer_generation_durations": [
+                    13.527011156082153,
+                    15.053809642791748
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    29.763582706451416,
+                    19.57223105430603
+                ],
+                "answer_generation_durations": [
+                    17.70087742805481,
+                    13.040501356124878
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    95.05333471298218,
+                    16.320762395858765
+                ],
+                "answer_generation_durations": [
+                    8.652943134307861,
+                    14.60857367515564
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    25.221823692321777,
+                    31.62034320831299
+                ],
+                "answer_generation_durations": [
+                    17.432356119155884,
+                    10.637984037399292
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    19.00313401222229,
+                    17.383639335632324
+                ],
+                "answer_generation_durations": [
+                    14.454599857330322,
+                    20.741290807724
+                ]
+            }
+        },
+        "spy_guess": "boat",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of documents might someone need to present before entering here?",
+                "answer": "Typically, government-issued identification and prior authorization are required."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What types of emergencies would prompt someone to seek help here?",
+                "answer": "Situations involving legal disputes or urgent safety concerns in a foreign country."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What qualifications are essential for someone working here?",
+                "answer": "Fluency in multiple languages and a strong understanding of legal frameworks and cultural nuances."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What non-emergency services are commonly requested here?",
+                "answer": "Assistance with visa applications and document notarization are frequently requested."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What common challenges do people face when accessing services here?",
+                "answer": "Delays due to stringent verification processes and navigating complex administrative procedures."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What types of cultural events might be hosted here to foster international relations?",
+                "answer": "Cultural showcases like traditional music performances or art exhibitions celebrating international heritage."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How does this institution typically collaborate with local authorities during a crisis?",
+                "answer": "By establishing secure communication channels and coordinating emergency response protocols."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What protocols are in place for handling sensitive communications between this institution and external entities?",
+                "answer": "All communications utilize encrypted channels and strict confidentiality agreements to ensure information integrity and security."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What measures ensure that interactions between staff and visitors maintain a balance between accessibility and security?",
+                "answer": "Rigorous identity checks paired with scheduled appointments and designated access tiers optimize both visitor convenience and protocol adherence."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What training programs are mandatory for staff to handle cross-cultural interactions effectively?",
+                "answer": "Cultural sensitivity workshops and advanced communication strategies tailored to diverse international contexts are required."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1's mention of 'prior authorization' as a document requirement feels overly broad and less specific to embassy protocols, where passports/visas are central. Their answers, while plausible, lack nuanced alignment with embassy-specific terminology, hinting at potential Spy uncertainty.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answer about protocols for sensitive communications emphasized 'confidentiality agreements,' which aligns more with corporate settings than embassy operations, where diplomatic protocols and secure channels are typically inherent without explicit agreements.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answer about 'legal frameworks and cultural nuances' for qualifications, while plausible, feels overly broad and could apply to many international roles, not uniquely aligning with embassy-specific duties. Their mention of 'encrypted channels' for communications, though correct, is a common trope and lacks nuanced context tied directly to embassy operations.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answer about required documents mentions 'prior authorization' in a vague way, which is less specific to embassy procedures compared to terms like visas or appointments. This ambiguity could indicate a lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"Player_2's emphasis on legal disputes and emergency protocols in a foreign country feels overly narrow, potentially hinting at a misunderstanding of the broader diplomatic context implied by other answers.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "airport",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21649,
+                "output_tokens": 591,
+                "thinking_tokens": 24989,
+                "full_output_tokens": 25580
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0030308600000000002,
+                "output_cost": 0.0012942899999999998,
+                "thinking_cost": 0.054725909999999996,
+                "full_output_cost": 0.05602019999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0030308600000000002,
+                "total_output_cost": 0.0012942899999999998,
+                "total_thinking_cost": 0.054725909999999996,
+                "total_full_output_cost": 0.05602019999999999,
+                "full_total_cost": 0.059051059999999995
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    37.845025300979614,
+                    16.689563512802124
+                ],
+                "answer_generation_durations": [
+                    12.825592517852783,
+                    14.325502395629883
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    48.95725059509277,
+                    15.036782026290894
+                ],
+                "answer_generation_durations": [
+                    16.4897243976593,
+                    12.1363365650177
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    53.908074617385864,
+                    13.831262826919556
+                ],
+                "answer_generation_durations": [
+                    18.936840295791626,
+                    14.157304763793945
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    55.45855903625488,
+                    101.36292934417725
+                ],
+                "answer_generation_durations": [
+                    18.06201696395874,
+                    20.29894232749939
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    50.69356036186218,
+                    41.04452204704285
+                ],
+                "answer_generation_durations": [
+                    18.53647756576538,
+                    13.101099491119385
+                ]
+            }
+        },
+        "spy_guess": "boat",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do people usually come here with luggage?",
+                "answer": "Yes, it's common to bring bags here for various purposes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are there designated waiting areas before proceeding further?",
+                "answer": "Yes, there are specific zones where people wait until it's their turn to move forward."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are there personnel in uniforms commonly seen here assisting individuals?",
+                "answer": "Yes, uniformed personnel are frequently stationed here to help guide and manage the flow of people."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there multiple sections or terminals designated for different destinations here?",
+                "answer": "Yes, they're often divided by regions or specific carriers."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are there multiple dining and shopping options available within the premises?",
+                "answer": "Yes, a variety of choices cater to different preferences."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is there a process here where personal items are checked before entry?",
+                "answer": "Yes, items often undergo inspection as part of standard safety protocols."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are there frequent public announcements here regarding schedules?",
+                "answer": "Yes, regular updates are broadcasted to keep everyone informed."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are there various transportation options available nearby for departures and arrivals?",
+                "answer": "Yes, including shuttles, taxis, and public transit for convenient access."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are there charging stations or work areas available for individuals to use while waiting?",
+                "answer": "Yes, modern setups often include these for convenience during extended stays."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are there areas here where people often need to verify their identity or documentation before proceeding?",
+                "answer": "Yes, verification of identity is required at specific checkpoints for security purposes."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answer about terminals being 'divided by regions' feels less precise for an airport context, where terminals are typically segmented by airlines or domestic/international flights rather than regions. This subtle mismatch suggests a possible lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about 'extended stays' in relation to charging stations feels slightly misaligned with typical airport contexts, where stays are usually temporary unless during layovers. This subtle inconsistency might indicate a lack of direct familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's mention of 'extended stays' in their answer about charging stations feels inconsistent with airports, where stays are typically temporary. This phrasing might indicate a lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their mention of terminals divided by 'regions' feels inconsistent. Airports typically separate terminals by airlines (carriers), not regions, suggesting they might be guessing without knowing the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answer about 'uniformed personnel' and 'transportation options' could apply to several locations, but their response to charging stations being 'for extended stays' feels slightly forced and less specific to the secret word, potentially indicating they are guessing.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "detectives",
+        "spy": 4,
+        "secret_word": "stadium",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21794,
+                "output_tokens": 538,
+                "thinking_tokens": 26315,
+                "full_output_tokens": 26853
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0030511600000000002,
+                "output_cost": 0.0011782199999999998,
+                "thinking_cost": 0.057629849999999996,
+                "full_output_cost": 0.05880807
+            },
+            "total_costs": {
+                "total_input_cost": 0.0030511600000000002,
+                "total_output_cost": 0.0011782199999999998,
+                "total_thinking_cost": 0.057629849999999996,
+                "total_full_output_cost": 0.05880807,
+                "full_total_cost": 0.061859229999999994
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    25.949000358581543,
+                    124.84785580635071
+                ],
+                "answer_generation_durations": [
+                    13.218438625335693,
+                    17.151574850082397
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    14.671283960342407,
+                    47.030521869659424
+                ],
+                "answer_generation_durations": [
+                    11.16067624092102,
+                    15.972328901290894
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    29.91987133026123,
+                    93.00256943702698
+                ],
+                "answer_generation_durations": [
+                    11.601966381072998,
+                    20.384341716766357
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    119.5394401550293,
+                    27.856978178024292
+                ],
+                "answer_generation_durations": [
+                    11.134689331054688,
+                    21.356496334075928
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    32.062992334365845,
+                    22.907289028167725
+                ],
+                "answer_generation_durations": [
+                    18.340503692626953,
+                    16.071383237838745
+                ]
+            }
+        },
+        "spy_guess": "stadium",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sounds might you expect to hear here?",
+                "answer": "Loud cheers and occasional announcements."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What time of day is this place most lively?",
+                "answer": "Evening hours when events typically occur."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of amenities can visitors expect here?",
+                "answer": "Facilities for seating and purchasing refreshments."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of transportation is commonly used to reach this place?",
+                "answer": "Public transit like buses or trains, or personal vehicles depending on the location."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What types of staff or personnel are typically present in this environment?",
+                "answer": "Security personnel, vendors, and maintenance teams."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What role does technology play in the daily operations here?",
+                "answer": "Managing access and transactions efficiently while supporting live event coordination."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What types of businesses are commonly found near this location?",
+                "answer": "Hospitality services and retail outlets catering to large crowds."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What is a common reason for first-time visitors to come here?",
+                "answer": "To attend major scheduled events."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How does the layout of this place prioritize visibility for everyone present?",
+                "answer": "The layout uses tiered arrangements or elevated sections to ensure unobstructed sightlines."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do seasonal changes affect the atmosphere or operations here?",
+                "answer": "Attendance and event types vary, with some seasons requiring climate control measures."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answer about transportation being 'depending on the location' feels overly vague and non-committal for a stadium, which typically has clear transit patterns. Their layout response, while correct, could also apply to generic venues, lacking subtle stadium-specific context.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answer about transportation being dependent on location feels overly vague for a stadium, which typically has well-known transit options, making their response less aligned with the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their mention of 'climate control measures' in seasonal changes feels more aligned with indoor venues rather than a stadium, which is often open-air. This inconsistency might indicate they\u2019re the Spy guessing a different word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their response about transportation ('Public transit... or personal vehicles') was overly generic and could apply to many locations, lacking subtle ties to stadium-specific infrastructure like parking lots or event shuttles. This vagueness might indicate the Spy avoiding word-specific clues.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about transportation ('public transit or personal vehicles') was overly generic, and their emphasis on tiered layouts felt forced, possibly hinting at a guess rather than genuine knowledge of the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "detectives",
+        "spy": 1,
+        "secret_word": "thermometer",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21860,
+                "output_tokens": 517,
+                "thinking_tokens": 28323,
+                "full_output_tokens": 28840
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0030604,
+                "output_cost": 0.00113223,
+                "thinking_cost": 0.06202736999999999,
+                "full_output_cost": 0.0631596
+            },
+            "total_costs": {
+                "total_input_cost": 0.0030604,
+                "total_output_cost": 0.00113223,
+                "total_thinking_cost": 0.06202736999999999,
+                "total_full_output_cost": 0.0631596,
+                "full_total_cost": 0.06622
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    96.96849083900452,
+                    37.950783014297485
+                ],
+                "answer_generation_durations": [
+                    13.70945954322815,
+                    13.768661499023438
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    13.241468906402588,
+                    36.272788286209106
+                ],
+                "answer_generation_durations": [
+                    83.41430401802063,
+                    43.184598445892334
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    59.0399956703186,
+                    75.11498641967773
+                ],
+                "answer_generation_durations": [
+                    32.114898920059204,
+                    12.850325107574463
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    42.50543403625488,
+                    103.9978461265564
+                ],
+                "answer_generation_durations": [
+                    26.412328243255615,
+                    11.020219802856445
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    109.43033957481384,
+                    87.61328840255737
+                ],
+                "answer_generation_durations": [
+                    39.46241307258606,
+                    30.14599633216858
+                ]
+            }
+        },
+        "spy_guess": "dial indicator",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What material is commonly found inside the item's main component?",
+                "answer": "Metal alloys are typically found inside."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "In what type of environment is it most commonly used?",
+                "answer": "Environments where precise measurements are critical."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What part of the item is designed to protect its most sensitive component?",
+                "answer": "A clear, durable covering."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What part translates internal changes into a readable format?",
+                "answer": "A component with visible gradations."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What part of the item is essential for maintaining direct engagement with the target?",
+                "answer": "The contact-sensitive tip."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What mechanism allows the item to indicate variations over time?",
+                "answer": "A spring-driven mechanism that adjusts the pointer based on internal changes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What steps are necessary to ensure the item remains calibrated over time?",
+                "answer": "Regular comparisons against a stable reference under controlled conditions."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What maintenance routine is recommended to ensure the item's longevity beyond calibration?",
+                "answer": "Regular cleaning to prevent residue and careful storage to avoid physical damage."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What feature allows the item to retain its reading after the measurement is taken?",
+                "answer": "A mechanism that temporarily secures the indicator until manually reset."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What role does the narrow passage play in the item's function?",
+                "answer": "It restricts movement to ensure accurate measurement."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answer about a 'mechanism that secures the indicator until manually reset' conflicts with a standard thermometer's behavior, suggesting they might not know the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about a 'clear, durable covering' to protect sensitive components feels overly generic and could apply to many devices, whereas a detective might reference a more specific feature tied to the secret word without directly revealing it.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their mention of a 'spring-driven mechanism' and 'metal alloys' doesn't align with a thermometer's liquid-based or digital operation, suggesting unfamiliarity with the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their mention of a 'spring-driven mechanism' to indicate variations conflicts with a thermometer's typical function, which relies on liquid expansion or digital sensors, not springs. This suggests a lack of alignment with the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answer about a 'spring-driven mechanism' conflicts with how thermometers operate, which rely on expansion of liquids or bimetallic strips, not springs.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "detectives",
+        "spy": 2,
+        "secret_word": "librarian",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 22980,
+                "output_tokens": 599,
+                "thinking_tokens": 15014,
+                "full_output_tokens": 15613
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0032172000000000004,
+                "output_cost": 0.0013118099999999998,
+                "thinking_cost": 0.03288066,
+                "full_output_cost": 0.034192469999999996
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032172000000000004,
+                "total_output_cost": 0.0013118099999999998,
+                "total_thinking_cost": 0.03288066,
+                "total_full_output_cost": 0.034192469999999996,
+                "full_total_cost": 0.03740967
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    36.858166456222534,
+                    21.142666816711426
+                ],
+                "answer_generation_durations": [
+                    16.809715747833252,
+                    14.594464778900146
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    40.03547692298889,
+                    17.091981649398804
+                ],
+                "answer_generation_durations": [
+                    11.942272186279297,
+                    14.085507869720459
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    32.879388093948364,
+                    19.536726713180542
+                ],
+                "answer_generation_durations": [
+                    18.784225940704346,
+                    18.649754524230957
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    53.21469831466675,
+                    28.737142086029053
+                ],
+                "answer_generation_durations": [
+                    11.380799293518066,
+                    13.720890760421753
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    15.897937297821045,
+                    16.2078115940094
+                ],
+                "answer_generation_durations": [
+                    15.900050640106201,
+                    20.764768362045288
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What is a key skill someone in this role should have?",
+                "answer": "Strong organizational skills and effective communication."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How does technology integrate into the daily responsibilities of this role?",
+                "answer": "Proficiency in utilizing digital tools for task management and collaborative platforms is essential."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do you prioritize tasks when facing tight deadlines?",
+                "answer": "Prioritizing involves assessing urgency and impact, focusing first on time-sensitive responsibilities that affect others."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do you handle multiple simultaneous requests while maintaining efficiency?",
+                "answer": "By categorizing tasks based on urgency and employing a systematic workflow to address each efficiently."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do you ensure accuracy when managing detailed records?",
+                "answer": "Implementing a methodical verification process and cross-checking entries regularly to minimize errors."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How do you approach assisting someone with a specialized request?",
+                "answer": "By first understanding the request's scope and then leveraging relevant resources to provide tailored assistance without overcomplicating the process."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How do you foster a welcoming environment for diverse individuals in your role?",
+                "answer": "By actively listening to individual needs and adapting communication styles while ensuring accessibility to resources for everyone."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do you adapt your approach when unexpected challenges arise during a project?",
+                "answer": "By reassessing the situation's demands and adjusting methods while ensuring alignment with overarching goals to maintain continuity."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do you handle situations where a user's needs conflict with established policies?",
+                "answer": "By balancing policy adherence with empathetic problem-solving, seeking compromises that respect guidelines while addressing the user's core needs."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do you stay informed about new developments relevant to your role?",
+                "answer": "By regularly engaging with professional networks and attending relevant workshops or seminars to stay updated on emerging trends and best practices."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the spy because their emphasis on 'collaborative platforms' and generic 'digital tools for task management' feels more aligned with general office roles than specific librarian responsibilities, which would likely focus on catalog systems or patron-facing technology.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their emphasis on 'collaborative platforms' and vague tech integration doesn't strongly align with a librarian's typical use of catalog systems or databases, suggesting a lack of specific knowledge about the role.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their responses about categorizing tasks and policy conflicts were overly generic, avoiding deeper engagement with the secret word's implied interpersonal or role-specific context.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the Spy because their answer about technology integration ('collaborative platforms') feels too broad for a librarian's role, which typically involves specific tools like catalog systems rather than generic task management platforms.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"Player_2's mention of 'collaborative platforms' and generic 'digital tools' feels too broad for a librarian's specific tech context (e.g., catalog systems, databases), suggesting they might be the Spy guessing vaguely.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "tank",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21354,
+                "output_tokens": 554,
+                "thinking_tokens": 17411,
+                "full_output_tokens": 17965
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00298956,
+                "output_cost": 0.0012132599999999999,
+                "thinking_cost": 0.03813009,
+                "full_output_cost": 0.03934335
+            },
+            "total_costs": {
+                "total_input_cost": 0.00298956,
+                "total_output_cost": 0.0012132599999999999,
+                "total_thinking_cost": 0.03813009,
+                "total_full_output_cost": 0.03934335,
+                "full_total_cost": 0.04233291
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    37.32310342788696,
+                    43.57442355155945
+                ],
+                "answer_generation_durations": [
+                    11.835142612457275,
+                    13.594163656234741
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    31.6512668132782,
+                    41.694249391555786
+                ],
+                "answer_generation_durations": [
+                    21.960712432861328,
+                    16.938063621520996
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    35.09809374809265,
+                    31.923672676086426
+                ],
+                "answer_generation_durations": [
+                    16.788146495819092,
+                    17.168299674987793
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    40.43165183067322,
+                    30.091626405715942
+                ],
+                "answer_generation_durations": [
+                    14.813553094863892,
+                    16.9104106426239
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    25.536525011062622,
+                    14.26266360282898
+                ],
+                "answer_generation_durations": [
+                    12.412502527236938,
+                    15.265040397644043
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What are common environments where you might find this?",
+                "answer": "Often in areas requiring robust protection or mobility."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How many people are typically involved in its operation?",
+                "answer": "Usually a small team works together to manage it effectively."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of training is required to operate it effectively?",
+                "answer": "Extensive hands-on practice and certification in safety protocols are typically necessary."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What routine checks are essential to maintain its functionality?",
+                "answer": "Regular inspections of mechanical components and fluid levels are crucial."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What factors most influence its operational lifespan under regular use conditions?",
+                "answer": "The frequency of maintenance, stress levels during operations, and environmental exposure to harsh conditions are key factors."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What auxiliary systems are vital besides its main mechanism?",
+                "answer": "Communication systems and environmental controls are essential."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What role does coordination with external units play in its successful operation?",
+                "answer": "Ensuring synchronized movements and shared objectives enhances mission success."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do individual roles within the team differ during a mission?",
+                "answer": "Specialized expertise dictates responsibilities, such as navigation, defense coordination, and system monitoring."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What redundancies are in place in case of system failure?",
+                "answer": "Backup power sources and secondary control systems are standard, along with fail-safes for critical components."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do varying surface conditions impact deployment strategies?",
+                "answer": "Adaptations in weight distribution and terrain assessment protocols are critical to optimize performance and prevent immobilization."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the Spy because their mention of 'environmental controls' as a vital auxiliary system feels less directly aligned with a tank's core mechanisms compared to other answers, possibly indicating a guess rather than knowledge of the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about team roles ('defense coordination') feels overly generic compared to specific tank crew roles (e.g., driver, gunner), and their training response ('certification in safety protocols') lacks the military context implied by the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about team roles ('defense coordination') feels vague compared to specific tank crew roles (e.g., gunner, driver), suggesting a lack of familiarity with the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"Player_1's references to 'robust protection or mobility' and 'communication systems' were too broad, lacking specific context that aligns with potential secret word clues discussed by others.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their answer 'communication systems and environmental controls' as vital auxiliary systems feels less aligned with a tank's primary auxiliary components like targeting or armor, potentially indicating a vague or uninformed Spy response.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "pharmacist",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21510,
+                "output_tokens": 588,
+                "thinking_tokens": 17680,
+                "full_output_tokens": 18268
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0030114,
+                "output_cost": 0.0012877199999999998,
+                "thinking_cost": 0.038719199999999995,
+                "full_output_cost": 0.040006919999999994
+            },
+            "total_costs": {
+                "total_input_cost": 0.0030114,
+                "total_output_cost": 0.0012877199999999998,
+                "total_thinking_cost": 0.038719199999999995,
+                "total_full_output_cost": 0.040006919999999994,
+                "full_total_cost": 0.04301831999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    80.26557517051697,
+                    42.96886396408081
+                ],
+                "answer_generation_durations": [
+                    13.81296682357788,
+                    10.655269622802734
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    26.37921380996704,
+                    23.978307723999023
+                ],
+                "answer_generation_durations": [
+                    14.29053282737732,
+                    10.078585147857666
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    45.97968888282776,
+                    20.5862557888031
+                ],
+                "answer_generation_durations": [
+                    18.143264293670654,
+                    13.58495306968689
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    15.32286286354065,
+                    130.32678365707397
+                ],
+                "answer_generation_durations": [
+                    15.040785551071167,
+                    15.992183923721313
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.648205280303955,
+                    28.507103443145752
+                ],
+                "answer_generation_durations": [
+                    10.329405546188354,
+                    42.92016553878784
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this role involve providing advice on proper usage?",
+                "answer": "Yes, guidance on correct application is often part of the responsibilities."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is collaboration with other healthcare professionals common in this role?",
+                "answer": "Yes, working within interdisciplinary teams is often necessary in this field."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this role require staying updated on new developments in specific guidelines or regulations?",
+                "answer": "Yes, continuous education is essential to ensure compliance and best practices."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is hands-on training or mentorship a significant component of this role?",
+                "answer": "Yes, fostering professional development through guidance is a key aspect."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is direct interaction with individuals seeking specific products or services a regular part of this role?",
+                "answer": "Yes, daily engagement with client needs is typical."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does the role require verifying the appropriateness of requests before fulfilling them?",
+                "answer": "Yes, confirming suitability is a standard procedure."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is maintaining confidentiality a critical aspect of this role?",
+                "answer": "Yes, safeguarding sensitive information is paramount."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is attention to detail critical due to potential consequences of errors?",
+                "answer": "Yes, precision is vital as oversights could lead to significant negative outcomes."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is maintaining accurate records a critical component of this role?",
+                "answer": "Yes, thorough documentation is necessary to meet regulatory standards and ensure accountability."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is proficiency with specialized software or tools necessary to perform daily tasks effectively?",
+                "answer": "Yes, familiarity with industry-specific systems is often required."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their emphasis on mentorship as a 'key aspect' feels less central to a pharmacist's primary duties compared to other answers. While pharmacists may mentor, it's not typically a defining responsibility, suggesting they might be inferring generically rather than aligning with the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their response about 'fostering professional development through guidance' as a key aspect feels overly broad and more aligned with general mentorship roles rather than the specific responsibilities tied to the secret word 'pharmacist.' This vagueness could indicate a lack of direct knowledge of the role.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their answer about mentorship being a 'key aspect' feels overly generic for a pharmacist role, which focuses more on dispensing medication and patient care than hands-on training. This vagueness could indicate a lack of alignment with the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's emphasis on mentorship and documentation seems overly broad, possibly avoiding specifics that could hint at the secret word, which a Detective might subtly reference.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their question about 'hands-on training or mentorship' being a significant component feels less directly tied to the core responsibilities of a pharmacist compared to other answers. While mentorship exists, it's not a defining feature, suggesting a possible lack of specific alignment with the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "retreat",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 20728,
+                "output_tokens": 506,
+                "thinking_tokens": 24551,
+                "full_output_tokens": 25057
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00290192,
+                "output_cost": 0.0011081399999999999,
+                "thinking_cost": 0.05376668999999999,
+                "full_output_cost": 0.05487482999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00290192,
+                "total_output_cost": 0.0011081399999999999,
+                "total_thinking_cost": 0.05376668999999999,
+                "total_full_output_cost": 0.05487482999999999,
+                "full_total_cost": 0.057776749999999995
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    55.60361456871033,
+                    114.55639100074768
+                ],
+                "answer_generation_durations": [
+                    172.0830979347229,
+                    131.21412634849548
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    39.3173623085022,
+                    71.66470837593079
+                ],
+                "answer_generation_durations": [
+                    56.040887117385864,
+                    51.84275579452515
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    45.107903242111206,
+                    100.01385879516602
+                ],
+                "answer_generation_durations": [
+                    16.018882989883423,
+                    15.293104887008667
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    51.617212772369385,
+                    59.6659619808197
+                ],
+                "answer_generation_durations": [
+                    64.29715776443481,
+                    159.55591106414795
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    30.16650915145874,
+                    36.18431997299194
+                ],
+                "answer_generation_durations": [
+                    130.7085747718811,
+                    81.25514960289001
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of environment do you associate with this word?",
+                "answer": "A serene and secluded place where one can unwind."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What is something you wouldn't expect to find in this environment?",
+                "answer": "Loud machinery or bustling crowds."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What personal item is most commonly associated with this environment?",
+                "answer": "A journal for reflection."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What time of year is this place most frequented?",
+                "answer": "During transitional periods when reflection is sought after."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What activity would be most out of place here?",
+                "answer": "Heavy construction work."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sound is most characteristic of this environment?",
+                "answer": "The gentle rustle of leaves and distant bird calls."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What benefit does one gain from spending time here?",
+                "answer": "A sense of inner peace and mental rejuvenation."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What scent is most commonly associated with this environment?",
+                "answer": "The clean, crisp aroma of morning dew."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What is a common misconception about this place?",
+                "answer": "That it's a hub for social gatherings rather than solitude."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's a common challenge someone might face when visiting this place?",
+                "answer": "Resisting the urge to stay busy and remain constantly occupied."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answer about the place being frequented during 'transitional periods' feels overly vague and disconnected from the seasonal or intentional nature of retreats, suggesting a lack of specific knowledge about the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answer about 'transitional periods' for the time of year felt overly vague and disconnected from typical retreat associations, suggesting a lack of concrete knowledge of the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's mention of 'transitional periods' as the most frequented time feels vague and disconnected from typical seasonal associations, possibly hinting at uncertainty a Spy might have.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answer about the time of year ('transitional periods') feels overly vague and disconnected from the secret word 'retreat,' which often implies intentional solitude rather than seasonality. While plausible, the phrasing lacks specificity a Detective might use to subtly reinforce the theme.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about the time of year ('transitional periods') feels overly vague and disconnected from the secret word 'retreat.' While other answers align with solitude and reflection, this response lacks the specificity a Detective might use to subtly reinforce the theme without revealing the word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "apple",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21207,
+                "output_tokens": 582,
+                "thinking_tokens": 29635,
+                "full_output_tokens": 30217
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0029689800000000004,
+                "output_cost": 0.0012745799999999998,
+                "thinking_cost": 0.06490064999999999,
+                "full_output_cost": 0.06617522999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0029689800000000004,
+                "total_output_cost": 0.0012745799999999998,
+                "total_thinking_cost": 0.06490064999999999,
+                "total_full_output_cost": 0.06617522999999999,
+                "full_total_cost": 0.06914420999999998
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    161.22302222251892,
+                    39.6371705532074
+                ],
+                "answer_generation_durations": [
+                    126.91502976417542,
+                    228.82709002494812
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    13.333789825439453,
+                    76.26414799690247
+                ],
+                "answer_generation_durations": [
+                    257.59288024902344,
+                    60.8637478351593
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    26.38353729248047,
+                    28.90170431137085
+                ],
+                "answer_generation_durations": [
+                    25.846654891967773,
+                    72.26082038879395
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    53.64116621017456,
+                    148.3394992351532
+                ],
+                "answer_generation_durations": [
+                    100.9321436882019,
+                    116.54950666427612
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    67.57524275779724,
+                    67.65223693847656
+                ],
+                "answer_generation_durations": [
+                    66.79844832420349,
+                    65.09195399284363
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it typically round?",
+                "answer": "Yes, though not always perfectly so."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it commonly associated with a specific type of cultivation area?",
+                "answer": "Yes, it's often linked to orchards or gardens."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it have a specific season when it's most commonly available?",
+                "answer": "Yes, it's most abundant during a particular season but can be found year-round in many regions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it commonly used in making beverages?",
+                "answer": "Yes, it can be processed into both non-alcoholic and fermented drinks."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there a part that is typically discarded before consuming it?",
+                "answer": "Yes, certain inner parts are usually not eaten."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it commonly consumed in its raw form?",
+                "answer": "Yes, it's often eaten without preparation."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it come in multiple color varieties?",
+                "answer": "Yes, colors can range from green to red to yellow depending on the variety."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it commonly used in both sweet and savory dishes?",
+                "answer": "Yes, it's versatile enough to be featured in both."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it often peeled before consumption?",
+                "answer": "It can be, though many prefer to consume it with the outer layer intact."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it often associated with any symbolic meanings in folklore or traditions?",
+                "answer": "Yes, it holds symbolic significance in various cultural stories and traditions."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about beverages being 'processed into both non-alcoholic and fermented drinks' feels overly broad and could apply to many fruits, potentially masking uncertainty about the specific secret word 'apple'.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their response about the secret word being used in 'both sweet and savory dishes' feels overly broad and could apply to many common items, potentially masking a lack of specific knowledge about 'apple'.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's response about peeling being optional fits many fruits, but their beverage answer could hint at processing steps common to apples. However, their vagueness might indicate uncertainty, making them a likely spy.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their answer about peeling ('many prefer to consume it with the outer layer intact') feels overly cautious and could apply to many fruits, avoiding specific alignment with 'apple.' Their beverage answer, while correct, was also broad enough to fit multiple fruits, suggesting they might be guessing rather than knowing the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about the secret word being used in 'both sweet and savory dishes' feels overly broad and could apply to many common items, making it a safe response for a spy who lacks specific knowledge of 'apple'. Additionally, their questions about beverages and peeling, while relevant, are generic enough to avoid revealing gaps in their knowledge.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "bear",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 20633,
+                "output_tokens": 520,
+                "thinking_tokens": 24746,
+                "full_output_tokens": 25266
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00288862,
+                "output_cost": 0.0011388,
+                "thinking_cost": 0.05419374,
+                "full_output_cost": 0.05533254
+            },
+            "total_costs": {
+                "total_input_cost": 0.00288862,
+                "total_output_cost": 0.0011388,
+                "total_thinking_cost": 0.05419374,
+                "total_full_output_cost": 0.05533254,
+                "full_total_cost": 0.05822116
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    50.81031823158264,
+                    84.56360960006714
+                ],
+                "answer_generation_durations": [
+                    22.035420417785645,
+                    26.403271198272705
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    60.3065390586853,
+                    88.15645718574524
+                ],
+                "answer_generation_durations": [
+                    16.015093326568604,
+                    39.093998670578
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    62.96545958518982,
+                    88.24049639701843
+                ],
+                "answer_generation_durations": [
+                    15.026259899139404,
+                    21.90044069290161
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    29.62537384033203,
+                    47.36317539215088
+                ],
+                "answer_generation_durations": [
+                    15.217165470123291,
+                    28.568206548690796
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    90.01519584655762,
+                    65.98028540611267
+                ],
+                "answer_generation_durations": [
+                    12.527113676071167,
+                    15.99779224395752
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Can the word function as both a noun and a verb?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does the word have a homophone that changes its meaning entirely?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the word have distinct meanings in different professional fields?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the word describe an action that isn't necessarily physical?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "player_4 asks player_0 the question: Is the word commonly used in expressions related to enduring a challenging situation?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is the word's metaphorical usage more prevalent in modern contexts than its original meaning?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is the word often associated with a specific type of environment or habitat?",
+                "answer": "Yes, it can be linked to certain natural environments."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is the word commonly used in phrases that indicate direction or movement?",
+                "answer": "Yes, in certain directional expressions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is the word commonly referenced in safety advisories or warnings?",
+                "answer": "Yes, particularly in outdoor contexts."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "player_4 asks player_0 the question: Is the word associated with a specific type of relationship or hierarchy in nature?",
+                "answer": "Yes, it can imply a structured dynamic in animal groups."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\"Player_1's response about the word's metaphorical usage being more prevalent in modern contexts feels inconsistent. If the secret word's original meaning is literal (e.g., 'bear' as an animal), the metaphorical use ('endure') is older, making their answer suspect.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their answer about the word implying a 'structured dynamic in animal groups' doesn't align well with 'bear,' which is solitary. This suggests they might be guessing rather than knowing the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their claim that the word's metaphorical usage is more prevalent than its original meaning doesn't align well with 'bear,' where the animal (original meaning) remains widely primary. This could indicate unfamiliarity with the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their claim that the word's metaphorical usage is more prevalent in modern contexts than its original meaning conflicts with 'bear'\u2014the animal (original) is ancient, while metaphorical uses (e.g., 'bear a burden') are also historically established, not modern.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their answer about the word implying a 'structured dynamic in animal groups' conflicts with bears being solitary creatures, suggesting a lack of knowledge about the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "library",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 20972,
+                "output_tokens": 622,
+                "thinking_tokens": 22669,
+                "full_output_tokens": 23291
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00293608,
+                "output_cost": 0.00136218,
+                "thinking_cost": 0.04964510999999999,
+                "full_output_cost": 0.05100728999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00293608,
+                "total_output_cost": 0.00136218,
+                "total_thinking_cost": 0.04964510999999999,
+                "total_full_output_cost": 0.05100728999999999,
+                "full_total_cost": 0.05394336999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    38.9545419216156,
+                    69.8125650882721
+                ],
+                "answer_generation_durations": [
+                    18.741175413131714,
+                    16.605894804000854
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    23.21875810623169,
+                    30.529860019683838
+                ],
+                "answer_generation_durations": [
+                    26.262118816375732,
+                    21.0374538898468
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    55.35406827926636,
+                    23.156824350357056
+                ],
+                "answer_generation_durations": [
+                    16.813947439193726,
+                    30.510546445846558
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    28.096439599990845,
+                    101.4405026435852
+                ],
+                "answer_generation_durations": [
+                    8.993341207504272,
+                    24.99491858482361
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    28.742106676101685,
+                    33.56987524032593
+                ],
+                "answer_generation_durations": [
+                    13.369946718215942,
+                    10.245944261550903
+                ]
+            }
+        },
+        "spy_guess": "administrative assistant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What activity here requires the most focus?",
+                "answer": "Delving into complex texts without distraction."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What's one item you always make sure to bring with you here?",
+                "answer": "Something to keep my place."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What's a sign that someone is new here?",
+                "answer": "They often glance around uncertainly, looking for guidance."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What's something you should avoid doing here?",
+                "answer": "Being loud or disruptive; it breaks concentration."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What habit do regulars here tend to develop over time?",
+                "answer": "Favoring specific spots where they feel most comfortable."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What's a feature here that has evolved the most over time?",
+                "answer": "The shift from physical catalogs to digital search methods."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What's a common sound you hear here despite the usual atmosphere?",
+                "answer": "The occasional soft rustle followed by a hushed whisper."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What's an action that might go unnoticed but is essential here?",
+                "answer": "Quietly replacing things exactly where they belong."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What\u2019s a space here that\u2019s both solitary and communal?",
+                "answer": "A quiet corner with individual desks arranged in open rows."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What\u2019s a routine people follow before departing here?",
+                "answer": "Silently organizing their materials before exiting."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their response about 'quietly replacing things exactly where they belong' feels overly broad and could apply to multiple settings, lacking a subtle connection specific to the secret word 'library' compared to other answers.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answer about a 'sign someone is new here' ('glancing around uncertainly, looking for guidance') feels overly generic and could apply to many settings, lacking specific ties to library behaviors like searching catalogs or navigating shelves. Their other answer ('replacing things where they belong') is also vague enough to avoid implicating the secret word, suggesting cautious evasion.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the Spy because their answer about a 'sign someone is new here' ('glancing around uncertainly') feels too generic and could apply to many settings. While plausible for a library, it lacks subtle alignment with library-specific behaviors (e.g., asking for help at a catalog desk). Their second answer ('replacing things where they belong') is reasonable but not uniquely tied to the secret word, suggesting cautious vagueness.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their answer about a 'quiet corner with individual desks arranged in open rows' feels generic and could apply to non-library spaces like study halls or offices. Their responses lack subtle ties to library-specific elements (e.g., books, catalogs), making them less aligned with the secret word compared to others.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"player_3's answer about newcomers 'glancing around uncertainly' could apply to multiple settings, lacking specificity tied to the secret word. This vagueness might indicate they are the Spy trying to blend in without concrete knowledge.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "detectives",
+        "spy": 4,
+        "secret_word": "graduation",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21935,
+                "output_tokens": 539,
+                "thinking_tokens": 26701,
+                "full_output_tokens": 27240
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0030709,
+                "output_cost": 0.0011804099999999998,
+                "thinking_cost": 0.058475189999999996,
+                "full_output_cost": 0.059655599999999996
+            },
+            "total_costs": {
+                "total_input_cost": 0.0030709,
+                "total_output_cost": 0.0011804099999999998,
+                "total_thinking_cost": 0.058475189999999996,
+                "total_full_output_cost": 0.059655599999999996,
+                "full_total_cost": 0.06272649999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    23.76787757873535,
+                    112.12679028511047
+                ],
+                "answer_generation_durations": [
+                    16.69582772254944,
+                    66.5903069972992
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    58.68449282646179,
+                    78.38895201683044
+                ],
+                "answer_generation_durations": [
+                    15.940862655639648,
+                    10.669492244720459
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    56.43333029747009,
+                    83.81390476226807
+                ],
+                "answer_generation_durations": [
+                    16.873082876205444,
+                    14.233144521713257
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    46.38635587692261,
+                    29.002673864364624
+                ],
+                "answer_generation_durations": [
+                    11.289928436279297,
+                    34.15905261039734
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    104.11964178085327,
+                    135.14470434188843
+                ],
+                "answer_generation_durations": [
+                    13.627951622009277,
+                    21.877800703048706
+                ]
+            }
+        },
+        "spy_guess": "Graduation",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When do you think this event usually takes place during the year?",
+                "answer": "It often marks the end of a significant cycle."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What steps might someone take in anticipation of this occasion?",
+                "answer": "They might coordinate schedules with loved ones and secure attire suitable for formal recognition."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "In what setting does this event typically occur?",
+                "answer": "A formal gathering in a structured environment."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What role do guests typically play during this event?",
+                "answer": "Guests often observe and participate in ceremonial traditions."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What symbolic item is typically central to this event?",
+                "answer": "A traditional cap and scroll often symbolize its culmination."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What is a common subsequent event that follows the main occasion?",
+                "answer": "A celebratory gathering with close acquaintances."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What collective gesture often marks the event's conclusion?",
+                "answer": "A synchronized toss of headgear into the air."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What themes are commonly emphasized in addresses during the occasion?",
+                "answer": "Emphasis on future endeavors and reflection on collective achievements."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What role do mentors or guides typically hold during the proceedings?",
+                "answer": "They often provide guidance and formally acknowledge individual achievements during the ceremony."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What significance do the colors of the attire hold during the ceremony?",
+                "answer": "They typically represent institutional affiliation and scholastic milestones."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about the event's setting ('A formal gathering in a structured environment') was overly vague compared to other answers that hinted at academic traditions (e.g., caps, institutional colors). While plausible, the phrasing lacks specificity tied to graduation, making it easier for a Spy to generically mimic.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's response about guests participating in ceremonial traditions seems off. In graduation, guests typically observe rather than actively participate, which might indicate they don't know the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's response about guests participating in ceremonial traditions feels too generic and could apply to events other than graduation, suggesting a lack of specific knowledge of the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their response about guests 'participating in ceremonial traditions' feels slightly off. While guests observe graduations, active participation in traditions (beyond applause) is uncommon, suggesting a vague or misaligned understanding of the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answer about the event's setting ('structured environment') was overly vague compared to other clues pointing to an academic ceremony. A detective might hint at a school-related venue, while the spy could avoid specifics to blend in.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "theater",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21917,
+                "output_tokens": 614,
+                "thinking_tokens": 18920,
+                "full_output_tokens": 19534
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.0030683800000000003,
+                "output_cost": 0.00134466,
+                "thinking_cost": 0.041434799999999994,
+                "full_output_cost": 0.04277945999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0030683800000000003,
+                "total_output_cost": 0.00134466,
+                "total_thinking_cost": 0.041434799999999994,
+                "total_full_output_cost": 0.04277945999999999,
+                "full_total_cost": 0.045847839999999994
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    25.072273015975952,
+                    59.400073528289795
+                ],
+                "answer_generation_durations": [
+                    26.10949182510376,
+                    95.95862054824829
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    58.52725100517273,
+                    61.41952848434448
+                ],
+                "answer_generation_durations": [
+                    16.310362577438354,
+                    14.650585412979126
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    27.719806909561157,
+                    39.45059895515442
+                ],
+                "answer_generation_durations": [
+                    55.36171269416809,
+                    14.889507055282593
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    30.797212839126587,
+                    154.54829120635986
+                ],
+                "answer_generation_durations": [
+                    129.24866724014282,
+                    57.799001932144165
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    78.06942558288574,
+                    40.07982277870178
+                ],
+                "answer_generation_durations": [
+                    15.498669385910034,
+                    85.0897855758667
+                ]
+            }
+        },
+        "spy_guess": "Graduation",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What aspect of this environment do you think changes most significantly between day and night?",
+                "answer": "The level of activity and visibility shifts dramatically with the changing light."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What sounds or signals might indicate a shift in the current state?",
+                "answer": "A sudden change in ambient noise followed by focused attention."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How crucial is timing in ensuring everything runs smoothly?",
+                "answer": "Precision in coordination can make or break the seamless flow required."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How critical is the balance between individual input and collective harmony?",
+                "answer": "The seamless integration of individual efforts is essential to preserve the collective harmony and overall impact."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How does preparation behind the scenes impact the final result?",
+                "answer": "The meticulous coordination of hidden elements ensures the audience's immersion remains uninterrupted."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How do transitions between segments influence the cohesion of the entire experience?",
+                "answer": "Smooth transitions maintain the illusion of continuity, preventing disruptions that could fracture the audience's engagement."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How do supporting roles adjust to maintain alignment with the central objective?",
+                "answer": "They synchronize their contributions to enhance the primary focus without overshadowing it."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do visible elements rely on the unseen to achieve their effect?",
+                "answer": "Their presence is magnified by meticulously orchestrated support systems operating just beyond immediate perception."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do entry and exit points affect the overall dynamics of the environment?",
+                "answer": "They establish rhythm and direct focus, guiding shifts in momentum without disrupting the overall experience."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How does the interplay of absence and presence shape the audience's emotional journey?",
+                "answer": "The contrast between what is revealed and withheld creates tension and anticipation, guiding emotional peaks and valleys."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answer about visible elements relying on 'orchestrated support systems' feels overly abstract and less aligned with theater-specific context compared to others, potentially hinting at a lack of direct knowledge of the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3's mention of 'orchestrated support systems' feels overly aligned with a potential secret word like 'orchestra,' which a Detective might avoid explicitly referencing. Their phrasing risks revealing the word, suggesting they might be the Spy fishing for confirmation.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answers about 'individual input vs. collective harmony' and 'entry/exit points' felt overly abstract and lacked concrete ties to theater-specific dynamics like backstage coordination or stagecraft, which other players referenced indirectly.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's responses about entry/exit points 'establishing rhythm' and 'collective harmony' are overly broad, lacking concrete ties to theater-specific dynamics. The Spy might avoid specifics to mask uncertainty about the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about visible elements relying on 'orchestrated support systems beyond perception' felt overly abstract and less directly tied to theater-specific context compared to others. While plausible, it could apply to multiple environments, reducing confidence in their alignment with the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "pillow",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21221,
+                "output_tokens": 544,
+                "thinking_tokens": 16218,
+                "full_output_tokens": 16762
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00297094,
+                "output_cost": 0.0011913599999999998,
+                "thinking_cost": 0.035517419999999994,
+                "full_output_cost": 0.036708779999999996
+            },
+            "total_costs": {
+                "total_input_cost": 0.00297094,
+                "total_output_cost": 0.0011913599999999998,
+                "total_thinking_cost": 0.035517419999999994,
+                "total_full_output_cost": 0.036708779999999996,
+                "full_total_cost": 0.039679719999999995
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    103.93516302108765,
+                    25.667738914489746
+                ],
+                "answer_generation_durations": [
+                    35.85502243041992,
+                    17.83349871635437
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    87.66666388511658,
+                    78.61211705207825
+                ],
+                "answer_generation_durations": [
+                    101.23119115829468,
+                    14.542295694351196
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    70.94729495048523,
+                    69.59214878082275
+                ],
+                "answer_generation_durations": [
+                    43.97124361991882,
+                    16.773428678512573
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    63.14420437812805,
+                    28.133337259292603
+                ],
+                "answer_generation_durations": [
+                    90.27994203567505,
+                    80.17840099334717
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    57.502546548843384,
+                    1054.7549006938934
+                ],
+                "answer_generation_durations": [
+                    55.21994662284851,
+                    17.175788164138794
+                ]
+            }
+        },
+        "spy_guess": "Graduation",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it tend to lose its shape with regular use?",
+                "answer": "It can vary based on care."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it often chosen for both aesthetic and functional reasons?",
+                "answer": "Yes, its dual purposes are often prioritized."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does its purpose vary significantly across different age groups?",
+                "answer": "It depends more on individual preferences than age, though core functionality remains consistent."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does proper storage significantly impact its longevity?",
+                "answer": "Proper care in general can extend its lifespan, but storage alone isn't the only factor."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is personal preference a major factor in its selection?",
+                "answer": "Absolutely, individual comfort often dictates choice."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is there a standard size for it, or does it vary by intended use?",
+                "answer": "Sizes often follow common guidelines but adapt to specific needs."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is its role in daily routines typically associated with comfort or support?",
+                "answer": "Its role is linked to restorative benefits in daily life."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is regular replacement necessary for optimal use?",
+                "answer": "It benefits from periodic attention rather than strict replacement schedules."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is there a common preference for specific materials in its construction?",
+                "answer": "Preferences vary, often prioritizing comfort or support needs."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there a typical recommendation for how many one should have, or does it depend entirely on personal needs?",
+                "answer": "It generally aligns with individual usage patterns more than fixed rules."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the spy because their answer about 'restorative benefits' felt vague and indirect for a pillow's primary purpose of comfort/support, and their replacement response downplayed the need for periodic renewal, which aligns with a spy avoiding specifics.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answer about storage impacting longevity feels less relevant to 'pillow'\u2014proper storage isn't a primary concern for pillows compared to care or material quality, suggesting a vague or disconnected understanding of the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their response about 'periodic attention rather than replacement' downplays the necessity of replacing the item, which aligns poorly with pillows that typically require replacement over time despite maintenance.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their mention of 'restorative benefits' and 'dual purposes' feels overly abstract yet subtly specific, potentially hinting at knowledge of the secret word. Their answers align too neatly with a detective's vague strategy, making them less likely to be the spy.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their response about 'restorative benefits' and avoiding direct replacement necessity feels overly broad and evasive for 'pillow,' which typically does require periodic replacement for hygiene and support.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "festival",
+        "players": {
+            "0": "deepseek",
+            "1": "deepseek",
+            "2": "deepseek",
+            "3": "deepseek",
+            "4": "deepseek"
+        },
+        "token_details": {
+            "deepseek": {
+                "input_tokens": 21293,
+                "output_tokens": 570,
+                "thinking_tokens": 16047,
+                "full_output_tokens": 16617
+            }
+        },
+        "token_prices": {
+            "deepseek": {
+                "input_cost": 0.00298102,
+                "output_cost": 0.0012483,
+                "thinking_cost": 0.035142929999999996,
+                "full_output_cost": 0.03639123
+            },
+            "total_costs": {
+                "total_input_cost": 0.00298102,
+                "total_output_cost": 0.0012483,
+                "total_thinking_cost": 0.035142929999999996,
+                "total_full_output_cost": 0.03639123,
+                "full_total_cost": 0.03937225
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    47.85569620132446,
+                    32.04828763008118
+                ],
+                "answer_generation_durations": [
+                    111.86773014068604,
+                    640.9053854942322
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    100.3546884059906,
+                    18.954233169555664
+                ],
+                "answer_generation_durations": [
+                    13.765207767486572,
+                    16.797605514526367
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.888423919677734,
+                    71.41059637069702
+                ],
+                "answer_generation_durations": [
+                    20.723042488098145,
+                    15.191585063934326
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.12038254737854,
+                    124.56177592277527
+                ],
+                "answer_generation_durations": [
+                    16.261969089508057,
+                    14.241017580032349
+                ]
+            },
+            "player_4": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    104.47738695144653,
+                    80.45584535598755
+                ],
+                "answer_generation_durations": [
+                    93.66751909255981,
+                    12.279839992523193
+                ]
+            }
+        },
+        "spy_guess": "Graduation",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is the secret word typically associated with a specific environment?",
+                "answer": "Yes, but it can vary depending on the occasion."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does the secret word often involve preparation or planning in advance?",
+                "answer": "Yes, depending on the scale involved."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the secret word typically involve a specific time frame or duration?",
+                "answer": "Yes, though it can vary widely based on cultural context."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the secret word commonly involve community engagement or collective activities?",
+                "answer": "Yes, depending on the scale and community focus."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does the secret word typically include multiple activities or attractions?",
+                "answer": "Yes, especially when aiming to cater to diverse interests."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does the secret word often involve specific roles or responsibilities for participants?",
+                "answer": "Yes, depending on the organizational structure."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does the secret word often revolve around a central theme or concept?",
+                "answer": "Yes, depending on the purpose or focus."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the secret word usually imply a recurring event or is it more sporadic?",
+                "answer": "Yes, it can be either, often influenced by tradition or specific occasions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the secret word usually involve active participation from attendees or is it more observational?",
+                "answer": "It can involve both, depending on the structure and intent behind it."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does the secret word often engage multiple senses simultaneously?",
+                "answer": "Yes, particularly when designed to create an immersive experience."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"Player_3's response about the secret word's time frame being 'varied widely based on cultural context' feels overly broad and non-committal, which could indicate a lack of familiarity with the word. Additionally, their answer to the recurring event question ('it can be either') avoids alignment with specifics a Detective might subtly reinforce.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answers about community engagement and participation were overly vague, using qualifiers like 'depending on scale' or 'structure' instead of confidently aligning with the inherently communal and participatory nature of a festival.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answer about the secret word being 'either' recurring or sporadic feels too non-committal. Festivals are typically recurring events tied to tradition, and a Detective might emphasize that aspect more confidently.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 is the spy because their answers about preparation ('depending on scale') and central theme ('depending on purpose') were overly vague and non-committal, avoiding clear alignment with festival-specific traits. This hedging could indicate a lack of confidence in the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their response about the secret word being 'either' recurring or sporadic feels inconsistent with 'festival,' which is typically recurring. Their vague phrasing might indicate a lack of certainty about the word.\""
+            }
+        ]
+    }
+]

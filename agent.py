@@ -173,10 +173,14 @@ class Agent:
             f"Your name in the game is: {self.player_name} \n"
             f"{self.secret_word}"
         )
+        additional_user_msg = ""
+        if self.role == "spy":
+            additional_user_msg = "- If you encounter generic and vague question and responses that does not mean that player is necessarily the spy, they could be a detective purposefully using general statements to not help the spy deduct what might the secret word be."
         user_message = (
             f"""This is the conversation record so far: {conversation}. \n
                 - Now it is the **voting round**. 
                 - Choose the **player you suspect the most** based on their answers. 
+                {additional_user_msg}
                 - You are not allowed to vote for yourself.
                 - Select from this list: {list_of_players}.
                 - **Return only one name in this format**: player_# 
@@ -196,7 +200,7 @@ class Agent:
         else:
             print(f"This is the conversation record so far: {conversation}. \n\n")
             print("""- Now it is the **voting round**. 
-                - Choose the **player you suspect the most** based on their answers. 
+                - Choose the **player you suspect the most** based on their answers.
                 - You are not allowed to vote for yourself.
                 - Select from this list: {list_of_players}.
                 - **insert only one name in this format**: player_#""")

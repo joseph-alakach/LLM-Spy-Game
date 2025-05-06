@@ -1,0 +1,1881 @@
+[
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 22068,
+                "output_tokens": 413,
+                "thinking_tokens": 21230,
+                "full_output_tokens": 21643
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0033101999999999997,
+                "output_cost": 0.0002478,
+                "thinking_cost": 0.074305,
+                "full_output_cost": 0.0745528
+            },
+            "total_costs": {
+                "total_input_cost": 0.0033101999999999997,
+                "total_output_cost": 0.0002478,
+                "total_thinking_cost": 0.074305,
+                "total_full_output_cost": 0.0745528,
+                "full_total_cost": 0.077863
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    2.9036872386932373,
+                    5.908100843429565
+                ],
+                "answer_generation_durations": [
+                    1.8986258506774902,
+                    2.4847018718719482
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.098611116409302,
+                    12.632851839065552
+                ],
+                "answer_generation_durations": [
+                    2.731616258621216,
+                    3.3235726356506348
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.3892345428466797,
+                    7.585606575012207
+                ],
+                "answer_generation_durations": [
+                    3.9257352352142334,
+                    4.182763338088989
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.617602586746216,
+                    7.644333362579346
+                ],
+                "answer_generation_durations": [
+                    2.8380885124206543,
+                    2.1353251934051514
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.014387845993042,
+                    5.928901672363281
+                ],
+                "answer_generation_durations": [
+                    2.978189468383789,
+                    2.0996198654174805
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What's your favorite thing about this kind of place?",
+                "answer": "I enjoy the overall feeling and experience it provides."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How often do you find yourself in a situation like this?",
+                "answer": "Not as often as I'd prefer, but occasionally."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What time of day is best for experiencing this?",
+                "answer": "Evening is often quite enjoyable."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of atmosphere do you prefer when you visit?",
+                "answer": "I prefer a place that feels welcoming and relaxed."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you usually visit alone or with company?",
+                "answer": "I often go with friends or family."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How important is the selection of options when you are deciding where to go?",
+                "answer": "The range of options available significantly influences my choice."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is this activity typically something you engage in out of routine, or is it usually for a specific event or occasion?",
+                "answer": "It varies; sometimes routine, sometimes for a special reason."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What is the typical duration of such an experience?",
+                "answer": "It typically lasts for an hour or two, sometimes longer."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the potential cost influence your decision to go?",
+                "answer": "Price can certainly play a role in my choice."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What role do the people working there play in the experience?",
+                "answer": "They can significantly impact the overall enjoyment of the visit."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their initial question and answer were very generic and lacked the contextual relevance seen in the other players' responses."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "I am voting for player_0 because their first answer about enjoying the \"overall feeling and experience\" was very vague and didn't give any specific hints related to the secret word, making it slightly more suspicious than other responses."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answers felt particularly generic and lacking in specific detail, even compared to the other players."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers felt the most generic and could apply to many different activities, rather than specifically aligning with the secret word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I am voting for player_1 because their questions seemed more generic compared to the others, which might suggest they were trying to avoid revealing knowledge about the specific word."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "detectives",
+        "spy": 4,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 22911,
+                "output_tokens": 393,
+                "thinking_tokens": 26676,
+                "full_output_tokens": 27069
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00343665,
+                "output_cost": 0.00023579999999999999,
+                "thinking_cost": 0.093366,
+                "full_output_cost": 0.0936018
+            },
+            "total_costs": {
+                "total_input_cost": 0.00343665,
+                "total_output_cost": 0.00023579999999999999,
+                "total_thinking_cost": 0.093366,
+                "total_full_output_cost": 0.0936018,
+                "full_total_cost": 0.09703845
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.267686605453491,
+                    6.291563272476196
+                ],
+                "answer_generation_durations": [
+                    5.5100486278533936,
+                    1.984637975692749
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.210605144500732,
+                    5.705085039138794
+                ],
+                "answer_generation_durations": [
+                    2.4596798419952393,
+                    3.817716121673584
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.570535898208618,
+                    7.822917699813843
+                ],
+                "answer_generation_durations": [
+                    3.3744847774505615,
+                    2.259434223175049
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.501211166381836,
+                    5.858046531677246
+                ],
+                "answer_generation_durations": [
+                    2.468804121017456,
+                    3.5823757648468018
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.578226566314697,
+                    5.113089084625244
+                ],
+                "answer_generation_durations": [
+                    2.630274772644043,
+                    3.0991036891937256
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you have a preferred time of day for engaging with this?",
+                "answer": "Dinner is usually my favorite time."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something you typically engage with alone or in a group?",
+                "answer": "Often with others, but sometimes by myself."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of atmosphere do you look for?",
+                "answer": "I prefer something that feels comfortable and welcoming."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is this something you usually plan ahead or is it more spontaneous?",
+                "answer": "I find it's usually a mix of both, depending on the circumstances."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's your favorite part of the experience?",
+                "answer": "I really appreciate the specific kind of atmosphere it provides."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What typically determines your choice when engaging with this?",
+                "answer": "Convenience and what is easily accessible often play a role."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does the location matter much?",
+                "answer": "Yes, it can definitely be a significant factor depending on the situation."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How much does the interaction with the people providing the service influence your experience?",
+                "answer": "A positive interaction with them really enhances the experience."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is the variety of options available something you consider?",
+                "answer": "Yes, I definitely consider the variety of options available."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does the cost involved influence your decision?",
+                "answer": "Yes, cost is definitely a factor I consider."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "I am voting for player_4 because their question \"What's your favorite part of the experience?\" felt the most generic compared to the others, potentially suggesting they were trying to gain information without revealing specific knowledge of the word."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I am voting for player_2 because their answers felt the most generic and least specifically tied to the secret word compared to the others."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "I suspect player_4 because their answers and questions seemed more general and less specific to the secret word compared to other players."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answer about cost being a factor was very generic and could apply to almost any product or service, lacking specific relevance to the secret word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I find player_3's answer about interaction with service providers to be slightly more specific than others."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21325,
+                "output_tokens": 348,
+                "thinking_tokens": 32984,
+                "full_output_tokens": 33332
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0031987499999999998,
+                "output_cost": 0.00020879999999999998,
+                "thinking_cost": 0.115444,
+                "full_output_cost": 0.1156528
+            },
+            "total_costs": {
+                "total_input_cost": 0.0031987499999999998,
+                "total_output_cost": 0.00020879999999999998,
+                "total_thinking_cost": 0.115444,
+                "total_full_output_cost": 0.1156528,
+                "full_total_cost": 0.11885155
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.4898083209991455,
+                    4.248295783996582
+                ],
+                "answer_generation_durations": [
+                    3.462303638458252,
+                    2.948946237564087
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.677297830581665,
+                    5.47671914100647
+                ],
+                "answer_generation_durations": [
+                    5.243189811706543,
+                    3.625166416168213
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.2325522899627686,
+                    4.804248332977295
+                ],
+                "answer_generation_durations": [
+                    3.7646734714508057,
+                    5.923965692520142
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.909072399139404,
+                    9.599756240844727
+                ],
+                "answer_generation_durations": [
+                    5.186280727386475,
+                    5.571839809417725
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.4078991413116455,
+                    4.579420328140259
+                ],
+                "answer_generation_durations": [
+                    2.1547961235046387,
+                    4.203944444656372
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you usually go alone or with others?",
+                "answer": "I typically go with others."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something you do frequently?",
+                "answer": "Yes, I try to make time for it regularly."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is the atmosphere important to you?",
+                "answer": "Yes, I find it enhances the overall feeling."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it primarily an indoor or outdoor activity?",
+                "answer": "Primarily indoors."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you typically need to make arrangements beforehand?",
+                "answer": "Sometimes it is necessary, depending on the situation."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it typically an expensive activity?",
+                "answer": "It depends on where you go."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something you typically do inside a specific type of building?",
+                "answer": "Yes, it is usually within a specific type of structure."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically associated with a certain time of day?",
+                "answer": "Often, yes, it is more common during specific hours."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is food or drink typically involved?",
+                "answer": "Yes, it usually involves that."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there usually a variety of options available?",
+                "answer": "There is usually a wide selection available."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their question about food or drink felt too direct and could easily help a Spy narrow down the secret word."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer regarding frequency felt slightly generic and less specific to the secret word's context compared to others."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their question about food or drink felt too direct for a Detective trying to be subtle about the secret word."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer regarding frequency felt very general and less connected to a specific activity compared to others."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answers felt a bit too general compared to the others, particularly \"I typically go with others\" which could apply to many activities."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21700,
+                "output_tokens": 442,
+                "thinking_tokens": 25374,
+                "full_output_tokens": 25816
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0032549999999999996,
+                "output_cost": 0.0002652,
+                "thinking_cost": 0.088809,
+                "full_output_cost": 0.08907419999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032549999999999996,
+                "total_output_cost": 0.0002652,
+                "total_thinking_cost": 0.088809,
+                "total_full_output_cost": 0.08907419999999999,
+                "full_total_cost": 0.09232919999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.2903056144714355,
+                    3.505385160446167
+                ],
+                "answer_generation_durations": [
+                    1.681014060974121,
+                    5.0209338665008545
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.927131652832031,
+                    5.266967535018921
+                ],
+                "answer_generation_durations": [
+                    2.544740915298462,
+                    2.9608168601989746
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.314504861831665,
+                    4.9938952922821045
+                ],
+                "answer_generation_durations": [
+                    3.0306975841522217,
+                    3.1806676387786865
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.5629820823669434,
+                    5.000341892242432
+                ],
+                "answer_generation_durations": [
+                    2.4639904499053955,
+                    2.727334499359131
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.889004230499268,
+                    11.01997709274292
+                ],
+                "answer_generation_durations": [
+                    2.863248348236084,
+                    6.139130353927612
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of atmosphere do you typically look for?",
+                "answer": "I usually prefer an atmosphere that feels comfortable and inviting."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What's your preferred time of day to go?",
+                "answer": "I usually prefer to go in the evening."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is the price a major factor in your decision?",
+                "answer": "It can be, depending on the occasion."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How often do you typically go?",
+                "answer": "Maybe once or twice a week, depending on my schedule."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you usually go alone or with others?",
+                "answer": "It depends, sometimes alone, sometimes with company."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How long do you typically spend there?",
+                "answer": "It varies, but typically around an hour or two."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How do you typically select which one you will visit?",
+                "answer": "It often depends on convenience and who I'm going with."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How important is the service to you?",
+                "answer": "Good service can definitely enhance the experience."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you usually make reservations beforehand?",
+                "answer": "Not typically, but I sometimes do depending on the circumstance."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's your favorite thing about going?",
+                "answer": "I enjoy the company of others and the convenience."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers regarding selection criteria (\"convenience and who I'm going with\") and service importance (\"Good service can definitely enhance the experience\") were very generic and could apply to many different things, potentially masking a lack of specific knowledge about the secret word."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers were very general and could apply to many different activities, lacking the subtle hints about the secret word that the others provided."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their final answer about enjoying \"company of others and the convenience\" felt slightly generic and could apply to many different activities, making me question their specific knowledge of the word compared to other players who mentioned more specific aspects like price, service, or reservations."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers, particularly their last one about favorite things, were quite general and could fit a variety of places, making them seem less confident about the specific context."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers were consistently very generic, which makes me suspect they don't have the context of the secret word."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "detectives",
+        "spy": 3,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 22460,
+                "output_tokens": 362,
+                "thinking_tokens": 21768,
+                "full_output_tokens": 22130
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.003369,
+                "output_cost": 0.0002172,
+                "thinking_cost": 0.076188,
+                "full_output_cost": 0.0764052
+            },
+            "total_costs": {
+                "total_input_cost": 0.003369,
+                "total_output_cost": 0.0002172,
+                "total_thinking_cost": 0.076188,
+                "total_full_output_cost": 0.0764052,
+                "full_total_cost": 0.0797742
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.095254421234131,
+                    4.214062213897705
+                ],
+                "answer_generation_durations": [
+                    2.2611193656921387,
+                    2.278581380844116
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.830057144165039,
+                    5.232097148895264
+                ],
+                "answer_generation_durations": [
+                    2.0780556201934814,
+                    3.898219347000122
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.444268703460693,
+                    6.7078094482421875
+                ],
+                "answer_generation_durations": [
+                    2.494513750076294,
+                    5.552066087722778
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.748812913894653,
+                    4.010974407196045
+                ],
+                "answer_generation_durations": [
+                    3.362269878387451,
+                    4.127262830734253
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.541962146759033,
+                    7.345365285873413
+                ],
+                "answer_generation_durations": [
+                    2.5574769973754883,
+                    5.87715220451355
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of atmosphere do you prefer there?",
+                "answer": "I usually prefer it to be relaxed and comfortable."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What do you typically look for when choosing one?",
+                "answer": "I often consider the location and the overall vibe."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How often do you typically go?",
+                "answer": "It depends on my schedule."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What's your favorite part about it?",
+                "answer": "I enjoy the overall experience it provides."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How important is the quality of service?",
+                "answer": "It's quite important for ensuring a pleasant visit."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How long do you usually spend there?",
+                "answer": "It varies depending on the meal."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of occasions typically bring you there?",
+                "answer": "Usually for social gatherings or sometimes special events."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it something you usually plan in advance, or is it more of a spontaneous activity?",
+                "answer": "It can be either, depending on the circumstances."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What time of day do you usually go?",
+                "answer": "It usually depends on when I plan to eat."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do you typically decide what to get when you are there?",
+                "answer": "It usually depends on what I'm in the mood for at the moment."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers regarding how often they go and whether they plan seemed generic and didn't reveal specific knowledge of the context."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers were consistently vague and didn't offer much context specific to the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers were very vague and didn't offer any specific context related to the word, unlike the other players."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers felt very general and didn't provide much specific context compared to others."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers felt the most generic and less specific to the secret word compared to others."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "detectives",
+        "spy": 2,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 22751,
+                "output_tokens": 426,
+                "thinking_tokens": 27023,
+                "full_output_tokens": 27449
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0034126499999999997,
+                "output_cost": 0.0002556,
+                "thinking_cost": 0.0945805,
+                "full_output_cost": 0.09483609999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0034126499999999997,
+                "total_output_cost": 0.0002556,
+                "total_thinking_cost": 0.0945805,
+                "total_full_output_cost": 0.09483609999999999,
+                "full_total_cost": 0.09824875
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.262167692184448,
+                    8.702101230621338
+                ],
+                "answer_generation_durations": [
+                    6.0313355922698975,
+                    2.588378667831421
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.984720468521118,
+                    9.592657804489136
+                ],
+                "answer_generation_durations": [
+                    6.915258169174194,
+                    8.489064693450928
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.9716856479644775,
+                    7.56374979019165
+                ],
+                "answer_generation_durations": [
+                    4.405642747879028,
+                    6.315251350402832
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.446710109710693,
+                    6.788990020751953
+                ],
+                "answer_generation_durations": [
+                    4.000033855438232,
+                    4.674781560897827
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.35395097732544,
+                    6.088271856307983
+                ],
+                "answer_generation_durations": [
+                    2.505878210067749,
+                    5.6490888595581055
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sense do you rely on most when you're there?",
+                "answer": "I find sight is very important."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What activity do you usually engage in when you are there?",
+                "answer": "I spend most of my time simply looking and taking it all in."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What's the typical atmosphere like there?",
+                "answer": "It's often quite social and can be lively."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do you typically leave feeling?",
+                "answer": "I usually feel quite satisfied."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What is something you typically receive or obtain there?",
+                "answer": "I typically receive something to consume."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sort of things might you be asked to decide upon while you are there?",
+                "answer": "I'm often asked to choose from the various options presented."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are there often distinct categories of things available to choose from?",
+                "answer": "Yes, distinct categories are frequently present."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of sounds might you hear there?",
+                "answer": "Sounds of conversation and activity are quite common."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What might you find on a surface in this place?",
+                "answer": "Various items are usually placed upon surfaces for immediate use."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How long do you typically spend in this place?",
+                "answer": "It varies depending on the purpose of the visit."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer about the typical activity (\"simply looking and taking it all in\") felt less specific to the secret word than the others."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer \"I spend most of my time simply looking and taking it all in\" was very vague and could apply to many places, unlike the other players' answers which felt more aligned with the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answer about relying on sight felt slightly less core to the experience compared to other sensory details or activities that were mentioned."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their first answer about spending most of their time \"simply looking and taking it all in\" doesn't seem like the main activity you'd do in a restaurant."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer about the typical activity, \"simply looking and taking it all in,\" felt less specific to the secret word than other players' responses."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21631,
+                "output_tokens": 397,
+                "thinking_tokens": 29263,
+                "full_output_tokens": 29660
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00324465,
+                "output_cost": 0.0002382,
+                "thinking_cost": 0.1024205,
+                "full_output_cost": 0.10265869999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00324465,
+                "total_output_cost": 0.0002382,
+                "total_thinking_cost": 0.1024205,
+                "total_full_output_cost": 0.10265869999999999,
+                "full_total_cost": 0.10590335
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.997980356216431,
+                    3.630845308303833
+                ],
+                "answer_generation_durations": [
+                    6.663210868835449,
+                    2.673746347427368
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.4424800872802734,
+                    4.868096351623535
+                ],
+                "answer_generation_durations": [
+                    2.859823703765869,
+                    3.1472465991973877
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.30135178565979,
+                    5.790803670883179
+                ],
+                "answer_generation_durations": [
+                    3.523653268814087,
+                    7.66430139541626
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.136544466018677,
+                    7.14088249206543
+                ],
+                "answer_generation_durations": [
+                    3.1858041286468506,
+                    2.8092167377471924
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.753281593322754,
+                    5.386960744857788
+                ],
+                "answer_generation_durations": [
+                    6.578955411911011,
+                    3.215167284011841
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What's important when deciding on one?",
+                "answer": "What you are in the mood for."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of atmosphere do you prefer?",
+                "answer": "Relaxed and casual is usually best."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How often do you typically engage with it?",
+                "answer": "Not as often as I'd like, but regularly."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What's your favorite part about the experience?",
+                "answer": "I enjoy the specific atmosphere of the place."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you prefer trying new ones or sticking to favorites?",
+                "answer": "While I appreciate trying new options, there's a comfort in returning to familiar favorites."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What time of day do you usually do this?",
+                "answer": "Usually in the evening."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is cost usually a factor in your decision?",
+                "answer": "It's definitely a consideration, but not the only one."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is location important?",
+                "answer": "Absolutely, it often determines convenience and accessibility."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is the level of service important to you?",
+                "answer": "Yes, it significantly contributes to the overall experience."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you usually engage with it alone or with others?",
+                "answer": "It varies, but I often enjoy the experience with others."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer to the question about how often they engage with it was very generic and could apply to almost anything, providing less specific insight compared to other players' responses."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers felt slightly more general and less specific to the nature of the secret word compared to the others."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers were the most generic and lacked connection to the context implied by other players discussing atmosphere and location."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their first answer, \"What you are in the mood for,\" was extremely generic and could apply to almost anything, potentially indicating they didn't have the specific context of the secret word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer about how often they engage with it was the most vague and could apply to many activities, not specifically a restaurant."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21915,
+                "output_tokens": 407,
+                "thinking_tokens": 25816,
+                "full_output_tokens": 26223
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00328725,
+                "output_cost": 0.00024419999999999997,
+                "thinking_cost": 0.09035599999999999,
+                "full_output_cost": 0.09060019999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00328725,
+                "total_output_cost": 0.00024419999999999997,
+                "total_thinking_cost": 0.09035599999999999,
+                "total_full_output_cost": 0.09060019999999999,
+                "full_total_cost": 0.09388745
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.018932819366455,
+                    4.61686110496521
+                ],
+                "answer_generation_durations": [
+                    2.29071307182312,
+                    2.208841323852539
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.286043405532837,
+                    6.129235744476318
+                ],
+                "answer_generation_durations": [
+                    3.1190028190612793,
+                    3.421844244003296
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.44677734375,
+                    10.46971344947815
+                ],
+                "answer_generation_durations": [
+                    4.6455652713775635,
+                    5.4421961307525635
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.547034025192261,
+                    6.47575569152832
+                ],
+                "answer_generation_durations": [
+                    3.334442377090454,
+                    8.96536898612976
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.97322940826416,
+                    7.551194190979004
+                ],
+                "answer_generation_durations": [
+                    3.8756072521209717,
+                    4.696660041809082
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of occasion might lead someone to visit this kind of place?",
+                "answer": "A special celebration or just wanting to relax."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What time of day is most common to go there?",
+                "answer": "Evening is usually a popular time for people to visit."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically indoor or outdoor?",
+                "answer": "Typically indoors, but outdoor options are common."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of atmosphere is common there?",
+                "answer": "The feeling inside often depends on the type of experience being offered."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What kind of service might you receive there?",
+                "answer": "You are often attended to by staff who help you during your visit."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sort of payment methods are commonly accepted at this place?",
+                "answer": "You can usually pay with cash, card, or digital methods."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What sort of sounds are typical?",
+                "answer": "Often there's background noise from other people and sometimes music."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What sort of typical activities might people do there?",
+                "answer": "People often gather to socialize and partake in what is provided."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of things might you find on a table?",
+                "answer": "Things for eating and drinking are usually found there."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What might you read while you are there?",
+                "answer": "Something that lists your choices."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I am voting for player_1 because their answers felt the most generic and least specific to the secret word compared to the others."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer about typical activities (\"People often gather to socialize and partake in what is provided\") was quite vague compared to other answers given, which felt more specific to the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answers felt very general and didn't provide much specific context, which could be a way to hide a lack of knowledge about the secret word."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer regarding typical activities (\"People often gather to socialize and partake in what is provided\") was exceptionally vague compared to other players' answers."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer regarding typical activities (\"partake in what is provided\") was quite vague compared to other players' answers."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21806,
+                "output_tokens": 428,
+                "thinking_tokens": 23572,
+                "full_output_tokens": 24000
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0032708999999999998,
+                "output_cost": 0.0002568,
+                "thinking_cost": 0.08250199999999999,
+                "full_output_cost": 0.0827588
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032708999999999998,
+                "total_output_cost": 0.0002568,
+                "total_thinking_cost": 0.08250199999999999,
+                "total_full_output_cost": 0.0827588,
+                "full_total_cost": 0.08602969999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.164209842681885,
+                    5.129698276519775
+                ],
+                "answer_generation_durations": [
+                    3.2340049743652344,
+                    3.318007707595825
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.522212743759155,
+                    6.4036705493927
+                ],
+                "answer_generation_durations": [
+                    2.0271687507629395,
+                    4.048497915267944
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.09113621711731,
+                    7.42153787612915
+                ],
+                "answer_generation_durations": [
+                    3.4389913082122803,
+                    4.908901691436768
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.472522258758545,
+                    8.253873109817505
+                ],
+                "answer_generation_durations": [
+                    3.9790024757385254,
+                    3.5948874950408936
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.924962997436523,
+                    8.957227230072021
+                ],
+                "answer_generation_durations": [
+                    5.976823091506958,
+                    5.1766111850738525
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What is the main reason people go to a place like this?",
+                "answer": "To experience something new or different."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What are some common activities people engage in there?",
+                "answer": "Gathering to eat and converse."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of sounds might you hear?",
+                "answer": "You often hear people talking and some activity."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of services are typically offered?",
+                "answer": "They offer items for consumption and provide a setting for enjoying them."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What is the typical atmosphere like?",
+                "answer": "It's often designed to facilitate social interaction and comfort for guests."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of objects might you find in this place?",
+                "answer": "You'd find things needed for eating and socializing."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is there a particular time of day when it's most popular?",
+                "answer": "Peak popularity often occurs around midday and in the evening."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of arrangement is there for groups of people?",
+                "answer": "There are usually specific areas or configurations for multiple people to gather together."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What is the typical range of options available to people?",
+                "answer": "The scope of what is available to choose from typically offers considerable variety."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What kind of individuals are typically found in this place?",
+                "answer": "Individuals participating as either patrons or providers."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers were consistently vague and could apply to many different types of locations, not specifically aligning with the secret word as clearly as others."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer about the sounds you might hear felt very general and could apply to many places, perhaps indicating they weren't connecting it specifically to the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I am voting for player_3 because their response about the sounds you hear felt very generic and could apply to almost any public place, rather than being specific to the secret word."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their first answer, \"To experience something new or different,\" was very generic and didn't strongly connect to the secret word, suggesting they might not know it."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answer to the first question (\"To experience something new or different.\") was the most general and least specific to the secret word compared to other players' responses."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21505,
+                "output_tokens": 371,
+                "thinking_tokens": 24660,
+                "full_output_tokens": 25031
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00322575,
+                "output_cost": 0.0002226,
+                "thinking_cost": 0.08631,
+                "full_output_cost": 0.0865326
+            },
+            "total_costs": {
+                "total_input_cost": 0.00322575,
+                "total_output_cost": 0.0002226,
+                "total_thinking_cost": 0.08631,
+                "total_full_output_cost": 0.0865326,
+                "full_total_cost": 0.08975835
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.076660394668579,
+                    4.891449451446533
+                ],
+                "answer_generation_durations": [
+                    1.7381274700164795,
+                    1.5004048347473145
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.2430338859558105,
+                    7.862548828125
+                ],
+                "answer_generation_durations": [
+                    2.1858575344085693,
+                    2.3187320232391357
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    9.139219760894775,
+                    6.416061162948608
+                ],
+                "answer_generation_durations": [
+                    3.567939043045044,
+                    2.523874521255493
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.8202645778656006,
+                    4.472095727920532
+                ],
+                "answer_generation_durations": [
+                    2.837841033935547,
+                    2.170301914215088
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.463629484176636,
+                    7.125890016555786
+                ],
+                "answer_generation_durations": [
+                    2.1758384704589844,
+                    2.1326186656951904
+                ]
+            }
+        },
+        "spy_guess": "Restaurant",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it something you typically experience alone or with company?",
+                "answer": "It's often enjoyed with company."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it have different styles or types?",
+                "answer": "Yes, it definitely has different types and styles."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically something that requires planning?",
+                "answer": "It can sometimes involve planning, depending on the situation."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Can you find it in many places?",
+                "answer": "Yes, they can be found in various locations."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it often involve service from others?",
+                "answer": "Service is definitely a part of the experience."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it associated with a specific time of day?",
+                "answer": "It is often enjoyed during particular times of the day."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is the overall environment important to the experience?",
+                "answer": "The environment is definitely a key factor."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does the experience have a typical duration?",
+                "answer": "The duration can vary quite a bit."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is there usually a range of options to choose from?",
+                "answer": "Yes, there are typically many choices available."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it often involve a financial transaction?",
+                "answer": "It typically requires payment for the experience."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I suspect player_3 because their answers regarding planning and duration felt the most general and could apply to many things, potentially indicating a lack of specific knowledge about the secret word."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "I am voting for player_3 because their answers felt a bit too general and could apply to many things, which might indicate they weren't confident about the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers regarding planning and duration seemed very general, even when compared to others who were being cautious."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "I believe player_4 is the spy because their questions about finding it in many places and requiring a financial transaction were quite generic, fitting many things, and their answers were also broad."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I am voting for player_3 because their answers regarding the duration and planning felt slightly less specific to the nature of the secret word compared to the answers from other players."
+            }
+        ]
+    }
+]

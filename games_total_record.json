@@ -2,145 +2,145 @@
     {
         "player_with_most_votes": "votes_tie",
         "winner": "spy",
-        "spy": 2,
-        "secret_word": "giraffe",
+        "spy": 4,
+        "secret_word": "lion",
         "players": {
-            "0": "gemini",
-            "1": "grok",
-            "2": "claude",
-            "3": "openai",
-            "4": "deepseek"
+            "0": "openai",
+            "1": "deepseek",
+            "2": "gemini",
+            "3": "claude",
+            "4": "grok"
         },
         "token_details": {
-            "openai": {
-                "input_tokens": 4305,
-                "output_tokens": 176,
-                "thinking_tokens": 2432,
-                "full_output_tokens": 2608
-            },
-            "gemini": {
-                "input_tokens": 4443,
-                "output_tokens": 82,
-                "thinking_tokens": 3327,
-                "full_output_tokens": 3409
+            "grok": {
+                "input_tokens": 4316,
+                "output_tokens": 86,
+                "thinking_tokens": 3614,
+                "full_output_tokens": 3700
             },
             "deepseek": {
-                "input_tokens": 4475,
-                "output_tokens": 127,
-                "thinking_tokens": 4496,
-                "full_output_tokens": 4623
+                "input_tokens": 4135,
+                "output_tokens": 124,
+                "thinking_tokens": 7182,
+                "full_output_tokens": 7306
+            },
+            "gemini": {
+                "input_tokens": 4466,
+                "output_tokens": 80,
+                "thinking_tokens": 4210,
+                "full_output_tokens": 4290
+            },
+            "openai": {
+                "input_tokens": 4362,
+                "output_tokens": 193,
+                "thinking_tokens": 2496,
+                "full_output_tokens": 2689
             },
             "claude": {
-                "input_tokens": 4563,
-                "output_tokens": 2138,
+                "input_tokens": 5179,
+                "output_tokens": 2108,
                 "thinking_tokens": 0,
-                "full_output_tokens": 2138
-            },
-            "grok": {
-                "input_tokens": 3958,
-                "output_tokens": 74,
-                "thinking_tokens": 3427,
-                "full_output_tokens": 3501
+                "full_output_tokens": 2108
             }
         },
         "token_prices": {
-            "openai": {
-                "input_cost": 0.0047355,
-                "output_cost": 0.0007744000000000001,
-                "thinking_cost": 0.0107008,
-                "full_output_cost": 0.0114752
-            },
-            "gemini": {
-                "input_cost": 0.00066645,
-                "output_cost": 4.9199999999999997e-05,
-                "thinking_cost": 0.0116445,
-                "full_output_cost": 0.0116937
+            "grok": {
+                "input_cost": 0.0012948,
+                "output_cost": 4.2999999999999995e-05,
+                "thinking_cost": 0.001807,
+                "full_output_cost": 0.00185
             },
             "deepseek": {
-                "input_cost": 0.0006265,
-                "output_cost": 0.00027812999999999997,
-                "thinking_cost": 0.00984624,
-                "full_output_cost": 0.010124369999999999
+                "input_cost": 0.0005789,
+                "output_cost": 0.00027155999999999995,
+                "thinking_cost": 0.01572858,
+                "full_output_cost": 0.01600014
+            },
+            "gemini": {
+                "input_cost": 0.0006699,
+                "output_cost": 4.8e-05,
+                "thinking_cost": 0.014735,
+                "full_output_cost": 0.014783
+            },
+            "openai": {
+                "input_cost": 0.0047982,
+                "output_cost": 0.0008492,
+                "thinking_cost": 0.0109824,
+                "full_output_cost": 0.0118316
             },
             "claude": {
-                "input_cost": 0.013689,
-                "output_cost": 0.03207,
+                "input_cost": 0.015537,
+                "output_cost": 0.03162,
                 "thinking_cost": 0.0,
-                "full_output_cost": 0.03207
-            },
-            "grok": {
-                "input_cost": 0.0011874,
-                "output_cost": 3.7e-05,
-                "thinking_cost": 0.0017135,
-                "full_output_cost": 0.0017504999999999999
+                "full_output_cost": 0.03162
             },
             "total_costs": {
-                "total_input_cost": 0.020904850000000003,
-                "total_output_cost": 0.033208730000000006,
-                "total_thinking_cost": 0.03390504,
-                "total_full_output_cost": 0.06711377,
-                "full_total_cost": 0.08801862
+                "total_input_cost": 0.0228788,
+                "total_output_cost": 0.03283176,
+                "total_thinking_cost": 0.043252979999999996,
+                "total_full_output_cost": 0.07608474,
+                "full_total_cost": 0.09896354
             }
         },
         "llm_info": {
             "player_0": {
-                "llm_type": "gemini",
-                "role": "detective",
-                "question_generation_durations": [
-                    4.391149520874023,
-                    6.15152382850647
-                ],
-                "answer_generation_durations": [
-                    4.950456619262695,
-                    2.9423272609710693
-                ]
-            },
-            "player_1": {
-                "llm_type": "grok",
-                "role": "detective",
-                "question_generation_durations": [
-                    13.23794412612915,
-                    11.666235208511353
-                ],
-                "answer_generation_durations": [
-                    5.769304037094116,
-                    4.625091791152954
-                ]
-            },
-            "player_2": {
-                "llm_type": "claude",
-                "role": "spy",
-                "question_generation_durations": [
-                    7.824184417724609,
-                    8.91218638420105
-                ],
-                "answer_generation_durations": [
-                    7.08127236366272,
-                    7.594886302947998
-                ]
-            },
-            "player_3": {
                 "llm_type": "openai",
                 "role": "detective",
                 "question_generation_durations": [
-                    4.880232572555542,
-                    8.355690956115723
+                    8.456796169281006,
+                    11.058927297592163
                 ],
                 "answer_generation_durations": [
-                    9.688746213912964,
-                    5.375575542449951
+                    4.481247663497925,
+                    5.991596698760986
                 ]
             },
-            "player_4": {
+            "player_1": {
                 "llm_type": "deepseek",
                 "role": "detective",
                 "question_generation_durations": [
-                    31.27311134338379,
-                    101.55014562606812
+                    19.135395765304565,
+                    65.35835433006287
                 ],
                 "answer_generation_durations": [
-                    34.29555916786194,
-                    14.397939920425415
+                    11.294542789459229,
+                    59.15586304664612
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.755629777908325,
+                    6.950572967529297
+                ],
+                "answer_generation_durations": [
+                    2.7983603477478027,
+                    1.8383963108062744
+                ]
+            },
+            "player_3": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.13310194015503,
+                    7.697534084320068
+                ],
+                "answer_generation_durations": [
+                    4.42852258682251,
+                    4.863325595855713
+                ]
+            },
+            "player_4": {
+                "llm_type": "grok",
+                "role": "spy",
+                "question_generation_durations": [
+                    10.310709238052368,
+                    18.726539850234985
+                ],
+                "answer_generation_durations": [
+                    7.752082824707031,
+                    6.721503973007202
                 ]
             }
         },
@@ -148,89 +148,89 @@
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "Is its appearance quite unique?",
-                "answer": "Yes, it's notably distinctive."
+                "question": "Is it something that most people would consider majestic or awe-inspiring?",
+                "answer": "Yes, many would find it quite majestic in its natural setting."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "Does it typically live in groups?",
-                "answer": "No, they're generally solitary creatures except during breeding season."
+                "question": "Is it commonly associated with living in groups or being solitary?",
+                "answer": "It is generally known for being social."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "Is it known for any special abilities or adaptations?",
-                "answer": "Yes, it has unique circulatory and skeletal adaptations to function effectively at great heights."
+                "question": "Does it make a distinctive sound that is widely recognized?",
+                "answer": "Yes, it makes a very distinctive and powerful sound that many people would recognize immediately."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "Is it primarily active during daylight hours?",
-                "answer": "Yes, their active periods align with times most conducive to their survival needs."
+                "question": "Is this considered to be at the top of its food chain?",
+                "answer": "Yes, it's commonly seen as a top predator in its environment."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "Does it require significantly less sleep than most other large mammals?",
-                "answer": "Yes, its rest requirements are notably low compared to typical large mammals."
+                "question": "Is it often depicted in stories or myths?",
+                "answer": "Yes, many cultures feature it prominently in their legends and folklore."
             },
             {
                 "ask_player": "player_0",
                 "respond_player": "player_1",
-                "question": "Does it typically inhabit a specific type of terrain or environment?",
-                "answer": "Yes, it favors particular open and expansive habitats."
+                "question": "Would encountering this typically require specialized equipment or training to observe safely?",
+                "answer": "Not typically, but in certain environments, precautions are advisable."
             },
             {
                 "ask_player": "player_1",
                 "respond_player": "player_2",
-                "question": "Is its reproductive cycle particularly extended?",
-                "answer": "Yes, the gestation period is longer than average for similar species in its class."
+                "question": "Is it typically considered to have any natural predators once it reaches adulthood?",
+                "answer": "Not usually, when fully grown."
             },
             {
                 "ask_player": "player_2",
                 "respond_player": "player_3",
-                "question": "Is it known for having any unusual dietary preferences or requirements?",
-                "answer": "Yes, it primarily consumes specific foliage types that necessitate specialized feeding adaptations."
+                "question": "Does it spend a significant portion of its time sleeping or resting?",
+                "answer": "Yes, it spends a considerable amount of its day resting and conserving energy between its active periods."
             },
             {
                 "ask_player": "player_3",
                 "respond_player": "player_4",
-                "question": "Does it undergo significant seasonal migrations?",
-                "answer": "Yes, they may shift ranges in response to resource availability rather than fixed seasonal patterns."
+                "question": "Would you consider its physical appearance to be distinctively different between males and females of its kind?",
+                "answer": "Yes, males and females exhibit noticeable differences in size and certain physical features."
             },
             {
                 "ask_player": "player_4",
                 "respond_player": "player_0",
-                "question": "Does it rely heavily on non-vocal cues for social interaction?",
-                "answer": "Yes, non-vocal cues are significant in their social structure."
+                "question": "Is it known for migrating seasonally?",
+                "answer": "No, they generally stay within their territories and do not migrate seasonally."
             }
         ],
         "voting_record": [
             {
                 "voter": "player_0",
-                "voted_for": "player_2",
-                "reason": "I am voting for player_2 because their answer about the creature being \"generally solitary\" doesn't seem accurate based on my knowledge of the secret word."
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their answer about needing equipment or training to safely encounter the subject was overly vague and hedged in a way that doesn\u2019t align with the other, more decisive responses.\u201d"
             },
             {
                 "voter": "player_1",
-                "voted_for": "player_4",
-                "reason": "\"I believe player_4 is the spy because their response about seasonal migrations being based on resource availability felt slightly vague and less aligned with the specific behaviors implied by the secret word.\""
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their answer about the secret word having 'no natural predators when fully grown' could apply broadly, but lions do face occasional threats (e.g., humans, hyenas). Their phrasing feels slightly vague compared to other answers, which might indicate the Spy avoiding concrete details.\""
             },
             {
                 "voter": "player_2",
-                "voted_for": "player_4",
-                "reason": "\"I suspect player_4 is the spy because their answers seem intentionally vague and overly technical. When asked about activity patterns and migration, they used unnecessarily complex phrasing that could apply to many animals rather than specific details about this particular species. This seems like a strategy to hide lack of knowledge about the secret word.\""
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their initial question about the word being \"majestic or awe-inspiring\" was quite general and didn't narrow down the possibilities effectively."
             },
             {
                 "voter": "player_3",
-                "voted_for": "player_2",
-                "reason": "\u201cI suspect player_2 because they described the animal as generally solitary, but giraffes are known to form loose herds rather than being truly solitary.\u201d"
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the spy because their answers, while not incorrect, seem deliberately vague and could apply to many animals. Their response about 'precautions being advisable' when observing lacks the specificity that someone familiar with lions would likely provide.\""
             },
             {
                 "voter": "player_4",
-                "voted_for": "player_1",
-                "reason": "\"I suspect player_1 is the Spy because their answer about the creature being 'generally solitary except during breeding season' doesn't fully align with giraffes, which often form loose groups even outside breeding periods. This subtle inconsistency suggests a lack of specific knowledge about the secret word.\""
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their response about it being social and having no predators seemed overly vague and didn't align well with the distinctive features others mentioned.\""
             }
         ]
     }
