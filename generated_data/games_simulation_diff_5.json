@@ -1,0 +1,1412 @@
+[
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "ceremony",
+        "players": {
+            "0": "gemini",
+            "1": "claude",
+            "2": "openai",
+            "3": "deepseek",
+            "4": "grok"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4602,
+                "output_tokens": 76,
+                "thinking_tokens": 6053,
+                "full_output_tokens": 6129
+            },
+            "grok": {
+                "input_tokens": 4604,
+                "output_tokens": 101,
+                "thinking_tokens": 4716,
+                "full_output_tokens": 4817
+            },
+            "claude": {
+                "input_tokens": 4777,
+                "output_tokens": 2064,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2064
+            },
+            "openai": {
+                "input_tokens": 4277,
+                "output_tokens": 196,
+                "thinking_tokens": 2368,
+                "full_output_tokens": 2564
+            },
+            "deepseek": {
+                "input_tokens": 4221,
+                "output_tokens": 106,
+                "thinking_tokens": 4219,
+                "full_output_tokens": 4325
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0006902999999999999,
+                "output_cost": 4.56e-05,
+                "thinking_cost": 0.0211855,
+                "full_output_cost": 0.0212311
+            },
+            "grok": {
+                "input_cost": 0.0013812,
+                "output_cost": 5.05e-05,
+                "thinking_cost": 0.002358,
+                "full_output_cost": 0.0024085
+            },
+            "claude": {
+                "input_cost": 0.014331,
+                "output_cost": 0.03096,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.03096
+            },
+            "openai": {
+                "input_cost": 0.0047047,
+                "output_cost": 0.0008624,
+                "thinking_cost": 0.0104192,
+                "full_output_cost": 0.0112816
+            },
+            "deepseek": {
+                "input_cost": 0.0005909400000000001,
+                "output_cost": 0.00023213999999999998,
+                "thinking_cost": 0.009239609999999999,
+                "full_output_cost": 0.00947175
+            },
+            "total_costs": {
+                "total_input_cost": 0.02169814,
+                "total_output_cost": 0.03215064,
+                "total_thinking_cost": 0.043202309999999994,
+                "total_full_output_cost": 0.07535295,
+                "full_total_cost": 0.09705109
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.687589645385742,
+                    4.328609943389893
+                ],
+                "answer_generation_durations": [
+                    5.194381237030029,
+                    1.9485137462615967
+                ]
+            },
+            "player_1": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.799190998077393,
+                    7.976156949996948
+                ],
+                "answer_generation_durations": [
+                    3.7611539363861084,
+                    6.4480719566345215
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.102664947509766,
+                    4.072772979736328
+                ],
+                "answer_generation_durations": [
+                    3.8182811737060547,
+                    6.163916826248169
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    365.0110251903534,
+                    222.8962676525116
+                ],
+                "answer_generation_durations": [
+                    448.6293363571167,
+                    302.09023666381836
+                ]
+            },
+            "player_4": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.438897132873535,
+                    12.009422779083252
+                ],
+                "answer_generation_durations": [
+                    15.121866464614868,
+                    5.146102666854858
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it usually a formal event?",
+                "answer": "Yes, it typically has a formal or structured nature to it."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it often mark or celebrate a significant life event or achievement?",
+                "answer": "Yes, it\u2019s often intended to commemorate a noteworthy milestone or life transition."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it usually involve a designated officiant or leader who guides the proceedings?",
+                "answer": "Yes, there's usually someone in charge to ensure everything follows tradition."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it common for participants to engage in specific rituals or symbolic gestures during the event?",
+                "answer": "Yes, participants frequently incorporate such elements into the proceedings, and I ask player_0: Is it typically planned well in advance?"
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it typically planned well in advance?",
+                "answer": "Often, it requires a good amount of preparation time."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it involve gathering people together?",
+                "answer": "Yes, it generally involves people coming together for the occasion."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it vary significantly across different cultures?",
+                "answer": "Yes, its practices and customs often differ quite a bit across cultures."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it typically involve participants wearing specific attire or following a dress code?",
+                "answer": "Yes, appropriate dress is generally expected to align with the event's tone and traditions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is there usually an exchange of symbolic items or tokens during the proceedings?",
+                "answer": "Yes, exchanges of symbolic items are often part of the event."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically follow a predetermined sequence of events?",
+                "answer": "It usually unfolds in a specific sequence."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "I believe player_4 is the spy because their answers, while consistent, sometimes used slightly more generic terms like 'proceedings' and 'event' when describing specific aspects compared to other players."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 is the spy because their answer about following 'a specific sequence' felt slightly generic compared to the more specific nature of ceremonies. Their responses, while not wrong, lacked some of the cultural and traditional specificity that others demonstrated when discussing the secret word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\u201cI\u2019m suspicious because unlike everyone else who directly affirmed with a \u2018yes,\u2019 player_0\u2019s response started with \u2018often,\u2019 making their answer phrasing stand out as less confident and possibly fabricated.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\"Player_0's answers about preparation and gathering people were overly generic, which could indicate they're the Spy avoiding specifics tied to the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their answers, like the one about the officiant, felt slightly vague and less detailed than the others, which made me suspicious.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "stadium",
+        "players": {
+            "0": "grok",
+            "1": "claude",
+            "2": "deepseek",
+            "3": "openai",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 5063,
+                "output_tokens": 112,
+                "thinking_tokens": 6054,
+                "full_output_tokens": 6166
+            },
+            "grok": {
+                "input_tokens": 4484,
+                "output_tokens": 109,
+                "thinking_tokens": 2880,
+                "full_output_tokens": 2989
+            },
+            "claude": {
+                "input_tokens": 4707,
+                "output_tokens": 1823,
+                "thinking_tokens": 0,
+                "full_output_tokens": 1823
+            },
+            "openai": {
+                "input_tokens": 4608,
+                "output_tokens": 228,
+                "thinking_tokens": 3584,
+                "full_output_tokens": 3812
+            },
+            "deepseek": {
+                "input_tokens": 4465,
+                "output_tokens": 138,
+                "thinking_tokens": 2974,
+                "full_output_tokens": 3112
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00075945,
+                "output_cost": 6.72e-05,
+                "thinking_cost": 0.021189,
+                "full_output_cost": 0.0212562
+            },
+            "grok": {
+                "input_cost": 0.0013452,
+                "output_cost": 5.4499999999999997e-05,
+                "thinking_cost": 0.0014399999999999999,
+                "full_output_cost": 0.0014945
+            },
+            "claude": {
+                "input_cost": 0.014121,
+                "output_cost": 0.027345,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.027345
+            },
+            "openai": {
+                "input_cost": 0.0050688,
+                "output_cost": 0.0010032,
+                "thinking_cost": 0.0157696,
+                "full_output_cost": 0.0167728
+            },
+            "deepseek": {
+                "input_cost": 0.0006251000000000001,
+                "output_cost": 0.00030221999999999996,
+                "thinking_cost": 0.006513059999999999,
+                "full_output_cost": 0.006815279999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.02191955,
+                "total_output_cost": 0.028772119999999998,
+                "total_thinking_cost": 0.044911660000000006,
+                "total_full_output_cost": 0.07368377999999999,
+                "full_total_cost": 0.09560332999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.787891864776611,
+                    87.74777126312256
+                ],
+                "answer_generation_durations": [
+                    3.5107483863830566,
+                    3.7583415508270264
+                ]
+            },
+            "player_1": {
+                "llm_type": "claude",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.436808824539185,
+                    6.080369234085083
+                ],
+                "answer_generation_durations": [
+                    4.970491647720337,
+                    7.3960912227630615
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    281.7041404247284,
+                    274.880597114563
+                ],
+                "answer_generation_durations": [
+                    231.7045760154724,
+                    280.3878917694092
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.169600009918213,
+                    6.7021260261535645
+                ],
+                "answer_generation_durations": [
+                    6.06195330619812,
+                    3.479168176651001
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.208510875701904,
+                    7.723033666610718
+                ],
+                "answer_generation_durations": [
+                    4.353107452392578,
+                    8.58270788192749
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Have you ever attended an event with a large open-air gathering?",
+                "answer": "Yes, I've been to several and always enjoy the atmosphere when there's a good crowd and perfect weather."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What equipment or items do you usually bring along?",
+                "answer": "A pair of binoculars and a reusable water bottle."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What sounds do you associate most with this kind of environment?",
+                "answer": "A low hum of voices punctuated by waves of spontaneous cheering and rhythmic clapping."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of attire do you usually wear for these large gatherings, and why?",
+                "answer": "Something comfortable and weather-appropriate, to fully enjoy being in the crowd."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do you typically find your way to your specific spot once you arrive?",
+                "answer": "I usually follow the designated signs and pathways to navigate through the crowd efficiently."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What do you think contributes most to the energy at these types of events?",
+                "answer": "I think the collective enthusiasm of the crowd combined with the anticipation of what's about to happen creates an electric atmosphere that's truly contagious."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How often do you participate in these events throughout the year?",
+                "answer": "A few times a season, depending on the schedule and what's happening."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What factors influence your decision on when to arrive before the event starts?",
+                "answer": "I usually aim to arrive early enough to avoid long entry lines and secure a good vantage point without having to wait around excessively."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What mode of transportation do you typically use to get to these events, and what do you like about it?",
+                "answer": "I often use public transport because it's usually the most efficient way to navigate the area around the venue and handle the crowds."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What view or vantage point do you find most appealing when attending these types of events?",
+                "answer": "I prefer an elevated spot that offers a clear, panoramic view of the entire gathering."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their mention of bringing binoculars seems slightly out of place and less directly tied to the typical experiences discussed, potentially indicating a lack of genuine familiarity with the theme.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answers about attire and transportation were notably generic and could apply to almost any gathering. While others mentioned specific items like binoculars or described distinct sounds and viewpoints, player_4's responses lacked the specific details that would indicate familiarity with this particular type of event.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their responses, like 'something comfortable and weather-appropriate' for attire, are overly generic and lack subtle ties to stadium-specific context (e.g., team colors, seating logistics). Their transportation answer, while plausible, could apply to any large venue, lacking the nuance expected from a Detective familiar with the secret word.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because bringing binoculars feels out of place for a stadium\u2014most venues have tiered seating and big screens, so it sounds like they\u2019re picturing a more generic open-air setting rather than a true stadium experience.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I am voting for player_1 because their first answer regarding atmosphere, crowd, and weather felt a bit more generic compared to the specific experiences others described early in the game."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "concert",
+        "players": {
+            "0": "claude",
+            "1": "deepseek",
+            "2": "gemini",
+            "3": "openai",
+            "4": "grok"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4619,
+                "output_tokens": 101,
+                "thinking_tokens": 6098,
+                "full_output_tokens": 6199
+            },
+            "grok": {
+                "input_tokens": 4745,
+                "output_tokens": 108,
+                "thinking_tokens": 3859,
+                "full_output_tokens": 3967
+            },
+            "claude": {
+                "input_tokens": 5257,
+                "output_tokens": 2321,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2321
+            },
+            "openai": {
+                "input_tokens": 4324,
+                "output_tokens": 226,
+                "thinking_tokens": 2112,
+                "full_output_tokens": 2338
+            },
+            "deepseek": {
+                "input_tokens": 4283,
+                "output_tokens": 138,
+                "thinking_tokens": 3031,
+                "full_output_tokens": 3169
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00069285,
+                "output_cost": 6.0599999999999996e-05,
+                "thinking_cost": 0.021343,
+                "full_output_cost": 0.021403600000000002
+            },
+            "grok": {
+                "input_cost": 0.0014234999999999999,
+                "output_cost": 5.4e-05,
+                "thinking_cost": 0.0019295,
+                "full_output_cost": 0.0019835
+            },
+            "claude": {
+                "input_cost": 0.015771,
+                "output_cost": 0.034815,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.034815
+            },
+            "openai": {
+                "input_cost": 0.0047564,
+                "output_cost": 0.0009944,
+                "thinking_cost": 0.0092928,
+                "full_output_cost": 0.0102872
+            },
+            "deepseek": {
+                "input_cost": 0.00059962,
+                "output_cost": 0.00030221999999999996,
+                "thinking_cost": 0.00663789,
+                "full_output_cost": 0.006940109999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.02324337,
+                "total_output_cost": 0.036226219999999996,
+                "total_thinking_cost": 0.039203190000000006,
+                "total_full_output_cost": 0.07542941,
+                "full_total_cost": 0.09867278
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.548996210098267,
+                    5.468972206115723
+                ],
+                "answer_generation_durations": [
+                    9.963545560836792,
+                    7.388707876205444
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    203.55665254592896,
+                    211.51858854293823
+                ],
+                "answer_generation_durations": [
+                    111.60351967811584,
+                    311.9128849506378
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.222242593765259,
+                    4.68109130859375
+                ],
+                "answer_generation_durations": [
+                    5.932634115219116,
+                    5.441039562225342
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    18.2559175491333,
+                    3.550537347793579
+                ],
+                "answer_generation_durations": [
+                    4.854869365692139,
+                    3.646855115890503
+                ]
+            },
+            "player_4": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.921716690063477,
+                    11.018488645553589
+                ],
+                "answer_generation_durations": [
+                    4.163660049438477,
+                    3.3033344745635986
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What's your favorite venue size?",
+                "answer": "I prefer places where the atmosphere feels intimate yet energetic."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How important is timing for the success of the event?",
+                "answer": "It's incredibly important; a lot depends on everything running on schedule."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How does the energy of the crowd affect your enjoyment?",
+                "answer": "I feed off the crowd\u2019s buzz\u2014when they\u2019re hyped, I\u2019m hooked, but if they\u2019re flat, the event loses its spark."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you prefer events with a tightly structured schedule, or do you like to leave room for spontaneous moments?",
+                "answer": "I enjoy a mix of structure and spontaneity, as it keeps things exciting without feeling too rigid."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How does the visual setup contribute to your enjoyment of events?",
+                "answer": "Good lighting and stage design elevate the whole experience, making it easier to connect with the performers and get lost in the moment."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How important is the sound quality to your overall experience?",
+                "answer": "It\u2019s crucial\u2014clear, balanced audio ensures you don\u2019t miss the nuances, but poor quality can ruin immersion."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How do transitions between segments affect your overall experience?",
+                "answer": "Seamless transitions are crucial for maintaining momentum and keeping the audience engaged."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What makes the experience memorable for you?",
+                "answer": "When a well-crafted program aligns with an unplanned surprise and the crowd\u2019s excitement peaks in that moment."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How important is audience participation or interactivity to your enjoyment of an event?",
+                "answer": "Audience participation adds a dynamic layer that significantly enhances my enjoyment of events."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How does the variety in event components affect your overall satisfaction?",
+                "answer": "I find that a good mix of different elements keeps me engaged throughout the entire experience, preventing any sense of monotony or boredom."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answers are very generic and could apply to almost any event. They never mentioned anything specific to concerts like acoustics, music, performances, or bands, while everyone else had more concert-specific references about sound quality, crowd energy, or stage design.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the Spy because their emphasis on 'structure and spontaneity' and 'audience participation' feels overly generic. While concerts involve some interactivity, their answers lack specific alignment with elements like sound, timing, or crowd energy that other detectives subtly highlighted, making their responses safer for a Spy guessing the word.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "I suspect player_4 is the spy because their questions, such as asking about the \"visual setup\" and \"variety in event components,\" felt a bit more general compared to others, potentially used to avoid giving away knowledge of the specific secret word."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because both of their answers focused almost entirely on timing and transitions, without touching on atmosphere, visuals, or crowd energy\u2014too narrowly focused for someone in on our shared theme.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their responses, like emphasizing timing and schedules without tying into the immersive or energetic aspects as strongly as others, felt somewhat generic and less aligned with the overall theme."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "typewriter",
+        "players": {
+            "0": "deepseek",
+            "1": "gemini",
+            "2": "openai",
+            "3": "grok",
+            "4": "claude"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4209,
+                "output_tokens": 87,
+                "thinking_tokens": 6410,
+                "full_output_tokens": 6497
+            },
+            "grok": {
+                "input_tokens": 4266,
+                "output_tokens": 92,
+                "thinking_tokens": 3763,
+                "full_output_tokens": 3855
+            },
+            "claude": {
+                "input_tokens": 5189,
+                "output_tokens": 2314,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2314
+            },
+            "openai": {
+                "input_tokens": 3919,
+                "output_tokens": 176,
+                "thinking_tokens": 2688,
+                "full_output_tokens": 2864
+            },
+            "deepseek": {
+                "input_tokens": 4272,
+                "output_tokens": 122,
+                "thinking_tokens": 2882,
+                "full_output_tokens": 3004
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0006313499999999999,
+                "output_cost": 5.2199999999999995e-05,
+                "thinking_cost": 0.022435,
+                "full_output_cost": 0.0224872
+            },
+            "grok": {
+                "input_cost": 0.0012798,
+                "output_cost": 4.6e-05,
+                "thinking_cost": 0.0018815,
+                "full_output_cost": 0.0019275
+            },
+            "claude": {
+                "input_cost": 0.015567000000000001,
+                "output_cost": 0.03471,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.03471
+            },
+            "openai": {
+                "input_cost": 0.0043109,
+                "output_cost": 0.0007744000000000001,
+                "thinking_cost": 0.011827200000000001,
+                "full_output_cost": 0.012601600000000001
+            },
+            "deepseek": {
+                "input_cost": 0.0005980800000000001,
+                "output_cost": 0.00026718,
+                "thinking_cost": 0.00631158,
+                "full_output_cost": 0.0065787599999999995
+            },
+            "total_costs": {
+                "total_input_cost": 0.02238713,
+                "total_output_cost": 0.03584978,
+                "total_thinking_cost": 0.04245528,
+                "total_full_output_cost": 0.07830506,
+                "full_total_cost": 0.10069219
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    171.33653497695923,
+                    274.5970776081085
+                ],
+                "answer_generation_durations": [
+                    197.99314188957214,
+                    267.63232946395874
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.759254217147827,
+                    7.9997148513793945
+                ],
+                "answer_generation_durations": [
+                    6.440497636795044,
+                    9.119041919708252
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.604225158691406,
+                    4.104720592498779
+                ],
+                "answer_generation_durations": [
+                    5.324729681015015,
+                    15.218868255615234
+                ]
+            },
+            "player_3": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.195183277130127,
+                    9.42160940170288
+                ],
+                "answer_generation_durations": [
+                    4.3552045822143555,
+                    4.24830436706543
+                ]
+            },
+            "player_4": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    12.136603116989136,
+                    8.404854774475098
+                ],
+                "answer_generation_durations": [
+                    5.794580698013306,
+                    7.64160943031311
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sound is most commonly associated with this object?",
+                "answer": "There is a distinct rhythmic sound associated with its use."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Describe a characteristic motion involved in its use.",
+                "answer": "It often involves a repetitive back-and-forth motion."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What materials is it typically made from?",
+                "answer": "It's typically made from metal and plastic materials."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What is a common location where this object might be stored?",
+                "answer": "It would typically be found on a desk or in an office area."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What distinctive feature helps identify this object from similar items?",
+                "answer": "A visible component that shifts incrementally with each input."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What component needs periodic adjustment for accurate operation?",
+                "answer": "The mechanism controlling the output position might require periodic attention."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What supply needs to be replenished for it to produce results?",
+                "answer": "It requires a constant replenishment of paper to keep producing output."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What power source does it typically use?",
+                "answer": "It typically relies on manual operation or electrical power for functionality."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What format does its output typically produce?",
+                "answer": "The output appears as characters arranged in uniform lines on paper."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "During what era did this object reach its peak popularity?",
+                "answer": "Its prominence peaked before the widespread adoption of personal computers."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about the power source ('manual or electrical') leans toward ambiguity. While electric typewriters exist, emphasizing 'electrical' might hint at a printer instead. Detectives would likely focus on manual operation to avoid confusion, making this answer inconsistent with subtlety around 'typewriter'.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers about materials, power source, and output format were quite generic and could apply to many different objects, not showing specific knowledge of the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their answers (\u2018distinct rhythmic sound\u2019 and \u2018mechanism controlling output position\u2019) are unusually vague and roundabout compared to the more concrete details given by others.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their response about a 'repetitive back-and-forth motion' felt slightly vague and not as specifically tied to the object's typical use as the other answers were.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the spy because their answers about 'rhythmic sound' and 'mechanism controlling output position' are vague and could apply to many objects beyond a typewriter. They didn't mention any typewriter-specific terminology that would demonstrate clear knowledge of the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "musician",
+        "players": {
+            "0": "openai",
+            "1": "grok",
+            "2": "deepseek",
+            "3": "gemini",
+            "4": "claude"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4720,
+                "output_tokens": 100,
+                "thinking_tokens": 5395,
+                "full_output_tokens": 5495
+            },
+            "grok": {
+                "input_tokens": 3886,
+                "output_tokens": 100,
+                "thinking_tokens": 3383,
+                "full_output_tokens": 3483
+            },
+            "claude": {
+                "input_tokens": 5454,
+                "output_tokens": 1966,
+                "thinking_tokens": 0,
+                "full_output_tokens": 1966
+            },
+            "openai": {
+                "input_tokens": 4460,
+                "output_tokens": 195,
+                "thinking_tokens": 2496,
+                "full_output_tokens": 2691
+            },
+            "deepseek": {
+                "input_tokens": 4368,
+                "output_tokens": 113,
+                "thinking_tokens": 2116,
+                "full_output_tokens": 2229
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.000708,
+                "output_cost": 5.9999999999999995e-05,
+                "thinking_cost": 0.0188825,
+                "full_output_cost": 0.0189425
+            },
+            "grok": {
+                "input_cost": 0.0011658,
+                "output_cost": 4.9999999999999996e-05,
+                "thinking_cost": 0.0016914999999999999,
+                "full_output_cost": 0.0017414999999999998
+            },
+            "claude": {
+                "input_cost": 0.016362,
+                "output_cost": 0.029490000000000002,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.029490000000000002
+            },
+            "openai": {
+                "input_cost": 0.004906000000000001,
+                "output_cost": 0.000858,
+                "thinking_cost": 0.0109824,
+                "full_output_cost": 0.0118404
+            },
+            "deepseek": {
+                "input_cost": 0.00061152,
+                "output_cost": 0.00024746999999999996,
+                "thinking_cost": 0.00463404,
+                "full_output_cost": 0.0048815099999999995
+            },
+            "total_costs": {
+                "total_input_cost": 0.023753320000000005,
+                "total_output_cost": 0.030705470000000002,
+                "total_thinking_cost": 0.03619044,
+                "total_full_output_cost": 0.06689591,
+                "full_total_cost": 0.09064923000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.502373218536377,
+                    11.724106550216675
+                ],
+                "answer_generation_durations": [
+                    12.40650725364685,
+                    2.7168819904327393
+                ]
+            },
+            "player_1": {
+                "llm_type": "grok",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.341454744338989,
+                    6.288549900054932
+                ],
+                "answer_generation_durations": [
+                    3.8162734508514404,
+                    8.001310586929321
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    135.7821660041809,
+                    114.7506537437439
+                ],
+                "answer_generation_durations": [
+                    176.43217134475708,
+                    289.5300154685974
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.244044780731201,
+                    7.715138912200928
+                ],
+                "answer_generation_durations": [
+                    3.200330972671509,
+                    4.237103700637817
+                ]
+            },
+            "player_4": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.202165842056274,
+                    8.708440780639648
+                ],
+                "answer_generation_durations": [
+                    6.954089164733887,
+                    15.772758722305298
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do individuals in this role often travel as part of their work?",
+                "answer": "Yes, individuals in this role frequently travel to carry out their duties."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What are the primary responsibilities of this role?",
+                "answer": "They focus on creating and delivering expressive performances."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How does this role typically engage with their audience?",
+                "answer": "Engagement often happens through shared experiences centered around their output."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What role does practice play in this profession?",
+                "answer": "Practice is fundamental to mastering the skills required and is typically a daily commitment for those who want to excel in this profession."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Are there different specializations or categories within this profession?",
+                "answer": "Yes, practitioners often subdivide into different branches, each emphasizing unique methods and skill sets."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do practitioners of this profession typically rely on auditory or visual skills as a primary tool?",
+                "answer": "Practitioners of this profession typically rely on a combination of auditory and visual skills to enhance their expressive deliveries."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What are the common challenges faced by practitioners in this profession?",
+                "answer": "Balancing technical precision with emotional expression while maintaining consistency in their work can be challenging."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How does the balance between structured routines and spontaneous creativity affect success in this profession?",
+                "answer": "Finding the right mix of structured discipline and spontaneous expression is often crucial for achieving excellence in this field."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What qualities are often valued in the 'output' produced by this profession?",
+                "answer": "Originality, emotional depth, technical excellence, and the ability to connect with audiences are highly valued qualities in this profession's output."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is this profession more commonly pursued as an individual career or as part of a collaborative group?",
+                "answer": "It often involves collaboration, though solo pursuits are also common."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their claim that practitioners rely equally on auditory and visual skills doesn\u2019t fit what a musician primarily uses, suggesting they don\u2019t really know the secret word.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their response about engagement through shared experiences felt overly generic and didn't tie in as smoothly with the specific challenges and responsibilities mentioned by others.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the Spy because their answer about audience engagement ('shared experiences centered around their output') is overly vague and avoids specifics tied to musicians, like live performances or concerts. A Detective would likely reference clearer musical contexts.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers felt slightly more general and broadly applicable to various professions compared to the answers provided by other players, making them seem less certain of the specific secret word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 is the spy because their answers were notably vague. When asked about audience engagement, their response about 'shared experiences centered around their output' could apply to almost any profession. Similarly, their answer about 'structured discipline and spontaneous expression' lacks the specific music-related terminology that a person familiar with musicians would likely use.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "conference",
+        "players": {
+            "0": "grok",
+            "1": "claude",
+            "2": "deepseek",
+            "3": "openai",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 5198,
+                "output_tokens": 108,
+                "thinking_tokens": 8378,
+                "full_output_tokens": 8486
+            },
+            "grok": {
+                "input_tokens": 4608,
+                "output_tokens": 116,
+                "thinking_tokens": 2882,
+                "full_output_tokens": 2998
+            },
+            "claude": {
+                "input_tokens": 5031,
+                "output_tokens": 2062,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2062
+            },
+            "openai": {
+                "input_tokens": 4764,
+                "output_tokens": 219,
+                "thinking_tokens": 2304,
+                "full_output_tokens": 2523
+            },
+            "deepseek": {
+                "input_tokens": 4320,
+                "output_tokens": 137,
+                "thinking_tokens": 4019,
+                "full_output_tokens": 4156
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0007796999999999999,
+                "output_cost": 6.48e-05,
+                "thinking_cost": 0.029323,
+                "full_output_cost": 0.0293878
+            },
+            "grok": {
+                "input_cost": 0.0013824,
+                "output_cost": 5.8e-05,
+                "thinking_cost": 0.001441,
+                "full_output_cost": 0.001499
+            },
+            "claude": {
+                "input_cost": 0.015093,
+                "output_cost": 0.03093,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.03093
+            },
+            "openai": {
+                "input_cost": 0.0052404,
+                "output_cost": 0.0009636,
+                "thinking_cost": 0.0101376,
+                "full_output_cost": 0.0111012
+            },
+            "deepseek": {
+                "input_cost": 0.0006048000000000001,
+                "output_cost": 0.00030002999999999996,
+                "thinking_cost": 0.00880161,
+                "full_output_cost": 0.00910164
+            },
+            "total_costs": {
+                "total_input_cost": 0.0231003,
+                "total_output_cost": 0.03231643,
+                "total_thinking_cost": 0.04970321,
+                "total_full_output_cost": 0.08201963999999999,
+                "full_total_cost": 0.10511994
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.143974781036377,
+                    6.593197822570801
+                ],
+                "answer_generation_durations": [
+                    3.5270726680755615,
+                    2.838637590408325
+                ]
+            },
+            "player_1": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.881222009658813,
+                    8.721009731292725
+                ],
+                "answer_generation_durations": [
+                    7.348587512969971,
+                    6.3217995166778564
+                ]
+            },
+            "player_2": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    19.280102252960205,
+                    42.39860939979553
+                ],
+                "answer_generation_durations": [
+                    124.53315329551697,
+                    23.83634924888611
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.246731758117676,
+                    7.275982856750488
+                ],
+                "answer_generation_durations": [
+                    4.475898265838623,
+                    3.4026286602020264
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.792827367782593,
+                    4.832350730895996
+                ],
+                "answer_generation_durations": [
+                    4.441709280014038,
+                    5.490903377532959
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What do you think about events that involve sharing knowledge in groups?",
+                "answer": "I think they're valuable opportunities for professional growth and networking, especially when well-organized with meaningful topics."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How much advance planning do you think is necessary for successful large group gatherings?",
+                "answer": "I believe a few months of planning is ideal to ensure smooth logistics and meaningful engagement opportunities."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do you balance structured sessions with informal interaction time in such events?",
+                "answer": "I alternate shorter formal sessions with open networking breaks so attendees stay engaged and have time to connect informally."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How would you encourage engagement from participants who are hesitant to speak up during group discussions?",
+                "answer": "Allowing anonymous questions or comments can help those hesitant to speak up feel more comfortable sharing their thoughts."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What duration do you think is optimal for this kind of event?",
+                "answer": "I believe a duration of two to three days strikes a good balance for comprehensive coverage without overwhelming participants."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What factors do you think contribute most to the overall atmosphere of these types of gatherings?",
+                "answer": "The caliber of speakers, quality of the venue, and opportunities for meaningful networking all significantly impact how engaging and productive these gatherings feel."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What technological tools or resources do you find most essential when attending large professional gatherings?",
+                "answer": "Reliable event apps for schedule management and attendee networking, plus real-time collaboration platforms for seamless communication during sessions."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do you approach gathering participant feedback to improve future iterations of the event?",
+                "answer": "I send targeted post-event surveys with a mix of rating scales and open-ended questions, then conduct brief follow-up interviews with select attendees."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How would you adjust the agenda if a key speaker canceled at the last minute?",
+                "answer": "I would attempt to reallocate the scheduled time slot to existing content or quickly find an appropriate replacement speaker."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What are your thoughts on the importance of the venue location for attendee experience?",
+                "answer": "The venue location plays a crucial role in enhancing attendee experience by influencing accessibility, comfort, and overall engagement levels."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because their responses, such as suggesting anonymous questions, seemed slightly generic and less integrated with the specific nuances of group events discussed by others.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answer about reallocating time when a speaker cancels doesn't address the question they were asked about venue location importance. This disconnect suggests they might not understand the context of a conference where both speakers and venues are critical elements.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's response about adjusting the agenda by reallocating time for a canceled speaker felt generic and reactive, lacking deeper strategic insight a Detective might have. Their focus on anonymous engagement, while valid, could hint at uncertainty about the secret word's context.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers stayed very general about group discussions and lacked the conference-specific details (like sessions, networking formats, or venue considerations) that other players naturally brought up.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their questions felt slightly more general and less focused on the specific operational aspects of a conference compared to the questions asked by other players."
+            }
+        ]
+    }
+]

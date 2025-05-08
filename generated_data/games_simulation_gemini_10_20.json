@@ -1,0 +1,1878 @@
+[
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "teacher",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21996,
+                "output_tokens": 414,
+                "thinking_tokens": 23622,
+                "full_output_tokens": 24036
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0032993999999999996,
+                "output_cost": 0.00024839999999999997,
+                "thinking_cost": 0.082677,
+                "full_output_cost": 0.0829254
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032993999999999996,
+                "total_output_cost": 0.00024839999999999997,
+                "total_thinking_cost": 0.082677,
+                "total_full_output_cost": 0.0829254,
+                "full_total_cost": 0.08622479999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.976776361465454,
+                    6.010282278060913
+                ],
+                "answer_generation_durations": [
+                    3.6576406955718994,
+                    3.3828206062316895
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.869384527206421,
+                    6.585951089859009
+                ],
+                "answer_generation_durations": [
+                    3.570690393447876,
+                    6.545863628387451
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.217505216598511,
+                    4.594735622406006
+                ],
+                "answer_generation_durations": [
+                    5.883244514465332,
+                    4.897201299667358
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.158104658126831,
+                    5.5533528327941895
+                ],
+                "answer_generation_durations": [
+                    5.358903169631958,
+                    4.407056093215942
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.87741231918335,
+                    4.75389289855957
+                ],
+                "answer_generation_durations": [
+                    2.532163619995117,
+                    2.3064520359039307
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of impact can this have on a person?",
+                "answer": "It can significantly alter their perspective and how they interact with the world around them."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What are some common scenarios where it comes up?",
+                "answer": "It frequently appears in contexts centered around sharing knowledge and fostering understanding."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What is their primary goal or function?",
+                "answer": "Their main purpose is often to help individuals grow and develop."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do they influence the future?",
+                "answer": "They help lay the groundwork for future progress and understanding."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What kind of challenges do they often encounter?",
+                "answer": "They sometimes face difficulties in managing varied needs and keeping everyone engaged."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of environment are they typically found in?",
+                "answer": "They are commonly encountered in settings focused on shared development and the exchange of information."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What role does individual effort play?",
+                "answer": "It is quite important for effectively benefiting from the interaction."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do they typically adjust their methods?",
+                "answer": "They frequently modify their approach based on observation and specific requirements."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What qualities are often considered important for effectiveness?",
+                "answer": "Being adaptable and understanding individual needs is often key."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What kind of preparation is usually involved?",
+                "answer": "It often involves planning and preparing materials beforehand."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer about individual effort benefiting from the interaction felt less directly related to the role of a teacher compared to the other answers provided in the conversation."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "I am voting for player_4. While their answers fit the general theme, they felt slightly more generic than others, particularly the point about laying groundwork for future progress, which could apply to many things."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their first answer about helping individuals grow and develop felt very generic and less specific to the secret word compared to other responses."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer about individual effort being important for benefiting from the interaction felt the most generic and least specific to the secret word compared to the other responses."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer about the importance of individual effort felt a bit more generic and less specific to the secret word compared to other responses."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "restaurant",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21918,
+                "output_tokens": 383,
+                "thinking_tokens": 24939,
+                "full_output_tokens": 25322
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0032876999999999997,
+                "output_cost": 0.0002298,
+                "thinking_cost": 0.0872865,
+                "full_output_cost": 0.0875163
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032876999999999997,
+                "total_output_cost": 0.0002298,
+                "total_thinking_cost": 0.0872865,
+                "total_full_output_cost": 0.0875163,
+                "full_total_cost": 0.09080400000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    2.8992490768432617,
+                    4.068041563034058
+                ],
+                "answer_generation_durations": [
+                    4.085781574249268,
+                    3.0337038040161133
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.230751991271973,
+                    5.71763801574707
+                ],
+                "answer_generation_durations": [
+                    1.9481723308563232,
+                    3.201465368270874
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.018340587615967,
+                    7.170482635498047
+                ],
+                "answer_generation_durations": [
+                    2.8335273265838623,
+                    5.250204801559448
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.4879796504974365,
+                    7.746881484985352
+                ],
+                "answer_generation_durations": [
+                    3.790461540222168,
+                    4.54178524017334
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.584351062774658,
+                    7.901468515396118
+                ],
+                "answer_generation_durations": [
+                    3.3640780448913574,
+                    11.922061443328857
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How often do you find yourself in such a place?",
+                "answer": "Pretty often, maybe a few times a month."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of atmosphere do you usually look for?",
+                "answer": "I usually look for something comfortable and inviting, maybe with a bit of a buzz."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What time of day do you usually go?",
+                "answer": "I find I visit most often during the afternoon or evening hours."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Who do you usually go with?",
+                "answer": "Often with friends or family."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What's the most important aspect for you?",
+                "answer": "The quality of the overall experience is probably what matters most."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of service do you prefer when you visit?",
+                "answer": "I appreciate service that is attentive but not overly intrusive."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How do you usually decide where to go?",
+                "answer": "It usually depends on my mood and what kind of company I'm with."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How long do you usually stay?",
+                "answer": "Usually for an hour or two, sometimes longer."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of activities might you engage in while you are there?",
+                "answer": "Mainly socializing and enjoying the atmosphere."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do you usually feel after visiting?",
+                "answer": "Usually quite satisfied, especially if the experience was good."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I suspect player_3 because their question about \"activities\" felt slightly less specific to the usual purpose of a restaurant compared to other questions asked."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "I believe player_4 is the spy because their answer about activities was very generic and didn't strongly suggest the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "Their answers were very generic, focusing only on general aspects like socializing and atmosphere, which could be an attempt to avoid giving anything away."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "I believe player_4 is the spy because their answer about the activities engaged in (\"Mainly socializing and enjoying the atmosphere\") did not mention anything about the primary activity for the secret word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their question about \"activities\" seemed a bit vague, possibly trying to confirm what happens at the location without knowing the word."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "caviar",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21041,
+                "output_tokens": 406,
+                "thinking_tokens": 33082,
+                "full_output_tokens": 33488
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00315615,
+                "output_cost": 0.00024359999999999999,
+                "thinking_cost": 0.115787,
+                "full_output_cost": 0.1160306
+            },
+            "total_costs": {
+                "total_input_cost": 0.00315615,
+                "total_output_cost": 0.00024359999999999999,
+                "total_thinking_cost": 0.115787,
+                "total_full_output_cost": 0.1160306,
+                "full_total_cost": 0.11918675
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.541177034378052,
+                    6.329747200012207
+                ],
+                "answer_generation_durations": [
+                    3.928154945373535,
+                    2.5032966136932373
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.581340074539185,
+                    6.437084197998047
+                ],
+                "answer_generation_durations": [
+                    3.2665293216705322,
+                    1.9452109336853027
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    2.860391616821289,
+                    5.7967448234558105
+                ],
+                "answer_generation_durations": [
+                    3.5262093544006348,
+                    2.3152031898498535
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.7480552196502686,
+                    5.431076526641846
+                ],
+                "answer_generation_durations": [
+                    2.966956853866577,
+                    4.776440382003784
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.827926874160767,
+                    3.744744062423706
+                ],
+                "answer_generation_durations": [
+                    14.360939025878906,
+                    2.4276835918426514
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What is its typical texture?",
+                "answer": "It's quite granular."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is this item considered something commonly encountered in daily life?",
+                "answer": "No, it's not typical for daily life."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it generally considered inexpensive?",
+                "answer": "It's quite costly."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it typically served hot or cold?",
+                "answer": "It is typically served cold."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How is it typically used or consumed?",
+                "answer": "It is typically consumed in small quantities."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of events is it typically associated with?",
+                "answer": "Special occasions."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something that requires special handling?",
+                "answer": "Yes, it often requires careful handling."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of animal is it typically associated with?",
+                "answer": "It is associated with aquatic life."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it considered a delicacy?",
+                "answer": "Yes, it is widely considered a delicacy."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What is its typical color?",
+                "answer": "It has a dark color."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answer \"Special occasions\" is quite generic and could apply to many things, potentially indicating a lack of specific knowledge about the secret word."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answers, such as 'Small quantities' and 'Dark color', were accurate but less specific in narrowing down the secret word compared to other players' responses."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "Based on the conversation, all players gave answers that seemed consistent with the secret word. However, player_0's answers about typical consumption (\"small quantities\") and color (\"dark color\"), while correct, felt slightly less uniquely identifying compared to the answers from other players. This slight lack of specificity makes me suspect they might be the spy trying to blend in."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I am voting for player_2 because their answers about the item not being typical for daily life and requiring careful handling felt quite general compared to the more specific details provided by other players. This vagueness, alongside their questions probing for cost and animal association, makes me suspect they were trying to gather information."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "I am voting for player_0 because their answers felt slightly less specific to the unique characteristics of the item compared to other players."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "skyscraper",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21857,
+                "output_tokens": 413,
+                "thinking_tokens": 31029,
+                "full_output_tokens": 31442
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00327855,
+                "output_cost": 0.0002478,
+                "thinking_cost": 0.1086015,
+                "full_output_cost": 0.10884930000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.00327855,
+                "total_output_cost": 0.0002478,
+                "total_thinking_cost": 0.1086015,
+                "total_full_output_cost": 0.10884930000000001,
+                "full_total_cost": 0.11212785000000002
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.261704206466675,
+                    5.970708847045898
+                ],
+                "answer_generation_durations": [
+                    3.385145664215088,
+                    2.2442069053649902
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.266992568969727,
+                    5.407462120056152
+                ],
+                "answer_generation_durations": [
+                    3.6145458221435547,
+                    2.5710198879241943
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.127006769180298,
+                    7.134895324707031
+                ],
+                "answer_generation_durations": [
+                    1.7819795608520508,
+                    3.974583864212036
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.695546865463257,
+                    9.86625862121582
+                ],
+                "answer_generation_durations": [
+                    9.357210874557495,
+                    7.721709966659546
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.244269609451294,
+                    8.117501974105835
+                ],
+                "answer_generation_durations": [
+                    3.6908819675445557,
+                    2.127692222595215
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it usually associated with a certain type of landscape?",
+                "answer": "It definitely fits into a specific kind of setting."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something designed for functionality?",
+                "answer": "Yes, it serves a specific purpose."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically something you'd see in a busy place?",
+                "answer": "Yes, it's often found in settings with a lot of activity."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it something that people interact with directly?",
+                "answer": "Yes, many people interact with it daily."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically require significant effort or resources to create?",
+                "answer": "Absolutely, bringing it into existence is a major undertaking."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it often a notable feature in its environment due to its scale?",
+                "answer": "Yes, its size often makes it quite noticeable."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it typically consist of many distinct levels or sections?",
+                "answer": "It's known for having many levels."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it often found clustered with others of its kind?",
+                "answer": "Yes, they are often found close together."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it typically house a variety of different functions or activities?",
+                "answer": "Yes, it can contain multiple different uses."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it often associated with economic activity?",
+                "answer": "That association is quite strong."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their first answer, \"Yes, it serves a specific purpose,\" was very generic and could apply to almost anything designed for functionality, suggesting they were unsure of the specific word."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answer to my question about functionality was quite generic and could apply to almost anything."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their first question about direct interaction was very broad and could apply to almost anything, unlike the more specific questions asked by other players."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answers, while not directly contradicting anything, felt consistently too general compared to the others, making it difficult to confirm they were on the same page about the word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I am voting for player_1 because their question \"Is it something designed for functionality?\" felt quite general compared to the other questions asked, which seemed slightly more specific to characteristics or location relevant to the secret word."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "detectives",
+        "spy": 0,
+        "secret_word": "projector",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 22365,
+                "output_tokens": 341,
+                "thinking_tokens": 27211,
+                "full_output_tokens": 27552
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0033547499999999997,
+                "output_cost": 0.00020459999999999999,
+                "thinking_cost": 0.0952385,
+                "full_output_cost": 0.0954431
+            },
+            "total_costs": {
+                "total_input_cost": 0.0033547499999999997,
+                "total_output_cost": 0.00020459999999999999,
+                "total_thinking_cost": 0.0952385,
+                "total_full_output_cost": 0.0954431,
+                "full_total_cost": 0.09879785
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.8395419120788574,
+                    7.863439321517944
+                ],
+                "answer_generation_durations": [
+                    3.948500394821167,
+                    6.570353269577026
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.901841402053833,
+                    5.97001838684082
+                ],
+                "answer_generation_durations": [
+                    2.3132693767547607,
+                    3.6494574546813965
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.960001468658447,
+                    11.24134349822998
+                ],
+                "answer_generation_durations": [
+                    2.269721508026123,
+                    3.190532684326172
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.234720945358276,
+                    9.259766101837158
+                ],
+                "answer_generation_durations": [
+                    2.0729105472564697,
+                    3.3224947452545166
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.146788120269775,
+                    6.380671501159668
+                ],
+                "answer_generation_durations": [
+                    5.326182842254639,
+                    3.8054254055023193
+                ]
+            }
+        },
+        "spy_guess": "Projector",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How often do you encounter it in your daily life?",
+                "answer": "Not very often, honestly."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of setting do you most associate it with?",
+                "answer": "I typically see it in professional or educational environments."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it usually require being connected to something else?",
+                "answer": "Often, it requires being linked to another device."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it need a certain type of surface to function properly?",
+                "answer": "A suitable surface is usually required for it to be effective."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it something you can easily carry around?",
+                "answer": "Yes, it's quite portable."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it electronic?",
+                "answer": "Yes, it is."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it need darkness to work best?",
+                "answer": "It works better without bright lights."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does its output often result in something viewed collectively?",
+                "answer": "Its function often serves an audience."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is its primary function to display something large?",
+                "answer": "Yes, its function often involves making things appear on a larger scale."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically produce any sound?",
+                "answer": "It usually makes some noise."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 might be the spy because their first answer felt a bit less descriptive of the item itself compared to others."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "I am voting for player_0 because their answers regarding portability and sound, while technically correct, felt slightly less specific to the unique characteristics of the secret word compared to the other players' responses."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "I am voting for player_0 because their answer regarding its portability felt slightly less specific or universally true compared to the other descriptions given."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their questions and answers felt slightly less specific to the characteristics of the secret word compared to the other players."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answers felt a bit too generic compared to the others."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "spaghetti",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 20887,
+                "output_tokens": 312,
+                "thinking_tokens": 27961,
+                "full_output_tokens": 28273
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00313305,
+                "output_cost": 0.0001872,
+                "thinking_cost": 0.09786349999999999,
+                "full_output_cost": 0.09805069999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.00313305,
+                "total_output_cost": 0.0001872,
+                "total_thinking_cost": 0.09786349999999999,
+                "total_full_output_cost": 0.09805069999999999,
+                "full_total_cost": 0.10118374999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.243283987045288,
+                    5.7585694789886475
+                ],
+                "answer_generation_durations": [
+                    2.8677399158477783,
+                    1.8990976810455322
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.162799835205078,
+                    4.8859968185424805
+                ],
+                "answer_generation_durations": [
+                    3.5925087928771973,
+                    3.263498306274414
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.692289113998413,
+                    7.175316095352173
+                ],
+                "answer_generation_durations": [
+                    6.648409605026245,
+                    9.08083200454712
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.619822025299072,
+                    7.73389458656311
+                ],
+                "answer_generation_durations": [
+                    1.8100826740264893,
+                    5.03804874420166
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.893210172653198,
+                    5.390281915664673
+                ],
+                "answer_generation_durations": [
+                    2.3102645874023438,
+                    3.2169013023376465
+                ]
+            }
+        },
+        "spy_guess": "Projector",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it usually require heat before consumption?",
+                "answer": "It generally does."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it expand when prepared?",
+                "answer": "It does expand when prepared."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically stored dry?",
+                "answer": "Yes, it is typically stored dry."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it typically served with a sauce?",
+                "answer": "Yes, it often is."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically soften during preparation?",
+                "answer": "Its texture typically softens."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it usually eaten with utensils?",
+                "answer": "Yes, it is typically eaten with utensils."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it typically served as a main dish?",
+                "answer": "Yes, it is frequently served as a main dish."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it come in different shapes or varieties?",
+                "answer": "Yes, it comes in different varieties."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it require boiling?",
+                "answer": "Yes, it typically does."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does its preparation often involve draining?",
+                "answer": "Yes, that step is frequently part of the process."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their initial response regarding preparation seemed less certain compared to others."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "I am voting for player_4 because their answer regarding it being served with sauce, saying \"Yes, it often is,\" felt slightly more vague compared to other players' answers, which could indicate they weren't entirely sure."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answer to the question about requiring heat felt a little vague."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "I am voting for player_4 because their answer regarding being served with sauce seemed slightly less certain compared to other players' responses which used stronger affirmations."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers felt very general and didn't seem to narrow down the secret word effectively."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "retreat",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21384,
+                "output_tokens": 357,
+                "thinking_tokens": 28679,
+                "full_output_tokens": 29036
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0032075999999999997,
+                "output_cost": 0.0002142,
+                "thinking_cost": 0.1003765,
+                "full_output_cost": 0.10059069999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032075999999999997,
+                "total_output_cost": 0.0002142,
+                "total_thinking_cost": 0.1003765,
+                "total_full_output_cost": 0.10059069999999999,
+                "full_total_cost": 0.1037983
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.56095027923584,
+                    5.052421808242798
+                ],
+                "answer_generation_durations": [
+                    5.736886978149414,
+                    2.1416175365448
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.111061334609985,
+                    4.441865682601929
+                ],
+                "answer_generation_durations": [
+                    1.3852863311767578,
+                    2.677546262741089
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.123059749603271,
+                    9.152328252792358
+                ],
+                "answer_generation_durations": [
+                    2.3586854934692383,
+                    3.289137601852417
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.309987783432007,
+                    6.759341716766357
+                ],
+                "answer_generation_durations": [
+                    3.269625663757324,
+                    2.933532953262329
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.1360249519348145,
+                    8.636955499649048
+                ],
+                "answer_generation_durations": [
+                    5.15317440032959,
+                    3.9131553173065186
+                ]
+            }
+        },
+        "spy_guess": "Projector",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it typically a deliberate action?",
+                "answer": "Yes, it often is."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something you might do when things are difficult?",
+                "answer": "Yes, it can be a response to challenging circumstances."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it an action that can have a specific purpose?",
+                "answer": "Yes, there is often a particular reason behind it."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Can it be a way to disengage?",
+                "answer": "Yes, it can be used as a way to disengage."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it primarily a physical or mental action?",
+                "answer": "It can encompass both aspects."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it sometimes strategic?",
+                "answer": "Absolutely, it can involve careful planning."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it always a negative thing?",
+                "answer": "Not always, it can vary."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Can it be a response to pressure?",
+                "answer": "It can certainly be triggered by pressure."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it often follow a period of engagement?",
+                "answer": "It frequently occurs after a period of engagement."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Can it be done in isolation?",
+                "answer": "It can certainly be a solitary act."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I am voting for player_1 because their answers seemed consistently generic, offering the least specific insight into the secret word compared to the others."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I am voting for player_2. Their answer \"Not always, it can vary\" when asked if it is always a negative thing felt a little less specific to the word than some of the other responses."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their questions felt like they were trying to confirm fundamental aspects of the word, like disengagement and following engagement."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "I am voting for player_4 because their question about whether it is primarily physical or mental felt a bit less specific to the secret word compared to the questions asked by other players."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their answer about it being strategic felt overly emphatic and general, which didn't provide much specific context."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "toothbrush",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 20987,
+                "output_tokens": 363,
+                "thinking_tokens": 28148,
+                "full_output_tokens": 28511
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00314805,
+                "output_cost": 0.00021779999999999998,
+                "thinking_cost": 0.098518,
+                "full_output_cost": 0.0987358
+            },
+            "total_costs": {
+                "total_input_cost": 0.00314805,
+                "total_output_cost": 0.00021779999999999998,
+                "total_thinking_cost": 0.098518,
+                "total_full_output_cost": 0.0987358,
+                "full_total_cost": 0.10188385
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.372125864028931,
+                    5.766993045806885
+                ],
+                "answer_generation_durations": [
+                    1.8018147945404053,
+                    4.2181806564331055
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.673961162567139,
+                    7.18654727935791
+                ],
+                "answer_generation_durations": [
+                    1.6900782585144043,
+                    4.0748748779296875
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.329981565475464,
+                    7.435149908065796
+                ],
+                "answer_generation_durations": [
+                    1.8237316608428955,
+                    1.9195528030395508
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.9677672386169434,
+                    9.169283390045166
+                ],
+                "answer_generation_durations": [
+                    1.8056914806365967,
+                    1.6487185955047607
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    8.005957841873169,
+                    7.535365581512451
+                ],
+                "answer_generation_durations": [
+                    4.36736536026001,
+                    5.372565984725952
+                ]
+            }
+        },
+        "spy_guess": "Projector",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it something you use as part of a daily routine?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it typically kept in a specific room of the house?",
+                "answer": "Yes."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it often involve another item to be used effectively?",
+                "answer": "Yes, it does."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it something you replace periodically?",
+                "answer": "Yes, it is."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it related to hygiene?",
+                "answer": "Yes, it is."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it something you might take with you when traveling?",
+                "answer": "Yes, it is."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it something you typically hold in your hand when using it?",
+                "answer": "Yes, you do."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it come in different colors?",
+                "answer": "Yes, they often do."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it typically consist of a handle and a working end?",
+                "answer": "Yes, it typically does."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it designed for use on a specific part of the body?",
+                "answer": "Yes, it is."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their question \"Is it something you typically hold in your hand when using it?\" was very generic and could apply to almost anything, suggesting they might not have known the word and were playing it safe."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I suspect player_2 because their question \"Does it come in different colors?\" was quite generic and didn't seem to narrow down the secret word as effectively as other questions, which could be a way for the spy to play it safe."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "I suspect player_4 because their question about the specific part of the body felt like a strong attempt to narrow down the word."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their questions seemed the most generic compared to the others, which might indicate a lack of specific knowledge about the secret word."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their questions, especially in the first round, felt very general and didn't seem to narrow down the possibilities much compared to others."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "rickshaw",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21310,
+                "output_tokens": 372,
+                "thinking_tokens": 26871,
+                "full_output_tokens": 27243
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0031964999999999997,
+                "output_cost": 0.00022319999999999998,
+                "thinking_cost": 0.0940485,
+                "full_output_cost": 0.0942717
+            },
+            "total_costs": {
+                "total_input_cost": 0.0031964999999999997,
+                "total_output_cost": 0.00022319999999999998,
+                "total_thinking_cost": 0.0940485,
+                "total_full_output_cost": 0.0942717,
+                "full_total_cost": 0.0974682
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.1889142990112305,
+                    5.147752285003662
+                ],
+                "answer_generation_durations": [
+                    3.1600348949432373,
+                    2.5194594860076904
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.317734003067017,
+                    8.204325199127197
+                ],
+                "answer_generation_durations": [
+                    4.35071587562561,
+                    6.851534128189087
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.527054786682129,
+                    6.886777877807617
+                ],
+                "answer_generation_durations": [
+                    3.589829444885254,
+                    5.605196475982666
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.504363536834717,
+                    9.76757001876831
+                ],
+                "answer_generation_durations": [
+                    3.8278374671936035,
+                    1.902688980102539
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.352264404296875,
+                    8.98590612411499
+                ],
+                "answer_generation_durations": [
+                    3.5613391399383545,
+                    2.2738375663757324
+                ]
+            }
+        },
+        "spy_guess": "Projector",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it more commonly associated with specific geographic regions?",
+                "answer": "Yes, I think certain regional ties are quite common for it."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it have different forms or variations?",
+                "answer": "Yes, I believe different types of it exist."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically associated with travel or transportation?",
+                "answer": "Yes, that seems like a common association."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it generally powered by a motor?",
+                "answer": "No, generally not."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it require physical effort to operate?",
+                "answer": "Yes, it often does."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is its speed generally slow?",
+                "answer": "Yes, generally speaking."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it commonly used for leisure or exercise?",
+                "answer": "Yes, it can be used for leisure."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is its primary function to transport people?",
+                "answer": "Yes, transporting people is a key function."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it typically have seating for passengers?",
+                "answer": "Yes, it typically does."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is the main operator separate from the passengers?",
+                "answer": "Yes, that separation is common."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer to the question about it being associated with travel/transportation used the phrase \"that seems like a common association,\" which felt less confident than a simple \"Yes,\" and they used a similar phrasing later."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I am voting for player_2 because their responses felt slightly less certain (\"I believe\", \"it can be used\") than others, which could indicate hesitation or uncertainty about the secret word."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer regarding association with travel/transportation seemed a bit generic, relying on \"common association\" rather than direct knowledge."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their question about 'leisure or exercise' felt less specific to the secret word compared to other questions."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I am voting for player_2 because some of their answers felt slightly less specific than the others, which could indicate they were being cautious because they didn't know the word."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "museum",
+        "players": {
+            "0": "gemini",
+            "1": "gemini",
+            "2": "gemini",
+            "3": "gemini",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 21512,
+                "output_tokens": 397,
+                "thinking_tokens": 22750,
+                "full_output_tokens": 23147
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0032267999999999997,
+                "output_cost": 0.0002382,
+                "thinking_cost": 0.079625,
+                "full_output_cost": 0.0798632
+            },
+            "total_costs": {
+                "total_input_cost": 0.0032267999999999997,
+                "total_output_cost": 0.0002382,
+                "total_thinking_cost": 0.079625,
+                "total_full_output_cost": 0.0798632,
+                "full_total_cost": 0.08309
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.346282958984375,
+                    4.326961278915405
+                ],
+                "answer_generation_durations": [
+                    5.346248149871826,
+                    6.138205528259277
+                ]
+            },
+            "player_1": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.865007638931274,
+                    7.505634546279907
+                ],
+                "answer_generation_durations": [
+                    5.110798120498657,
+                    2.6303725242614746
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.635436296463013,
+                    6.315555572509766
+                ],
+                "answer_generation_durations": [
+                    3.3817265033721924,
+                    4.219484567642212
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.243603467941284,
+                    8.327847242355347
+                ],
+                "answer_generation_durations": [
+                    6.01714301109314,
+                    3.801849365234375
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.447259902954102,
+                    4.09574556350708
+                ],
+                "answer_generation_durations": [
+                    4.536159992218018,
+                    4.004971504211426
+                ]
+            }
+        },
+        "spy_guess": "Projector",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of feeling does it evoke?",
+                "answer": "It often brings a sense of quiet reflection and curiosity."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of experience does it offer?",
+                "answer": "It allows for quiet exploration and discovery."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of atmosphere does it have?",
+                "answer": "It has a quiet and often inspiring atmosphere."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What is its primary function?",
+                "answer": "It primarily serves to inform and inspire visitors."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How long might someone typically spend there?",
+                "answer": "Many visitors find themselves spending a few hours there."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kind of objects or things might you find there?",
+                "answer": "Inside, you'll encounter many different exhibits and collections."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of activities might someone participate in there?",
+                "answer": "One can spend time quietly observing and discovering new things."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What is its role in the community?",
+                "answer": "It contributes to the cultural and educational fabric of the area."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How might visitors typically gain entry?",
+                "answer": "Typically, entry is managed through a specific process at the entrance."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What kind of people typically visit?",
+                "answer": "It typically attracts people who are interested in learning and experiencing new things."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "I am voting for player_2 because their responses felt a bit repetitive and abstract, focusing heavily on \"discovery\" and \"observing,\" which seemed less specific than other answers."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "I am voting for player_4 because their answer regarding how visitors gain entry was very generic and didn't feel as specific to the secret word as other players' responses."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "I am voting for player_0 because their answers, while fitting, were the most generic and could apply to many different locations or activities, making them slightly less convincing as a Detective who knows the specific secret word."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers were quite generic and repetitive, not providing specific details that fully align with the secret word compared to other players' responses."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their answers focused on the general activities like exploration and discovery, which could apply to many places, rather than specific elements related to the secret word."
+            }
+        ]
+    }
+]

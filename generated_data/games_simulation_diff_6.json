@@ -1,0 +1,1177 @@
+[
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "pharmacist",
+        "players": {
+            "0": "grok",
+            "1": "deepseek",
+            "2": "openai",
+            "3": "claude",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 5163,
+                "output_tokens": 107,
+                "thinking_tokens": 7554,
+                "full_output_tokens": 7661
+            },
+            "claude": {
+                "input_tokens": 5210,
+                "output_tokens": 1888,
+                "thinking_tokens": 0,
+                "full_output_tokens": 1888
+            },
+            "grok": {
+                "input_tokens": 4604,
+                "output_tokens": 114,
+                "thinking_tokens": 2806,
+                "full_output_tokens": 2920
+            },
+            "openai": {
+                "input_tokens": 4514,
+                "output_tokens": 218,
+                "thinking_tokens": 1792,
+                "full_output_tokens": 2010
+            },
+            "deepseek": {
+                "input_tokens": 4351,
+                "output_tokens": 129,
+                "thinking_tokens": 3095,
+                "full_output_tokens": 3224
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00077445,
+                "output_cost": 6.42e-05,
+                "thinking_cost": 0.026439,
+                "full_output_cost": 0.0265032
+            },
+            "claude": {
+                "input_cost": 0.01563,
+                "output_cost": 0.02832,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.02832
+            },
+            "grok": {
+                "input_cost": 0.0013812,
+                "output_cost": 5.6999999999999996e-05,
+                "thinking_cost": 0.001403,
+                "full_output_cost": 0.00146
+            },
+            "openai": {
+                "input_cost": 0.0049654,
+                "output_cost": 0.0009592,
+                "thinking_cost": 0.0078848,
+                "full_output_cost": 0.008844000000000001
+            },
+            "deepseek": {
+                "input_cost": 0.0006091400000000001,
+                "output_cost": 0.00028251,
+                "thinking_cost": 0.006778049999999999,
+                "full_output_cost": 0.007060559999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.023360190000000003,
+                "total_output_cost": 0.029682910000000003,
+                "total_thinking_cost": 0.042504850000000004,
+                "total_full_output_cost": 0.07218776,
+                "full_total_cost": 0.09554795
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.619126319885254,
+                    8.677128553390503
+                ],
+                "answer_generation_durations": [
+                    5.832274675369263,
+                    3.4754884243011475
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    408.6501684188843,
+                    366.8892583847046
+                ],
+                "answer_generation_durations": [
+                    61.636168003082275,
+                    206.64079093933105
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.0714707374572754,
+                    6.801976680755615
+                ],
+                "answer_generation_durations": [
+                    2.8793623447418213,
+                    4.25860595703125
+                ]
+            },
+            "player_3": {
+                "llm_type": "claude",
+                "role": "spy",
+                "question_generation_durations": [
+                    9.884472131729126,
+                    6.987056255340576
+                ],
+                "answer_generation_durations": [
+                    11.831133365631104,
+                    7.394365072250366
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    11.388045310974121,
+                    7.559049606323242
+                ],
+                "answer_generation_durations": [
+                    4.5305016040802,
+                    5.516560316085815
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What role do you think is essential in ensuring the safe use of prescription drugs?",
+                "answer": "A licensed professional who verifies prescriptions and counsels on proper medication use."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How does this role contribute to patient safety beyond dispensing medications?",
+                "answer": "They review patient histories for interactions and offer guidance to prevent harmful side effects."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "In what ways might this role collaborate with other healthcare professionals to ensure treatment plans are both safe and effective?",
+                "answer": "They regularly consult with doctors and nurses, sharing expertise on medication options, dosages, and potential interactions to develop comprehensive care plans."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What specific education or training requirements are typically needed to enter this profession?",
+                "answer": "It generally involves several years of university-level study focused on health sciences and hands-on clinical training."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "In what types of establishments or facilities is this professional most typically found working?",
+                "answer": "This professional is typically found working in retail health outlets, hospital settings, and community care facilities."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What key skills are essential for success in this profession?",
+                "answer": "Strong attention to detail, effective communication skills for patient interactions, and thorough knowledge of safety protocols to prevent errors."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How does ongoing professional development impact the effectiveness of someone in this role?",
+                "answer": "It ensures they stay current with new therapies and safety protocols, refining their skills and enhancing patient outcomes."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How do professionals in this role handle drug recalls or shortages to maintain patient safety?",
+                "answer": "They implement notification systems to alert patients about recalls, coordinate with suppliers for alternatives during shortages, and work with prescribers to identify suitable therapeutic substitutions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What regulatory or legal challenges do these professionals face when adapting to new technologies in their workplace?",
+                "answer": "Navigating legal frameworks for data security and patient confidentiality becomes complex with the integration of new digital tools."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "After receiving a prescription, what are some initial steps taken by the professional before dispensing?",
+                "answer": "They first verify the prescription's details, check for potential interactions, and ensure it aligns with patient records before proceeding."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because their responses, such as on regulatory challenges, felt somewhat vague and less directly tied to the core aspects of the profession discussed by others.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's answer about education requirements ('health sciences and clinical training') was too vague compared to the specific PharmD pathway for pharmacists. Their focus on data security in regulatory challenges felt more aligned with general healthcare roles rather than the pharmacist's specific context.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because their answers were overly generic\u2014focusing on broad health\u2010science training and data security\u2014without mentioning any pharmacy-specific details like licensure exams, controlled substances regulations, or prescription processes.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answers were somewhat general. When asked about education requirements, they mentioned 'several years of university-level study' without specifically referencing pharmacy school or PharmD degrees. Their response about regulatory challenges focused more on general healthcare technology concerns rather than specific pharmacy-related regulations like controlled substance laws or dispensing requirements.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "I suspect player_2 because their answer about ongoing professional development was quite general and could apply to many roles, lacking the specific details shown by others."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "caviar",
+        "players": {
+            "0": "openai",
+            "1": "claude",
+            "2": "grok",
+            "3": "deepseek",
+            "4": "gemini"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 5051,
+                "output_tokens": 104,
+                "thinking_tokens": 5134,
+                "full_output_tokens": 5238
+            },
+            "claude": {
+                "input_tokens": 4934,
+                "output_tokens": 1905,
+                "thinking_tokens": 0,
+                "full_output_tokens": 1905
+            },
+            "grok": {
+                "input_tokens": 4390,
+                "output_tokens": 102,
+                "thinking_tokens": 3789,
+                "full_output_tokens": 3891
+            },
+            "openai": {
+                "input_tokens": 4518,
+                "output_tokens": 194,
+                "thinking_tokens": 2688,
+                "full_output_tokens": 2882
+            },
+            "deepseek": {
+                "input_tokens": 4400,
+                "output_tokens": 119,
+                "thinking_tokens": 4126,
+                "full_output_tokens": 4245
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00075765,
+                "output_cost": 6.24e-05,
+                "thinking_cost": 0.017969,
+                "full_output_cost": 0.0180314
+            },
+            "claude": {
+                "input_cost": 0.014802000000000001,
+                "output_cost": 0.028575,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.028575
+            },
+            "grok": {
+                "input_cost": 0.001317,
+                "output_cost": 5.1e-05,
+                "thinking_cost": 0.0018945,
+                "full_output_cost": 0.0019455
+            },
+            "openai": {
+                "input_cost": 0.0049698,
+                "output_cost": 0.0008536,
+                "thinking_cost": 0.011827200000000001,
+                "full_output_cost": 0.0126808
+            },
+            "deepseek": {
+                "input_cost": 0.000616,
+                "output_cost": 0.00026061,
+                "thinking_cost": 0.00903594,
+                "full_output_cost": 0.009296549999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.02246245,
+                "total_output_cost": 0.02980261,
+                "total_thinking_cost": 0.04072664,
+                "total_full_output_cost": 0.07052925,
+                "full_total_cost": 0.0929917
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.394268274307251,
+                    3.5158069133758545
+                ],
+                "answer_generation_durations": [
+                    3.6368460655212402,
+                    5.213738203048706
+                ]
+            },
+            "player_1": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.501102447509766,
+                    7.429680347442627
+                ],
+                "answer_generation_durations": [
+                    6.649533987045288,
+                    5.008677959442139
+                ]
+            },
+            "player_2": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.550056219100952,
+                    14.200782299041748
+                ],
+                "answer_generation_durations": [
+                    5.424246072769165,
+                    5.322818040847778
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    153.2130868434906,
+                    34.13118886947632
+                ],
+                "answer_generation_durations": [
+                    313.71345591545105,
+                    41.86209535598755
+                ]
+            },
+            "player_4": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.590781688690186,
+                    6.839039087295532
+                ],
+                "answer_generation_durations": [
+                    4.01129674911499,
+                    3.9062938690185547
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you consider this item to be more of a cultural symbol or a functional commodity?",
+                "answer": "I'd say it's primarily a cultural symbol of luxury and exclusivity, though it does have a functional purpose."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you consider this item more accessible today than it was historically?",
+                "answer": "Yes, it's more accessible now due to modern production and distribution methods."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What role do you think this item plays in social or traditional gatherings?",
+                "answer": "It often serves as a centerpiece in celebrations, symbolizing status and shared enjoyment."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you think this item's significance varies greatly between different cultures?",
+                "answer": "Yes, its perception and use can differ significantly depending on the region or tradition."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is this item typically associated with everyday consumption or special indulgent moments?",
+                "answer": "It's primarily reserved for special indulgent moments rather than everyday consumption."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this item typically consumed in small portions or larger servings?",
+                "answer": "Definitely in small portions, as its richness and intensity means a little goes a long way."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do you think the environmental impact of sourcing this item is a significant concern in today's market?",
+                "answer": "Yes, sustainability in sourcing this item has become a notable concern in modern discussions."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What factors do you think influence the perceived quality of this item?",
+                "answer": "The origin, craftsmanship, and brand reputation are key factors, along with rarity and traditional production methods."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you think the packaging or presentation significantly influences people's perception of this item's value?",
+                "answer": "Absolutely, how it's presented often reflects and reinforces its high perceived value."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is the texture of this item considered a key part of its sensory experience?",
+                "answer": "Yes, the subtle texture is a crucial part of its sensory appeal."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because calling this item a \u2018centerpiece in celebrations\u2019 and emphasizing \u2018craftsmanship\u2019 feels too generic and doesn\u2019t quite match caviar\u2019s usual role or typical descriptors.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 is the spy because their answers, while not incorrect, seem more generic and could apply to many luxury items. Their response about perception varying by culture and their comment about presentation influencing value lack the specific knowledge about caviar's unique characteristics that other players demonstrated.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because their answers, such as on cultural variations, were somewhat generic and lacked the nuanced details that align more precisely with the item's specific traits.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"Player_2's focus on accessibility and environmental impact feels slightly disconnected from a luxury item typically reserved for special occasions. Their answers may hint at a different context than the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers seemed slightly more generic, applying broadly to many luxury items rather than specifically hinting at attributes unique to the secret word like texture or specific sourcing concerns."
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "giraffe",
+        "players": {
+            "0": "gemini",
+            "1": "grok",
+            "2": "claude",
+            "3": "deepseek",
+            "4": "openai"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4755,
+                "output_tokens": 93,
+                "thinking_tokens": 6451,
+                "full_output_tokens": 6544
+            },
+            "claude": {
+                "input_tokens": 5214,
+                "output_tokens": 2076,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2076
+            },
+            "grok": {
+                "input_tokens": 3943,
+                "output_tokens": 107,
+                "thinking_tokens": 3203,
+                "full_output_tokens": 3310
+            },
+            "openai": {
+                "input_tokens": 4859,
+                "output_tokens": 208,
+                "thinking_tokens": 2048,
+                "full_output_tokens": 2256
+            },
+            "deepseek": {
+                "input_tokens": 4677,
+                "output_tokens": 135,
+                "thinking_tokens": 2488,
+                "full_output_tokens": 2623
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00071325,
+                "output_cost": 5.5799999999999994e-05,
+                "thinking_cost": 0.0225785,
+                "full_output_cost": 0.022634300000000003
+            },
+            "claude": {
+                "input_cost": 0.015642,
+                "output_cost": 0.03114,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.03114
+            },
+            "grok": {
+                "input_cost": 0.0011829,
+                "output_cost": 5.35e-05,
+                "thinking_cost": 0.0016014999999999998,
+                "full_output_cost": 0.0016549999999999998
+            },
+            "openai": {
+                "input_cost": 0.0053449000000000005,
+                "output_cost": 0.0009152,
+                "thinking_cost": 0.0090112,
+                "full_output_cost": 0.0099264
+            },
+            "deepseek": {
+                "input_cost": 0.0006547800000000001,
+                "output_cost": 0.00029564999999999995,
+                "thinking_cost": 0.00544872,
+                "full_output_cost": 0.0057443699999999995
+            },
+            "total_costs": {
+                "total_input_cost": 0.02353783,
+                "total_output_cost": 0.03246015000000001,
+                "total_thinking_cost": 0.03863992,
+                "total_full_output_cost": 0.07110007,
+                "full_total_cost": 0.0946379
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.644015312194824,
+                    9.676880598068237
+                ],
+                "answer_generation_durations": [
+                    4.301865339279175,
+                    6.69461989402771
+                ]
+            },
+            "player_1": {
+                "llm_type": "grok",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.605615615844727,
+                    11.351269721984863
+                ],
+                "answer_generation_durations": [
+                    6.040382623672485,
+                    5.371867418289185
+                ]
+            },
+            "player_2": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.90488862991333,
+                    8.828914165496826
+                ],
+                "answer_generation_durations": [
+                    11.082555294036865,
+                    7.814555406570435
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    51.84167814254761,
+                    119.52940797805786
+                ],
+                "answer_generation_durations": [
+                    57.278778076171875,
+                    43.93451142311096
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.8590991497039795,
+                    3.478353261947632
+                ],
+                "answer_generation_durations": [
+                    5.474766731262207,
+                    4.414164304733276
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What sort of difficulties does it typically encounter?",
+                "answer": "It typically encounters challenges like unpredictable weather patterns and human encroachment."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What unique adaptations does it have to survive in its environment?",
+                "answer": "Its elongated features allow it to access resources that others cannot reach, and its distinctive coloration provides excellent camouflage against predators."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What is its typical social structure or group behavior?",
+                "answer": "They often form loose, fluid groups that can change members frequently, with some bonds stronger among females and their young."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How do they primarily communicate with others of their kind?",
+                "answer": "They communicate through low-frequency vocalizations, subtle body postures, and occasional gentle physical contact."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What are its primary predators and what strategies does it use to defend itself?",
+                "answer": "It is preyed upon by large hunters and defends itself effectively with its physical abilities."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "How does it acquire the resources it needs to survive?",
+                "answer": "It acquires resources by foraging in its environment, leveraging its elongated features to access hard-to-reach food sources."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What is its primary diet and how does it vary seasonally?",
+                "answer": "Its primary diet consists of various plant materials, particularly leaves from trees, with a shift toward more drought-resistant vegetation during dry seasons and lusher foliage when available during rainy periods."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "In what geographic regions is it most commonly found?",
+                "answer": "They inhabit open landscapes across certain continental regions known for seasonal dry and wet cycles."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What role does it play in maintaining the balance of its ecosystem?",
+                "answer": "By selectively browsing high foliage, it regulates vegetation structure, aids seed dispersal, and supports overall biodiversity."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What type of parental care does it provide to its offspring, and how does this influence juvenile survival rates?",
+                "answer": "Care for the young focuses heavily on protection from threats, and the effectiveness of this care directly influences juvenile survival rates."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answer regarding geographic regions was less specific than other players' descriptions of the animal's characteristics."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I believe player_4 is the spy because their responses, like the one on communication, felt slightly generic and didn't align as seamlessly with the detailed behaviors others described, possibly to avoid giving away specifics.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"I believe player_0 is the spy because their answers were notably vague compared to others. They mentioned 'physical abilities' for defense without specifying the powerful kicks that are characteristic of the secret animal. Their answers about predators and parental care could apply to many animals, lacking the specific details that others provided about unique features and behaviors.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\"I suspect player_0 because their answer about predators and defense ('large hunters and physical abilities') was too vague compared to giraffe-specific defenses like powerful kicks. Their parental care response also lacked detail, avoiding mention of communal calf-rearing behavior, which aligns with a spy avoiding knowledge gaps.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because describing \u2018low-frequency vocalizations\u2019 is more characteristic of elephants than giraffes, whose communication is not well known for infrasound.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "chameleon",
+        "players": {
+            "0": "openai",
+            "1": "deepseek",
+            "2": "grok",
+            "3": "gemini",
+            "4": "claude"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4947,
+                "output_tokens": 106,
+                "thinking_tokens": 4142,
+                "full_output_tokens": 4248
+            },
+            "claude": {
+                "input_tokens": 5771,
+                "output_tokens": 2794,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2794
+            },
+            "grok": {
+                "input_tokens": 4491,
+                "output_tokens": 101,
+                "thinking_tokens": 3215,
+                "full_output_tokens": 3316
+            },
+            "openai": {
+                "input_tokens": 4615,
+                "output_tokens": 219,
+                "thinking_tokens": 3008,
+                "full_output_tokens": 3227
+            },
+            "deepseek": {
+                "input_tokens": 4113,
+                "output_tokens": 149,
+                "thinking_tokens": 4530,
+                "full_output_tokens": 4679
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.00074205,
+                "output_cost": 6.36e-05,
+                "thinking_cost": 0.014497,
+                "full_output_cost": 0.0145606
+            },
+            "claude": {
+                "input_cost": 0.017313000000000002,
+                "output_cost": 0.04191,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.04191
+            },
+            "grok": {
+                "input_cost": 0.0013472999999999998,
+                "output_cost": 5.05e-05,
+                "thinking_cost": 0.0016075,
+                "full_output_cost": 0.001658
+            },
+            "openai": {
+                "input_cost": 0.0050765,
+                "output_cost": 0.0009636,
+                "thinking_cost": 0.0132352,
+                "full_output_cost": 0.014198800000000001
+            },
+            "deepseek": {
+                "input_cost": 0.00057582,
+                "output_cost": 0.00032630999999999996,
+                "thinking_cost": 0.0099207,
+                "full_output_cost": 0.010247009999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.025054670000000005,
+                "total_output_cost": 0.04331401000000001,
+                "total_thinking_cost": 0.0392604,
+                "total_full_output_cost": 0.08257441,
+                "full_total_cost": 0.10762908
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.445346355438232,
+                    6.506993293762207
+                ],
+                "answer_generation_durations": [
+                    4.884277820587158,
+                    4.918209552764893
+                ]
+            },
+            "player_1": {
+                "llm_type": "deepseek",
+                "role": "spy",
+                "question_generation_durations": [
+                    16.49906897544861,
+                    23.985949516296387
+                ],
+                "answer_generation_durations": [
+                    41.54836082458496,
+                    61.37114906311035
+                ]
+            },
+            "player_2": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.157913684844971,
+                    8.144439935684204
+                ],
+                "answer_generation_durations": [
+                    4.405973672866821,
+                    4.797791004180908
+                ]
+            },
+            "player_3": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.322961091995239,
+                    7.876554489135742
+                ],
+                "answer_generation_durations": [
+                    3.8216514587402344,
+                    2.95558500289917
+                ]
+            },
+            "player_4": {
+                "llm_type": "claude",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.886598348617554,
+                    7.569054126739502
+                ],
+                "answer_generation_durations": [
+                    8.905700445175171,
+                    7.237165451049805
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "If you needed to avoid notice in a busy environment, what tactic would you use to blend in?",
+                "answer": "I'd mirror the pace and behavior of those around me to seamlessly integrate."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "How would you divert attention if you felt suspicion was rising?",
+                "answer": "I'd adapt my behavior to blend seamlessly with the environment, drawing attention away from myself."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How would you maintain adaptability in a dynamic situation without drawing notice?",
+                "answer": "I'd focus on subtly shifting my approach based on the changing surroundings to remain unnoticed."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What methods would you use to seamlessly integrate with different types of backgrounds?",
+                "answer": "I'd carefully observe the distinctive elements of each environment and gradually adjust my appearance and behavior to match those patterns."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do you maintain your grip in difficult terrain while staying inconspicuous?",
+                "answer": "I lower my center of gravity, test each foothold silently, and use natural cover to conceal my movements."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "If you needed to observe your surroundings without attracting attention, how would you choose your vantage point and posture?",
+                "answer": "I\u2019d position myself in an area with natural cover, adopting a relaxed but observant stance that mirrors casual bystanders."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When adjusting your approach over an extended period, how do you ensure your adaptations remain undetected by those monitoring the environment?",
+                "answer": "I'd make subtle, gradual changes that align with the surrounding dynamics to ensure my adaptations blend seamlessly."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How would you ensure your presence feels natural during periods of inactivity?",
+                "answer": "I'd stay perfectly still, making sure I visually integrate with the immediate area."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "How important is the visual match to your surroundings?",
+                "answer": "Visual matching is absolutely critical for survival, as it's the primary defense mechanism that allows for complete disappearance into the environment when necessary."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "How do temperature shifts affect your ability to perform your natural functions?",
+                "answer": "Colder temperatures slow my movements and reaction time, while warmer conditions make me more alert and active."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were overly generic about adapting without any mention of visual camouflage or specific environmental cues, unlike the other players who all subtly referenced visual matching or cover.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"Player_4's emphasis on 'complete disappearance into the environment' and 'visual matching as the primary defense mechanism' felt overly specific, risking exposure of the secret word\u2014unlike detectives aiming to be subtle. This directness suggests they might be the Spy trying to mimic detective cues.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\"I believe player_0 is the spy because their responses emphasized physical movements and terrain adaptation without sufficiently addressing subtle visual or behavioral blending, which feels off.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "I believe player_0 is the spy because their answer about testing footholds and lowering their center of gravity seemed less specific to the visual blending methods that are central to the secret word compared to other players' responses."
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because their answers focus on mirroring other people's behaviors rather than environmental adaptation. Chameleons blend with their surroundings, not with other animals, yet they mentioned 'mirroring the pace and behavior of those around me' and 'mirrors casual bystanders' - suggesting they're thinking of human camouflage tactics rather than the natural ability of a chameleon.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "wedding",
+        "players": {
+            "0": "claude",
+            "1": "grok",
+            "2": "gemini",
+            "3": "deepseek",
+            "4": "openai"
+        },
+        "token_details": {
+            "gemini": {
+                "input_tokens": 4472,
+                "output_tokens": 84,
+                "thinking_tokens": 4364,
+                "full_output_tokens": 4448
+            },
+            "claude": {
+                "input_tokens": 4851,
+                "output_tokens": 2242,
+                "thinking_tokens": 0,
+                "full_output_tokens": 2242
+            },
+            "grok": {
+                "input_tokens": 4100,
+                "output_tokens": 87,
+                "thinking_tokens": 3901,
+                "full_output_tokens": 3988
+            },
+            "openai": {
+                "input_tokens": 4608,
+                "output_tokens": 196,
+                "thinking_tokens": 2496,
+                "full_output_tokens": 2692
+            },
+            "deepseek": {
+                "input_tokens": 4460,
+                "output_tokens": 115,
+                "thinking_tokens": 2956,
+                "full_output_tokens": 3071
+            }
+        },
+        "token_prices": {
+            "gemini": {
+                "input_cost": 0.0006707999999999999,
+                "output_cost": 5.04e-05,
+                "thinking_cost": 0.015274,
+                "full_output_cost": 0.0153244
+            },
+            "claude": {
+                "input_cost": 0.014553,
+                "output_cost": 0.03363,
+                "thinking_cost": 0.0,
+                "full_output_cost": 0.03363
+            },
+            "grok": {
+                "input_cost": 0.00123,
+                "output_cost": 4.35e-05,
+                "thinking_cost": 0.0019505,
+                "full_output_cost": 0.001994
+            },
+            "openai": {
+                "input_cost": 0.0050688,
+                "output_cost": 0.0008624,
+                "thinking_cost": 0.0109824,
+                "full_output_cost": 0.011844799999999999
+            },
+            "deepseek": {
+                "input_cost": 0.0006244,
+                "output_cost": 0.00025184999999999997,
+                "thinking_cost": 0.006473639999999999,
+                "full_output_cost": 0.006725489999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.022146999999999997,
+                "total_output_cost": 0.03483815,
+                "total_thinking_cost": 0.034680539999999996,
+                "total_full_output_cost": 0.06951869000000001,
+                "full_total_cost": 0.09166569000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "claude",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.876756429672241,
+                    10.027205467224121
+                ],
+                "answer_generation_durations": [
+                    7.499269962310791,
+                    8.797924518585205
+                ]
+            },
+            "player_1": {
+                "llm_type": "grok",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.638779163360596,
+                    11.482937812805176
+                ],
+                "answer_generation_durations": [
+                    4.789460182189941,
+                    5.832887887954712
+                ]
+            },
+            "player_2": {
+                "llm_type": "gemini",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.020551681518555,
+                    5.451005458831787
+                ],
+                "answer_generation_durations": [
+                    3.834566354751587,
+                    4.4761738777160645
+                ]
+            },
+            "player_3": {
+                "llm_type": "deepseek",
+                "role": "detective",
+                "question_generation_durations": [
+                    39.65083289146423,
+                    55.644006967544556
+                ],
+                "answer_generation_durations": [
+                    19.748600244522095,
+                    17.27303171157837
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.963862180709839,
+                    6.685396671295166
+                ],
+                "answer_generation_durations": [
+                    5.497282028198242,
+                    3.7937896251678467
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "In what settings would you typically encounter this?",
+                "answer": "In settings that involve celebrations and formal gatherings."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What activities are commonly associated with this?",
+                "answer": "Activities often include a formal ceremony followed by a festive reception."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What kind of atmosphere does it usually have?",
+                "answer": "A warm and celebratory atmosphere with a mix of joy and anticipation."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of preparation is typically involved beforehand?",
+                "answer": "It typically involves organizing guest lists, sending invitations, booking venues and vendors, and finalizing a timeline."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What kind of clothing or dress code is expected of attendees?",
+                "answer": "Typically formal attire is expected, with guests wearing suits, dresses, or other elegant clothing appropriate for a special celebration."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What kinds of gifts are typically exchanged or given at this event?",
+                "answer": "Gifts often include household items, cash, or personalized mementos to celebrate the occasion."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kind of entertainment is typically involved in this?",
+                "answer": "Entertainment often includes music and activities for guests to enjoy."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What types of places are often chosen as locations?",
+                "answer": "Locations are often scenic or elegant venues that accommodate both intimate and large gatherings."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What is a common tradition associated with this event that isn't always mandatory?",
+                "answer": "Couples often share a first dance together, though it isn\u2019t always mandatory."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What types of speeches or toasts are commonly given, and who usually delivers them?",
+                "answer": "Typically, heartfelt speeches and congratulatory toasts are given by close friends and family members, such as best friends, parents, and siblings of the honored individuals."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their answers about 'music and activities for entertainment' and 'formal ceremony followed by festive reception' were too vague compared to others who gave more specific details consistent with the secret word.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "I believe player_2 is the spy because their response about entertainment was vague and lacked specific details that would align more closely with the overall context of the discussions."
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "I believe player_3 is the spy because their answers, while relevant, were slightly more general and could potentially apply to other formal celebrations compared to the more specific details provided by other players."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their answer about entertainment ('music and activities') was overly vague compared to wedding-specific elements like dancing, speeches, or a DJ. This lack of detail could indicate the Spy avoiding alignment with the secret word.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their answer about entertainment was overly vague and didn\u2019t reference any wedding\u2010specific details like dancing or cake cutting.\""
+            }
+        ]
+    }
+]

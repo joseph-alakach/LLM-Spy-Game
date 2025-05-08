@@ -11,7 +11,7 @@ def __run_same_llm(number_of_players, number_of_rounds, secret_word, llm_name):
     return game.game_record
 
 def run_games_same_llm(llm_name: str, number_of_games: int):
-    record_json_path = "generated_data/games_simulation_grok_0_20.json"
+    record_json_path = "generated_data/games_simulation_gemini_10_20.json"
     games_total_record = []
     number_of_rounds = 2
 
@@ -54,6 +54,8 @@ def __run_different_llms(llm_names, number_of_rounds, secret_word, spy_llm ):
 
 def run_games_different_llms(number_of_games: int):
     llms = ["openai", "gemini", "claude", "deepseek", "grok"]
+    record_json_path = "generated_data/games_simulation_diff_x.json"
+
     games_total_record = []
     number_of_rounds = 2
 
@@ -77,7 +79,7 @@ def run_games_different_llms(number_of_games: int):
         random.shuffle(llm_names)
 
         if i != 0:
-            with open("games_total_record.json", "r") as file:
+            with open(record_json_path, "r") as file:
                 games_total_record = json.load(file)
         category = random.choice(list(categories.CATEGORIES.keys()))
         secret_word = random.choice(categories.CATEGORIES[category])
@@ -94,16 +96,16 @@ def run_games_different_llms(number_of_games: int):
             game_record["voting_record"] = game_record["voting_record_json"]
             del game_record["voting_record_json"]
         games_total_record.append(game_record)
-        with open("games_total_record.json", "w") as file:
+        with open(record_json_path, "w") as file:
             json.dump(games_total_record, file, indent=4)
     return games_total_record
 
 
 # Run games with the same LLM
-number_of_games_same = 20
-llm_name = "grok"  #openai, gemini, deepseek, claude, grok
-games_same_llm = run_games_same_llm(llm_name, number_of_games_same)
+# number_of_games_same = 20
+# llm_name = "gemini"  #openai, gemini, deepseek, claude, grok
+# games_same_llm = run_games_same_llm(llm_name, number_of_games_same)
 
 # Run games with different LLMs
-# number_of_games_different = 1
-# games_different_llms = run_games_different_llms(number_of_games_different)
+number_of_games_different = 100
+games_different_llms = run_games_different_llms(number_of_games_different)
