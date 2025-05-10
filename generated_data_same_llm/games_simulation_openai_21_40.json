@@ -1,0 +1,3760 @@
+[
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "funeral",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23063,
+                "output_tokens": 1023,
+                "thinking_tokens": 14528,
+                "full_output_tokens": 15551
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0253693,
+                "output_cost": 0.0045012,
+                "thinking_cost": 0.0639232,
+                "full_output_cost": 0.0684244
+            },
+            "total_costs": {
+                "total_input_cost": 0.0253693,
+                "total_output_cost": 0.0045012,
+                "total_thinking_cost": 0.0639232,
+                "total_full_output_cost": 0.0684244,
+                "full_total_cost": 0.0937937
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.192900896072388,
+                    3.648975133895874
+                ],
+                "answer_generation_durations": [
+                    3.526789665222168,
+                    3.3019638061523438
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.43350863456726,
+                    9.713001728057861
+                ],
+                "answer_generation_durations": [
+                    3.908673048019409,
+                    4.284118413925171
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.474523067474365,
+                    8.550309181213379
+                ],
+                "answer_generation_durations": [
+                    4.146857261657715,
+                    5.556269884109497
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    11.448162078857422,
+                    9.060120344161987
+                ],
+                "answer_generation_durations": [
+                    4.025431394577026,
+                    5.100475311279297
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.662334680557251,
+                    4.130099058151245
+                ],
+                "answer_generation_durations": [
+                    4.387636661529541,
+                    3.3071374893188477
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What\u2019s one small detail you tend to notice first when attending a highly emotional gathering?",
+                "answer": "I tend to notice the small comforting gestures people offer, like a hand gently resting on someone\u2019s shoulder."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What's one fragrance you often notice in places people go to show support or pay respect?",
+                "answer": "I often notice the gentle scent of lilies underpinned by a soft hint of sandalwood."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What's one common ambient sound you notice in gatherings meant to offer comfort during tough times?",
+                "answer": "I often hear soft, intermittent sniffles as people try to hold back tears."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of seating arrangement do you typically notice at events where people come together to support each other during difficult times?",
+                "answer": "I usually notice rows of chairs all facing toward a central focal point, like an altar or podium."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What type of printed material do attendees often hold or refer to at these events?",
+                "answer": "A small booklet outlining the sequence of readings, hymns, and speakers\u2014often called the order of service."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What\u2019s one typical type of refreshment you might find offered to attendees at such gatherings?",
+                "answer": "Typically there\u2019s tea and coffee served alongside a selection of simple finger sandwiches or pastries."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What type of floral arrangement or display do you typically notice at these gatherings?",
+                "answer": "I typically notice tall standing sprays of white lilies and chrysanthemums arranged on easels near the front."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What is a common item guests might write messages in to express their condolences during these gatherings?",
+                "answer": "Guests typically write their condolences in a condolence book set out near the entrance."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What kind of attire do attendees typically wear at these gatherings?",
+                "answer": "They typically wear dark, conservative clothing, often in black or muted tones."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What style of music is typically played at these gatherings?",
+                "answer": "Soft, somber instrumental music such as slow hymns or reflective organ pieces."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because mentioning a sandalwood note alongside lilies seems out of place for a typical funeral, suggesting they\u2019re guessing rather than drawing from genuine experience.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because the mention of a sandalwood note under the lilies felt out of place for a funeral home\u2014most funeral fragrances stick to floral or subtle wood undertones, not a distinct sandalwood scent.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "I believe player_1 is the spy because their refreshments\u2014tea, coffee with finger sandwiches and pastries\u2014feel more like a generic reception than a funeral, and their answers lack the funeral-specific details that the others provided."
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because the mention of sandalwood alongside lilies feels out of place for a typical funeral setting, suggesting they lack genuine familiarity.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI believe player_2 is the spy because the mention of sandalwood fragrance seems oddly specific and out of place for a typical gathering of this type.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "binoculars",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21540,
+                "output_tokens": 951,
+                "thinking_tokens": 16384,
+                "full_output_tokens": 17335
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.023694,
+                "output_cost": 0.0041844000000000004,
+                "thinking_cost": 0.0720896,
+                "full_output_cost": 0.07627400000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.023694,
+                "total_output_cost": 0.0041844000000000004,
+                "total_thinking_cost": 0.0720896,
+                "total_full_output_cost": 0.07627400000000001,
+                "full_total_cost": 0.099968
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.33122181892395,
+                    8.964819431304932
+                ],
+                "answer_generation_durations": [
+                    2.4289944171905518,
+                    3.6478583812713623
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.081434965133667,
+                    10.697809934616089
+                ],
+                "answer_generation_durations": [
+                    3.3162600994110107,
+                    3.4947509765625
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.3705737590789795,
+                    7.109900712966919
+                ],
+                "answer_generation_durations": [
+                    2.8494739532470703,
+                    2.0160083770751953
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    12.053531408309937,
+                    5.568827390670776
+                ],
+                "answer_generation_durations": [
+                    4.283143520355225,
+                    5.411289930343628
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.0906078815460205,
+                    13.352277994155884
+                ],
+                "answer_generation_durations": [
+                    2.3126137256622314,
+                    3.2878682613372803
+                ]
+            }
+        },
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this something you\u2019d bring with you on a hiking trip?",
+                "answer": "Yes, I\u2019d likely pack that for a hike."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this item usually require batteries or another power source to function?",
+                "answer": "No, it typically doesn\u2019t require any power source."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it something you would use primarily in daylight rather than at night?",
+                "answer": "Yes, I\u2019d mostly use it during the day."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is this item typically made of paper?",
+                "answer": "No, it\u2019s usually constructed from materials like metal or plastic."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is this object small enough to fit comfortably in one hand?",
+                "answer": "No, it generally requires two hands to hold properly."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this item primarily used for recreational activities rather than professional or industrial tasks?",
+                "answer": "Yes, it\u2019s most commonly used for recreational purposes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this item usually include adjustable components to customize it for your use?",
+                "answer": "Yes, it often has adjustable components to customize it for personal use."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is this item typically held in your hands during use rather than being attached to something?",
+                "answer": "Yes, it\u2019s typically held directly in your hands rather than being attached to something."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this item help you see distant objects more clearly?",
+                "answer": "Yes, it brings faraway details into clearer view."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it typical to wear this item around your neck using a strap for easy access?",
+                "answer": "Yes, it\u2019s often hung around the neck with a strap for quick access."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because they insisted the item is used \u2018primarily for recreational purposes,\u2019 which seems too narrow\u2014binoculars also see extensive professional and industrial use.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their sizing question about fitting in one hand seemed overly targeted to narrow down to something like binoculars, which feels like a spy tactic to pinpoint the word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\u201cI\u2019m suspicious of player_0\u2019s answer about fitting it in one hand. Most binoculars can at least fit comfortably in one hand, but they said it \u2018generally requires two hands,\u2019 which felt off compared to the other consistent answers.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their last answer was oddly detailed\u2014\u2018brings faraway details into clearer view\u2019\u2014as if they were too eager to reveal the item\u2019s function.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were unusually impersonal and generic\u2014unlike the others, they never referenced personal experience, which makes me doubt their familiarity with the item.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "detectives",
+        "spy": 4,
+        "secret_word": "monastery",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23611,
+                "output_tokens": 1025,
+                "thinking_tokens": 12928,
+                "full_output_tokens": 13953
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0259721,
+                "output_cost": 0.00451,
+                "thinking_cost": 0.0568832,
+                "full_output_cost": 0.0613932
+            },
+            "total_costs": {
+                "total_input_cost": 0.0259721,
+                "total_output_cost": 0.00451,
+                "total_thinking_cost": 0.0568832,
+                "total_full_output_cost": 0.0613932,
+                "full_total_cost": 0.0873653
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.77712345123291,
+                    11.72685170173645
+                ],
+                "answer_generation_durations": [
+                    2.5256154537200928,
+                    2.0187788009643555
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.993199348449707,
+                    8.893339395523071
+                ],
+                "answer_generation_durations": [
+                    6.33870792388916,
+                    3.8962783813476562
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.175198316574097,
+                    6.110628366470337
+                ],
+                "answer_generation_durations": [
+                    2.3514232635498047,
+                    2.0858452320098877
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.28300428390503,
+                    8.483531475067139
+                ],
+                "answer_generation_durations": [
+                    2.578244686126709,
+                    2.417404890060425
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    2.431741952896118,
+                    4.667569875717163
+                ],
+                "answer_generation_durations": [
+                    4.791390419006348,
+                    4.726381540298462
+                ]
+            }
+        },
+        "spy_guess": "monastery",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you say this place is typically located in a secluded area rather than a bustling urban center?",
+                "answer": "Yes, it\u2019s often found in a quiet, out-of-the-way location rather than an active urban center."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this place typically involve inhabitants following a structured daily routine?",
+                "answer": "Yes, inhabitants generally follow a highly regimented daily schedule."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it common for inhabitants here to grow their own food on-site?",
+                "answer": "Yes, it\u2019s fairly common for residents to cultivate simple gardens on-site to provide some of their provisions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you say that residents here typically share communal living quarters rather than having individual private rooms?",
+                "answer": "Yes, residents generally sleep in shared quarters rather than individual rooms."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there typically a mandatory uniform or dress code that residents are required to follow?",
+                "answer": "Yes, residents usually all wear a standardized, modest outfit."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is residency usually intended to be a long-term or permanent commitment rather than a short-term stay?",
+                "answer": "Yes, residency is generally intended to be long-term or permanent rather than brief."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is there typically a designated leader who makes decisions and provides guidance to the inhabitants?",
+                "answer": "Yes, there\u2019s typically a single appointed leader who oversees decisions and guides the residents."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do inhabitants dedicate designated periods of each day to silent reflection or meditation?",
+                "answer": "Yes, they typically set aside specific periods each day for silent reflection or meditation."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are bells or similar signals used to indicate when it\u2019s time to begin or end daily activities?",
+                "answer": "Yes, bells are rung to signal the start and end of daily activities."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do the residents take formal vows, such as poverty or celibacy, upon joining?",
+                "answer": "Yes, new members customarily take formal vows such as poverty, chastity, and obedience."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answer about residents \u2018generally sleeping in shared quarters\u2019 felt overly broad and didn\u2019t quite match the varied private cells common in many such communities.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 is the spy because they said residents typically share communal living quarters, but in a monastery the members almost always have individual cells or private cells rather than a dormitory\u2010style setup.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because a true monastery typically provides individual cells for its residents rather than shared dormitory\u2010style quarters, yet they claimed communal sleeping arrangements.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their description of the daily schedule as \u2018highly regimented\u2019 felt more military than monastic, which seems slightly off for the secret word.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 is the spy because their answer about formal vows\u2014poverty, chastity, obedience\u2014was unusually detailed and seemed aimed at steering us toward the secret theme.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "narwhal",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21114,
+                "output_tokens": 914,
+                "thinking_tokens": 12608,
+                "full_output_tokens": 13522
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0232254,
+                "output_cost": 0.0040216,
+                "thinking_cost": 0.0554752,
+                "full_output_cost": 0.0594968
+            },
+            "total_costs": {
+                "total_input_cost": 0.0232254,
+                "total_output_cost": 0.0040216,
+                "total_thinking_cost": 0.0554752,
+                "total_full_output_cost": 0.0594968,
+                "full_total_cost": 0.0827222
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.492584705352783,
+                    6.405043363571167
+                ],
+                "answer_generation_durations": [
+                    3.4508137702941895,
+                    2.8884241580963135
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.865255832672119,
+                    8.045237064361572
+                ],
+                "answer_generation_durations": [
+                    2.1908950805664062,
+                    2.89044451713562
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.3767831325531,
+                    15.402324199676514
+                ],
+                "answer_generation_durations": [
+                    7.078078746795654,
+                    3.237719774246216
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.5800352096557617,
+                    5.145330190658569
+                ],
+                "answer_generation_durations": [
+                    1.9924650192260742,
+                    3.224417209625244
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.731791973114014,
+                    9.911816358566284
+                ],
+                "answer_generation_durations": [
+                    2.0641467571258545,
+                    3.5021233558654785
+                ]
+            }
+        },
+        "spy_guess": "monastery",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you say this is more associated with work or leisure?",
+                "answer": "It\u2019s more associated with leisure."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you need special equipment to observe it closely?",
+                "answer": "Yes, you\u2019d need at least a boat and some optics to observe it closely."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you typically find it in a cold environment?",
+                "answer": "Yes, it\u2019s typically found in colder environments."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it more commonly found alone or in groups?",
+                "answer": "They\u2019re generally spotted in small pods rather than alone."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it migrate seasonally?",
+                "answer": "Yes, they migrate seasonally."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you typically observe it close to the shore or out in the open ocean?",
+                "answer": "You\u2019d generally observe it out in the open ocean rather than close to shore."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would interacting with it require specialized training?",
+                "answer": "Yes, you\u2019d generally need specialized training to interact with it safely."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does it rely on echolocation to navigate or find food?",
+                "answer": "Yes, it uses echolocation for navigation and finding food."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it need to surface regularly to breathe air?",
+                "answer": "Yes, it must surface regularly to breathe."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it have any natural predators in the wild?",
+                "answer": "Adults have few natural predators, though calves can sometimes fall prey to orcas and large sharks."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "I suspect player_3 because they claimed the animal \u201ctypically\u201d lives in cold environments and relies on echolocation\u2014statements that don\u2019t consistently fit the secret word (whales) as a whole."
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because citing large sharks as predators of narwhals seems inaccurate\u2014narwhal calves are preyed on by orcas and polar bears, but not typically by sharks.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\u201cI find player_1 suspicious because their answers (\u2018leisure\u2019 and \u2018open ocean\u2019) were very generic and didn\u2019t show the depth of knowledge the other players demonstrated.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because they said observing it is more about leisure\u2014but narwhals aren\u2019t typically watched for fun, they\u2019re usually encountered through research or subsistence activities.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their detail about calves falling prey to \u2018large sharks\u2019 seems off for narwhals\u2014narwhal calves are almost exclusively at risk from orcas, not typical large shark predators.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "detectives",
+        "spy": 3,
+        "secret_word": "giraffe",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23890,
+                "output_tokens": 1022,
+                "thinking_tokens": 12928,
+                "full_output_tokens": 13950
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.026279,
+                "output_cost": 0.0044968000000000004,
+                "thinking_cost": 0.0568832,
+                "full_output_cost": 0.061380000000000004
+            },
+            "total_costs": {
+                "total_input_cost": 0.026279,
+                "total_output_cost": 0.0044968000000000004,
+                "total_thinking_cost": 0.0568832,
+                "total_full_output_cost": 0.061380000000000004,
+                "full_total_cost": 0.087659
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.7758843898773193,
+                    11.47917652130127
+                ],
+                "answer_generation_durations": [
+                    3.2034692764282227,
+                    2.612833261489868
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.340268135070801,
+                    16.532448053359985
+                ],
+                "answer_generation_durations": [
+                    6.076170921325684,
+                    4.548450946807861
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.905176401138306,
+                    4.919776201248169
+                ],
+                "answer_generation_durations": [
+                    3.1769793033599854,
+                    2.6698691844940186
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.127872943878174,
+                    6.818612337112427
+                ],
+                "answer_generation_durations": [
+                    3.2040817737579346,
+                    5.464354753494263
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.3167548179626465,
+                    4.799341678619385
+                ],
+                "answer_generation_durations": [
+                    5.85126256942749,
+                    3.035425901412964
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you prefer to remain in open spaces where it\u2019s easy to see far into the distance, or in enclosed areas where you feel more sheltered?",
+                "answer": "I prefer open spaces where I can keep an eye on everything happening around me."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you rather excel at tasks requiring utmost precision or at those demanding exceptional reach?",
+                "answer": "I\u2019d choose tasks demanding exceptional reach."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you rather gather food from items located high above you or from those close to ground level?",
+                "answer": "I\u2019d go for those close to ground level since they\u2019re easier to reach without stretching too far."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you rather rely on strength or on flexibility to obtain what you need?",
+                "answer": "I\u2019d rely on flexibility, since being adaptable often opens up more opportunities."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you rather rely on speed or endurance when covering long distances?",
+                "answer": "I\u2019d choose endurance to maintain a steady pace without burning out."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you rather travel as part of a group for collective safety or wander alone relying solely on your own vigilance?",
+                "answer": "I\u2019d prefer traveling in a group for the shared vigilance and safety it offers."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you rather spend your time standing still and surveying your surroundings, or moving around continuously to discover what lies ahead?",
+                "answer": "I\u2019d spend my time standing still and surveying my surroundings."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you rather depend on elevated visibility to observe your surroundings or on subtle camouflage to blend in?",
+                "answer": "I\u2019d rather depend on elevated visibility to observe my surroundings."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you rather depend on acute hearing or on sharp vision to perceive your surroundings?",
+                "answer": "I\u2019d rely on sharp vision to pick up details that might otherwise go unnoticed."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you rather sleep lying down where you feel most comfortable but vulnerable, or sleep standing where you might be less comfortable but can react quickly to danger?",
+                "answer": "I\u2019d sleep standing so I can react quickly to any danger."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they said they\u2019d gather food close to the ground, which contradicts the high-reaching feeding behavior implied by our secret word.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI believe player_3 is the spy because they chose to gather food at ground level\u2014a choice that clearly conflicts with the high-browsing nature of our secret word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 because they chose to feed from items close to ground level, which directly contradicts how the secret word would behave by reaching high foliage.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because they chose flexibility over strength\u2014an inconsistency if the group is thinking of something that relies on power (like a long-necked browser) rather than bending flexibility.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they said they\u2019d gather food from ground level, which conflicts with knowing the secret word.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "cartographer",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22903,
+                "output_tokens": 1047,
+                "thinking_tokens": 15744,
+                "full_output_tokens": 16791
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.025193300000000002,
+                "output_cost": 0.0046068,
+                "thinking_cost": 0.0692736,
+                "full_output_cost": 0.0738804
+            },
+            "total_costs": {
+                "total_input_cost": 0.025193300000000002,
+                "total_output_cost": 0.0046068,
+                "total_thinking_cost": 0.0692736,
+                "total_full_output_cost": 0.0738804,
+                "full_total_cost": 0.0990737
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.1102447509765625,
+                    5.630947589874268
+                ],
+                "answer_generation_durations": [
+                    3.8501224517822266,
+                    4.520193099975586
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    12.961843490600586,
+                    7.514533281326294
+                ],
+                "answer_generation_durations": [
+                    4.630048751831055,
+                    2.2184321880340576
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.765769720077515,
+                    8.12465214729309
+                ],
+                "answer_generation_durations": [
+                    2.785358190536499,
+                    2.7979190349578857
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.301580905914307,
+                    5.0398945808410645
+                ],
+                "answer_generation_durations": [
+                    3.9020771980285645,
+                    2.111255168914795
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.09066891670227,
+                    8.17391037940979
+                ],
+                "answer_generation_durations": [
+                    2.6635684967041016,
+                    3.191131830215454
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Where would you typically find this?",
+                "answer": "Often in government surveying offices or university geography departments where mapping work is done."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would someone performing this generally spend more time indoors or outdoors?",
+                "answer": "Mostly indoors, with occasional outdoor trips for field measurements."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this generally require specialized formal education, or can it be learned primarily through practical experience?",
+                "answer": "Most practitioners pursue formal education to grasp core principles, though hands-on fieldwork is essential for honing the necessary skills."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is regular revision and updating a key part of their typical workflow, or are their outputs usually final once completed?",
+                "answer": "Their work typically involves ongoing revisions to ensure accuracy as geographic data changes."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do they typically rely on specialized software tools in their work, or do they proceed mostly through manual methods?",
+                "answer": "They rely heavily on specialized software tools, resorting to manual methods only sparingly for on-site checks."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do they often collaborate with professionals from other fields, such as urban planners or environmental scientists, in their work?",
+                "answer": "Yes, they frequently partner with urban planners, environmental scientists, and other specialists to integrate mapping insights into broader projects."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Are their deliverables predominantly digital, or is there still significant reliance on physical media like paper outputs?",
+                "answer": "They deliver primarily digital outputs, though printed maps are still produced as needed."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do they need to follow strict style guidelines to maintain consistency across different assignments, or does each assignment allow flexibility in presentation?",
+                "answer": "They adhere to strict style guidelines to ensure consistency and clarity across all mapping assignments."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do they typically work on long-term projects spanning several months or handle short-term assignments with quicker turnaround?",
+                "answer": "They often work on projects lasting several months, though they also handle shorter assignments requiring quick turnaround."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do they often reference historical archives in their work, or base their deliverables solely on the most recent data?",
+                "answer": "They frequently reference historical archives to track changes over time while integrating the latest data for accuracy."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their emphasis on mostly indoor work seems inconsistent with the field-intensive nature suggested by the other players\u2019 answers.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their answers were quite generic\u2014lacking any cartography-specific details like GIS software, coordinate systems, or map projections\u2014which seems inconsistent with true insider knowledge.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answers were unusually vague and generic, lacking the specific mapping detail the others demonstrated.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI find player_4\u2019s answers unusually vague\u2014mentioning only \u2018ongoing revisions\u2019 and project lengths without any specific mapping tools, data sources, or domain details that the other players referenced. That lack of specificity raises my suspicion.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I suspect player_2 because their answers\u2014like stating they work \u2018mostly indoors with occasional outdoor trips\u2019 and produce \u2018primarily digital outputs\u2019\u2014felt overly generic and could apply to many roles, suggesting they\u2019re avoiding specific cartographer details.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "cat",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 20852,
+                "output_tokens": 871,
+                "thinking_tokens": 13952,
+                "full_output_tokens": 14823
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0229372,
+                "output_cost": 0.0038324,
+                "thinking_cost": 0.0613888,
+                "full_output_cost": 0.06522120000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.0229372,
+                "total_output_cost": 0.0038324,
+                "total_thinking_cost": 0.0613888,
+                "total_full_output_cost": 0.06522120000000001,
+                "full_total_cost": 0.08815840000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.215275764465332,
+                    8.658350467681885
+                ],
+                "answer_generation_durations": [
+                    2.627171754837036,
+                    3.2825663089752197
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.690682411193848,
+                    12.7506582736969
+                ],
+                "answer_generation_durations": [
+                    2.1422815322875977,
+                    2.6960349082946777
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.622156620025635,
+                    6.377208471298218
+                ],
+                "answer_generation_durations": [
+                    2.5596609115600586,
+                    2.388740062713623
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.591418981552124,
+                    10.03081750869751
+                ],
+                "answer_generation_durations": [
+                    3.6474618911743164,
+                    4.034481763839722
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.9186015129089355,
+                    6.188488960266113
+                ],
+                "answer_generation_durations": [
+                    2.9512808322906494,
+                    2.6369264125823975
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you say it is something you\u2019d commonly find inside a house rather than outdoors?",
+                "answer": "I\u2019d say you\u2019re more likely to encounter it inside than out."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it typically move independently rather than remaining stationary?",
+                "answer": "Yes, it typically moves independently."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Can it climb vertical surfaces easily?",
+                "answer": "Yes, it can climb vertical surfaces fairly easily."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it likely to weigh more than 100 pounds?",
+                "answer": "No, it almost never weighs more than 100 pounds."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically have a tail?",
+                "answer": "Yes, it typically has a tail."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it purr?",
+                "answer": "Yes, you can often hear a soft, rhythmic rumble from it."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does its diet mainly consist of meat?",
+                "answer": "Yes, it primarily eats meat."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are its claws typically retractable?",
+                "answer": "Yes, they\u2019re typically retractable."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it generally a solitary creature rather than living in social groups?",
+                "answer": "Yes, it generally leads a solitary life rather than forming social groups."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it primarily active during dawn and dusk rather than midday?",
+                "answer": "Yes, it\u2019s most active during dawn and dusk."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI believe player_4 is the spy because their hedged responses about weight (\u2018almost never weighs more than 100 pounds\u2019) and social behavior felt overly cautious compared to the others\u2019 direct answers.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 is the spy because their answers were overly brief and lacked detail compared to the others, which could be an attempt to hide uncertainty.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because saying you\u2019re more likely to find it inside than outdoors feels off for a cat\u2014most people see them both inside and out, but they overstated the indoor angle.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their very brief, one-word answers stand out as unusually terse compared to everyone else\u2019s more detailed responses.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers (\u2018moves independently,\u2019 \u2018primarily eats meat\u2019) were overly generic and could fit many animals, unlike the more specific clues other players gave.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 0,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "sandwich",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21636,
+                "output_tokens": 964,
+                "thinking_tokens": 16192,
+                "full_output_tokens": 17156
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0237996,
+                "output_cost": 0.0042416,
+                "thinking_cost": 0.0712448,
+                "full_output_cost": 0.0754864
+            },
+            "total_costs": {
+                "total_input_cost": 0.0237996,
+                "total_output_cost": 0.0042416,
+                "total_thinking_cost": 0.0712448,
+                "total_full_output_cost": 0.0754864,
+                "full_total_cost": 0.099286
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.037034273147583,
+                    12.252002239227295
+                ],
+                "answer_generation_durations": [
+                    3.18076229095459,
+                    2.7859861850738525
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.1279053688049316,
+                    10.967493534088135
+                ],
+                "answer_generation_durations": [
+                    5.9375927448272705,
+                    8.084474086761475
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.293305158615112,
+                    4.881023168563843
+                ],
+                "answer_generation_durations": [
+                    2.3848767280578613,
+                    3.77695369720459
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.033839225769043,
+                    7.429690361022949
+                ],
+                "answer_generation_durations": [
+                    2.055671215057373,
+                    2.907632350921631
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    17.928393363952637,
+                    7.480360746383667
+                ],
+                "answer_generation_durations": [
+                    3.6311941146850586,
+                    2.4801361560821533
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this something people often customize or personalize to their taste?",
+                "answer": "Yes, people often personalize it to suit their own tastes."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it an electronic device?",
+                "answer": "No, it isn\u2019t an electronic device."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it something that people typically assemble from several separate components?",
+                "answer": "Yes, it typically involves combining several distinct parts into a single item."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it typically designed to be portable and easily carried by hand?",
+                "answer": "Yes, it\u2019s generally small and designed to be easily carried and handled by hand."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is this item designed to be used only once before being discarded rather than reused?",
+                "answer": "Yes, it\u2019s intended to be used only once."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it perishable if left at room temperature for more than a few hours?",
+                "answer": "Yes, it spoils if left at room temperature for more than a few hours."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it typically eaten without the need for utensils?",
+                "answer": "Yes, it\u2019s usually eaten by hand and doesn\u2019t require utensils."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it more commonly eaten at lunchtime than at breakfast or dinner?",
+                "answer": "Yes, it is most often eaten around midday rather than at breakfast or dinner."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it commonly wrapped in paper or foil when sold at a shop or cafe?",
+                "answer": "Yes, it\u2019s often wrapped in simple packaging like paper or foil for convenience."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it more commonly purchased ready-to-eat than made from scratch at home?",
+                "answer": "Yes, it\u2019s more commonly purchased ready-to-eat than made from scratch at home."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers added vague qualifiers like \u2018small\u2019 and \u2018simple packaging,\u2019 which don\u2019t consistently match how sandwiches vary in size or wrapping.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their question about the typical mealtime felt unusually specific and out of step with the more general clues, as if they were trying to fish for extra confirmation.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their claim that this item is more often bought ready-to-eat than made at home doesn\u2019t fit my knowledge of sandwiches \u2013 most people make them from scratch.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their answer to whether the item is \u2018designed to be used only once before being discarded\u2019 was oddly worded and doesn\u2019t align cleanly with how a sandwich is typically described.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because their answer about being \u2018designed to be used only once\u2019 sounds like they\u2019re describing packaging rather than the item itself, which doesn\u2019t quite fit with everyone else\u2019s responses.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "symposium",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22132,
+                "output_tokens": 952,
+                "thinking_tokens": 11520,
+                "full_output_tokens": 12472
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0243452,
+                "output_cost": 0.0041888,
+                "thinking_cost": 0.050688000000000004,
+                "full_output_cost": 0.0548768
+            },
+            "total_costs": {
+                "total_input_cost": 0.0243452,
+                "total_output_cost": 0.0041888,
+                "total_thinking_cost": 0.050688000000000004,
+                "total_full_output_cost": 0.0548768,
+                "full_total_cost": 0.079222
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.713591814041138,
+                    11.448146104812622
+                ],
+                "answer_generation_durations": [
+                    3.114621877670288,
+                    2.2208497524261475
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.533968210220337,
+                    9.899291038513184
+                ],
+                "answer_generation_durations": [
+                    3.982527017593384,
+                    10.053768873214722
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.680983066558838,
+                    8.315775156021118
+                ],
+                "answer_generation_durations": [
+                    7.147007465362549,
+                    3.9721181392669678
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.939891338348389,
+                    2.9366352558135986
+                ],
+                "answer_generation_durations": [
+                    3.65521502494812,
+                    4.028814792633057
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.388023138046265,
+                    6.286749362945557
+                ],
+                "answer_generation_durations": [
+                    4.248644828796387,
+                    2.7046563625335693
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you expect this to occur regularly as part of a routine schedule or more occasionally as a special event?",
+                "answer": "I\u2019d say it happens more occasionally as a special event rather than on a regular schedule."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you expect it to follow a formal agenda or be more loosely organized?",
+                "answer": "I\u2019d expect it to follow a fairly formal agenda rather than be loosely organized."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you expect attendees to wear formal attire or more casual clothing?",
+                "answer": "I\u2019d expect attendees to wear formal attire."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you expect this to take place in an academic institution or at a commercial conference center?",
+                "answer": "I\u2019d expect it to take place in an academic institution."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you expect this to emphasize theoretical discussions or practical demonstrations?",
+                "answer": "I\u2019d expect it to emphasize theoretical discussions."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you expect this event to span multiple consecutive days or conclude within a single day?",
+                "answer": "I\u2019d expect it to conclude within a single day."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you expect participants to submit written papers in advance or rely on impromptu presentations?",
+                "answer": "I\u2019d expect participants to submit written papers in advance."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you expect this event to be open to the general public or restricted to invited participants?",
+                "answer": "I\u2019d expect it to be restricted to invited participants."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you expect the event to be free of charge or require a registration fee?",
+                "answer": "I\u2019d expect it to require a registration fee."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you expect this event to include poster sessions in addition to talks or focus solely on oral presentations?",
+                "answer": "I\u2019d expect it to include poster sessions in addition to talks."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 because insisting on formal attire seems off for a typical academic symposium, where the dress code is usually more business casual.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\u201cI believe player_3 is the spy because they insisted on strictly formal attire and only invited participants, which doesn\u2019t fit the broader, open-call nature of a symposium.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because insisting on formal attire seems off for an academic event like this, where business casual is more typical.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI\u2019m suspicious of player_1\u2019s claim that this would conclude in a single day\u2014symposia often run over multiple days, so that narrow answer stands out as inconsistent.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they said the event would be restricted to invited participants and require formal attire\u2014most symposiums operate on open paper submissions and business\u2010casual dress, not strictly by invitation or full formal wear.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 4,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "glasses",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 23005,
+                "output_tokens": 1016,
+                "thinking_tokens": 15488,
+                "full_output_tokens": 16504
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0253055,
+                "output_cost": 0.0044704,
+                "thinking_cost": 0.0681472,
+                "full_output_cost": 0.0726176
+            },
+            "total_costs": {
+                "total_input_cost": 0.0253055,
+                "total_output_cost": 0.0044704,
+                "total_thinking_cost": 0.0681472,
+                "total_full_output_cost": 0.0726176,
+                "full_total_cost": 0.09792310000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.8936686515808105,
+                    6.300890207290649
+                ],
+                "answer_generation_durations": [
+                    3.3216497898101807,
+                    4.136232137680054
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.798475503921509,
+                    4.21519136428833
+                ],
+                "answer_generation_durations": [
+                    4.28433632850647,
+                    3.7539901733398438
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.7969605922698975,
+                    11.302047491073608
+                ],
+                "answer_generation_durations": [
+                    2.524651050567627,
+                    5.772504806518555
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.285895109176636,
+                    12.43333101272583
+                ],
+                "answer_generation_durations": [
+                    2.748290777206421,
+                    2.663245439529419
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.792732238769531,
+                    7.237924337387085
+                ],
+                "answer_generation_durations": [
+                    3.2109391689300537,
+                    2.6341238021850586
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Have you ever needed to switch between different versions of something you wear daily based on your environment?",
+                "answer": "Yes, I often switch to a different pair when moving between indoor and bright outdoor settings."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Have you ever needed to clean or maintain this item regularly to keep it working properly?",
+                "answer": "Yes, I clean it regularly to keep it functioning properly."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Have you ever had to adjust its angle or position throughout the day to maintain clear vision?",
+                "answer": "Yes, I often adjust its angle slightly during the day to keep a clear view."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Have you ever found the weight of this item noticeable after wearing it for an extended period?",
+                "answer": "Occasionally after hours of use I notice a slight pressure on my nose and ears, but it\u2019s generally quite light."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Have you ever needed to remove this item before engaging in vigorous physical activity to prevent it from slipping or getting damaged?",
+                "answer": "Yes, I usually take it off before vigorous workouts to keep it secure and avoid any damage."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Have you ever had to store it in a protective case when not in use?",
+                "answer": "Yes, I usually store it in a protective case whenever it\u2019s not in use."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Have you ever experienced it fogging up when moving between environments with different temperatures?",
+                "answer": "Yes, it fogs up whenever I move from a cold outdoor space into a warmer indoor area."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Have you ever had to tighten or adjust its hinges to keep it fitting properly?",
+                "answer": "Yes, I sometimes tighten its hinges to keep it fitting comfortably."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Have you ever carried a backup version in case yours became unavailable or damaged?",
+                "answer": "Yes, I often carry a spare pair to ensure I\u2019m never caught without one."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Have you ever experienced glare or reflections obstructing your view when using it under bright lighting?",
+                "answer": "Yes, glare can be distracting under bright lighting, so I tilt it slightly to reduce reflections."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 because their claim about tightening the hinges to keep it fitting properly feels off\u2014people usually adjust nose pads or temple arms, not the hinges, which is inconsistent with true glasses maintenance.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because carrying a spare pair is an unusual level of preparation\u2014most genuine wearers don\u2019t routinely tote a backup, which feels like an overdone detail to seem convincing.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because they specifically mentioned switching to \u2018bright outdoor settings,\u2019 which hints at sunglasses rather than the broader category of glasses.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 is the spy because their response about cleaning was oddly generic and lacked the kind of specific detail everyone else provided about maintenance.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their comment about always carrying a spare pair feels over-specific and isn\u2019t typical of most glasses wearers.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "coronation",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21080,
+                "output_tokens": 892,
+                "thinking_tokens": 12480,
+                "full_output_tokens": 13372
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.023188,
+                "output_cost": 0.0039248,
+                "thinking_cost": 0.054912,
+                "full_output_cost": 0.0588368
+            },
+            "total_costs": {
+                "total_input_cost": 0.023188,
+                "total_output_cost": 0.0039248,
+                "total_thinking_cost": 0.054912,
+                "total_full_output_cost": 0.0588368,
+                "full_total_cost": 0.08202480000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.722362041473389,
+                    7.124028444290161
+                ],
+                "answer_generation_durations": [
+                    3.2439961433410645,
+                    1.7225127220153809
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.031517267227173,
+                    8.647883415222168
+                ],
+                "answer_generation_durations": [
+                    3.6983885765075684,
+                    2.5572457313537598
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.12638545036316,
+                    6.09950852394104
+                ],
+                "answer_generation_durations": [
+                    3.279294729232788,
+                    8.362151861190796
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.965439796447754,
+                    12.31606936454773
+                ],
+                "answer_generation_durations": [
+                    3.6225638389587402,
+                    2.6397693157196045
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    7.653395175933838,
+                    3.8509371280670166
+                ],
+                "answer_generation_durations": [
+                    6.918804407119751,
+                    5.0775744915008545
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you expect a large audience to witness this event?",
+                "answer": "Yes, it typically draws a sizable crowd."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is this event more likely to take place indoors than outdoors?",
+                "answer": "Yes, it\u2019s typically held indoors."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Does this event often include live musical accompaniment?",
+                "answer": "Yes, this event usually includes live musical accompaniment."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does the event usually involve a formal procession of participants?",
+                "answer": "Yes, participants usually enter in a formal procession."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do participants typically wear formal attire to this event?",
+                "answer": "Yes, participants usually wear formal attire."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this event typically include speeches by notable individuals?",
+                "answer": "Yes, prominent figures often deliver speeches at this event."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this event typically involve the use of ceremonial objects or artifacts?",
+                "answer": "Yes, it generally features specialized symbolic items that play a role in the ceremony."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is this event commonly broadcast live to viewers outside the venue?",
+                "answer": "Yes, it\u2019s often broadcast live to viewers outside the venue."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is attendance at this event typically limited to invited guests rather than open to the general public?",
+                "answer": "Yes, it\u2019s typically restricted to invited guests rather than open to the public."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is there typically a designated officiant who presides over the ceremony?",
+                "answer": "Yes, a designated officiant typically presides over the ceremony."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\"I\u2019m voting for player_1 because their responses were very generic and lacked the specific ceremonial details that everyone else included, suggesting they\u2019re the spy.\""
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their claim that \u2018prominent figures often deliver speeches\u2019 felt off\u2014coronations focus on rites and oaths rather than formal speeches.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their remark about \u2018prominent figures delivering speeches\u2019 felt generic and less tied to a coronation\u2019s specific ceremony, unlike everyone else\u2019s more pointed details.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because a coronation doesn\u2019t typically feature public \u2018speeches by notable individuals\u2019\u2014it\u2019s more a liturgical ceremony than a forum for addresses.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\"I believe player_2 is the spy because their description of the ceremonial objects was unusually vague and doesn\u2019t quite fit a typical ceremony.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 4,
+        "secret_word": "bruschetta",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21724,
+                "output_tokens": 945,
+                "thinking_tokens": 16192,
+                "full_output_tokens": 17137
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0238964,
+                "output_cost": 0.004158,
+                "thinking_cost": 0.0712448,
+                "full_output_cost": 0.07540279999999999
+            },
+            "total_costs": {
+                "total_input_cost": 0.0238964,
+                "total_output_cost": 0.004158,
+                "total_thinking_cost": 0.0712448,
+                "total_full_output_cost": 0.07540279999999999,
+                "full_total_cost": 0.09929919999999999
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    6.675475597381592,
+                    9.420478820800781
+                ],
+                "answer_generation_durations": [
+                    2.184145212173462,
+                    3.5118613243103027
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    11.61849856376648,
+                    10.95438289642334
+                ],
+                "answer_generation_durations": [
+                    3.0396175384521484,
+                    2.0681893825531006
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.699793815612793,
+                    10.533868074417114
+                ],
+                "answer_generation_durations": [
+                    3.3727712631225586,
+                    3.292118787765503
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    11.48523235321045,
+                    12.221504926681519
+                ],
+                "answer_generation_durations": [
+                    2.3373284339904785,
+                    3.0938785076141357
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    5.164228916168213,
+                    9.06675410270691
+                ],
+                "answer_generation_durations": [
+                    4.055084228515625,
+                    3.766409158706665
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Would you typically eat this with your hands or with utensils?",
+                "answer": "Mostly with my hands, though I might use utensils in a more formal setting."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you say this is more commonly served as an appetizer or as a main course?",
+                "answer": "It's typically served as an appetizer."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Would you typically serve this hot, warm, or cold?",
+                "answer": "Usually served warm."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you be more likely to find this at a casual gathering or at a formal dinner party?",
+                "answer": "You\u2019d most commonly find it at casual gatherings."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you say this is usually eaten as part of a shared platter or as an individual serving?",
+                "answer": "It's typically eaten as part of a shared platter."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does it typically involve a combination of raw and cooked elements?",
+                "answer": "Yes, it often combines a cooked base with raw toppings."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it typically assembled right before serving, or can it be prepared and left alone without losing quality?",
+                "answer": "It\u2019s typically assembled right before serving to preserve its texture."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is this item seasonal, typically enjoyed only at certain times of the year, or is it available year-round?",
+                "answer": "It\u2019s available year-round."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Would you typically be able to prepare this in under fifteen minutes, or does it usually take longer to make?",
+                "answer": "It usually takes less than fifteen minutes to prepare."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Would you describe the main component as primarily plant-based, or does it include meat?",
+                "answer": "It's primarily plant-based."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI think player_3 is the spy because their claim that this is available year-round seemed off\u2014fresh ingredients make it more seasonal\u2014unlike the other answers, which all fit neatly.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because saying it\u2019s \u2018usually served warm\u2019 doesn\u2019t quite fit the secret word, which is more often at room temperature.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 because they said it\u2019s \u2018usually served warm,\u2019 which doesn\u2019t align with the typical room-temperature serving of bruschetta.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI think player_1 is the spy because their comment about possibly using utensils in a formal setting feels like a generic safe answer rather than true insight into how bruschetta is actually eaten (almost always by hand).\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\"I suspect player_3 because their answers were unusually brief and generic\u2014\u2018warm\u2019 and \u2018year-round\u2019 feel like they\u2019re avoiding specifics to hide they don\u2019t know the word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": "votes_tie",
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "bear",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22087,
+                "output_tokens": 971,
+                "thinking_tokens": 13248,
+                "full_output_tokens": 14219
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0242957,
+                "output_cost": 0.0042724,
+                "thinking_cost": 0.0582912,
+                "full_output_cost": 0.0625636
+            },
+            "total_costs": {
+                "total_input_cost": 0.0242957,
+                "total_output_cost": 0.0042724,
+                "total_thinking_cost": 0.0582912,
+                "total_full_output_cost": 0.0625636,
+                "full_total_cost": 0.0868593
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.476220369338989,
+                    4.372003078460693
+                ],
+                "answer_generation_durations": [
+                    3.1366400718688965,
+                    2.9393503665924072
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.771775960922241,
+                    3.6910641193389893
+                ],
+                "answer_generation_durations": [
+                    4.72638201713562,
+                    5.712218999862671
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.40137243270874,
+                    8.278405904769897
+                ],
+                "answer_generation_durations": [
+                    3.3736441135406494,
+                    3.9979541301727295
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.169371128082275,
+                    7.387768507003784
+                ],
+                "answer_generation_durations": [
+                    1.94907808303833,
+                    4.4772138595581055
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.0919787883758545,
+                    6.124983549118042
+                ],
+                "answer_generation_durations": [
+                    3.851304769515991,
+                    2.7237770557403564
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What activities do you usually do when you\u2019re there?",
+                "answer": "I usually hike through the trails and set up a small picnic."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What sounds do you typically hear when you\u2019re there?",
+                "answer": "I usually hear birdsong, rustling leaves, and the gentle flow of a nearby stream."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "What scents do you notice most often when you\u2019re there?",
+                "answer": "I often notice the crisp scent of pine and damp earth, with a subtle hint of wildflowers."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What time of day do you most often find yourself there?",
+                "answer": "I usually go there early in the morning, just after sunrise."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What textures do you notice underfoot or around you when you\u2019re there?",
+                "answer": "I feel a layer of soft moss underfoot mixed with crunchy pine needles and occasional patches of damp soil."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "What colors dominate the landscape when you\u2019re there?",
+                "answer": "Rich greens dominate, with earthy undertones and soft golden highlights filtering through."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "What kinds of weather conditions do you typically experience when you\u2019re there?",
+                "answer": "Mostly mild days with occasional fog rolling in and the odd sudden shower."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "How crowded or secluded does the area feel when you\u2019re there?",
+                "answer": "It feels quite secluded, with only the occasional hiker passing through."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "What type of underbrush do you navigate through\u2014dense shrubs, ferns, or clearings?",
+                "answer": "I mostly push through thick ferns with the occasional small clearing."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "What types of animals or wildlife do you commonly observe when you\u2019re there?",
+                "answer": "I often see deer grazing in clearings, squirrels scurrying up tree trunks, and the occasional fox slipping through the ferns."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 is the spy because their emphasis on fog and sudden showers feels more like a mountainous setting than the consistent forest environment described by everyone else.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_1",
+                "reason": "\"I think player_1 is the spy because suggesting a picnic in a place teeming with large wildlife (like bears) feels oddly naive\u2014someone who knows the word would avoid inviting one.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because they mentioned setting up a picnic\u2014someone who knows the secret word is \u2018bear\u2019 would be wary of picnicking where bears roam.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their answers have been unusually brief and generic compared to everyone else\u2019s richer, habitat-specific details\u2014suggesting they\u2019re hiding a lack of real knowledge.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 is the spy because their answers felt very generic\u2014mentioning only vague sounds and weather without the specific, concrete details the other players provided.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 1,
+        "secret_word": "rabbit",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 20942,
+                "output_tokens": 905,
+                "thinking_tokens": 17600,
+                "full_output_tokens": 18505
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0230362,
+                "output_cost": 0.003982,
+                "thinking_cost": 0.07744000000000001,
+                "full_output_cost": 0.08142200000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.0230362,
+                "total_output_cost": 0.003982,
+                "total_thinking_cost": 0.07744000000000001,
+                "total_full_output_cost": 0.08142200000000001,
+                "full_total_cost": 0.1044582
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.245826959609985,
+                    11.347488164901733
+                ],
+                "answer_generation_durations": [
+                    2.91556978225708,
+                    2.5196776390075684
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    10.907103061676025,
+                    7.917996883392334
+                ],
+                "answer_generation_durations": [
+                    3.557574987411499,
+                    5.287542343139648
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.835844039916992,
+                    11.1164391040802
+                ],
+                "answer_generation_durations": [
+                    4.456936359405518,
+                    2.7861223220825195
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    19.663371086120605,
+                    7.979624032974243
+                ],
+                "answer_generation_durations": [
+                    3.0548415184020996,
+                    2.2582459449768066
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    10.872286558151245,
+                    7.448238372802734
+                ],
+                "answer_generation_durations": [
+                    3.114895820617676,
+                    3.5827009677886963
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this creature primarily herbivorous?",
+                "answer": "Yes, it\u2019s primarily herbivorous."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is this creature native to Africa?",
+                "answer": "No, it\u2019s not typically native to Africa."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is this creature commonly kept as a pet?",
+                "answer": "Yes, it\u2019s often kept as a household pet."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is this creature most active around dawn and dusk rather than during the day or night?",
+                "answer": "Yes, it\u2019s most active around dawn and dusk."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this creature's native habitat consist mainly of grasslands or meadows?",
+                "answer": "Yes, it primarily inhabits grasslands and meadows."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Does this creature typically live in underground burrows?",
+                "answer": "Yes, it typically lives in underground burrows."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does this creature primarily move by hopping or jumping?",
+                "answer": "Yes, it primarily moves by hopping."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is its tail shorter than half its body length?",
+                "answer": "Yes, its tail is shorter than half its body length."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does this creature tend to live in social groups rather than alone?",
+                "answer": "Yes, they usually live in social groups rather than alone."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does this creature have prominent whiskers around its muzzle?",
+                "answer": "Yes, it has prominent whiskers around its muzzle."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers about not being native to Africa and hopping seemed overly neat and generic, matching the secret word too perfectly compared to the more detailed responses from others.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their precise yes answers about hopping and tail length seem too on-point, as if they already know the secret word.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because their answers on crepuscular activity and social grouping felt overly generic \u2013 they fit many animals and didn\u2019t show the confidence I\u2019d expect from someone who really knows rabbits.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because they said the creature isn\u2019t native to Africa, but rabbits (e.g., the European rabbit) are also native to parts of North Africa\u2014an odd mistake for someone who truly knows the secret word.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because they answered that the creature isn\u2019t native to Africa, but rabbits do naturally occur in parts of Africa, which seems like a slip from someone who truly knows the secret word.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 0,
+        "secret_word": "school",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 20826,
+                "output_tokens": 907,
+                "thinking_tokens": 14464,
+                "full_output_tokens": 15371
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0229086,
+                "output_cost": 0.0039908,
+                "thinking_cost": 0.0636416,
+                "full_output_cost": 0.06763240000000001
+            },
+            "total_costs": {
+                "total_input_cost": 0.0229086,
+                "total_output_cost": 0.0039908,
+                "total_thinking_cost": 0.0636416,
+                "total_full_output_cost": 0.06763240000000001,
+                "full_total_cost": 0.09054100000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.9674861431121826,
+                    9.152210235595703
+                ],
+                "answer_generation_durations": [
+                    4.6783387660980225,
+                    4.3158159255981445
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.2848780155181885,
+                    7.641576051712036
+                ],
+                "answer_generation_durations": [
+                    2.5880579948425293,
+                    4.361428260803223
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    9.33417272567749,
+                    10.777405738830566
+                ],
+                "answer_generation_durations": [
+                    2.5227174758911133,
+                    3.4699695110321045
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.374827861785889,
+                    9.752195119857788
+                ],
+                "answer_generation_durations": [
+                    2.3148579597473145,
+                    2.6740682125091553
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.51059627532959,
+                    5.368447780609131
+                ],
+                "answer_generation_durations": [
+                    2.6348748207092285,
+                    2.798156976699829
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Which sense is most engaged when interacting with it?",
+                "answer": "Hearing."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does it typically follow a set schedule?",
+                "answer": "Yes, it generally follows a regular schedule."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it more typically used during weekdays than on weekends?",
+                "answer": "Yes, it\u2019s generally used more on weekdays than on weekends."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is interacting with it something people usually do in a group rather than alone?",
+                "answer": "Yes, it\u2019s usually done with other people."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does interacting with it typically occur indoors?",
+                "answer": "Yes, it typically occurs indoors."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is there usually a designated person who leads it?",
+                "answer": "Yes, it usually has someone specifically designated to lead it."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does interacting with it often involve the use of written materials?",
+                "answer": "Yes, it often involves the use of written materials."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically organized by a formal institution rather than by individuals?",
+                "answer": "Yes, it\u2019s generally organized by a formal institution rather than by individuals."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it typically include a scheduled break partway through?",
+                "answer": "Yes, there\u2019s usually a scheduled break partway through."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does interacting with it typically require participants to complete tasks outside of scheduled sessions?",
+                "answer": "Yes, participants often have tasks to complete outside of scheduled sessions."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\u201cI believe player_1 is the spy because their answer that only hearing is involved seems off\u2014interacting with it usually engages sight as well.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because claiming that hearing is the primary sense used seems off\u2014someone knowing the secret word would emphasize sight (reading, seeing the board) rather than just hearing.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because saying the most engaged sense is \u2018hearing\u2019 doesn\u2019t fit as well with the secret word\u2014most people would point to sight (reading, seeing the board) when interacting with it.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI think player_1 is the spy because their choice of \u2018hearing\u2019 as the primary sense doesn\u2019t fit school nearly as well as vision does, and that answer seems more suited to something like a concert or service.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because their very first response was just the single word 'Hearing' without any elaboration, whereas all other players replied in full sentences consistent with knowing the secret word.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "theater",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22416,
+                "output_tokens": 985,
+                "thinking_tokens": 12160,
+                "full_output_tokens": 13145
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.024657600000000002,
+                "output_cost": 0.004334,
+                "thinking_cost": 0.053504,
+                "full_output_cost": 0.057838
+            },
+            "total_costs": {
+                "total_input_cost": 0.024657600000000002,
+                "total_output_cost": 0.004334,
+                "total_thinking_cost": 0.053504,
+                "total_full_output_cost": 0.057838,
+                "full_total_cost": 0.0824956
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.398317575454712,
+                    3.421504259109497
+                ],
+                "answer_generation_durations": [
+                    2.633481025695801,
+                    1.9535889625549316
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.769414186477661,
+                    3.540318012237549
+                ],
+                "answer_generation_durations": [
+                    3.614942789077759,
+                    3.027381420135498
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.8259713649749756,
+                    6.689817905426025
+                ],
+                "answer_generation_durations": [
+                    3.3202052116394043,
+                    4.292538642883301
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    9.528970003128052,
+                    6.379045724868774
+                ],
+                "answer_generation_durations": [
+                    7.855735778808594,
+                    3.1119914054870605
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.814814329147339,
+                    7.983808755874634
+                ],
+                "answer_generation_durations": [
+                    2.2609825134277344,
+                    2.608839273452759
+                ]
+            }
+        },
+        "spy_guess": "giraffe",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you prefer events that are carefully rehearsed or those that are more spontaneous?",
+                "answer": "I generally lean toward carefully organized occasions, though a bit of spontaneity can be enjoyable."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do you tend to focus more on visual details or auditory elements when you're experiencing something new?",
+                "answer": "I tend to focus more on visual details when experiencing something new."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When experiencing an event, do you prefer to be an active participant or a silent observer?",
+                "answer": "I usually prefer to be a silent observer."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When attending something like this, do you tend to arrive early to choose your spot, or show up just as it begins?",
+                "answer": "I usually arrive early to secure a good spot."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you feel more immersed when the environment around you is dimly lit or brightly lit?",
+                "answer": "I feel much more immersed when the environment is dimly lit."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you prefer attending events in large venues or smaller, more intimate settings?",
+                "answer": "I tend to enjoy larger venues for the atmosphere, though smaller settings have their own charm."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do you prefer sitting closer to the front or the back when attending an event?",
+                "answer": "I prefer sitting closer to the front to get a clearer view."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do you prefer attending events that include an intermission or those that run continuously without breaks?",
+                "answer": "I generally prefer events that include an intermission."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do you find live music or pre-recorded soundtracks more appealing?",
+                "answer": "I find live music more appealing for the energy it brings."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do you prefer events where formal attire is expected, or ones where casual dress is acceptable?",
+                "answer": "I prefer events that expect more formal attire for the sense of occasion it provides."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their emphasis on spontaneity and large venues feels too generic for our tightly scripted, mid\u2010sized, intermission\u2010based theatre setting.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_4",
+                "reason": "\"I suspect player_4 because emphasizing a preference for live music over pre-recorded sound suggests they\u2019re thinking of a concert rather than a theatrical performance.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because wanting to arrive early to \u2018secure a good spot\u2019 and preferring live music sounds more like a concert or general\u2010admission event, not a reserved seating theater performance.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\u201cI suspect player_1 because their answers have been unusually generic and vague compared to everyone else, as if they\u2019re avoiding giving any context clues.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I think player_1 is the spy because their comment about enjoying 'a bit of spontaneity' in a rehearsed event seems inconsistent with a true theater\u2010goer, who would rarely welcome unscripted moments in a performance.\""
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "detectives",
+        "spy": 3,
+        "secret_word": "helicopter",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 22283,
+                "output_tokens": 918,
+                "thinking_tokens": 14912,
+                "full_output_tokens": 15830
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0245113,
+                "output_cost": 0.004039200000000001,
+                "thinking_cost": 0.0656128,
+                "full_output_cost": 0.069652
+            },
+            "total_costs": {
+                "total_input_cost": 0.0245113,
+                "total_output_cost": 0.004039200000000001,
+                "total_thinking_cost": 0.0656128,
+                "total_full_output_cost": 0.069652,
+                "full_total_cost": 0.0941633
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.959374666213989,
+                    10.8155996799469
+                ],
+                "answer_generation_durations": [
+                    4.221766948699951,
+                    2.745408058166504
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.914411783218384,
+                    11.23981523513794
+                ],
+                "answer_generation_durations": [
+                    3.2434072494506836,
+                    3.47708797454834
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    16.943922758102417,
+                    10.268877506256104
+                ],
+                "answer_generation_durations": [
+                    2.680783748626709,
+                    2.543931484222412
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    6.202572584152222,
+                    6.395968914031982
+                ],
+                "answer_generation_durations": [
+                    8.262197017669678,
+                    5.973404407501221
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.992512464523315,
+                    4.622560024261475
+                ],
+                "answer_generation_durations": [
+                    2.680406093597412,
+                    2.0633280277252197
+                ]
+            }
+        },
+        "spy_guess": "helicopter",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is its primary function related to transportation rather than entertainment?",
+                "answer": "Yes, its main purpose is transportation rather than entertainment."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Does operating it typically require formal certification or specialized training?",
+                "answer": "Yes, using it typically requires specialized training and formal certification."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically equipped with wheels for ground movement?",
+                "answer": "Yes, it\u2019s equipped with wheels for ground movement."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it typically follow a predetermined route or schedule?",
+                "answer": "No, it\u2019s generally operated on-demand without a fixed route or schedule."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Does it typically accommodate more than two passengers at a time?",
+                "answer": "Yes, it often carries more than two passengers at once."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Can it hover in place without moving forward or backward?",
+                "answer": "Yes, it can remain stationary in the air."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it typically stored in a hangar when not in use?",
+                "answer": "Yes, it\u2019s usually kept in a hangar when not in use."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically operated by a single person rather than requiring a crew?",
+                "answer": "Yes, it\u2019s typically operated by a single person rather than a crew."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it rely on rotating rotor blades to generate lift rather than fixed wings?",
+                "answer": "Yes, it generates lift through rotating rotor blades rather than fixed wings."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it commonly used in military missions such as troop transport or reconnaissance?",
+                "answer": "Yes, it\u2019s frequently employed in military operations for troop transport and reconnaissance."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their answer claiming it\u2019s typically equipped with wheels is inconsistent\u2014most helicopters use skids rather than wheels.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because they said it\u2019s equipped with wheels for ground movement, but helicopters most often use skids rather than wheels.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they said a helicopter is typically equipped with wheels for ground movement, which is incorrect\u2014most helicopters use skids, not wheels.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their insistence on \u2018specialized training and formal certification\u2019 seemed overly broad and didn\u2019t help narrow down the secret word.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because they claimed it\u2019s typically equipped with wheels, which doesn\u2019t align with a helicopter\u2019s usual skid-based landing gear.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 2,
+        "winner": "spy",
+        "spy": 3,
+        "secret_word": "hamburger",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21253,
+                "output_tokens": 907,
+                "thinking_tokens": 18432,
+                "full_output_tokens": 19339
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0233783,
+                "output_cost": 0.0039908,
+                "thinking_cost": 0.0811008,
+                "full_output_cost": 0.0850916
+            },
+            "total_costs": {
+                "total_input_cost": 0.0233783,
+                "total_output_cost": 0.0039908,
+                "total_thinking_cost": 0.0811008,
+                "total_full_output_cost": 0.0850916,
+                "full_total_cost": 0.10846990000000001
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.749049186706543,
+                    54.1586811542511
+                ],
+                "answer_generation_durations": [
+                    3.0657477378845215,
+                    3.5634212493896484
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.407437562942505,
+                    9.090303659439087
+                ],
+                "answer_generation_durations": [
+                    3.649311065673828,
+                    7.760702610015869
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.936656475067139,
+                    8.05894684791565
+                ],
+                "answer_generation_durations": [
+                    2.425454616546631,
+                    3.5742931365966797
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    3.755023956298828,
+                    6.407227039337158
+                ],
+                "answer_generation_durations": [
+                    3.429429531097412,
+                    2.605388879776001
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    8.601885557174683,
+                    11.037658452987671
+                ],
+                "answer_generation_durations": [
+                    3.056216239929199,
+                    3.4734537601470947
+                ]
+            }
+        },
+        "spy_guess": "helicopter",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it typically eaten with your hands rather than with utensils?",
+                "answer": "Yes, it\u2019s usually eaten with your hands."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is it commonly found at fast-food restaurants?",
+                "answer": "Yes, it\u2019s commonly available at most fast-food restaurants."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it something you might grill outdoors during the summer?",
+                "answer": "Yes, it\u2019s often grilled outdoors during the summer."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Is it typically served on a bun?",
+                "answer": "Yes, it\u2019s commonly served on a bun."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is it commonly served with condiments such as ketchup and mustard?",
+                "answer": "Yes, it\u2019s often accompanied by condiments like ketchup or mustard."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is this item more commonly prepared fresh from raw ingredients rather than bought pre-processed?",
+                "answer": "It\u2019s often prepared from scratch, although pre-processed varieties are also widely used."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Would you commonly find it at a ballpark or sports stadium concession stand?",
+                "answer": "Yes, it\u2019s commonly sold at ballpark concession stands."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Is it typically served hot rather than cold?",
+                "answer": "Yes, it\u2019s typically served hot."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Does it frequently include pickle relish as a topping?",
+                "answer": "Relish isn\u2019t a standard topping for this, though some people add it occasionally."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Is cheese commonly used as a topping on it?",
+                "answer": "Yes, cheese is a popular topping on it."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_4",
+                "reason": "\u201cI suspect player_4 because their comment about pickle relish being an occasional topping feels off\u2014relish isn\u2019t really used on burgers, it\u2019s more of a hot-dog condiment.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were overly generic\u2014with simple \u2018yes\u2019 and no detail\u2014unlike the more nuanced responses from the other players.\u201d"
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their answers were overly generic\u2014\u2018yes, it\u2019s grilled\u2019 and \u2018yes, it\u2019s served hot\u2019\u2014without the specific details about buns, condiments, or typical toppings that the other detectives provided.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_2",
+                "reason": "\u201cI believe player_2 is the spy because their answers about where it\u2019s served were overly generic and didn\u2019t demonstrate detailed knowledge of typical preparations.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were very generic (fast-food, ballpark) and didn\u2019t show the specific nuances that match the secret word.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 3,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "museum",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 21393,
+                "output_tokens": 914,
+                "thinking_tokens": 11392,
+                "full_output_tokens": 12306
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.023532300000000003,
+                "output_cost": 0.0040216,
+                "thinking_cost": 0.050124800000000004,
+                "full_output_cost": 0.054146400000000004
+            },
+            "total_costs": {
+                "total_input_cost": 0.023532300000000003,
+                "total_output_cost": 0.0040216,
+                "total_thinking_cost": 0.050124800000000004,
+                "total_full_output_cost": 0.054146400000000004,
+                "full_total_cost": 0.0776787
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.16575813293457,
+                    12.09178376197815
+                ],
+                "answer_generation_durations": [
+                    2.2488231658935547,
+                    4.259491443634033
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.083569288253784,
+                    3.4529829025268555
+                ],
+                "answer_generation_durations": [
+                    4.200335264205933,
+                    3.058922052383423
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    8.428680658340454,
+                    6.023298025131226
+                ],
+                "answer_generation_durations": [
+                    4.302196502685547,
+                    2.6702513694763184
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    16.14315128326416,
+                    7.117668151855469
+                ],
+                "answer_generation_durations": [
+                    3.0077285766601562,
+                    2.791083812713623
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    7.694669961929321,
+                    8.141289949417114
+                ],
+                "answer_generation_durations": [
+                    2.2653114795684814,
+                    2.6288368701934814
+                ]
+            }
+        },
+        "spy_guess": "helicopter",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Is it a place where quiet behavior is generally expected?",
+                "answer": "Yes, it\u2019s typically a spot where people speak softly."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Is this place typically indoors rather than outdoors?",
+                "answer": "Yes, it\u2019s almost always located indoors."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Do people typically enter this place without paying an admission fee?",
+                "answer": "No, most visitors have to pay an admission fee."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Do visitors usually spend more than an hour there in a typical visit?",
+                "answer": "Yes, many people stay for over an hour on a typical visit."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do visitors often engage in structured educational programs or activities during their visit?",
+                "answer": "Yes, many visitors join guided tours or workshops during their visit."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do visitors often use audio guides or similar devices during their visit?",
+                "answer": "Yes, many visitors use audio guides or similar devices to enhance their experience."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "Do venues like this commonly include a gift shop on-site?",
+                "answer": "Yes, they usually have a gift shop on-site."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "Are visitors generally allowed to take photographs or videos inside?",
+                "answer": "Yes, photography and video are generally allowed, though some specific areas or exhibits may have restrictions."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "Are visitors typically prohibited from touching the exhibits?",
+                "answer": "Yes, visitors are generally not allowed to touch the exhibits."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "Do most exhibits display inanimate objects rather than living organisms?",
+                "answer": "Yes, the majority of exhibits feature inanimate objects rather than living specimens."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_3",
+                "reason": "\u201cI suspect player_3 because their answer about photography felt overly broad and hedged\u2014real museum-goers would know more specific restrictions rather than giving a vague \u2018generally allowed, with some areas restricted\u2019 response.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_3",
+                "reason": "\"I believe player_3 is the spy because their claim that photography and video are generally allowed feels overly broad and doesn\u2019t quite match typical museum restrictions.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 is the spy because their answers about quiet behavior and audio guides felt overly generic, as if they were avoiding giving any real context.\""
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_0",
+                "reason": "\u201cI suspect player_0 because describing exhibits as \u2018inanimate objects rather than living specimens\u2019 feels off\u2014museums don\u2019t normally contrast artifacts with \u2018specimens\u2019 in that way.\u201d"
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers have been unusually brief and generic compared to everyone else\u2019s more detailed responses, suggesting they might be guessing.\u201d"
+            }
+        ]
+    },
+    {
+        "player_with_most_votes": 1,
+        "winner": "spy",
+        "spy": 2,
+        "secret_word": "wedding",
+        "players": {
+            "0": "openai",
+            "1": "openai",
+            "2": "openai",
+            "3": "openai",
+            "4": "openai"
+        },
+        "token_details": {
+            "openai": {
+                "input_tokens": 24174,
+                "output_tokens": 1091,
+                "thinking_tokens": 9664,
+                "full_output_tokens": 10755
+            }
+        },
+        "token_prices": {
+            "openai": {
+                "input_cost": 0.0265914,
+                "output_cost": 0.004800400000000001,
+                "thinking_cost": 0.0425216,
+                "full_output_cost": 0.047322
+            },
+            "total_costs": {
+                "total_input_cost": 0.0265914,
+                "total_output_cost": 0.004800400000000001,
+                "total_thinking_cost": 0.0425216,
+                "total_full_output_cost": 0.047322,
+                "full_total_cost": 0.0739134
+            }
+        },
+        "llm_info": {
+            "player_0": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.3851099014282227,
+                    7.154742956161499
+                ],
+                "answer_generation_durations": [
+                    2.5774424076080322,
+                    3.867586612701416
+                ]
+            },
+            "player_1": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    5.180807590484619,
+                    5.719899654388428
+                ],
+                "answer_generation_durations": [
+                    2.5436697006225586,
+                    3.4350152015686035
+                ]
+            },
+            "player_2": {
+                "llm_type": "openai",
+                "role": "spy",
+                "question_generation_durations": [
+                    4.9776434898376465,
+                    4.899336338043213
+                ],
+                "answer_generation_durations": [
+                    2.57944393157959,
+                    2.9355316162109375
+                ]
+            },
+            "player_3": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    4.6202332973480225,
+                    5.085355043411255
+                ],
+                "answer_generation_durations": [
+                    2.172539710998535,
+                    2.956191301345825
+                ]
+            },
+            "player_4": {
+                "llm_type": "openai",
+                "role": "detective",
+                "question_generation_durations": [
+                    3.620894193649292,
+                    5.040370225906372
+                ],
+                "answer_generation_durations": [
+                    2.122285842895508,
+                    3.7666125297546387
+                ]
+            }
+        },
+        "spy_guess": "helicopter",
+        "conversation_record": [
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "Do you tend to focus more on formal rituals or on celebrations when attending social events?",
+                "answer": "I tend to focus more on the celebrations, though I do appreciate formal rituals for their significance."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When you\u2019re involved in planning an occasion, do you prefer to lock in all the details well in advance or leave room to improvise on the day of the event?",
+                "answer": "I like to firm up the core details in advance while still keeping a bit of flexibility to adapt on the day."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When selecting a venue for an event, do you usually choose an indoor location for a controlled atmosphere or an outdoor setting for a more natural vibe?",
+                "answer": "I typically go with an indoor venue to maintain a consistent atmosphere."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When selecting a color scheme for an event, do you base your choices on a specific theme or on the personal preferences of the hosts?",
+                "answer": "I typically choose a color scheme built around a cohesive theme that also reflects the hosts\u2019 personal tastes."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When choosing attire guidelines for an event, do you specify a dress code or leave it open-ended?",
+                "answer": "I typically specify a dress code to ensure everyone matches the event\u2019s level of formality."
+            },
+            {
+                "ask_player": "player_0",
+                "respond_player": "player_1",
+                "question": "When planning an event, do you include structured icebreaker activities or leave time for open mingling?",
+                "answer": "I include a couple of structured icebreakers to get things started, then leave ample time for guests to mingle freely."
+            },
+            {
+                "ask_player": "player_1",
+                "respond_player": "player_2",
+                "question": "When organizing an event, do you prefer assigned seating for guests or let them choose their own seats?",
+                "answer": "I generally assign seats to guide interactions but leave a handful of spots open so guests can adjust as needed."
+            },
+            {
+                "ask_player": "player_2",
+                "respond_player": "player_3",
+                "question": "When allocating your event budget, do you concentrate spending on a few key elements or distribute funds evenly across all aspects?",
+                "answer": "I prioritize a few standout features\u2014like the venue, food, and atmosphere\u2014while keeping other expenses more modest."
+            },
+            {
+                "ask_player": "player_3",
+                "respond_player": "player_4",
+                "question": "When planning refreshments for an event, do you prefer a buffet-style setup or a plated service?",
+                "answer": "I prefer plated service to maintain an elegant presentation and keep the event timing on track."
+            },
+            {
+                "ask_player": "player_4",
+                "respond_player": "player_0",
+                "question": "When sending out invitations, do you prefer to use traditional printed invitations or digital invitations?",
+                "answer": "I usually opt for printed invitations to set a formal tone and provide guests with a tangible keepsake."
+            }
+        ],
+        "voting_record": [
+            {
+                "voter": "player_0",
+                "voted_for": "player_1",
+                "reason": "\u201cI believe player_1 is the spy because their mention of structured icebreaker activities feels more like a corporate event than a wedding, which seems out of place given the secret word.\u201d"
+            },
+            {
+                "voter": "player_1",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because mentioning \u2018structured icebreaker activities\u2019 feels out of place for a wedding setting, suggesting they\u2019re not familiar with the true nature of the event.\""
+            },
+            {
+                "voter": "player_2",
+                "voted_for": "player_2",
+                "reason": "\u201cI suspect player_2 because their answers were unusually balanced and noncommittal\u2014leaning neither strongly formal nor informal\u2014and felt like a safe, generic approach rather than specific expertise.\u201d"
+            },
+            {
+                "voter": "player_3",
+                "voted_for": "player_1",
+                "reason": "\"I suspect player_1 because they mention using structured icebreaker activities\u2014something more common at corporate or team-building events, not a typical feature of a wedding.\""
+            },
+            {
+                "voter": "player_4",
+                "voted_for": "player_1",
+                "reason": "\"I believe player_1 is the spy because they mentioned using structured icebreakers\u2014something you\u2019d more likely see at a corporate event rather than a wedding.\""
+            }
+        ]
+    }
+]
