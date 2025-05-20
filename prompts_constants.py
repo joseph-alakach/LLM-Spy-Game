@@ -20,8 +20,6 @@ SYSTEM_PROMPTS = {
 
 3. **Voting**:
    - All players vote on who they suspect is the Spy.
-   - If the Spy is voted out, they get one chance to guess the word.
-   - If the spy guesses correctly, **the Spy wins**. Otherwise, **Detectives win**.
    - If the Spy is not voted out and someone else is voted out by mistake, **the Spy wins**.
 
 ## Rules & Guidelines:
